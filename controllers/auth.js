@@ -2,6 +2,16 @@ import User from '../models/users.js'
 import jwt from 'jsonwebtoken'
 import 'dotenv/config'
 
+// Register Route
+export const registerUser = async (req, res) => {
+  try {
+    const newUser = await User.create(req.body)
+    return res.json({ message: `Welcome ${newUser.username}` })
+  } catch (err) {
+    return res.status(422).json(err)
+  }
+}
+
 // Login Route
 export const loginUser = async (req, res) => {
   try {
