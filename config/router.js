@@ -2,7 +2,7 @@ import express from 'express'
 import { loginOrRegister } from '../controllers/auth.js'
 import { addDestination, deleteDestination, displayAllDestinations, displaySingleDestination, updateDestination } from '../controllers/destinations.js'
 import { addReview, deleteReview } from '../controllers/reviews.js'
-import { secureRoute } from './secureRouter.js'
+import { adminRoute, secureRoute } from './secureRouter.js'
 
 const router = express.Router()
 
@@ -16,9 +16,9 @@ router.route('/destinations/:id')
   .delete(secureRoute, deleteReview)
 
 router.route('/admin')
-  .put(secureRoute, updateDestination)
-  .post(secureRoute, addDestination)
-  .delete(secureRoute, deleteDestination)
+  .put(adminRoute, updateDestination)
+  .post(adminRoute, addDestination)
+  .delete(adminRoute, deleteDestination)
 
 router.route('/profile')
   .delete(secureRoute, deleteReview)
