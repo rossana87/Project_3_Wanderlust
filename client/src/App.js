@@ -1,23 +1,46 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import axios from 'axios'
 
 const App = () => {
+
+  // const [isOpen, setIsOpen] = useState(false)
+  const modalRef = useRef(null)
+
+  function openModal() {
+    // setIsOpen(true)
+    modalRef.current.showModal()
+    console.log('Open Modal clicked')
+    // console.log(isOpen)
+    
+  }  
+
+  function closeModal() {
+    // setIsOpen(false)
+    modalRef.current.close()
+  }
+
   useEffect(() => {
+    
     const getData = async () => {
       const { data } = await axios.get('/api/') // * <-- replace with your endpoint
       console.log(data)
     }
     getData()
+
   })
 
   return (
     <div id="wrapper">
       <header>
         <div id="logo">Wanderlust</div>
-        <nav></nav>
+        <nav>
+          <ul>
+            <li onClick={openModal} className="open-button">Login</li>
+            <li>Register</li>
+          </ul>
+        </nav>
       </header>
       <main>
-        {/* <h1>Hello World</h1> */}
         {/* <!-- BUTTONS (input/labels) --> */}
         <input type="radio" name="slider" id="slide-1-trigger" className="trigger" />
         <label className="btn" htmlFor="slide-1-trigger"></label>
@@ -37,6 +60,17 @@ const App = () => {
             <div className="slide slide-4"></div>
           </div>
         </div>
+
+        {/* <!-- LOGIN MODAL --> */}
+        <dialog className="modal" id="modal" ref={modalRef}>
+          <h2>Log into Wanderlust</h2>
+          <button className="button close-button" onClick={closeModal}>close modal</button>
+          <form className="form" method="dialog">
+            <label>Email:<input type="text" /></label>
+            <label>Password:<input type="email" /></label>
+            <button className="button" type="submit">submit form</button>
+          </form>
+        </dialog>
       </main>
     </div>
   )
