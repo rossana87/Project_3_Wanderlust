@@ -18,14 +18,14 @@ const seedDatabase = async () => {
     const createUsers = await User.create(userData)
     console.log(`${createUsers.length} users added`)
 
-    // const pokemonWithOwner = destinationData.map(record => {
-    //   const randomUser = createUsers[Math.floor(Math.random() * createUsers.length)]
-    //   console.log(randomUser)
-    //   return { ...record, owner: randomUser._id }
-    // })
-    // console.log('reacords with an owner field ->', pokemonWithOwner)
+    const destinationWithOwner = destinationData.map(destination => {
+      const randomUser = createUsers[Math.floor(Math.random() * createUsers.length)]
+      console.log(randomUser)
+      return { ...destination, owner: randomUser._id }
+    })
+    //console.log('reacords with an owner field ->', destinationWithOwner)
 
-    const createDestinations = await Destination.create(destinationData)
+    const createDestinations = await Destination.create(destinationWithOwner)
     console.log(`${createDestinations.length} destinations added`)
 
     await mongoose.connection.close()
