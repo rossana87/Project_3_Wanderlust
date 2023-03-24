@@ -9,14 +9,11 @@ const router = express.Router()
 router.route('/')
   .get(displayDestination)
   .post(loginOrRegister)
-<<<<<<< HEAD
-=======
 
 router.route('/destinations/:id/reviews')
   .post(secureRoute, addReview)
 
 router.route('/destinations/:destinationId/reviews/:reviewId')
   .delete(secureRoute, deleteReview)
->>>>>>> development
 
 export default router
