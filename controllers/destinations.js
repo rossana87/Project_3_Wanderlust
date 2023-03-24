@@ -1,7 +1,7 @@
 import Destination from '../models/destinations.js'
 
 // GET all
-export const displayDestination = async (req, res) => {
+export const displayAllDestinations = async (req, res) => {
   try {
     const destinations = await Destination.find()
     // .populate('owner')
@@ -10,4 +10,24 @@ export const displayDestination = async (req, res) => {
   } catch (err) {
     console.log(err)
   }
+}
+
+// Get Single Destination
+export const displaySingleDestination = async () => {
+
+}
+
+// Update Destination
+export const updateDestination = async () => {
+  
+}
+
+// Delete Destination
+export const deleteDestination = async () => {
+  
+}
+
+// Add Destination
+export const addDestination = async () => {
+  
 }
