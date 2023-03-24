@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import 'dotenv/config'
 import User from '../models/users.js'
-import { NotFound, Unauthorized, sendError } from './errors.js'
+import { NotFound, Unauthorized } from './errors.js'
 
 export const secureRoute = async (req, res, next) => {
   try {
@@ -18,12 +18,36 @@ export const secureRoute = async (req, res, next) => {
 
     // 5. If the request reaches this point, the token is valid
     const loggedInUser = await User.findById(payload.sub)
+
     if (!loggedInUser) throw new NotFound('User not found')
 
     // 6. Pass the loggedInUser document above onto the req object by assigning it a key name
     req.loggedInUser = loggedInUser
 
     // 7. If the token is valid, and the user verified, then pass the request onto the controller
+    next()
+  } catch (err) {
+    console.log(err.status)
+    console.log(err.message)
+    return res.status(401).json({ message: 'Unauthorized' })
+  }
+}
+
+export const adminRoute = async (req, res, next) => {
+  try {
+    const authorization = req.headers.authorization
+    if (!authorization) throw new Unauthorized('Missing Authorization header')
+
+    const token = authorization.replace('Bearer ', '')
+
+    const payload = jwt.verify(token, process.env.SECRET)
+
+    const loggedInUser = await User.findById(payload.sub)
+    if (!loggedInUser) throw new NotFound('User not found')
+    // Checks user is admin
+    if (!loggedInUser.isAdmin) throw new Unauthorized('User is not an admin')
+
+    req.loggedInUser = loggedInUser
     next()
   } catch (err) {
     console.log(err.status)
