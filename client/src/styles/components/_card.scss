@@ -1,7 +1,7 @@
 #grid-container {
   // border: 1px dotted black;
   margin: 1em;
-  display: flex;
+  // display: flex;
   gap: 1em;
 }
 
@@ -11,7 +11,9 @@
 }
 
 #grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .card {

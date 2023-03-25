@@ -28,7 +28,6 @@ const Home = () => {
     const getDestinations = async () => {
       try {
         const { data } = await axios.get('/api/')
-        console.log('This is the data from Home.js', data)
         setDestinations(data)
       } catch (err) {
         console.log(err)

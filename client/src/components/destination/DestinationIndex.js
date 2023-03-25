@@ -21,7 +21,6 @@ const DestinationIndex = () => {
       const getDestinations = async () => {
         try {
           const { data } = await axios.get('/api/')
-          console.log('This is the data from Home.js', data)
           setDestinations(data)
           setFilteredDestinations(data)
         } catch (err) {
@@ -48,13 +47,15 @@ const DestinationIndex = () => {
           <div id="grid">
             {filteredDestinations.length > 0 ?
               filteredDestinations.map(destination => {
-                const { _id, name, highTemps } = destination
+                const currentMonth = new Date().getMonth()
+                const { _id, name, country, highTemps } = destination
                 const avgRating = destination.averageRating ? destination.averageRating : '-'
                 const background = destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : ''
                 return (
                   <div key={_id} className="card" style={{ backgroundImage: `url(${background})` }} >
                     <div id="destination-name">{name}</div>
-                    <div id="avg-weather">{highTemps[1]}</div>
+                    <div id="country-name">{country}</div>
+                    <div id="avg-weather">{highTemps[currentMonth]}</div>
                     <div id="avg-review">Average rating: {avgRating}</div>
                   </div>
                 )
