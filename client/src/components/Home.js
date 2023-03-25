@@ -3,7 +3,6 @@ import React from 'react'
 import Nav from './common/Nav'
 import axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom'
-import DestinationIndex from './destination/DestinationIndex'
 
 const Home = () => {
 
@@ -21,6 +20,7 @@ const Home = () => {
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
   const [temperature, setTemperature] = useState('warm')
+  // const [test, setTest] = useState(['reactjs', 'react-router-dom'])
 
   // ! On Mount
   useEffect(() => {
@@ -129,7 +129,7 @@ const Home = () => {
             <div className="slide slide-4"></div>
           </div>
           <div id="explore">
-            <Link to={'/destinations'}>
+            <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations }}>
               <button id="btn-explore" >Explore!</button>
             </Link>
           </div>
