@@ -78,53 +78,69 @@ main {
 // BUTTONS LOGIC
 
 .btn, .btn::after {
-    border-radius: 50%;
-    transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  border-radius: 50%;
+  transition: all .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .btn {
-    border: 1px solid rgba(0, 0, 0, 0.281);
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 2px 2px rgba(56, 56, 56, 0.822);
-    position: absolute;
-    bottom: 12%;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    transform: scale(1.1);
-    z-index: 1000;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 2px 2px rgba(56, 56, 56, 0.822);
+  position: absolute;
+  bottom: 12%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transform: scale(1.1);
+  z-index: 1000;
 }
 
 .btn:nth-of-type(1) {
-    left: 38%;
+  left: 38%;
 }
 
 .btn:nth-of-type(2) {
-    left: 45%;
+  left: 45%;
 }
 
 .btn:nth-of-type(3) {
-    left: 52%;
+  left: 52%;
 }
 
 .btn:nth-of-type(4) {
-    left: 59%;
+  left: 59%;
 }
 
 .btn:hover {
-    transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 .btn::after {
-    content: "";
-    display: inline-block;
-    border: 1px solid white;
-    background: rgb(11, 185, 238);
-    width: 20px;
-    height: 20px;
-    margin: 3px 3px;
-    transform: scale(.5, .5);
-    box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
+  content: "";
+  display: inline-block;
+  border: 1px solid white;
+  background: rgb(11, 185, 238);
+  width: 20px;
+  height: 20px;
+  margin: 3px 3px;
+  transform: scale(.5, .5);
+  box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
+}
+
+#explore {
+  position: absolute;
+  width: 100%;
+  // border: 1px solid black;
+  z-index: 400;
+  bottom: 5%;
+  text-align: center;
+}
+
+#btn-explore {
+  // position: absolute;
+  left: 46%;
+  height: 2rem;
+  width: 6rem;
 }
 
 // SLIDE LOGIC

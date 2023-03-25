@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import Nav from './common/Nav'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Home = () => {
   
@@ -69,6 +69,11 @@ const Home = () => {
             <div className="slide slide-2"></div>
             <div className="slide slide-3"></div>
             <div className="slide slide-4"></div>
+          </div>
+          <div id="explore">
+            {/* <Link to={'/destinations'}>
+              <button id="btn-explore">Explore!</button> 
+            </Link> */}
           </div>
         </div>
 
