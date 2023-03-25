@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Nav from './common/Nav'
 import axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom'
@@ -15,6 +15,25 @@ const Home = () => {
     password: '',
   })
   const [ error, setError ] = useState('')
+
+  const [ destination, setDestination ] = useState([])
+  const [ filteredDestination, setFilteredDestination ] = useState([])
+
+  // ! On Mount
+  useEffect(() => {
+    // This function will get our bread data and save it to the bread state
+    const getDestinations = async () => {
+      try {
+        const { data } = await axios.get('/api/')
+        console.log('This is the data from Home.js', data)
+        setDestination(data)
+      } catch (err) {
+        console.log(err)
+        setError(err.message)
+      }
+    }
+    getDestinations()
+  }, [])
 
   // ! Executions
   const handleChange = (e) => {
@@ -71,9 +90,9 @@ const Home = () => {
             <div className="slide slide-4"></div>
           </div>
           <div id="explore">
-            {/* <Link to={'/destinations'}>
+            <Link to={'/destinations'}>
               <button id="btn-explore">Explore!</button> 
-            </Link> */}
+            </Link>
           </div>
         </div>
 

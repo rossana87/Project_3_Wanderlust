@@ -6,15 +6,15 @@ import DestinationIndex from './components/destination/DestinationIndex'
 
 const App = () => {
 
-  useEffect(() => {
+  // useEffect(() => {
     
-    const getData = async () => {
-      const { data } = await axios.get('/api/')
-      console.log('This is the data', data)
-    }
-    getData()
+  //   const getData = async () => {
+  //     const { data } = await axios.get('/api/')
+  //     console.log('This is the data', data)
+  //   }
+  //   getData()
 
-  })
+  // })
 
   return (
     <div id="wrapper">
@@ -23,8 +23,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<DestinationIndex />} />
           {/* <Route path="/'/destinations/:id/" element={<DestinationSingle />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
           <Route path="*" element={<PageNotFound />} /> */}
         </Routes>
       </BrowserRouter>

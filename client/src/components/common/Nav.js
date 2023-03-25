@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Buffer } from 'buffer'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, Link } from 'react-router-dom'
 const tokenName = 'WANDERLUST-TOKEN'
 
 const Nav = ({ openModal }) => {
@@ -36,12 +36,14 @@ const Nav = ({ openModal }) => {
   }
 
   useEffect(() => {
-    console.log(location)
+    // console.log(location)
   }, [location])
 
   return (
     <header>
-      <div id="logo">Wanderlust</div>
+      <div id="logo">
+        <Link to={'/'}>Wanderlust</Link>
+      </div>
       <nav>
         <ul>
           {/* check if authenticated. if true, show logout, otherwise show login and register links */}

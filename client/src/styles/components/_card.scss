@@ -1,0 +1,29 @@
+#grid-container {
+  // border: 1px dotted black;
+  margin: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+#filters {
+  border: 1px solid black;
+  width: 15em;
+}
+
+#grid {
+  display: grid;
+}
+
+.card {
+  border: 1px solid blue;
+  width: 15em;
+  height: 10em;
+  font-family: $main-font;
+  padding: 0.5em;
+  line-height: 2em;
+  // display: flex;
+
+  #destination-name {
+    font-size: 1.5em;
+  }
+}

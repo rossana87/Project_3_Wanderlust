@@ -4,7 +4,7 @@ form {
 }
 
 form, h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: $main-font;
 }
 
 .modal {
@@ -13,8 +13,6 @@ form, h2 {
   max-width: 50ch;
   border-radius: 8px;
   // z-index: 300;
-  // border: 0;
-  // box-shadow: 0 0 1em rgb(0 0 0 / .3);
 
   & > * {
     margin: 0 0 0.5rem 0;
@@ -32,7 +30,7 @@ form, h2 {
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  background-color: inherit;
+  // background-color: inherit;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
