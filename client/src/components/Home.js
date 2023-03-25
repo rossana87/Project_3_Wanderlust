@@ -1,23 +1,26 @@
 import { useState, useRef, useEffect } from 'react'
+import React from 'react'
 import Nav from './common/Nav'
 import axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom'
+import DestinationIndex from './destination/DestinationIndex'
 
 const Home = () => {
-  
+
   // ! State
   // State for the Modal to either show or not show
   const modalRef = useRef(null)
-  
+
   // State for the Form Fields
-  const [ formFields, setFormFields ] = useState({
+  const [formFields, setFormFields] = useState({
     email: '',
     password: '',
   })
-  const [ error, setError ] = useState('')
 
-  const [ destination, setDestination ] = useState([])
-  const [ filteredDestination, setFilteredDestination ] = useState([])
+  const [error, setError] = useState('')
+  const [destinations, setDestinations] = useState([])
+  const [filteredDestinations, setFilteredDestinations] = useState([])
+  const [temperature, setTemperature] = useState('warm')
 
   // ! On Mount
   useEffect(() => {
@@ -26,7 +29,7 @@ const Home = () => {
       try {
         const { data } = await axios.get('/api/')
         console.log('This is the data from Home.js', data)
-        setDestination(data)
+        setDestinations(data)
       } catch (err) {
         console.log(err)
         setError(err.message)
@@ -59,26 +62,62 @@ const Home = () => {
   }
 
   function openModal() {
-    modalRef.current.showModal()  
-  }  
+    modalRef.current.showModal()
+  }
 
   function closeModal() {
     modalRef.current.close()
   }
 
+  const handleFilter = (value) => {
+    console.log(value)
+    setTemperature(value)
+  }
+
+  const applyFilter = () => {
+    const currentMonth = new Date().getMonth()
+    let minTemp
+    let maxTemp
+    if (temperature === 'cold') {
+      minTemp = Math.min(...destinations.map(destination => destination.highTemps[currentMonth]))
+      maxTemp = 10
+    } else if (temperature === 'mild') {
+      minTemp = 11
+      maxTemp = 19
+    } else if (temperature === 'warm') {
+      minTemp = 20
+      maxTemp = 29
+    } else {
+      minTemp = 30
+      maxTemp = Math.max(...destinations.map(destination => destination.highTemps[currentMonth]))
+    }
+    const temp = destinations.filter(destination => {
+      console.log(destination.highTemps[currentMonth])
+      return minTemp <= destination.highTemps[currentMonth] && destination.highTemps[currentMonth] <= maxTemp
+    })
+    setFilteredDestinations(temp)
+    console.log('minTemp =', minTemp)
+    console.log('maxTemp =', maxTemp)
+    console.log(temp)
+  }
+
+  useEffect(() => {
+    applyFilter()
+  }, [temperature])
+
   return (
     <>
-      <Nav openModal={openModal}/>
+      <Nav openModal={openModal} />
 
       <main>
         {/* <!-- BUTTONS (input/labels) --> */}
-        <input type="radio" name="slider" id="slide-1-trigger" className="trigger" />
+        <input type="radio" name="slider" id="slide-1-trigger" className="trigger" value="cold" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-1-trigger"></label>
-        <input type="radio" name="slider" id="slide-2-trigger" className="trigger" />
+        <input type="radio" name="slider" id="slide-2-trigger" className="trigger" value="mild" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-2-trigger"></label>
-        <input type="radio" name="slider" id="slide-3-trigger" className="trigger" />
+        <input type="radio" name="slider" id="slide-3-trigger" className="trigger" value="warm" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-3-trigger"></label>
-        <input type="radio" name="slider" id="slide-4-trigger" className="trigger" />
+        <input type="radio" name="slider" id="slide-4-trigger" className="trigger" value="hot" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-4-trigger"></label>
 
         {/* <!-- SLIDES --> */}
@@ -91,7 +130,7 @@ const Home = () => {
           </div>
           <div id="explore">
             <Link to={'/destinations'}>
-              <button id="btn-explore">Explore!</button> 
+              <button id="btn-explore" >Explore!</button>
             </Link>
           </div>
         </div>
@@ -101,8 +140,8 @@ const Home = () => {
           <h2>Log into Wanderlust</h2>
           <button className="close-button" onClick={closeModal}>X</button>
           <form className="form" method="dialog" onSubmit={handleSubmit}>
-            <label>Email:<input type="email" name="email" placeholder='Email' onChange={handleChange} value={formFields.email}/></label>
-            <label>Password:<input type="password" name="password" placeholder='Password' onChange={handleChange} value={formFields.password}/></label>
+            <label>Email:<input type="email" name="email" placeholder='Email' onChange={handleChange} value={formFields.email} /></label>
+            <label>Password:<input type="password" name="password" placeholder='Password' onChange={handleChange} value={formFields.password} /></label>
             <button className="button" type="submit">Submit form</button>
             {error && <p className='text-danger'>{error}</p>}
           </form>

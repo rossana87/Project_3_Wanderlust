@@ -1,7 +1,10 @@
 import Nav from '../common/Nav'
+import { useParams } from 'react-router-dom'
+import React from 'react'
 
-const DestinationIndex = () => {
-
+const DestinationIndex = (props) => {
+  const { arrayProp } = props
+  console.log(arrayProp)
   return (
     <>
       <Nav />
@@ -23,7 +26,7 @@ const DestinationIndex = () => {
           </div>
         </div>
       </main>
-    </>  
+    </>
   )
 
 }
