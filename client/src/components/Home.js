@@ -19,7 +19,7 @@ const Home = () => {
   const [error, setError] = useState('')
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
-  const [temperature, setTemperature] = useState('warm')
+  const [temperature, setTemperature] = useState('cold')
 
   // ! On Mount
   useEffect(() => {
@@ -72,34 +72,41 @@ const Home = () => {
   }
 
   const applyFilter = () => {
-    const currentMonth = new Date().getMonth()
-    let minTemp
-    let maxTemp
-    if (temperature === 'cold') {
-      minTemp = Math.min(...destinations.map(destination => destination.highTemps[currentMonth]))
-      maxTemp = 10
-    } else if (temperature === 'mild') {
-      minTemp = 11
-      maxTemp = 19
-    } else if (temperature === 'warm') {
-      minTemp = 20
-      maxTemp = 29
-    } else {
-      minTemp = 30
-      maxTemp = Math.max(...destinations.map(destination => destination.highTemps[currentMonth]))
+    if (destinations.length > 0) {
+      const currentMonth = new Date().getMonth()
+      let minTemp
+      let maxTemp
+      if (temperature === 'cold') {
+        minTemp = Math.min(...destinations.map(destination => destination.highTemps[currentMonth]))
+        maxTemp = 10
+      } else if (temperature === 'mild') {
+        minTemp = 11
+        maxTemp = 19
+      } else if (temperature === 'warm') {
+        minTemp = 20
+        maxTemp = 29
+      } else {
+        minTemp = 30
+        maxTemp = Math.max(...destinations.map(destination => destination.highTemps[currentMonth]))
+      }
+      const temp = destinations.filter(destination => {
+        return minTemp <= destination.highTemps[currentMonth] && destination.highTemps[currentMonth] <= maxTemp
+      })
+      setFilteredDestinations(temp)
+      console.log('minTemp =', minTemp)
+      console.log('maxTemp =', maxTemp)
     }
-    const temp = destinations.filter(destination => {
-      return minTemp <= destination.highTemps[currentMonth] && destination.highTemps[currentMonth] <= maxTemp
-    })
-    setFilteredDestinations(temp)
-    console.log('minTemp =', minTemp)
-    console.log('maxTemp =', maxTemp)
-    console.log(temp)
   }
 
   useEffect(() => {
     applyFilter()
-  }, [temperature])
+    // console.log(filteredDestinations[0].images[0])
+  }, [destinations, temperature])
+
+  useEffect(() => {
+    console.log(filteredDestinations)
+  }, [filteredDestinations])
+
 
   return (
     <>
@@ -119,10 +126,10 @@ const Home = () => {
         {/* <!-- SLIDES --> */}
         <div className="slide-wrapper">
           <div id="slide-role">
-            <div className="slide slide-1"></div>
-            <div className="slide slide-2"></div>
-            <div className="slide slide-3"></div>
-            <div className="slide slide-4"></div>
+            <div className="slide slide-1" style={{ backgroundImage: 'url("https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div>
+            <div className="slide slide-2" style={{ backgroundImage: 'url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div>
+            <div className="slide slide-3" style={{ backgroundImage: 'url("https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div>
+            <div className="slide slide-4" style={{ backgroundImage: 'url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div>
           </div>
           <div id="explore">
             <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations }}>

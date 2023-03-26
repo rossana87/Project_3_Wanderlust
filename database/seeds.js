@@ -20,10 +20,8 @@ const seedDatabase = async () => {
 
     const destinationWithOwner = destinationData.map(destination => {
       const randomUser = createUsers[Math.floor(Math.random() * createUsers.length)]
-      console.log(randomUser)
       return { ...destination, owner: randomUser._id }
     })
-    //console.log('reacords with an owner field ->', destinationWithOwner)
 
     const createDestinations = await Destination.create(destinationWithOwner)
     console.log(`${createDestinations.length} destinations added`)
