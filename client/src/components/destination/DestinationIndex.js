@@ -1,5 +1,5 @@
 import Nav from '../common/Nav'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
@@ -53,16 +53,18 @@ const DestinationIndex = () => {
                 const background = destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : ''
                 return (
                   <div key={_id} className="card" style={{ backgroundImage: `url(${background})` }} >
-                    <div id="destination-name">{name}</div>
-                    <div id="country-name">{country}</div>
-                    <div id="avg-weather">{highTemps[currentMonth]}</div>
-                    <div id="avg-review">Average rating: {avgRating}</div>
+                    <Link to={`/destinations/${_id}`}>
+                      <div id="destination-name">{name}</div>
+                      <div id="country-name">{country}</div>
+                      <div id="avg-weather">{highTemps[currentMonth]}</div>
+                      <div id="avg-review">Average rating: {avgRating}</div>
+                    </Link>
                   </div>
                 )
               })
               :
               <>
-                {console.log(error)}
+                {console.log('error')}
               </>
             }
           </div>

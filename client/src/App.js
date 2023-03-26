@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import axios from 'axios'
 import Home from './components/Home'
 import DestinationIndex from './components/destination/DestinationIndex'
+import DestinationSingle from './components/destination/DestinationSingle'
 
 const App = () => {
 
@@ -22,8 +23,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<DestinationIndex />} />
-          {/* <Route path="/'/destinations/:id/" element={<DestinationSingle />} />
-          <Route path="*" element={<PageNotFound />} /> */}
+          <Route path="/destinations/:id" element={<DestinationSingle />} />
+          {/* <Route path="*" element={<PageNotFound />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

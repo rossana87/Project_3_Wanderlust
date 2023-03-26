@@ -125,7 +125,7 @@ export default [
     longitude: 12.57,
     description: 'Capital city of Spain with lively nightlife and world-class art.',
     images: [],
-    features: [],
+    features: ['beach', 'mountain', 'ocean'],
     highTemps: [10, 12, 16, 18, 22, 28, 32, 31, 26, 19, 13, 10],
     lowTemps: [3, 4, 6, 8, 11, 16, 19, 19, 15, 11, 6, 4],
   },

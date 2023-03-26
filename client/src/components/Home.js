@@ -20,7 +20,6 @@ const Home = () => {
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
   const [temperature, setTemperature] = useState('warm')
-  // const [test, setTest] = useState(['reactjs', 'react-router-dom'])
 
   // ! On Mount
   useEffect(() => {
@@ -40,7 +39,6 @@ const Home = () => {
   // ! Executions
   const handleChange = (e) => {
     setFormFields({ ...formFields, [e.target.name]: e.target.value })
-    // console.log('This is the login debug:', formFields, e.target.name)
     setError('')
   }
 
@@ -91,7 +89,6 @@ const Home = () => {
       maxTemp = Math.max(...destinations.map(destination => destination.highTemps[currentMonth]))
     }
     const temp = destinations.filter(destination => {
-      console.log(destination.highTemps[currentMonth])
       return minTemp <= destination.highTemps[currentMonth] && destination.highTemps[currentMonth] <= maxTemp
     })
     setFilteredDestinations(temp)

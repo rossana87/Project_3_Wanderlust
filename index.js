@@ -5,14 +5,15 @@ import 'dotenv/config'
 
 const app = express()
 
-app.use(express.json())
 
 const startServer = async () => {
   try {
-
+    
     // ? Connect to our mongodb database
     await mongoose.connect(process.env.MONGO_URI)
     console.log('Database connected')
+    
+    app.use(express.json())
 
     // ? Middleware
     // logger

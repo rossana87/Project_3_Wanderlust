@@ -19,8 +19,8 @@ export const displaySingleDestination = async (req, res) => {
   try {
     const { id } = req.params
     console.log(id)
-    const destination = await Destination.findById(id)
-    //.populate('owner').populate('reviews.owner')
+    const destination = await Destination.findById(id).populate('owner').populate('reviews.owner')
+    console.log('THIS CONSOLE LOG!!!!', destination)
 
     // If record returns null, we want to throw a 404
     if (!destination) throw new Error('Record not found')
