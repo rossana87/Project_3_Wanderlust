@@ -20,6 +20,12 @@ const Home = () => {
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
   const [temperature, setTemperature] = useState('cold')
+  const [slide1Image, setSlide1Image] = useState(0)
+  const [slide2Image, setSlide2Image] = useState(0)
+  const [slide3Image, setSlide3Image] = useState(0)
+  const [slide4Image, setSlide4Image] = useState(0)
+  const [previousDisabled, setPreviousDisabled] = useState(true)
+  const [nextDisabled, setNextDisabled] = useState(false)
 
   // ! On Mount
   useEffect(() => {
@@ -100,12 +106,40 @@ const Home = () => {
 
   useEffect(() => {
     applyFilter()
-    // console.log(filteredDestinations[0].images[0])
   }, [destinations, temperature])
 
   useEffect(() => {
-    console.log(filteredDestinations)
+    console.log('FILTERED DESTINATIONS', filteredDestinations)
   }, [filteredDestinations])
+
+  const handleImageChange = (value) => {
+    if (temperature === 'cold') {
+      setSlide1Image(slide1Image + parseInt(value))
+    } else if (temperature === 'mild') {
+      setSlide2Image(slide2Image + parseInt(value))
+    } else if (temperature === 'warm') {
+      setSlide3Image(slide3Image + parseInt(value))
+    } else {
+      setSlide4Image(slide4Image + parseInt(value))
+    }
+  }
+
+  const disableButtons = () => {
+    if ((temperature === 'cold' && slide1Image === 0) || (temperature === 'mild' && slide2Image === 0) || (temperature === 'warm' && slide3Image === 0) || (temperature === 'hot' && slide4Image === 0)) {
+      setPreviousDisabled(true)
+    } else setPreviousDisabled(false)
+    if ((temperature === 'cold' && slide1Image >= filteredDestinations.length - 1) || (temperature === 'mild' && slide2Image >= filteredDestinations.length - 1) || (temperature === 'warm' && slide3Image >= filteredDestinations.length - 1) || (temperature === 'hot' && slide4Image >= filteredDestinations.length - 1)) {
+      setNextDisabled(true)
+    } else setNextDisabled(false)
+  }
+
+  useEffect(() => {
+    console.log('slide1Image', slide1Image)
+    console.log('slide1Image', slide2Image)
+    console.log('slide1Image', slide3Image)
+    console.log('slide1Image', slide4Image)
+    disableButtons()
+  }, [filteredDestinations, slide1Image, slide2Image, slide3Image, slide4Image])
 
 
   return (
@@ -126,15 +160,24 @@ const Home = () => {
         {/* <!-- SLIDES --> */}
         <div className="slide-wrapper">
           <div id="slide-role">
-            <div className="slide slide-1" style={{ backgroundImage: 'url("https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div>
-            <div className="slide slide-2" style={{ backgroundImage: 'url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div>
-            <div className="slide slide-3" style={{ backgroundImage: 'url("https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div>
-            <div className="slide slide-4" style={{ backgroundImage: 'url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div>
+            {filteredDestinations.length > 0 ?
+              <>
+                <div className="slide slide-1" style={{ backgroundImage: `url(${filteredDestinations[slide1Image].images[0]})` }}></div>
+                <div className="slide slide-2" style={{ backgroundImage: `url(${filteredDestinations[slide2Image].images[1]})` }}></div>
+                <div className="slide slide-3" style={{ backgroundImage: `url(${filteredDestinations[slide3Image].images[2]})` }}></div>
+                <div className="slide slide-4" style={{ backgroundImage: `url(${filteredDestinations[slide4Image].images[3]})` }}></div>
+              </>
+              :
+              console.log('error - filtered destinations')
+            }
+            {/* <div className="slide slide-1" style={{ backgroundImage: 'url("https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div> */}
           </div>
           <div id="explore">
+            <button id="btn-explore" value='-1' onClick={(e) => handleImageChange(e.target.value)} disabled={previousDisabled}>previous</button>
             <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations }}>
               <button id="btn-explore" >Explore!</button>
             </Link>
+            <button id="btn-explore" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>next</button>
           </div>
         </div>
 
