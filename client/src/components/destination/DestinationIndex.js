@@ -51,7 +51,9 @@ const DestinationIndex = () => {
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <Nav />
         <main>
-          <h1>Hello World</h1>
+          <div id="grid-header">
+            <h1>Select your destination...</h1>
+          </div>
           <div id="grid-container">
             <div id="filters">Filters
               <DatePicker inputFormat="DD/MM/YYYY" format="DD/MM/YYYY" />
@@ -64,12 +66,18 @@ const DestinationIndex = () => {
                   const avgRating = destination.averageRating ? destination.averageRating : '-'
                   const background = destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]
                   return (
-                    <div key={_id} className="card" style={{ backgroundImage: `url(${background})` }} >
+                    // <div key={_id} className="card" style={{ backgroundImage: `url(${background})` }} >
+                    <div key={_id} className="card" >
                       <Link to={`/destinations/${_id}`}>
-                        <div id="destination-name">{name}</div>
-                        <div id="country-name">{country}</div>
-                        <div id="avg-weather">{highTemps[currentMonth]}</div>
-                        <div id="avg-review">Average rating: {avgRating}</div>
+                        <div id="card-header">
+                          <div id="destination-image"><img src={background} alt={name}/></div>
+                          <div id="destination-name">{name} <br/> {country}</div>
+                          {/* <div id="country-name">{country}</div> */}
+                        </div>
+                        <div id="card-content">
+                          <div id="avg-weather">Average temp: {highTemps[currentMonth]}</div>
+                          <div id="avg-review">Average rating: {avgRating}</div>
+                        </div>
                       </Link>
                     </div>
                   )

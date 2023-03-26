@@ -7,3 +7,8 @@ $brand-colour: black;
 // FONTS import
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+h1 {
+  font-size: 1.5em;
+  font-family: $main-font;
+}
