@@ -34,8 +34,29 @@ export const displaySingleDestination = async (req, res) => {
 
 // Update Destination
 //'/admin'
-export const updateDestination = async () => {
+export const updateDestination = async (req, res) => {
+  try {
+    const { name, country, continent, currency, latitude, longitude, description
+      , images, features, highTemps, lowTemps, destinationId } = req.body
+    console.log('DESTINADTION ID ->', destinationId)
+    const loggedInUserId = req.loggedInUser._id
 
+    const destinationToUpdate = await Destination.findById(destinationId)
+    if (!destinationToUpdate) throw new NotFound('Destination not found')
+
+    if (!destinationToUpdate.owner.equals(loggedInUserId)) {
+      throw new Unauthorized()
+    }
+
+    Object.assign(destinationToUpdate, { name: name }, { country: country }, { continent: continent }, { currency: currency }, { latitude: latitude }, { longitude: longitude },
+      { description: description }, { images: images }, { features: features }, { highTemps: highTemps }, { lowTemps: lowTemps } )
+
+    await destinationToUpdate.save()
+
+    return res.json(destinationToUpdate)
+  } catch (err) {
+    return sendError(err, res)
+  }
 }
 
 // Delete Destination
