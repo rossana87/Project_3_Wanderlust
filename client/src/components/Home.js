@@ -19,7 +19,7 @@ const Home = () => {
   const [error, setError] = useState('')
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
-  const [temperature, setTemperature] = useState('cold')
+  const [temperature, setTemperature] = useState('0')
   const [slide1Image, setSlide1Image] = useState(0)
   const [slide2Image, setSlide2Image] = useState(0)
   const [slide3Image, setSlide3Image] = useState(0)
@@ -82,13 +82,13 @@ const Home = () => {
       const currentMonth = new Date().getMonth()
       let minTemp
       let maxTemp
-      if (temperature === 'cold') {
+      if (temperature === '0') {
         minTemp = Math.min(...destinations.map(destination => destination.highTemps[currentMonth]))
         maxTemp = 10
-      } else if (temperature === 'mild') {
+      } else if (temperature === '1') {
         minTemp = 11
         maxTemp = 19
-      } else if (temperature === 'warm') {
+      } else if (temperature === '2') {
         minTemp = 20
         maxTemp = 29
       } else {
@@ -113,11 +113,11 @@ const Home = () => {
   }, [filteredDestinations])
 
   const handleImageChange = (value) => {
-    if (temperature === 'cold') {
+    if (temperature === '0') {
       setSlide1Image(slide1Image + parseInt(value))
-    } else if (temperature === 'mild') {
+    } else if (temperature === '1') {
       setSlide2Image(slide2Image + parseInt(value))
-    } else if (temperature === 'warm') {
+    } else if (temperature === '2') {
       setSlide3Image(slide3Image + parseInt(value))
     } else {
       setSlide4Image(slide4Image + parseInt(value))
@@ -125,19 +125,19 @@ const Home = () => {
   }
 
   const disableButtons = () => {
-    if ((temperature === 'cold' && slide1Image === 0) || (temperature === 'mild' && slide2Image === 0) || (temperature === 'warm' && slide3Image === 0) || (temperature === 'hot' && slide4Image === 0)) {
+    if ((temperature === '0' && slide1Image === 0) || (temperature === '1' && slide2Image === 0) || (temperature === '2' && slide3Image === 0) || (temperature === '3' && slide4Image === 0)) {
       setPreviousDisabled(true)
     } else setPreviousDisabled(false)
-    if ((temperature === 'cold' && slide1Image >= filteredDestinations.length - 1) || (temperature === 'mild' && slide2Image >= filteredDestinations.length - 1) || (temperature === 'warm' && slide3Image >= filteredDestinations.length - 1) || (temperature === 'hot' && slide4Image >= filteredDestinations.length - 1)) {
+    if ((temperature === '0' && slide1Image >= filteredDestinations.length - 1) || (temperature === '1' && slide2Image >= filteredDestinations.length - 1) || (temperature === '2' && slide3Image >= filteredDestinations.length - 1) || (temperature === '3' && slide4Image >= filteredDestinations.length - 1)) {
       setNextDisabled(true)
     } else setNextDisabled(false)
   }
 
   useEffect(() => {
     console.log('slide1Image', slide1Image)
-    console.log('slide1Image', slide2Image)
-    console.log('slide1Image', slide3Image)
-    console.log('slide1Image', slide4Image)
+    console.log('slide2Image', slide2Image)
+    console.log('slide3Image', slide3Image)
+    console.log('slide4Image', slide4Image)
     disableButtons()
   }, [filteredDestinations, slide1Image, slide2Image, slide3Image, slide4Image])
 
@@ -148,13 +148,13 @@ const Home = () => {
 
       <main>
         {/* <!-- BUTTONS (input/labels) --> */}
-        <input type="radio" name="slider" id="slide-1-trigger" className="trigger" value="cold" onChange={(e) => handleFilter(e.target.value)} />
+        <input type="radio" name="slider" id="slide-1-trigger" className="trigger" value="0" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-1-trigger"></label>
-        <input type="radio" name="slider" id="slide-2-trigger" className="trigger" value="mild" onChange={(e) => handleFilter(e.target.value)} />
+        <input type="radio" name="slider" id="slide-2-trigger" className="trigger" value="1" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-2-trigger"></label>
-        <input type="radio" name="slider" id="slide-3-trigger" className="trigger" value="warm" onChange={(e) => handleFilter(e.target.value)} />
+        <input type="radio" name="slider" id="slide-3-trigger" className="trigger" value="2" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-3-trigger"></label>
-        <input type="radio" name="slider" id="slide-4-trigger" className="trigger" value="hot" onChange={(e) => handleFilter(e.target.value)} />
+        <input type="radio" name="slider" id="slide-4-trigger" className="trigger" value="3" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-4-trigger"></label>
 
         {/* <!-- SLIDES --> */}
@@ -174,7 +174,7 @@ const Home = () => {
           </div>
           <div id="explore">
             <button id="btn-explore" value='-1' onClick={(e) => handleImageChange(e.target.value)} disabled={previousDisabled}>previous</button>
-            <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations }}>
+            <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations, temperature: temperature }}>
               <button id="btn-explore" >Explore!</button>
             </Link>
             <button id="btn-explore" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>next</button>
