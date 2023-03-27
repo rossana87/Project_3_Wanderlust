@@ -15,6 +15,8 @@ export const loginOrRegister = async (req, res) => {
         throw new Error()
       }
       console.log(req.body.email, ' was logged in')
+      console.log(userToLogin._id, ' was logged in')
+
       const token = jwt.sign({ sub: userToLogin._id }, process.env.SECRET, { expiresIn: '7d' })
       return res.json({ message: `Welcome ${userToLogin.username}`, token: token })
     } else {

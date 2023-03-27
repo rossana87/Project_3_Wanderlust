@@ -178,7 +178,7 @@ export default [
     longitude: 12.57,
     description: 'Playground for the rich with glamorous casinos and luxury yachts.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909976/Wanderlust/monaco_winter_oln2cf.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909868/Wanderlust/madrid-autumn_uuuvlw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909978/Wanderlust/monaco_spring_w4v12p.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909978/Wanderlust/monaco_spring_w4v12p.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909976/Wanderlust/monaco_summer_rafww8.jpg'
     ],
@@ -840,10 +840,10 @@ export default [
     latitude: 3.14,
     longitude: 101.69,
     description: 'Malaysian capital with modern architecture and vibrant street food.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679924503/Wanderlust/kuala_lumpur_1_obar8b.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679924502/Wanderlust/kuala_lumpur_2_e6qliy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679924503/Wanderlust/kuala_lumpur_1_obar8b.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679924502/Wanderlust/kuala_lumpur_2_e6qliy.jpg'
     ],
     features: [],
     highTemps: [32, 33, 33, 33, 33, 33, 32, 32, 32, 32, 32, 32],
@@ -857,10 +857,10 @@ export default [
     latitude: 5.37,
     longitude: 100.25,
     description: 'Malaysian island with colonial heritage and street art.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679925222/Wanderlust/penang_3_h6e09u.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925223/Wanderlust/penang_2_z5wdcx.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925222/Wanderlust/penang_3_h6e09u.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925221/Wanderlust/penang_1_h4v9uq.jpg'
     ],
     features: [],
     highTemps: [32, 32, 32, 32, 32, 32, 31, 31, 31, 31, 31, 31],
@@ -874,10 +874,10 @@ export default [
     latitude: 1.41,
     longitude: 103.96,
     description: 'Nature retreat in Singapore with hiking trails and rustic charm.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679925367/Wanderlust/singapore_1_qnnz13.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925368/Wanderlust/singapore_2_ty7us2.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925367/Wanderlust/singapore_1_qnnz13.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925368/Wanderlust/singapore_2_ty7us2.jpg'
     ],
     features: [],
     highTemps: [30, 32, 32, 32, 32, 32, 31, 31, 31, 32, 31, 30],
@@ -891,10 +891,10 @@ export default [
     latitude: 39.91,
     longitude: 116.40,
     description: 'Chinese capital with historic landmarks and modern architecture.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679925888/Wanderlust/beijing_winter_rneaag.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925887/Wanderlust/beijing_2_ny5exl.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925888/Wanderlust/beijing_1_ytpacc.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925887/Wanderlust/beijing_2_ny5exl.jpg'
     ],
     features: [],
     highTemps: [2, 5, 12, 21, 27, 30, 31, 30, 26, 19, 10, 4],
@@ -908,10 +908,10 @@ export default [
     latitude: 35.02,
     longitude: 135.75,
     description: 'Japanese city with traditional culture and serene temples.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926219/Wanderlust/kyoto_winter_exjjhb.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926222/Wanderlust/kyoto_autumn_whjsmj.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926219/Wanderlust/kyoto_spring_lgnl4k.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926222/Wanderlust/kyoto_autumn_whjsmj.jpg'
     ],
     features: [],
     highTemps: [9, 10, 14, 20, 25, 28, 32, 33, 29, 23, 17, 11],
@@ -925,10 +925,10 @@ export default [
     latitude: 35.84,
     longitude: 129.21,
     description: 'South Korean city with ancient temples and historic landmarks.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926340/Wanderlust/gyeongju_winter_ogtgy7.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926340/Wanderlust/gyeongju_spring_z9uzj4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926340/Wanderlust/gyeongju_spring_z9uzj4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926340/Wanderlust/gyeongju_summer_juswzd.jpg'
     ],
     features: [],
     highTemps: [5, 7, 12, 18, 23, 25, 29, 29, 25, 20, 14, 8],
@@ -942,10 +942,10 @@ export default [
     latitude: 37.57,
     longitude: 126.98,
     description: 'Vibrant South Korean metropolis with street food and nightlife.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926444/Wanderlust/seoul_winter_md1bok.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926445/Wanderlust/seoul_autumn_xpgaao.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926443/Wanderlust/seoul_spring_cuu56j.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926446/Wanderlust/seoul_summer_bhux7h.jpg'
     ],
     features: [],
     highTemps: [1, 4, 10, 17, 23, 27, 28, 29, 25, 19, 11, 3],
@@ -959,10 +959,10 @@ export default [
     latitude: 11.98,
     longitude: 121.92,
     description: 'Philippine island with white sand beaches and crystal-clear waters.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926533/Wanderlust/boracay_2_xzwa4j.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926534/Wanderlust/boracay_1_przbtp.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926533/Wanderlust/boracay_2_xzwa4j.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926534/Wanderlust/boracay_1_przbtp.jpg'
     ],
     features: [],
     highTemps: [28, 29, 29, 27, 32, 31, 29, 30, 31, 30, 29, 28],
@@ -976,10 +976,10 @@ export default [
     latitude: -8.33,
     longitude: 115.00,
     description: 'Indonesian island with lush forests and ancient temples.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926639/Wanderlust/bali_1_ex3git.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926639/Wanderlust/bali_2_ilpsqp.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926639/Wanderlust/bali_1_ex3git.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926639/Wanderlust/bali_2_ilpsqp.jpg'
     ],
     features: [],
     highTemps: [29, 30, 30, 32, 33, 31, 31, 31, 31, 31, 31, 30],
@@ -993,10 +993,10 @@ export default [
     latitude: -8.51,
     longitude: 115.27,
     description: 'Balinese town with rice paddies and traditional crafts.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_1_jviiam.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_2_qtaam3.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_1_jviiam.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_2_qtaam3.jpg'
     ],
     features: [],
     highTemps: [29, 29, 29, 29, 29, 28, 27, 27, 28, 29, 30, 29],
@@ -1010,10 +1010,10 @@ export default [
     latitude: -33.87,
     longitude: 151.21,
     description: 'Explore the iconic Opera House and Harbour Bridge, and enjoy the city’s beaches and parks.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926897/Wanderlust/sydney_3_pxhqri.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926898/Wanderlust/sydney_1_soyoae.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926897/Wanderlust/sydney_2_r0ly3k.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926897/Wanderlust/sydney_2_r0ly3k.jpg'
     ],
     features: [],
     highTemps: [26, 26, 25, 23, 20, 17, 17, 18, 21, 22, 23, 25],
@@ -1027,10 +1027,10 @@ export default [
     latitude: -31.95,
     longitude: 115.86,
     description: 'Discover stunning beaches, world-class wineries, and unique wildlife encounters.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927013/Wanderlust/perth_1_dckxut.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927015/Wanderlust/perth_2_dsfoci.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927013/Wanderlust/perth_1_dckxut.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927015/Wanderlust/perth_2_dsfoci.jpg'
     ],
     features: [],
     highTemps: [30, 31, 29, 25, 22, 19, 18, 19, 20, 22, 25, 28],
@@ -1044,10 +1044,10 @@ export default [
     latitude: -37.81,
     longitude: 144.96,
     description: 'Experience the city’s vibrant art, culture, and cuisine, and explore nearby scenic wonders.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927086/Wanderlust/melbourne_1_a9xlkb.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927094/Wanderlust/melbourne_2_clfdhv.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927086/Wanderlust/melbourne_1_a9xlkb.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927094/Wanderlust/melbourne_2_clfdhv.jpg'
     ],
     features: [],
     highTemps: [26, 27, 24, 21, 17, 15, 14, 16, 18, 20, 22, 24],
@@ -1061,10 +1061,10 @@ export default [
     latitude: -28.00,
     longitude: 153.43,
     description: 'Enjoy the sun, surf, and theme parks of Australia’s playground, with breathtaking views.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927164/Wanderlust/gold_coast_2_gca8rd.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927164/Wanderlust/gold_coast_2_gca8rd.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927163/Wanderlust/gold_coast_1_izbktt.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927163/Wanderlust/gold_coast_1_izbktt.jpg'
     ],
     features: [],
     highTemps: [29, 28, 28, 26, 24, 21, 21, 22, 24, 25, 27, 28],
@@ -1078,10 +1078,10 @@ export default [
     latitude: -27.47,
     longitude: 153.03,
     description: 'Discover the city’s relaxed charm, outdoor activities, and nearby wildlife sanctuaries.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927243/Wanderlust/brisbane_1_rxymrf.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927243/Wanderlust/brisbane_1_rxymrf.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927240/Wanderlust/brisbane_2_nbqufw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927240/Wanderlust/brisbane_2_nbqufw.jpg'
     ],
     features: [],
     highTemps: [29, 29, 29, 27, 24, 21, 21, 22, 24, 26, 28, 29],
@@ -1095,10 +1095,10 @@ export default [
     latitude: -36.85,
     longitude: 174.76,
     description: 'Explore the city’s scenic waterfront and volcanic islands, and taste local wines and seafood.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927401/Wanderlust/auckland_2_lxb7ur.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927402/Wanderlust/auckland_1_grfask.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927401/Wanderlust/auckland_2_lxb7ur.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927402/Wanderlust/auckland_1_grfask.jpg'
     ],
     features: [],
     highTemps: [24, 24, 23, 20, 18, 15, 14, 15, 16, 18, 20, 22],
@@ -1112,10 +1112,10 @@ export default [
     latitude: -45.03,
     longitude: 168.66,
     description: 'Experience thrilling outdoor adventures and stunning landscapes, with a laid-back vibe.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927874/Wanderlust/queenstown_1_x1d2t8.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927875/Wanderlust/queenstown_2_p8tzx4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927874/Wanderlust/queenstown_1_x1d2t8.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927875/Wanderlust/queenstown_2_p8tzx4.jpg'
     ],
     features: [],
     highTemps: [22, 22, 19, 15, 12, 8, 8, 10, 13, 15, 18, 20],
@@ -1129,10 +1129,10 @@ export default [
     latitude: 49.25,
     longitude: -123.12,
     description: 'Discover the city’s stunning natural surroundings, diverse neighborhoods, and cultural scene.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927950/Wanderlust/vancouver_winter_eouku0.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927949/Wanderlust/vancouver_autumn_pcsgib.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927951/Wanderlust/vancouver_spring_onensu.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927948/Wanderlust/vancouver_summer_rpdlky.jpg'
     ],
     features: [],
     highTemps: [7, 8, 10, 13, 17, 20, 22, 22, 19, 14, 9, 7],
@@ -1146,10 +1146,10 @@ export default [
     latitude: 43.70,
     longitude: -79.42,
     description: 'Experience the city’s multicultural charm, impressive landmarks, and scenic waterfront.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928024/Wanderlust/toronto_winter_pgunmg.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928024/Wanderlust/toronto_autumn_qwgs8l.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928024/Wanderlust/toronto_autumn_qwgs8l.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928025/Wanderlust/toronto_summer_ccksvr.jpg'
     ],
     features: [],
     highTemps: [0, 0, 5, 12, 19, 24, 27, 26, 23, 15, 9, 3],
@@ -1163,10 +1163,10 @@ export default [
     latitude: 19.43,
     longitude: -99.13,
     description: 'Explore the city’s rich history, art, and cuisine, and visit ancient ruins and colorful markets.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928116/Wanderlust/mexico_city_2_plmmpw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928116/Wanderlust/mexico_city_2_plmmpw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928116/Wanderlust/mexico_city_1_crxoo3.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928117/Wanderlust/mexico_city_3_tiffuc.jpg'
     ],
     features: [],
     highTemps: [22, 24, 26, 27, 27, 26, 24, 25, 24, 24, 23, 23],
@@ -1180,10 +1180,10 @@ export default [
     latitude: 25.77,
     longitude: -80.19,
     description: 'Experience the city’s glamorous beaches, vibrant nightlife, and cultural diversity.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_1_snjwjy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_2_fdrnit.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_1_snjwjy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_2_fdrnit.jpg'
     ],
     features: [],
     highTemps: [23, 24, 25, 26, 28, 30, 31, 31, 30, 28, 26, 24],
@@ -1197,10 +1197,10 @@ export default [
     latitude: 24.56,
     longitude: -81.78,
     description: 'Discover the city’s laid-back charm, scenic sunsets, and vibrant arts and culture scene.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928253/Wanderlust/key_west_2_cvynyr.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928255/Wanderlust/key_west_1_azlt7g.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928253/Wanderlust/key_west_2_cvynyr.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928255/Wanderlust/key_west_1_azlt7g.jpg0'
     ],
     features: [],
     highTemps: [24, 24, 26, 28, 30, 31, 32, 33, 31, 29, 26, 25],
@@ -1214,10 +1214,10 @@ export default [
     latitude: 23.13,
     longitude: -82.38,
     description: 'Experience the city’s vibrant music, art, and architecture, and explore its colorful streets.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928406/Wanderlust/havana_1_h7vlvy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928407/Wanderlust/havana_2_uie8xa.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928406/Wanderlust/havana_1_h7vlvy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928407/Wanderlust/havana_2_uie8xa.jpg'
     ],
     features: [],
     highTemps: [27, 27, 28, 29, 31, 31, 32, 32, 32, 30, 29, 27],
@@ -1231,10 +1231,10 @@ export default [
     latitude: 25.06,
     longitude: -77.34,
     description: 'Relax on the city’s white-sand beaches, explore its colonial history, and taste local cuisine.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929015/Wanderlust/nassau_1_of60xo.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929014/Wanderlust/nassau_2_z7qtr1.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929015/Wanderlust/nassau_1_of60xo.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929014/Wanderlust/nassau_2_z7qtr1.jpg'
     ],
     features: [],
     highTemps: [26, 26, 27, 28, 30, 32, 32, 33, 32, 30, 28, 27],
@@ -1248,10 +1248,10 @@ export default [
     latitude: 18.00,
     longitude: -76.79,
     description: 'Experience the city’s rich cultural heritage, explore Bob Marley’s birthplace, and enjoy local cuisine.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929111/Wanderlust/kingston_1_a33h4z.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929108/Wanderlust/kingston_2_od6ych.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929111/Wanderlust/kingston_1_a33h4z.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929108/Wanderlust/kingston_2_od6ych.jpg'
     ],
     features: [],
     highTemps: [31, 31, 31, 31, 32, 33, 33, 33, 33, 32, 32, 32],
@@ -1265,10 +1265,10 @@ export default [
     latitude: 17.94,
     longitude: -87.95,
     description: 'Discover the island’s pristine beaches, coral reefs, and laid-back Caribbean lifestyle.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929216/Wanderlust/ambergris_caye_1_ngalye.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929216/Wanderlust/ambergris_caye_2_glqll4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929216/Wanderlust/ambergris_caye_1_ngalye.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929216/Wanderlust/ambergris_caye_2_glqll4.jpg'
     ],
     features: [],
     highTemps: [27, 27, 28, 29, 31, 30, 30, 31, 31, 29, 28, 27],
@@ -1282,10 +1282,10 @@ export default [
     latitude: 17.23,
     longitude: -89.61,
     description: 'Explore the ancient Mayan ruins and tropical rainforest of one of the world’s greatest archaeological sites.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929285/Wanderlust/tikal_1_ipcc1r.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929285/Wanderlust/tikal_2_qvmkf3.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929285/Wanderlust/tikal_1_ipcc1r.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929285/Wanderlust/tikal_2_qvmkf3.jpg'
     ],
     features: [],
     highTemps: [28, 30, 33, 34, 35, 33, 33, 32, 32, 31, 30, 28],
@@ -1299,10 +1299,10 @@ export default [
     latitude: 10.10,
     longitude: -83.45,
     description: 'Experience the cloud forest’s lush greenery, exotic wildlife, and thrilling zip-line adventures.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929332/Wanderlust/monteverde_2_t1rdud.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929332/Wanderlust/monteverde_1_h0bzyk.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929332/Wanderlust/monteverde_2_t1rdud.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929332/Wanderlust/monteverde_1_h0bzyk.jpg'
     ],
     features: [],
     highTemps: [28, 28, 29, 29, 27, 26, 26, 26, 26, 26, 26, 27],
@@ -1316,10 +1316,10 @@ export default [
     latitude: 16.32,
     longitude: -86.54,
     description: 'Relax on the island’s pristine beaches, dive into its coral reefs, and taste local seafood.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929408/Wanderlust/roatan_2_jreyl7.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929406/Wanderlust/roatan_1_abhgh7.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929408/Wanderlust/roatan_2_jreyl7.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929406/Wanderlust/roatan_1_abhgh7.jpg'
     ],
     features: [],
     highTemps: [28, 29, 29, 31, 31, 32, 31, 32, 32, 30, 29, 28],
@@ -1333,10 +1333,10 @@ export default [
     latitude: 10.40,
     longitude: -75.51,
     description: 'Explore the city’s colonial charm, vibrant nightlife, and nearby beaches and islands.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_1_ezrv62.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_2_hfg8pw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_1_ezrv62.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_2_hfg8pw.jpg'
     ],
     features: [],
     highTemps: [31, 31, 31, 31, 32, 32, 32, 32, 32, 31, 31, 31],
@@ -1350,10 +1350,10 @@ export default [
     latitude: 14.00,
     longitude: -61.01,
     description: 'Experience the city’s laid-back Caribbean charm, natural beauty, and local cuisine.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929624/Wanderlust/castries_2_c0foym.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929623/Wanderlust/castries_1_jcycfe.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929624/Wanderlust/castries_2_c0foym.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929623/Wanderlust/castries_1_jcycfe.jpg'
     ],
     features: [],
     highTemps: [29, 29, 30, 30, 31, 31, 31, 31, 31, 31, 30, 29],
@@ -1367,10 +1367,10 @@ export default [
     latitude: -13.23,
     longitude: -72.50,
     description: 'Experience the awe-inspiring Inca ruins and stunning Andean landscapes of one of the world’s most iconic sites.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929880/Wanderlust/machu_picchu_1_kdo4ec.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929881/Wanderlust/machu_picchu_2_mc4rwr.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929880/Wanderlust/machu_picchu_1_kdo4ec.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929881/Wanderlust/machu_picchu_2_mc4rwr.jpg'
     ],
     features: [],
     highTemps: [13, 14, 14, 12, 11, 10, 9, 9, 9, 10, 11, 12],
@@ -1384,10 +1384,10 @@ export default [
     latitude: -34.61,
     longitude: -58.38,
     description: 'Experience the city’s vibrant culture, delicious cuisine, and tango-filled nightlife.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679930275/Wanderlust/buenos_aires_1_e1xdjv.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930274/Wanderlust/buenos_aires_2_oecqkj.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930275/Wanderlust/buenos_aires_1_e1xdjv.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930274/Wanderlust/buenos_aires_2_oecqkj.jpg'
     ],
     features: [],
     highTemps: [29, 28, 26, 22, 19, 16, 15, 17, 18, 22, 25, 28],
@@ -1401,10 +1401,10 @@ export default [
     latitude: -34.90,
     longitude: -56.19,
     description: 'Discover the city’s colonial architecture, scenic waterfront, and lively cultural scene.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679930340/Wanderlust/montevideo_1_npznrm.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930341/Wanderlust/montevideo_2_bix8tf.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930340/Wanderlust/montevideo_1_npznrm.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930341/Wanderlust/montevideo_2_bix8tf.jpg'
     ],
     features: [],
     highTemps: [28, 27, 26, 23, 19, 16, 15, 17, 18, 21, 24, 27],
@@ -1418,10 +1418,10 @@ export default [
     latitude: 12.57,
     longitude: -70.03,
     description: 'A stunning Caribbean paradise with crystal-clear waters, white sand beaches, and endless sunshine.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679930413/Wanderlust/palm_beach_1_kra8cy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930415/Wanderlust/palm_beach_2_cq26jg.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930413/Wanderlust/palm_beach_1_kra8cy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930415/Wanderlust/palm_beach_2_cq26jg.jpg'
     ],
     features: [],
     highTemps: [30, 30, 31, 31, 32, 32, 32, 33, 33, 32, 31, 30],
@@ -1435,10 +1435,10 @@ export default [
     latitude: -16.35,
     longitude: -56.67,
     description: 'Experience the world’s largest wetland, with its diverse wildlife, stunning scenery, and outdoor adventures.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679930512/Wanderlust/pantanal_02_h5j8pv.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930513/Wanderlust/pantanal_01_gesp9t.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930512/Wanderlust/pantanal_02_h5j8pv.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930513/Wanderlust/pantanal_01_gesp9t.jpg'
     ],
     features: [],
     highTemps: [33, 33, 33, 33, 32, 31, 32, 34, 34, 34, 31, 32],
@@ -1452,10 +1452,10 @@ export default [
     latitude: -54.81,
     longitude: -68.32,
     description: 'Ushuaia is the southernmost city in the world and is surrounded by breathtaking mountains, glaciers, and wildlife.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936091/Wanderlust/ushuaia_04_tuuoe6.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936094/Wanderlust/ushuaia_03_aqjd5x.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936095/Wanderlust/ushuaia_01_jgo2an.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936094/Wanderlust/ushuaia_02_xmxrfd.jpg'
     ],
     features: [],
     highTemps: [14, 14, 12, 9, 7, 4, 4, 6, 8, 10, 12, 13],
@@ -1469,10 +1469,10 @@ export default [
     latitude: -0.23,
     longitude: -78.52,
     description: 'Colonial architecture, vibrant culture, volcanoes and cloud forests.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936269/Wanderlust/quito_1_evmenh.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936269/Wanderlust/quito_3_xklsd2.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936273/Wanderlust/quito_2_wwwnpl.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936269/Wanderlust/quito_3_xklsd2.jpg'
     ],
     features: [],
     highTemps: [19, 19, 19, 19, 19, 19, 19, 20, 20, 20, 19, 19],
@@ -1486,10 +1486,10 @@ export default [
     latitude: -28.52,
     longitude: -71.00,
     description: 'Surreal landscape of rock formations, geysers, and stargazing opportunities.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936401/Wanderlust/atacama_desert_2_llplnh.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936399/Wanderlust/atacama_desert_1_paso8d.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936401/Wanderlust/atacama_desert_2_llplnh.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936399/Wanderlust/atacama_desert_1_paso8d.jpg'
     ],
     features: [],
     highTemps: [25, 24, 24, 23, 22, 21, 21, 22, 23, 24, 24, 24],
@@ -1503,10 +1503,10 @@ export default [
     latitude: -20.46,
     longitude: -66.83,
     description: 'World\'s largest salt flat, natural beauty and unique wildlife.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936492/Wanderlust/salar_de_uyuni_3_qb5u5g.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936494/Wanderlust/salar_de_uyuni_2_fsizv0.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936493/Wanderlust/salar_de_uyuni_1_lr8ndu.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936494/Wanderlust/salar_de_uyuni_2_fsizv0.jpg'
     ],
     features: [],
     highTemps: [20, 19, 20, 20, 21, 20, 19, 21, 20, 21, 21, 21],
@@ -1520,10 +1520,10 @@ export default [
     latitude: -0.94,
     longitude: -90.95,
     description: 'Wonderland of biodiversity, featuring unique animals like giant tortoises.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936644/Wanderlust/galapagos_islands_2_zngzhz.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936646/Wanderlust/galapagos_islands_1_ljjtcu.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936644/Wanderlust/galapagos_islands_2_zngzhz.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936646/Wanderlust/galapagos_islands_1_ljjtcu.jpg'
     ],
     features: [],
     highTemps: [30, 30, 30, 31, 30, 29, 26, 27, 27, 27, 29, 30],
@@ -1537,10 +1537,10 @@ export default [
     latitude: -25.67,
     longitude: -54.45,
     description: 'Jaw-dropping natural wonder of cascading waterfalls and lush rainforest.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_2_av07hp.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_3_w0ryyz.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_1_owabem.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_3_w0ryyz.jpg'
     ],
     features: [],
     highTemps: [32, 32, 32, 29, 24, 23, 24, 25, 26, 29, 30, 31],
@@ -1554,10 +1554,10 @@ export default [
     latitude: -6.16,
     longitude: 39.20,
     description: 'Tropical paradise with pristine beaches, coral reefs, and historic Stone Town.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_01_ij6w08.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_02_adqce6.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_01_ij6w08.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_02_adqce6.jpg'
     ],
     features: [],
     highTemps: [32, 33, 32, 31, 30, 29, 29, 29, 30, 31, 31, 32],
@@ -1571,10 +1571,10 @@ export default [
     latitude: 30.01,
     longitude: 31.21,
     description: 'Iconic Great Sphinx and ancient pyramids, glimpse into one of the world\'s oldest civilizations.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679938797/Wanderlust/giza_2_ibouo1.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938801/Wanderlust/giza_1_zcamwg.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938797/Wanderlust/giza_2_ibouo1.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938801/Wanderlust/giza_1_zcamwg.jpg'
     ],
     features: [],
     highTemps: [19, 21, 24, 29, 33, 35, 35, 35, 34, 30, 25, 21],
@@ -1588,10 +1588,10 @@ export default [
     latitude: -17.93,
     longitude: 25.83,
     description: 'One of the world\'s largest waterfalls, surrounded by a stunning rainforest and offering adventurous activities.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679938920/Wanderlust/victoria_falls_2_pbstc2.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938912/Wanderlust/victoria_falls_1_objzjc.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938920/Wanderlust/victoria_falls_2_pbstc2.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938912/Wanderlust/victoria_falls_1_objzjc.jpg'
     ],
     features: [],
     highTemps: [30, 30, 30, 30, 28, 25, 25, 29, 32, 34, 33, 31],
@@ -1605,10 +1605,10 @@ export default [
     latitude: -1.48,
     longitude: 29.53,
     description: 'Home to endangered mountain gorillas, featuring breathtaking views of lush rainforest, volcanic mountains, and crater lakes.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939032/Wanderlust/volcanoes_national_park_rwanda_2_khxlcd.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939028/Wanderlust/volcanoes_national_park_rwanda_1_e8tatn.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939032/Wanderlust/volcanoes_national_park_rwanda_2_khxlcd.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939028/Wanderlust/volcanoes_national_park_rwanda_1_e8tatn.jpg'
     ],
     features: [],
     highTemps: [28, 27, 27, 25, 26, 26, 27, 28, 27, 27, 26, 26],
@@ -1622,10 +1622,10 @@ export default [
     latitude: -1.39,
     longitude: 36.80,
     description: 'Wildlife enthusiast\'s dream, abundant populations of lions, elephants, zebras, and other animals roaming the savannah.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939187/Wanderlust/masai_mara_kenya_1_qmoqe6.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939178/Wanderlust/masai_mara_kenya_2_w6xfx0.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939187/Wanderlust/masai_mara_kenya_1_qmoqe6.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939178/Wanderlust/masai_mara_kenya_2_w6xfx0.jpg'
     ],
     features: [],
     highTemps: [26, 27, 27, 25, 24, 23, 22, 22, 25, 26, 24, 25],
@@ -1639,10 +1639,10 @@ export default [
     latitude: -3.24,
     longitude: 35.49,
     description: 'UNESCO World Heritage Site, unique ecosystem of lions, hyenas, and flamingos in a volcanic caldera.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939256/Wanderlust/ngorongoro_crater_tanzania_1_kou7lr.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939257/Wanderlust/ngorongoro_crater_tanzania_02_xk73aw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939256/Wanderlust/ngorongoro_crater_tanzania_1_kou7lr.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939257/Wanderlust/ngorongoro_crater_tanzania_02_xk73aw.jpg'
     ],
     features: [],
     highTemps: [29, 29, 28, 26, 23, 23, 23, 24, 26, 27, 27, 28],
@@ -1656,10 +1656,10 @@ export default [
     latitude: -12.93,
     longitude: 34.30,
     description: 'Crystal-clear lake surrounded by white sand beaches and lush forests.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939307/Wanderlust/lake_malawi_1_bhwalr.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939319/Wanderlust/lake_malawi_2_jde4og.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939307/Wanderlust/lake_malawi_1_bhwalr.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939319/Wanderlust/lake_malawi_2_jde4og.jpg'
     ],
     features: [],
     highTemps: [27, 27, 27, 27, 26, 24, 24, 25, 28, 30, 30, 28],
@@ -1673,10 +1673,10 @@ export default [
     latitude: -3.35,
     longitude: 40.02,
     description: 'Peaceful beach town with coral reefs, marine wildlife, and nearby Marine National Park.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939417/Wanderlust/watamu_kenya_1_a8rsjm.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939417/Wanderlust/watamu_kenya_2_z9sftw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939417/Wanderlust/watamu_kenya_1_a8rsjm.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939417/Wanderlust/watamu_kenya_2_z9sftw.jpg'
     ],
     features: [],
     highTemps: [31, 31, 32, 31, 29, 28, 27, 28, 28, 30, 31, 31],
@@ -1690,10 +1690,10 @@ export default [
     latitude: -13.83,
     longitude: -171.77,
     description: 'Scenic coastal city with lush tropical forests, waterfalls, and natural swimming hole.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939488/Wanderlust/apia_samoa_1_duq4ag.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939486/Wanderlust/apia_samoa_02_lmmslg.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939488/Wanderlust/apia_samoa_1_duq4ag.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939486/Wanderlust/apia_samoa_02_lmmslg.webp'
     ],
     features: [],
     highTemps: [31, 31, 31, 29, 29, 30, 29, 30, 28, 29, 31, 31],
@@ -1707,10 +1707,10 @@ export default [
     latitude: 42.64,
     longitude: 18.11,
     description: 'Historic city with medieval walls, charming narrow streets, and breathtaking views.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939594/Wanderlust/dubrovnik_2_git7vv.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939597/Wanderlust/dubrovnik_3_psvl0i.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939596/Wanderlust/dubrovnik_1_sfckcq.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939597/Wanderlust/dubrovnik_3_psvl0i.jpg'
     ],
     features: [],
     highTemps: [12, 13, 15, 18, 23, 27, 30, 30, 26, 22, 17, 14],
@@ -1724,10 +1724,10 @@ export default [
     latitude: 45.42,
     longitude: 6.64,
     description: 'World-renowned ski resort with powdery slopes, luxury chalets, and stunning mountain vistas.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939831/Wanderlust/courchevel_winter_lk9ix7.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939831/Wanderlust/courchevel_autumn_qjoioa.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940322/Wanderlust/courchevel_spring_akribx.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939830/Wanderlust/courchevel_summer_kofk4h.jpg'
     ],
     features: [],
     highTemps: [-1, 1, 5, 9, 13, 17, 20, 19, 15, 10, 3, -1],
@@ -1741,10 +1741,10 @@ export default [
     latitude: 46.02,
     longitude: 7.75,
     description: 'Picturesque mountain town at the foot of the Matterhorn, offering skiing, hiking, and mountaineering opportunities.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939905/Wanderlust/zermatt_winter_c5sfdp.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939906/Wanderlust/zermatt_autumn_iuehsf.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939906/Wanderlust/zermatt_autumn_iuehsf.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939906/Wanderlust/zermatt_summer_kqxyz6.jpg'
     ],
     features: [],
     highTemps: [1, 2, 6, 11, 14, 19, 21, 20, 16, 12, 6, 2],
@@ -1758,10 +1758,10 @@ export default [
     latitude: 46.54,
     longitude: 12.14,
     description: 'Cortina D\'Ampezzo in the Italian Dolomites is a skiing and hiking paradise with stunning alpine scenery and charming mountain villages.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679940017/Wanderlust/cortina_winter_ygb1bq.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940017/Wanderlust/cortina_autumn_hgl9gn.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940016/Wanderlust/cortina_spring_zdxs97.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940016/Wanderlust/cortina_summer_zcgdek.jpg'
     ],
     features: [],
     highTemps: [0, 3, 7, 11, 16, 20, 22, 21, 17, 12, 5, 0],
@@ -1775,10 +1775,10 @@ export default [
     latitude: 37.94,
     longitude: -107.81,
     description: 'Telluride, Colorado is a world-class ski resort town with stunning mountain views, hiking trails, and vibrant cultural events.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679940092/Wanderlust/telluride_winter_f9sbrx.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940092/Wanderlust/telluride_spring_bksxxc.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940092/Wanderlust/telluride_summer_r6ekyz.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940092/Wanderlust/telluride_spring_bksxxc.webp'
     ],
     features: [],
     highTemps: [2, 4, 6, 11, 16, 22, 25, 23, 20, 14, 7, 3],
@@ -1792,10 +1792,10 @@ export default [
     latitude: 40.58,
     longitude: -111.66,
     description: 'Snowbird, Utah is a premier ski destination with over 500 inches of snow annually and breathtaking views of the Wasatch Mountains.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679940196/Wanderlust/snowbird_utah_winter_ackyc8.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940583/Wanderlust/snowbird_utah_autumn_airiux.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940548/Wanderlust/snowbird_utah_spring_fo9bgu.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940200/Wanderlust/snowbird_utah_summer_ddyprc.jpg'
     ],
     features: [],
     highTemps: [0, 0, 3, 6, 12, 18, 23, 22, 17, 10, 3, 0],
@@ -1809,10 +1809,10 @@ export default [
     latitude: 42.81,
     longitude: 140.69,
     description: 'Niseko, Japan is a ski resort town known for its world-class powder snow, natural hot springs, and stunning views of Mount Yotei.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679940413/Wanderlust/niseko_winter_ubgmfl.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940411/Wanderlust/niseko_summer_fqxvzg.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940411/Wanderlust/niseko_spring_cwasai.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940411/Wanderlust/niseko_summer_fqxvzg.jpg'
     ],
     features: [],
     highTemps: [-2, -1, 3, 9, 16, 21, 24, 25, 21, 15, 7, 0],
@@ -1826,10 +1826,10 @@ export default [
     latitude: 36.70,
     longitude: 137.86,
     description: 'Hakuba, Japan is a winter wonderland with premier ski resorts, hot springs, and breathtaking views of the Japanese Alps.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679940476/Wanderlust/hakuba_winter_wbrmch.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940474/Wanderlust/hakuba_summer_dgbcso.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940475/Wanderlust/hakuba_spring_oksxsq.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940474/Wanderlust/hakuba_summer_dgbcso.jpg'
     ],
     features: [],
     highTemps: [1, 3, 7, 15, 21, 23, 27, 29, 23, 17, 11, 4],
