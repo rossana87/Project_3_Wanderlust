@@ -228,10 +228,10 @@ export default [
     latitude: 40.71,
     longitude: -74.01,
     description: 'City that never sleeps with skyscrapers, Central Park and Broadway.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911101/Wanderlust/ny_winter_turrru.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911102/Wanderlust/ny_autumn_arm5z2.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911101/Wanderlust/ny_spring_dghkkt.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911103/Wanderlust/ny_summer_zcslmy.jpg'
     ],
     features: [],
     highTemps: [4, 6, 11, 18, 22, 27, 29, 29, 25, 18, 13, 7],
@@ -262,10 +262,10 @@ export default [
     latitude: 37.77,
     longitude: -122.42,
     description: 'City by the bay with Golden Gate Bridge, hills, and tech industry.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911235/Wanderlust/san_francisco_winter_kq8yuy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911235/Wanderlust/san_francisco_spring_p6gef4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911235/Wanderlust/san_francisco_spring_p6gef4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911234/Wanderlust/san_francisco_summer_cbptky.jpg'
     ],
     features: [],
     highTemps: [14, 16, 17, 17, 18, 19, 19, 20, 21, 21, 18, 14],
@@ -279,10 +279,10 @@ export default [
     latitude: -22.91,
     longitude: -43.18,
     description: 'Brazilian city with Copacabana beach, Carnival, and Christ the Redeemer.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911311/Wanderlust/rio_summer_wt0khv.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911311/Wanderlust/rio_summer_wt0khv.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911310/Wanderlust/rio_summer2_u8rykd.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911310/Wanderlust/rio_summer2_u8rykd.jpg'
     ],
     features: [],
     highTemps: [30, 31, 30, 28, 26, 25, 25, 25, 26, 27, 28, 29],
@@ -296,10 +296,10 @@ export default [
     latitude: -39.28,
     longitude: -71.95,
     description: 'Capital city of Chile with museums, parks, and Andes views.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911379/Wanderlust/santiago_summer2_mosvw4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911379/Wanderlust/santiago_summer2_mosvw4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911380/Wanderlust/santiago_summer_a2jtwb.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911380/Wanderlust/santiago_summer_a2jtwb.jpg'
     ],
     features: [],
     highTemps: [30, 30, 28, 24, 19, 16, 15, 17, 20, 23, 26, 29],
@@ -313,10 +313,10 @@ export default [
     latitude: 41.01,
     longitude: 28.95,
     description: 'City where Europe meets Asia, with bazaars, mosques, and palaces.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_winter_qzn0x9.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_spring_ix5ulk.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_spring_ix5ulk.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_summer_jxljzl.webp'
     ],
     features: [],
     highTemps: [9, 9, 12, 17, 22, 27, 29, 29, 25, 20, 15, 11],
