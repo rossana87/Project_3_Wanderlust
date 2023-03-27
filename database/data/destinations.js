@@ -7,10 +7,10 @@ export default [
     latitude: 41.29,
     longitude: 2.16,
     description: 'Vibrant city with Gaudi\'s architecture and Mediterranean beaches.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679907697/Wanderlust/barcelona_winter_z0yeg6.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679908109/Wanderlust/barcelona_autumn_w7vara.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679907554/Wanderlust/barcelona_spring_wzljbd.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679907092/Wanderlust/Barcelona_summer_zotkqj.jpg'
     ],
     features: [],
     highTemps: [15, 15, 17, 20, 23, 27, 29, 29, 26, 23, 18, 15],
@@ -24,10 +24,10 @@ export default [
     latitude: 45.45,
     longitude: 6.98,
     description: 'Ski resort in the French Alps with picturesque mountain views.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679908562/Wanderlust/val_disere_winter_uhb90u.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679908564/Wanderlust/val_disere_autumn_yupttk.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679908565/Wanderlust/val_disere_spring_j0mdmj.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679908562/Wanderlust/val_disere_summer_eiraye.jpg'
     ],
     features: [],
     highTemps: [-1, 1, 6, 9, 14, 18, 20, 20, 15, 10, 3, -1],
@@ -41,10 +41,10 @@ export default [
     latitude: 51.51,
     longitude: -0.13,
     description: 'Capital city of England with iconic landmarks and rich history.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909093/Wanderlust/london_winter_t3wkuf.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909093/Wanderlust/london_spring_oph6j4.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909101/Wanderlust/london_autumn_od3yxh.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909097/Wanderlust/london_summer_rfujrz.jpg'
     ],
     features: [],
     highTemps: [7, 8, 10, 13, 17, 20, 22, 22, 19, 15, 10, 8],
@@ -58,10 +58,10 @@ export default [
     latitude: 41.89,
     longitude: 12.51,
     description: 'Eternal city with ancient ruins and stunning Renaissance art.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909211/Wanderlust/rome_winter_npif7c.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909216/Wanderlust/rome_autumn_dncwjy.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909212/Wanderlust/rome_spring_x7iml6.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909214/Wanderlust/rome_summer_rctmxw.jpg'
     ],
     features: [],
     highTemps: [12, 14, 17, 19, 24, 28, 31, 31, 27, 22, 17, 13],
@@ -75,10 +75,10 @@ export default [
     latitude: 48.14,
     longitude: 11.58,
     description: 'German city known for beer gardens and rich cultural heritage.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909312/Wanderlust/munich_winter_ccf8bt.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909319/Wanderlust/munich_summer_irutmi.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909311/Wanderlust/munich_spring_pekaym.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909311/Wanderlust/munich_spring_pekaym.jpg'
     ],
     features: [],
     highTemps: [3, 5, 9, 14, 19, 22, 24, 24, 19, 14, 8, 4],
@@ -92,10 +92,10 @@ export default [
     latitude: 52.37,
     longitude: 4.89,
     description: 'Picturesque city with canals, cycling culture and art museums.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909397/Wanderlust/amsterdam_winter_uwdjrp.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909396/Wanderlust/amsterdam-summer_yuxvfr.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909402/Wanderlust/amsterdam_spring_qxyrve.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909402/Wanderlust/amsterdam_spring_qxyrve.jpg'
     ],
     features: [],
     highTemps: [6, 6, 10, 13, 17, 20, 22, 22, 19, 15, 10, 7],
@@ -109,10 +109,10 @@ export default [
     latitude: 59.33,
     longitude: 18.07,
     description: 'Scandinavian city with charming Old Town and modern design.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909595/Wanderlust/stockholm_winter_bjxmno.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909599/Wanderlust/stockholm_spring_qut4ia.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909599/Wanderlust/stockholm_spring_qut4ia.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909596/Wanderlust/stockholm_summer_xggauv.jpg'
     ],
     features: [],
     highTemps: [0, 0, 4, 10, 16, 21, 23, 21, 16, 10, 5, 2],
@@ -126,10 +126,10 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'Bicycle-friendly city with colorful waterfront and cozy cafes.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909665/Wanderlust/copenhagen_winter_q1cebd.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909668/Wanderlust/copenhagen_spring_koecjf.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909672/Wanderlust/copenhagen_summer_nfbmch.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909672/Wanderlust/copenhagen_summer_nfbmch.jpg'
     ],
     features: [],
     highTemps: [3, 3, 6, 11, 16, 20, 22, 22, 17, 12, 7, 5],
@@ -143,10 +143,10 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'City of lights with iconic landmarks, art museums, and cuisine.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909730/Wanderlust/paris_winter_lghthi.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909730/Wanderlust/paris_autumn_bexhc3.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909732/Wanderlust/paris_spring_btjfjp.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909730/Wanderlust/paris_summer_bt7ip5.jpg'
     ],
     features: [],
     highTemps: [7, 8, 12, 16, 19, 23, 25, 25, 21, 16, 11, 8],
@@ -160,10 +160,10 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'Capital city of Spain with lively nightlife and world-class art.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909864/Wanderlust/madrid_winter_g5cona.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909868/Wanderlust/madrid-autumn_uuuvlw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909865/Wanderlust/madrid_spring_ulyoq9.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909865/Wanderlust/madrid_summer_zt9ky4.jpg'
     ],
     features: ['beach', 'mountain', 'ocean'],
     highTemps: [10, 12, 16, 18, 22, 28, 32, 31, 26, 19, 13, 10],
@@ -177,10 +177,10 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'Playground for the rich with glamorous casinos and luxury yachts.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909976/Wanderlust/monaco_winter_oln2cf.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909868/Wanderlust/madrid-autumn_uuuvlw.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909978/Wanderlust/monaco_spring_w4v12p.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909976/Wanderlust/monaco_summer_rafww8.jpg'
     ],
     features: [],
     highTemps: [12, 12, 14, 16, 20, 24, 27, 27, 24, 20, 16, 13],
@@ -194,10 +194,10 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'Picturesque city with colorful tiles, charming alleys, and seafood.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679910131/Wanderlust/lisbon_winter_dy3ynz.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679910132/Wanderlust/lisbon-spring_w7abd6.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679910133/Wanderlust/lisbon_autumn_c8zgll.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679910132/Wanderlust/lisbon_summer_wtxkva.jpg'
     ],
     features: [],
     highTemps: [15, 16, 18, 20, 22, 25, 28, 28, 26, 23, 18, 15],
@@ -211,10 +211,10 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'Swiss city with scenic lake and mountains, and financial district.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679910246/Wanderlust/zurich_winter_l67y3t.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679910251/Wanderlust/zurich_autumn_ckojwc.webp',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679910247/Wanderlust/zurich_spring_o98yaj.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679910247/Wanderlust/zurich_summer_tua88o.jpg'
     ],
     features: [],
     highTemps: [4, 6, 11, 15, 19, 23, 25, 24, 20, 15, 9, 5],
