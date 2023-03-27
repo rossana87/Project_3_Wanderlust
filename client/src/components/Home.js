@@ -174,7 +174,7 @@ const Home = () => {
           </div>
           <div id="explore">
             <button id="btn-explore" value='-1' onClick={(e) => handleImageChange(e.target.value)} disabled={previousDisabled}>previous</button>
-            <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations }}>
+            <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations, temperature: temperature }}>
               <button id="btn-explore" >Explore!</button>
             </Link>
             <button id="btn-explore" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>next</button>

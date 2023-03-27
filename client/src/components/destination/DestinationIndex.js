@@ -12,17 +12,19 @@ const DestinationIndex = () => {
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
   // const [pickerDate, setPickerDate] = useState(dayjs())
+  const [date, setDate] = useState()
+  const [temperature, setTemperature] = useState('cold')
+  const [image, setImage] = useState(0)
+  const [filters, setFilters] = useState({
+    temperature: 'warm',
+    month: '',
+    country: 'All',
+    continent: 'All',
+    rating: 'All',
+  })
 
   const location = useLocation()
-  
-  // function setDatePicker() {
-  //   const currentDate = new Date()
-  //   const todayDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate())
-  //   setPickerDate(dayjs(todayDate))
-  // }
-
-  // const passedData = location.state?.data
-  // console.log(location.state)
+  console.log(location.state)
 
   // ! On Mount
   useEffect(() => {
@@ -41,14 +43,41 @@ const DestinationIndex = () => {
       getDestinations()
       // setDatePicker()
     } else {
+      console.log('has location.state')
       setDestinations(location.state.unfiltered)
       setFilteredDestinations(location.state.filtered)
+      setTemperature(location.state.temperature)
     }
   }, [])
 
-  const handleSlider = (e) => {
-    console.log(e)
+  const handleChange = (e) => {
+    const newDate = new Date(e.$d)
+    // console.log(newDate.getMonth())
+    // const newFilters = { ...filters, [e.target.name]: e.target.value }
+    // setFilters(newFilters)
+    // console.log(filteredDestinations)
+    console.log('TEMP->', e.target.value)
+    if (e.target.name === 'temperature') {
+      setImage(e.target.value)
+    }
   }
+
+  // function setDatePicker() {
+  //   const currentDate = new Date()
+  //   const todayDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate())
+  //   setPickerDate(dayjs(todayDate))
+  // }
+
+  useEffect(() => {
+    console.log(filteredDestinations)
+  }, [filteredDestinations])
+
+  // useEffect(() => {
+  //   const updatedDestinations = destinations.filter(destination => {
+  //     return (destination.region === filters.region || filters.region === 'All') && (destination)
+  //   }).sort((a, b) => a.name > b.name ? 1 : -1)
+  //   setFilteredDestinations(updatedDestinations)
+  // }, [filters, destinations])
 
   return (
     <>
@@ -64,38 +93,40 @@ const DestinationIndex = () => {
               <div id="filter-temp">
                 <div>
                   <label htmlFor="temperature">Temperature</label>
-                  <input type="range" name="temperature" id="temperature" list="values" onChange={handleSlider} min="1" max="4" defaultValue="3" step="1" />
+                  <input type="range" name="temperature" id="temperature" list="values" onChange={handleChange} min="0" max="3" defaultValue="3" step="1" />
                   <datalist id="values">
-                    <option value="1" label="❄️"></option>
-                    <option value="2" label="⛅️"></option>
-                    <option value="3" label="☀️"></option>
-                    <option value="4" label="🔥"></option>
+                    <option value="0" label="❄️"></option>
+                    <option value="1" label="⛅️"></option>
+                    <option value="2" label="☀️"></option>
+                    <option value="3" label="🔥"></option>
                   </datalist>
-                  <hr/>
+                  <hr />
                 </div>
               </div>Date
-              <DatePicker inputFormat="DD/MM/YYYY" format="DD/MM/YYYY" />
-              <hr/>
+              <DatePicker inputFormat="DD/MM/YYYY" format="DD/MM/YYYY" name="month" onChange={handleChange} />
+              <hr />
               <div id="country-selector">
                 <label htmlFor="country">Country:</label>
                 <select name="country" id="">
-                  <option value="">One</option>
-                  <option value="">Two</option>
-                  <option value="">Three</option>
-                  <option value="">Four</option>
+                  <option value="All">All</option>
+                  {filteredDestinations.length > 0 &&
+                    [...new Set(filteredDestinations.map(destination => destination.country))].sort().map(country => {
+                      return <option key={country} value={country}>{country}</option>
+                    })}
                 </select>
               </div>
-              <hr/>
+              <hr />
               <div id="continent-selector">
                 <label htmlFor="continent">Continent:</label>
                 <select name="continent" id="">
-                  <option value="">One</option>
-                  <option value="">Two</option>
-                  <option value="">Three</option>
-                  <option value="">Four</option>
+                  <option value="All">All</option>
+                  {filteredDestinations.length > 0 &&
+                    [...new Set(filteredDestinations.map(destination => destination.continent))].sort().map(continent => {
+                      return <option key={continent} value={continent}>{continent}</option>
+                    })}
                 </select>
               </div>
-              <hr/>
+              <hr />
               <div id="rating-selector">
                 <label htmlFor="rating">Rating:</label>
                 <select name="rating" id="">
@@ -113,14 +144,14 @@ const DestinationIndex = () => {
                   const currentMonth = new Date().getMonth()
                   const { _id, name, country, highTemps } = destination
                   const avgRating = destination.averageRating ? destination.averageRating : '-'
-                  const background = destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]
+                  const background = destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[image]
                   return (
                     // <div key={_id} className="card" style={{ backgroundImage: `url(${background})` }} >
                     <div key={_id} className="card" >
                       <Link to={`/destinations/${_id}`}>
                         <div id="card-header">
-                          <div id="destination-image"><img src={background} alt={name}/></div>
-                          <div id="destination-name">{name} <br/> {country}</div>
+                          <div id="destination-image"><img src={background} alt={name} /></div>
+                          <div id="destination-name">{name} <br /> {country}</div>
                           {/* <div id="country-name">{country}</div> */}
                         </div>
                         <div id="card-content">
