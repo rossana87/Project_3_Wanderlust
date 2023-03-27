@@ -20,10 +20,7 @@ const Home = () => {
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
   const [temperature, setTemperature] = useState('0')
-  const [slide1Image, setSlide1Image] = useState(0)
-  const [slide2Image, setSlide2Image] = useState(0)
-  const [slide3Image, setSlide3Image] = useState(0)
-  const [slide4Image, setSlide4Image] = useState(0)
+  const [image, setImage] = useState(0)
   const [previousDisabled, setPreviousDisabled] = useState(true)
   const [nextDisabled, setNextDisabled] = useState(false)
 
@@ -74,6 +71,7 @@ const Home = () => {
 
   const handleFilter = (value) => {
     console.log(value)
+    setImage(0)
     setTemperature(value)
   }
 
@@ -113,34 +111,21 @@ const Home = () => {
   }, [filteredDestinations])
 
   const handleImageChange = (value) => {
-    if (temperature === '0') {
-      setSlide1Image(slide1Image + parseInt(value))
-    } else if (temperature === '1') {
-      setSlide2Image(slide2Image + parseInt(value))
-    } else if (temperature === '2') {
-      setSlide3Image(slide3Image + parseInt(value))
-    } else {
-      setSlide4Image(slide4Image + parseInt(value))
-    }
+    setImage(image + parseInt(value))
   }
 
   const disableButtons = () => {
-    if ((temperature === '0' && slide1Image === 0) || (temperature === '1' && slide2Image === 0) || (temperature === '2' && slide3Image === 0) || (temperature === '3' && slide4Image === 0)) {
+    if (image === 0) {
       setPreviousDisabled(true)
     } else setPreviousDisabled(false)
-    if ((temperature === '0' && slide1Image >= filteredDestinations.length - 1) || (temperature === '1' && slide2Image >= filteredDestinations.length - 1) || (temperature === '2' && slide3Image >= filteredDestinations.length - 1) || (temperature === '3' && slide4Image >= filteredDestinations.length - 1)) {
+    if (image >= filteredDestinations.length - 1) {
       setNextDisabled(true)
     } else setNextDisabled(false)
   }
 
   useEffect(() => {
-    console.log('slide1Image', slide1Image)
-    console.log('slide2Image', slide2Image)
-    console.log('slide3Image', slide3Image)
-    console.log('slide4Image', slide4Image)
     disableButtons()
-  }, [filteredDestinations, slide1Image, slide2Image, slide3Image, slide4Image])
-
+  }, [filteredDestinations, image])
 
   return (
     <>
@@ -162,15 +147,14 @@ const Home = () => {
           <div id="slide-role">
             {filteredDestinations.length > 0 ?
               <>
-                <div className="slide slide-1" style={{ backgroundImage: `url(${filteredDestinations[slide1Image].images[0]})` }}></div>
-                <div className="slide slide-2" style={{ backgroundImage: `url(${filteredDestinations[slide2Image].images[1]})` }}></div>
-                <div className="slide slide-3" style={{ backgroundImage: `url(${filteredDestinations[slide3Image].images[2]})` }}></div>
-                <div className="slide slide-4" style={{ backgroundImage: `url(${filteredDestinations[slide4Image].images[3]})` }}></div>
+                <div className="slide slide-1" style={{ backgroundImage: `url(${filteredDestinations[image].images[0]})` }}></div>
+                <div className="slide slide-2" style={{ backgroundImage: `url(${filteredDestinations[image].images[1]})` }}></div>
+                <div className="slide slide-3" style={{ backgroundImage: `url(${filteredDestinations[image].images[2]})` }}></div>
+                <div className="slide slide-4" style={{ backgroundImage: `url(${filteredDestinations[image].images[3]})` }}></div>
               </>
               :
               console.log('error - filtered destinations')
             }
-            {/* <div className="slide slide-1" style={{ backgroundImage: 'url("https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600")' }}></div> */}
           </div>
           <div id="explore">
             <button id="btn-explore" value='-1' onClick={(e) => handleImageChange(e.target.value)} disabled={previousDisabled}>previous</button>
