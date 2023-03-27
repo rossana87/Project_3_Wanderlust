@@ -46,6 +46,10 @@ const DestinationIndex = () => {
     }
   }, [])
 
+  const handleSlider = (e) => {
+    console.log(e)
+  }
+
   return (
     <>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -55,9 +59,54 @@ const DestinationIndex = () => {
             <h1>Select your destination...</h1>
           </div>
           <div id="grid-container">
-            <div id="filters">Filters
+            <div id="filters">
+              <h2>Filters</h2>
+              <div id="filter-temp">
+                <div>
+                  <label htmlFor="temperature">Temperature</label>
+                  <input type="range" name="temperature" id="temperature" list="values" onChange={handleSlider} min="1" max="4" defaultValue="3" step="1" />
+                  <datalist id="values">
+                    <option value="1" label="❄️"></option>
+                    <option value="2" label="⛅️"></option>
+                    <option value="3" label="☀️"></option>
+                    <option value="4" label="🔥"></option>
+                  </datalist>
+                  <hr/>
+                </div>
+              </div>Date
               <DatePicker inputFormat="DD/MM/YYYY" format="DD/MM/YYYY" />
+              <hr/>
+              <div id="country-selector">
+                <label htmlFor="country">Country:</label>
+                <select name="country" id="">
+                  <option value="">One</option>
+                  <option value="">Two</option>
+                  <option value="">Three</option>
+                  <option value="">Four</option>
+                </select>
+              </div>
+              <hr/>
+              <div id="continent-selector">
+                <label htmlFor="continent">Continent:</label>
+                <select name="continent" id="">
+                  <option value="">One</option>
+                  <option value="">Two</option>
+                  <option value="">Three</option>
+                  <option value="">Four</option>
+                </select>
+              </div>
+              <hr/>
+              <div id="rating-selector">
+                <label htmlFor="rating">Rating:</label>
+                <select name="rating" id="">
+                  <option value="">One</option>
+                  <option value="">Two</option>
+                  <option value="">Three</option>
+                  <option value="">Four</option>
+                </select>
+              </div>
             </div>
+
             <div id="grid">
               {filteredDestinations.length > 0 ?
                 filteredDestinations.map(destination => {
