@@ -9,7 +9,7 @@ import userData from './data/users.js'
 
 const seedDatabase = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI)
+    await mongoose.connect(process.env.MONGO_URI, { keepAlive: true, keepAliveInitialDelay: 300000 })
     console.log('🚀 Database connection established')
 
     await mongoose.connection.db.dropDatabase()

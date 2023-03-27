@@ -1,5 +1,5 @@
 import Destination from '../models/destinations.js'
-import { sendError } from '../config/errors.js'
+import { NotFound, Unauthorized, sendError } from '../config/errors.js'
 
 // GET all
 export const displayAllDestinations = async (req, res) => {
@@ -17,9 +17,9 @@ export const displayAllDestinations = async (req, res) => {
 //'/destinations/:id'
 export const displaySingleDestination = async (req, res) => {
   try {
-    const { id } = req.params
-    console.log(id)
-    const destination = await Destination.findById(id).populate('owner').populate('reviews.owner')
+    const { destinationId } = req.params
+    console.log(destinationId)
+    const destination = await Destination.findById(destinationId).populate('owner').populate('reviews.owner')
     console.log('THIS CONSOLE LOG!!!!', destination)
 
     // If record returns null, we want to throw a 404
@@ -41,15 +41,22 @@ export const updateDestination = async () => {
 // Delete Destination
 //'/admin'
 export const deleteDestination = async (req, res) => {
-  // try {
-  //   const { id } = req.params
-  //   console.log(id)
-  //   const deleteDestination = await Destination.findByIdAndDelete(id)
-  //   if (!deleteDestination) throw new Error('Destination not found')
-  //   return res.sendStatus(204)
-  // } catch (err) {
-  //   return sendError(err, res)
-  // }
+  try {
+    const { destinationId } = req.body
+    console.log('DESTINATION ID ->', destinationId)
+    const loggedInUserId = req.loggedInUser._id
+
+    const destinationToDelete = await Destination.findById(destinationId)
+    if (!destinationToDelete) throw new NotFound('Destination not found')
+
+    if (!destinationToDelete.owner.equals(loggedInUserId)) {
+      throw new Unauthorized()
+    }
+    await destinationToDelete.deleteOne()
+    return res.sendStatus(204)
+  } catch (err) {
+    return sendError(err, res)
+  }
 }
 
 
