@@ -12,9 +12,9 @@ const DestinationIndex = () => {
   const [filteredContinents, setFilteredContinents] = useState([])
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
-  const [temperature, setTemperature] = useState(location.state.temperature)
+  const [temperature, setTemperature] = useState('2')
   const [filters, setFilters] = useState({
-    temperature: location.state.temperature,
+    temperature: '2',
     month: new Date().getMonth(),
     country: 'All',
     continent: 'All',
@@ -63,12 +63,6 @@ const DestinationIndex = () => {
     setFilters(newFilters)
   }
 
-  // function setDatePicker() {
-  //   const currentDate = new Date()
-  //   const todayDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate())
-  //   setPickerDate(dayjs(todayDate))
-  // }
-
   useEffect(() => {
     console.log('FILTERS', filters)
   }, [filters])
@@ -96,7 +90,8 @@ const DestinationIndex = () => {
     setFilteredContinents(continents)
     const updatedDestinations = destinations.filter(destination => {
       return (destination.country === filters.country || filters.country === 'All') && (destination.continent === filters.continent || filters.continent === 'All')
-        && minTemp <= destination.highTemps[searchMonth] && destination.highTemps[searchMonth] <= maxTemp
+        && minTemp <= destination.highTemps[searchMonth] && destination.highTemps[searchMonth] <= maxTemp 
+        && (destination.averageRating === filters.rating || filters.rating === 'All')
     }).sort((a, b) => a.name > b.name ? 1 : -1)
     setFilteredDestinations(updatedDestinations)
   
@@ -116,14 +111,13 @@ const DestinationIndex = () => {
               <div id="filter-temp">
                 <div>
                   <label htmlFor="temperature">Temperature</label>
-                  <input type="range" name="temperature" id="temperature" list="values" onChange={handleChange} min="0" max="3" defaultValue={location.state.temperature} step="1" />
+                  <input type="range" name="temperature" id="temperature" list="values" onChange={handleChange} min="0" max="3" defaultValue={location.state ? location.state.temperature : '2'} step="1" />
                   <datalist id="values">
                     <option value="cold" label="❄️"></option>
                     <option value="mild" label="⛅️"></option>
                     <option value="warm" label="☀️"></option>
                     <option value="hot" label="🔥"></option>
                   </datalist>
-
                   <hr />
                 </div>
               </div>Date
@@ -145,7 +139,8 @@ const DestinationIndex = () => {
                 <select name="country" id="country" onChange={handleChange}>
                   <option value="All">All</option>
                   {filteredDestinations.length > 0 &&
-                    [...new Set(filteredDestinations.map(destination => destination.country))].sort().map(country => {
+                    [...new Set(filteredContinents.filter(destination => destination.continent === filters.continent || filters.continent === 'All')
+                      .map(destination => destination.country))].sort().map(country => {
                       return <option key={country} value={country}>{country}</option>
                     })}
                 </select>
@@ -154,11 +149,12 @@ const DestinationIndex = () => {
               <div id="rating-selector">
                 <label htmlFor="rating">Average rating:</label>
                 <select name="rating" id="" onChange={handleChange}>
-                  <option value="">All</option>
-                  <option value="">One</option>
-                  <option value="">Two</option>
-                  <option value="">Three</option>
-                  <option value="">Four</option>
+                  <option value="All">All</option>
+                  <option value="1">1 Star</option>
+                  <option value="2">2 Star</option>
+                  <option value="3">3 Star</option>
+                  <option value="4">4 Star</option>
+                  <option value="5">5 Star</option>
                 </select>
               </div>
             </div>

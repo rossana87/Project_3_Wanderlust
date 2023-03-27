@@ -125,6 +125,7 @@ const Home = () => {
 
   useEffect(() => {
     disableButtons()
+    console.log(image)
   }, [filteredDestinations, image])
 
   return (
