@@ -2,11 +2,12 @@ import Destination from '../models/destinations.js'
 import { NotFound, Unauthorized, sendError } from '../config/errors.js'
 
 // * POST Review
-// Endpoint: /destinations/:id/reviews
+// Endpoint: /destinations/:id/
 export const addReview = async (req, res) => {
   try {
     const { id } = req.params
-    console.log('Logged in user', req.loggedInUser)
+    // const reviews = req.body._id
+    // console.log('THIS IS REVIEWS ->', reviews)
     const destination = await Destination.findById(id)
 
     if (!destination) throw new NotFound('Record Not Found')
@@ -28,6 +29,8 @@ export const addReview = async (req, res) => {
 export const deleteReview = async (req, res) => {
   try {
     const { destinationId, reviewId } = req.params
+    // const { reviewId } = req.body
+    // console.log('REVIEWID ->', req.body._id)
     const loggedInUserId = req.loggedInUser._id
 
     const destination = await Destination.findById(destinationId)
