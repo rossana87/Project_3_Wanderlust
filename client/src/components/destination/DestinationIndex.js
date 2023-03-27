@@ -7,6 +7,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import dayjs from 'dayjs'
 
 const DestinationIndex = () => {
+  const location = useLocation()
 
   const [error, setError] = useState('')
   const [destinations, setDestinations] = useState([])
@@ -14,16 +15,15 @@ const DestinationIndex = () => {
   // const [pickerDate, setPickerDate] = useState(dayjs())
   const [date, setDate] = useState()
   const [temperature, setTemperature] = useState('cold')
-  const [image, setImage] = useState(0)
+  const [image, setImage] = useState(location.state.temperature)
   const [filters, setFilters] = useState({
     temperature: 'warm',
-    month: '',
+    month: new Date().getMonth(),
     country: 'All',
     continent: 'All',
     rating: 'All',
   })
 
-  const location = useLocation()
   console.log(location.state)
 
   // ! On Mount
@@ -47,13 +47,14 @@ const DestinationIndex = () => {
       setDestinations(location.state.unfiltered)
       setFilteredDestinations(location.state.filtered)
       setTemperature(location.state.temperature)
+      setFilters({ ...filters, [temperature]: location.state.temperature })
     }
   }, [])
 
   const handleChange = (e) => {
     const newDate = new Date(e.$d)
     // console.log(newDate.getMonth())
-    // const newFilters = { ...filters, [e.target.name]: e.target.value }
+    const newFilters = { ...filters, [e.target.name]: e.target.value }
     // setFilters(newFilters)
     // console.log(filteredDestinations)
     console.log('TEMP->', e.target.value)
@@ -93,12 +94,12 @@ const DestinationIndex = () => {
               <div id="filter-temp">
                 <div>
                   <label htmlFor="temperature">Temperature</label>
-                  <input type="range" name="temperature" id="temperature" list="values" onChange={handleChange} min="0" max="3" defaultValue="3" step="1" />
+                  <input type="range" name="temperature" id="temperature" list="values" onChange={handleChange} min="0" max="3" defaultValue={location.state.temperature} step="1" />
                   <datalist id="values">
-                    <option value="0" label="❄️"></option>
-                    <option value="1" label="⛅️"></option>
-                    <option value="2" label="☀️"></option>
-                    <option value="3" label="🔥"></option>
+                    <option value="cold" label="❄️"></option>
+                    <option value="mild" label="⛅️"></option>
+                    <option value="warm" label="☀️"></option>
+                    <option value="hot" label="🔥"></option>
                   </datalist>
                   <hr />
                 </div>
@@ -128,8 +129,9 @@ const DestinationIndex = () => {
               </div>
               <hr />
               <div id="rating-selector">
-                <label htmlFor="rating">Rating:</label>
+                <label htmlFor="rating">Average rating:</label>
                 <select name="rating" id="">
+                  <option value="">All</option>
                   <option value="">One</option>
                   <option value="">Two</option>
                   <option value="">Three</option>
