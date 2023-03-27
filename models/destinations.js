@@ -4,7 +4,6 @@ import mongoose from 'mongoose'
 const { Schema } = mongoose
 
 const reviewSchema = new Schema({
-  title: { type: String, required: true, maxlength: 30 },
   text: { type: String, required: true, maxlength: 300 },
   rating: { type: Number, required: true, min: 1, max: 5 },
   owner: { type: Schema.ObjectId, ref: 'User', required: true },
@@ -29,6 +28,19 @@ const destinationSchema = new Schema({
   owner: { type: Schema.ObjectId, ref: 'User', required: true },
   reviews: [reviewSchema],
 })
+
+// ! Average Rating Virtual Field
+destinationSchema.virtual('averageRating')
+  .get(function () {
+    if (!this.reviews.length) return 'Not rated yet'
+    // Create a sum, then average it by dividing by the length
+    const sum = this.reviews.reduce((acc, review) => {
+      return acc + review.rating
+    }, 0)
+    return parseFloat((sum / this.reviews.length).toFixed(2))
+  })
+
+destinationSchema.set('toJSON', { virtuals: true })
 
 // ! Model
 const { model } = mongoose
