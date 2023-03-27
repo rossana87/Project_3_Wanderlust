@@ -37,54 +37,56 @@ const DestinationIndex = () => {
               <p>{destination.description}</p>
             </section>
             <section id="common">
-              <div className='info'>
-                <div><img src="" alt="countryIcon" /></div>
-                <div>
-                  <h3>Country</h3>
-                  {destination.country}
-                </div>
-              </div>
-              <div className='info'>
-                <div><img src="" alt="continentIcon" /></div>
-                <div>
-                  <h3>Continent</h3>
-                  {destination.continent}
-                </div>
-              </div>
-              <div className='info'>
-                <div><img src="" alt="currencyIcon" /></div>
-                <div>
-                  <h3>Currency</h3>
-                  {destination.currency}
-                </div>
-              </div>
-              <div className='info'>
-                <div><img src="" alt="currencyIcon" /></div>
-                <div>
-                  <h3>Price</h3>
-                  {destination.price}
-                </div>
-              </div>
-              {destination.averageRating &&
+              <div id="common-container">
                 <div className='info'>
-                  <div><img src="" alt="ratingIcon" /></div>
+                  <div><img src="" alt="countryIcon" /></div>
                   <div>
-                    <h3>Average Rating</h3>
-                    {destination.averageRating}
+                    <h3>Country</h3>
+                    {destination.country}
                   </div>
                 </div>
-              }
-              <div id="forecast"></div>
+                <div className='info'>
+                  <div><img src="" alt="continentIcon" /></div>
+                  <div>
+                    <h3>Continent</h3>
+                    {destination.continent}
+                  </div>
+                </div>
+                <div className='info'>
+                  <div><img src="" alt="currencyIcon" /></div>
+                  <div>
+                    <h3>Currency</h3>
+                    {destination.currency}
+                  </div>
+                </div>
+                <div className='info'>
+                  <div><img src="" alt="currencyIcon" /></div>
+                  <div>
+                    <h3>Price</h3>
+                    {destination.price}
+                  </div>
+                </div>
+                {destination.averageRating &&
+                  <div className='info'>
+                    <div><img src="" alt="ratingIcon" /></div>
+                    <div>
+                      <h3>Average Rating</h3>
+                      {destination.averageRating}
+                    </div>
+                  </div>
+                }
+              </div>
+              <div id="forecast-container">Forecast data goes here</div>
             </section>
-            <section id="ftAndMap">
-              <div>
+            <section id="attractions">
+              <div id="attraction-container">
                 <ul className="fa-ul">
                   <li><span className="fa-li"><i className="restaurants"></i></span>{destination.features[0]}</li>
                   <li><span className="fa-li"><i className="activites"></i></span>{destination.features[1]}</li>
                   <li><span className="fa-li"><i className="sightseeing"></i></span>{destination.features[2]}</li>
                 </ul>
               </div>
-              <div id="map">
+              <div id="map-container">
                 MAP
               </div>
             </section>
