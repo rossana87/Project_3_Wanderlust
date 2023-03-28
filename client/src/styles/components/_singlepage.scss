@@ -35,12 +35,44 @@
 
 #common, #attractions {
   display: flex;
+  border-bottom: 2px solid black;
 
-  & > #common-container {
-    margin: $main-title;
+  & > #common-container, #attraction-container {
+    // margin: $main-title;
+    font-family: $main-font;
+    margin: 2.5em;
   }
 }
 
 #common-container, #forecast-container, #attraction-container {
   width: 50%;
+  // border: 1px solid black;
 }
+
+.first-info {
+  margin-top: 0em;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+// #attraction-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: baseline;
+// }
+
+#attractions .icon-container {
+  margin-top: 0.5em;
+}
+
+// .sightseeing, .activities, .restaurants {
+//   margin-top: 0.5em;
+// }
