@@ -23,13 +23,15 @@ main {
   position: relative;
   height: 92svh;
   width: 100%;
-  max-width: 100rem;
-  margin: 0 auto;
+  z-index: 300;
+}
+
+header {
+  z-index: 400;
 }
 
 .slide-wrapper {
   position: relative;
-  margin: 0 auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -98,6 +100,10 @@ main {
 
 .btn:nth-of-type(1) {
   left: 38%;
+  // &::before{
+  //   font-size: 1.5em;
+  //   content: "🍔";
+  // }
 }
 
 .btn:nth-of-type(2) {
@@ -128,6 +134,13 @@ main {
   box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
 }
 
+#prev-next-controls {
+  position: absolute;
+  width: 100%;
+  z-index: 400;
+  top: 40%
+}
+
 #explore {
   position: absolute;
   width: 100%;
@@ -142,6 +155,41 @@ main {
   left: 46%;
   height: 2rem;
   width: 6rem;
+}
+
+.prev-next {
+  position: absolute;
+  font-size: 4em;
+  font-family: $main-font;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+  // top: 40%
+  &:hover {
+    color: darken(gold, 3%);
+  }
+}
+
+#btn-next {
+  right: 2.5%;
+}
+
+#btn-previous {
+  left: 2.5%;
 }
 
 // SLIDE LOGIC
@@ -174,6 +222,23 @@ input[type="radio"]:checked+label.btn::after {
   .slide-wrapper {
       height: 100%;
   }
+
+  #prev-next-controls {
+    bottom: 1.5%;
+    position: fixed;
+    // &:hover {
+    //   color: inherit;
+    // }
+  }
+
+  #btn-next {
+    bottom: 1.5%;
+  }
+  
+  #btn-previous {
+    bottom: 1.5%;
+  }
+
   .btn:nth-of-type(1) {
       left: 93%;
       bottom: 60%;

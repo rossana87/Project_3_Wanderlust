@@ -157,12 +157,16 @@ const Home = () => {
               console.log('error - filtered destinations')
             }
           </div>
+          <div id="prev-next-controls">
+            <button id="btn-previous" className="prev-next" value='-1' onClick={(e) => handleImageChange(e.target.value)} disabled={previousDisabled}>&#60;</button>
+            <button id="btn-next" className="prev-next" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>&#62;</button>
+          </div>
           <div id="explore">
-            <button id="btn-explore" value='-1' onClick={(e) => handleImageChange(e.target.value)} disabled={previousDisabled}>previous</button>
+            {/* <button id="btn-previous" value='-1' onClick={(e) => handleImageChange(e.target.value)} disabled={previousDisabled}>previous</button> */}
             <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations, temperature: temperature }}>
               <button id="btn-explore" >Explore!</button>
             </Link>
-            <button id="btn-explore" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>next</button>
+            {/* <button id="btn-next" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>next</button> */}
           </div>
         </div>
 
