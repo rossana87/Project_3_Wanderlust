@@ -1,30 +1,11 @@
-import { useEffect } from 'react'
-import { Buffer } from 'buffer'
 import { useLocation, useNavigate, Link } from 'react-router-dom'
-const tokenName = 'WANDERLUST-TOKEN'
+import { authenticated, getUserID, isAuthenticated, removeToken } from '../../helpers/auth'
+import { useState, useEffect } from 'react'
+
 
 const Nav = ({ openModal }) => {
-
-  // This function is going to use the payload to check the validity of the token
-  // It will do this by checking the expiry date
-  const getPayload = () => {
-    const token = localStorage.getItem(tokenName) // get full token from localStorage
-    if (!token) return
-    const splitToken = token.split('.') // split token into 3 parts using split
-    const payloadString = splitToken[1] // take the middle payload string and save it to a variable
-    return JSON.parse(Buffer.from(payloadString, 'base64'))
-  }
-
-  const isAuthenticated = () => {
-    const payload = getPayload() // get payload object containing the expiry date under the exp key
-    if (!payload) return false // if it's undefined, it doesn't exist and so we return false
-    const currentTime = Date.now() / 1000 // we get the current time by using Date.now() but need to convert to seconds from miliseconds so divide by 1000
-    return currentTime < payload.exp // finally we check if the expiry is bigger than the current timestamp, if it is, it's valid
-  }
-  
-  const removeToken = () => {
-    localStorage.removeItem(tokenName)
-  }
+  const [ error, setError ] = useState('')
+  const [ profileData, setProfileData ] = useState()
 
   const location = useLocation()
   const navigate = useNavigate()
@@ -35,10 +16,6 @@ const Nav = ({ openModal }) => {
     navigate('/')
   }
 
-  useEffect(() => {
-    // console.log(location)
-  }, [location])
-
   return (
     <header>
       <div id="logo">
@@ -47,8 +24,13 @@ const Nav = ({ openModal }) => {
       <nav>
         <ul>
           {/* check if authenticated. if true, show logout, otherwise show login and register links */}
-          { isAuthenticated() ?
-            <li className="" onClick={handleLogOut}>Logout</li>
+          {isAuthenticated() ?
+            <>
+              {/* <Link to="/admin" as={Link}>Admin</Link> */}
+              <Link to={`/profile/${getUserID()}`} as={Link}>Profile</Link>
+              {/* <li className="" onClick={handleLogOut}>Profile</li> */}
+              <li className="" onClick={handleLogOut}>Logout</li>
+            </>
             :
             <>
               <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={openModal}>Login</li>
@@ -57,7 +39,7 @@ const Nav = ({ openModal }) => {
           }
         </ul>
       </nav>
-    </header>
+    </header >
   )
 
 }

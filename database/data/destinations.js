@@ -892,7 +892,7 @@ export default [
     longitude: 135.75,
     description: 'Japanese city with traditional culture and serene temples.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926219/Wanderlust/kyoto_winter_exjjhb.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926222/Wanderlust/kyoto_autumn_whjsmj.jpg',
+      'https://e5rxtr4t5ah.exactdn.com/wp-content/uploads/2018/05/kyoto-4-day-itinerary-header.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926219/Wanderlust/kyoto_spring_lgnl4k.jpg',
       'https://media.architecturaldigest.com/photos/5c3f984992ce212ce3f51233/master/w_1600%2Cc_limit/GettyImages-565448091.jpg'
     ],
