@@ -23,7 +23,7 @@ router.route('/admin')
   .delete(secureRoute, deleteDestination)
   .get(secureRoute, adminProfileView)
 
-router.route('/profile')
+router.route('/profile/:userId')
   .delete(secureRoute, deleteReview)
   .get(secureRoute, profileView)
 

@@ -6,6 +6,7 @@ import { NotFound, Unauthorized } from './errors.js'
 export const secureRoute = async (req, res, next) => {
   try {
     const authorization = req.headers.authorization
+    console.log('AUTHORIZATION LOG ->', authorization)
     // 1.Check that the request has an Authorization header
     // 2.If it does, we move onto the next step, otherwise
     if (!authorization) throw new Unauthorized('Missing Authorization header')
