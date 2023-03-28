@@ -484,8 +484,8 @@ export default [
     longitude: 23.73,
     description: 'Ancient city with iconic landmarks and Mediterranean charm.',
     images: ['https://cms.ferryscanner.com/media/2022/10/ferryscanner-%E2%80%93-athens-in-the-winter-.jpg',
-      'https://www.visitgreece.gr/images/1743x752/jpg/files/s_1852670350_athens_1743x752.jpg',
       'https://www.tastingtable.com/img/gallery/16-places-to-eat-and-drink-in-athens-greece/l-intro-1673379087.jpg',
+      'https://www.visitgreece.gr/images/1743x752/jpg/files/s_1852670350_athens_1743x752.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917654/Wanderlust/athens_spring_ppasp8.jpg'
     ],
     features: [],
@@ -1183,7 +1183,7 @@ export default [
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928253/Wanderlust/key_west_2_cvynyr.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928255/Wanderlust/key_west_1_azlt7g.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928253/Wanderlust/key_west_2_cvynyr.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928255/Wanderlust/key_west_1_azlt7g.jpg0'
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928255/Wanderlust/key_west_1_azlt7g.jpg'
     ],
     features: [],
     highTemps: [24, 24, 26, 28, 30, 31, 32, 33, 31, 29, 26, 25],

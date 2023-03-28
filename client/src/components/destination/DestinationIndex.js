@@ -12,9 +12,8 @@ const DestinationIndex = () => {
   const [filteredContinents, setFilteredContinents] = useState([])
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
-  const [temperature, setTemperature] = useState('2')
   const [filters, setFilters] = useState({
-    temperature: '2',
+    temperature: location.state ? location.state.temperature : '2' ,
     month: new Date().getMonth(),
     country: 'All',
     continent: 'All',
@@ -30,19 +29,17 @@ const DestinationIndex = () => {
           const { data } = await axios.get('/api/')
           setDestinations(data)
           setFilteredDestinations(data)
+          setFilters({ ...filters })
         } catch (err) {
           console.log(err)
           setError(err.message)
         }
       }
       getDestinations()
-      // setDatePicker()
     } else {
-      console.log('has location.state')
       setDestinations(location.state.unfiltered)
       setFilteredDestinations(location.state.filtered)
-      setTemperature(location.state.temperature)
-      setFilters({ ...filters, [temperature]: location.state.temperature })
+      setFilters({ ...filters, temperature: location.state.temperature })
     }
   }, [])
 
@@ -94,7 +91,6 @@ const DestinationIndex = () => {
         && (destination.averageRating === filters.rating || filters.rating === 'All')
     }).sort((a, b) => a.name > b.name ? 1 : -1)
     setFilteredDestinations(updatedDestinations)
-  
   }, [filters])
 
   return (
