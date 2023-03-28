@@ -79,10 +79,15 @@
     position: relative;
   }
 
+  #destination-image {
+    // background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  }
+
   img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    background: linear-gradient(rgba(0,130,170,.5),rgba(0,130,170,.5));
   }
 
   #destination-name {
