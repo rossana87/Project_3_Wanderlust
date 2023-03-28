@@ -11,6 +11,18 @@ const userSchema = new Schema({
   isAdmin: { type: Boolean, required: true },
 })
 
+userSchema.virtual('Destinations', {
+  ref: 'Destination',
+  localField: '_id',
+  foreignField: 'owner',
+})
+
+userSchema.virtual('Reviews', {
+  ref: 'Destination',
+  localField: '_id',
+  foreignField: 'reviews.owner',
+})
+
 // Removes password whenever a document is password is converted into JSON
 userSchema.set('toJSON', {
   virtuals: true,
