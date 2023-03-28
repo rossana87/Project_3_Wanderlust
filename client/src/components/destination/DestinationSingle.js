@@ -32,7 +32,7 @@ const DestinationIndex = () => {
       <main>
         {destination &&
           <>
-            <section id="hero" style={{ backgroundImage: `url(${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]})` }}>
+            <section id="hero" style={{ backgroundImage: `url("${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]}")` }}>
               <h1>{destination.name}</h1>
               <p>{destination.description}</p>
             </section>

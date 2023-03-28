@@ -148,10 +148,10 @@ const Home = () => {
           <div id="slide-role">
             {filteredDestinations.length > 0 ?
               <>
-                <div className="slide slide-1" style={{ backgroundImage: `url(${filteredDestinations[image].images[0]})` }}></div>
-                <div className="slide slide-2" style={{ backgroundImage: `url(${filteredDestinations[image].images[1]})` }}></div>
-                <div className="slide slide-3" style={{ backgroundImage: `url(${filteredDestinations[image].images[2]})` }}></div>
-                <div className="slide slide-4" style={{ backgroundImage: `url(${filteredDestinations[image].images[3]})` }}></div>
+                <div className="slide slide-1" style={{ backgroundImage: `url("${filteredDestinations[image].images[0]}")` }}></div>
+                <div className="slide slide-2" style={{ backgroundImage: `url("${filteredDestinations[image].images[1]}")` }}></div>
+                <div className="slide slide-3" style={{ backgroundImage: `url("${filteredDestinations[image].images[2]}")` }}></div>
+                <div className="slide slide-4" style={{ backgroundImage: `url("${filteredDestinations[image].images[3]}")` }}></div>
               </>
               :
               console.log('error - filtered destinations')
