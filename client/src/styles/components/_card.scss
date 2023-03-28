@@ -20,8 +20,6 @@
     margin: 2em 0;
   }
 
-
-
   #filter-temp {
     width: 100%;
   }
@@ -59,7 +57,6 @@
   }
 }
 
-
 #grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -74,14 +71,18 @@
   line-height: 2em;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255,255,255,1));
+  // background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255,255,255,1));
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(255, 255, 255, 0));
+  // object-fit: contain;
+  transition: all .2s ease-in-out;
+
+  &:hover { 
+    transform: scale(101%);
+  }
 
   #card-header {
     position: relative;
-  }
-
-  #destination-image {
-    // background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
   }
 
   img {
@@ -89,18 +90,12 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     position: relative;
+    z-index: -1;
+    border-radius: 8px 8px 0 0;
     // background: linear-gradient(rgba(0,130,170,.5),rgba(0,130,170,.5));
-  }
-
-  img:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
-    pointer-events: none; /* This line ensures that the gradient overlay does not block mouse interactions with the image */
+    // -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    // mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+    // background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
   }
 
   #destination-name {
@@ -109,6 +104,9 @@
     top: 0;
     padding: 1.5rem;
     color: white;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
   }
 
   #card-content {
