@@ -1,5 +1,13 @@
 @media (max-width: 600px) {
 
+  header {
+    padding-left: 0.5em;
+  }
+
+  #hero h1 {
+    font-size: 3em;
+  }
+
   #grid-container, #common, #attractions, #reviews {
     display: block;
   }
@@ -7,6 +15,61 @@
   #common-container, #forecast-container, #attraction-container, #reviews-container, #add-review-container {
     width: 80%;
     // border: 1px solid black;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .slide-wrapper {
+      height: 100%;
+  }
+
+  #prev-next-controls {
+    bottom: 1.5%;
+    position: fixed;
+    // &:hover {
+    //   color: inherit;
+    // }
+  }
+
+  #btn-next {
+    bottom: 1.5%;
+  }
+  
+  #btn-previous {
+    bottom: 1.5%;
+  }
+
+  .btn:nth-of-type(1) {
+      left: 93%;
+      bottom: 60%;
+  }
+  .btn:nth-of-type(2) {
+      left: 93%;
+      bottom: 50%;
+  }
+  .btn:nth-of-type(3) {
+      left: 93%;
+      bottom: 40%;
+  }
+  .btn:nth-of-type(4) {
+      left: 93%;
+      bottom: 30%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .btn:nth-of-type(1) {
+      left: 85%;
+  }
+  .btn:nth-of-type(2) {
+      left: 85%;
+  }
+  .btn:nth-of-type(3) {
+      left: 85%;
+  }
+  .btn:nth-of-type(4) {
+      left: 85%;
   }
 }
 
