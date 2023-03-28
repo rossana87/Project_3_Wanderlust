@@ -42,9 +42,9 @@ export default [
     longitude: -0.13,
     description: 'Capital city of England with iconic landmarks and rich history.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909093/Wanderlust/london_winter_t3wkuf.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909093/Wanderlust/london_spring_oph6j4.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909101/Wanderlust/london_autumn_od3yxh.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909097/Wanderlust/london_summer_rfujrz.jpg'
+      'https://blueorchid.com/Content/images/London%20in%20Spring%20Season.jpg',
+      'https://www.enjoylondon.com/wp-content/uploads/2022/02/enjoy-london.webp',
+      'http://london.com/wp-content/uploads/2019/03/london_001.jpg'
     ],
     features: [],
     highTemps: [7, 8, 10, 13, 17, 20, 22, 22, 19, 15, 10, 8],
@@ -60,7 +60,7 @@ export default [
     description: 'Eternal city with ancient ruins and stunning Renaissance art.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909211/Wanderlust/rome_winter_npif7c.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909216/Wanderlust/rome_autumn_dncwjy.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909212/Wanderlust/rome_spring_x7iml6.jpg',
+      'https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateRome_Hero_shutterstock789412159.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909214/Wanderlust/rome_summer_rctmxw.jpg'
     ],
     features: [],
@@ -75,7 +75,7 @@ export default [
     latitude: 48.14,
     longitude: 11.58,
     description: 'German city known for beer gardens and rich cultural heritage.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909312/Wanderlust/munich_winter_ccf8bt.jpg',
+    images: ['https://wallpaperaccess.com/full/4652983.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909319/Wanderlust/munich_summer_irutmi.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909311/Wanderlust/munich_spring_pekaym.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909311/Wanderlust/munich_spring_pekaym.jpg'
@@ -109,10 +109,10 @@ export default [
     latitude: 59.33,
     longitude: 18.07,
     description: 'Scandinavian city with charming Old Town and modern design.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909595/Wanderlust/stockholm_winter_bjxmno.jpg',
+    images: ['https://a.cdn-hotels.com/gdcs/production166/d131/09a4f7b5-3d31-4c8e-93bb-a867e52ca6f5.jpg',
+      'https://media.gq-magazine.co.uk/photos/5d13960ad7a70172e9bba60a/16:9/w_2560%2Cc_limit/Stockholm-hp-GQ-21Jul15_istock_b.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909599/Wanderlust/stockholm_spring_qut4ia.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909599/Wanderlust/stockholm_spring_qut4ia.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909596/Wanderlust/stockholm_summer_xggauv.jpg'
+      'https://www.lifeinnorway.net/wp-content/uploads/2022/06/waterside-view-of-stockholm-in-sweden.jpg.webp'
     ],
     features: [],
     highTemps: [0, 0, 4, 10, 16, 21, 23, 21, 16, 10, 5, 2],
@@ -127,7 +127,7 @@ export default [
     longitude: 12.57,
     description: 'Bicycle-friendly city with colorful waterfront and cozy cafes.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909665/Wanderlust/copenhagen_winter_q1cebd.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909668/Wanderlust/copenhagen_spring_koecjf.jpg',
+      'https://www.travelandleisure.com/thmb/G5hwSYQUTvgGQISOXymFUYYr-Iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/copenhagen-dk-COPENHAGENTG0721-4a481cb6025b43d1a781b1571b144f46.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909672/Wanderlust/copenhagen_summer_nfbmch.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909672/Wanderlust/copenhagen_summer_nfbmch.jpg'
     ],
@@ -144,8 +144,8 @@ export default [
     longitude: 12.57,
     description: 'City of lights with iconic landmarks, art museums, and cuisine.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909730/Wanderlust/paris_winter_lghthi.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909730/Wanderlust/paris_autumn_bexhc3.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909732/Wanderlust/paris_spring_btjfjp.webp',
+      'https://www.originaltravel.co.uk/travel-blog/ShowPhoto/3583/0',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909730/Wanderlust/paris_summer_bt7ip5.jpg'
     ],
     features: [],
@@ -160,10 +160,10 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'Capital city of Spain with lively nightlife and world-class art.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909864/Wanderlust/madrid_winter_g5cona.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909868/Wanderlust/madrid-autumn_uuuvlw.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909865/Wanderlust/madrid_spring_ulyoq9.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909865/Wanderlust/madrid_summer_zt9ky4.jpg'
+    images: ['https://i0.wp.com/dymabroad.com/wp-content/uploads/2020/11/Street-in-Madrid.jpg?ssl=1',
+      'https://www.abercrombiekent.co.uk/-/media/abercrombieandkent/images/page-header-images/europe/spain/madrid/madrid_0001_spain-madrid-246261844.jpg?w=1920&h=940',
+      'https://deih43ym53wif.cloudfront.net/cibeles-fountain-madrid-spain-shutterstock_556870582_cf4a306a5b.jpeg',
+      'https://www.roadaffair.com/wp-content/uploads/2018/07/metropolis-hotel-madrid-spain-shutterstock_333044603.jpg'
     ],
     features: ['beach', 'mountain', 'ocean'],
     highTemps: [10, 12, 16, 18, 22, 28, 32, 31, 26, 19, 13, 10],
@@ -177,9 +177,9 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'Playground for the rich with glamorous casinos and luxury yachts.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679909976/Wanderlust/monaco_winter_oln2cf.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909978/Wanderlust/monaco_spring_w4v12p.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679909978/Wanderlust/monaco_spring_w4v12p.jpg',
+    images: ['https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/bltce707bcb3714ac38/61810d1da61df875c345996a/UK_Monaco_Monaco_Header.jpg?width=1680&quality=70&auto=webp',
+      'https://www.visitmonaco.com/ImageRepository/monaco/1-EvenementSearch.jpg?Width=2500&Height=1250',
+      'https://woody.cloudly.space/app/uploads/crt-cotedazur/2020/07/thumbs/landing-monaco-istock-686004938-xantana-1920x1080-1-1920x960.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909976/Wanderlust/monaco_summer_rafww8.jpg'
     ],
     features: [],
@@ -194,7 +194,7 @@ export default [
     latitude: 55.68,
     longitude: 12.57,
     description: 'Picturesque city with colorful tiles, charming alleys, and seafood.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679910131/Wanderlust/lisbon_winter_dy3ynz.jpg',
+    images: ['https://www.collegiate-ac.pt/propeller/uploads/sites/4/2020/12/O-que-fazer-em-Lisboa-no-Inverno-1450x967.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679910132/Wanderlust/lisbon-spring_w7abd6.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679910133/Wanderlust/lisbon_autumn_c8zgll.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679910132/Wanderlust/lisbon_summer_wtxkva.jpg'
@@ -228,10 +228,10 @@ export default [
     latitude: 40.71,
     longitude: -74.01,
     description: 'City that never sleeps with skyscrapers, Central Park and Broadway.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911101/Wanderlust/ny_winter_turrru.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911102/Wanderlust/ny_autumn_arm5z2.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911101/Wanderlust/ny_spring_dghkkt.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911103/Wanderlust/ny_summer_zcslmy.jpg'
+    images: ['https://www.thebenjamin.com/content/uploads/2020/10/weekend-special-1440x954-1.jpg',
+      'https://media.cntraveler.com/photos/63483e15ef943eff59de603a/4:3/w_2668,h_2001,c_limit/New%20York%20City_GettyImages-1347979016.jpg',
+      'https://lp-cms-production.imgix.net/2020-11/shutterstockRF_1564421236.jpg?auto=format&q=75&w=3840',
+      'https://cdn.getyourguide.com/img/location/5ffeb528d3d6f.jpeg/75.jpg'
     ],
     features: [],
     highTemps: [4, 6, 11, 18, 22, 27, 29, 29, 25, 18, 13, 7],
@@ -245,10 +245,10 @@ export default [
     latitude: 47.61,
     longitude: -122.33,
     description: 'Pacific Northwest city with coffee culture, seafood, and Space Needle.',
-    images: ['https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600',
-      'https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600'
+    images: ['https://www.panpacificseattle.com/wp-content/uploads/2019/01/GettyImages-174670761-1-1.jpg',
+      'https://anopensuitcase.com/wp-content/uploads/2022/01/seattle.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg',
+      'https://hiretop.com/content/images/2023/02/5639157682e2053e7cfaddeea35c03a1.jpeg'
     ],
     features: [],
     highTemps: [8, 9, 11, 14, 17, 19, 22, 22, 19, 15, 11, 8],
@@ -263,8 +263,8 @@ export default [
     longitude: -122.42,
     description: 'City by the bay with Golden Gate Bridge, hills, and tech industry.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911235/Wanderlust/san_francisco_winter_kq8yuy.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911235/Wanderlust/san_francisco_spring_p6gef4.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911235/Wanderlust/san_francisco_spring_p6gef4.jpg',
+      'https://www.hoover.org/sites/default/files/research/images/istock-623380162.jpg',
+      'https://content.r9cdn.net/rimg/dimg/69/1b/cca1e76b-city-13852-16eeb19be6a.jpg?width=1750&height=1000&xhint=1566&yhint=1117&crop=true',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911234/Wanderlust/san_francisco_summer_cbptky.jpg'
     ],
     features: [],
@@ -280,8 +280,8 @@ export default [
     longitude: -43.18,
     description: 'Brazilian city with Copacabana beach, Carnival, and Christ the Redeemer.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911311/Wanderlust/rio_summer_wt0khv.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911311/Wanderlust/rio_summer_wt0khv.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911310/Wanderlust/rio_summer2_u8rykd.jpg',
+      'https://travellersworldwide.com/wp-content/uploads/2023/02/Shutterstock_422575195.jpg',
+      'https://www.costacruises.eu/content/dam/costa/inventory-assets/ports/RIO/c035_rio_de_janeiro.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911310/Wanderlust/rio_summer2_u8rykd.jpg'
     ],
     features: [],
@@ -313,10 +313,10 @@ export default [
     latitude: 41.01,
     longitude: 28.95,
     description: 'City where Europe meets Asia, with bazaars, mosques, and palaces.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_winter_qzn0x9.jpg',
+    images: ['https://www.novo-monde.com/app/uploads/2017/01/istanbul-pont.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_spring_ix5ulk.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_spring_ix5ulk.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_summer_jxljzl.webp'
+      'https://www.cuddlynest.com/blog/wp-content/uploads/2022/10/day-trips-from-istanbul-scaled.jpg'
     ],
     features: [],
     highTemps: [9, 9, 12, 17, 22, 27, 29, 29, 25, 20, 15, 11],
@@ -347,8 +347,8 @@ export default [
     latitude: 50.93,
     longitude: 0.53,
     description: 'Metropolis with vibrant nightlife, technology, and traditional culture.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679916725/Wanderlust/tokyo_winter_mjaeyl.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679916727/Wanderlust/tokyo_autumn_bhf0ee.jpg',
+    images: ['https://wallpapercave.com/wp/wp11491113.jpg',
+      'https://lp-cms-production.imgix.net/2022-03/Japan%20Tokyo%20%C2%A9%20Kohei%20Hara%20GettyImages-1077121822.jpg?auto=format&q=75&w=3840',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916726/Wanderlust/tokyo_spring_szctaj.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916726/Wanderlust/tokyo_summer_xh463y.jpg'
     ],
@@ -364,8 +364,8 @@ export default [
     latitude: 45.92,
     longitude: 6.87,
     description: 'French Alpine town with Mont Blanc, skiing, and mountaineering.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679916888/Wanderlust/chamonix_winter_xcfipa.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679916888/Wanderlust/chamonix_autumn_hdyxel.jpg',
+    images: ['https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffad028b0-77b4-11ec-9998-b2483743c25e.jpg?crop=4152%2C2768%2C0%2C0',
+      'https://happylittletraveler.com/wp-content/uploads/2022/09/Chamonix-France-Best-Things-To-Do-Near-Mont-Blanc.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916888/Wanderlust/chamonix_spring_gaaeia.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916888/Wanderlust/chamonix_autumn_hdyxel.jpg'
     ],
@@ -381,10 +381,10 @@ export default [
     latitude: 9.94,
     longitude: 76.26,
     description: 'Historic city in Kerala, India with backwaters, temples, and spices.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679916991/Wanderlust/kochi_3_nrdsrn.jpg',
+    images: ['https://www.celebritycruises.com/blog/content/uploads/2022/04/things-to-do-in-kochi-indo-portuguese-museum-hero.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916991/Wanderlust/kochi_3_nrdsrn.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916992/Wanderlust/kochi_s3h74j.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679916995/Wanderlust/kochi_1_lmkvjm.jpg'
+      'https://media.architecturaldigest.com/photos/5e5d70acb84db300091bfc22/16:9/w_2560%2Cc_limit/GettyImages-562722429.jpg'
     ],
     features: [],
     highTemps: [32, 32, 33, 33, 32, 30, 30, 30, 30, 31, 31, 32],
@@ -433,8 +433,8 @@ export default [
     longitude: 11.25,
     description: 'City of Renaissance art with Duomo, museums, and Tuscan cuisine.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679917343/Wanderlust/florence_winter_l1ysud.jpg',
+      'https://jetexcdn.sfo2.cdn.digitaloceanspaces.com/jetex.com/wp-content/uploads/2021/07/shutterstock_264759209_Landscape-of-the-Tuscany-seen-from-the-walls-of-Montepulciano-Italy-scaled.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917343/Wanderlust/florence_autumn_f150ed.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679917343/Wanderlust/florence_spring_fgvmkq.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917343/Wanderlust/florence_summer_fdrzs3.jpg'
     ],
     features: [],
@@ -449,7 +449,7 @@ export default [
     latitude: 45.44,
     longitude: 12.33,
     description: 'City of canals with gondolas, palaces, and Italian cuisine.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679917482/Wanderlust/venice_winter_qixsb9.jpg',
+    images: ['https://assets.vogue.com/photos/589123057edfa70512d6264b/master/w_2560%2Cc_limit/holding-the-grand-canal.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917482/Wanderlust/venice_autumn_enwgcy.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917482/Wanderlust/venice_spring_ugqb76.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917481/Wanderlust/venice_summer_ymxllu.webp'
@@ -466,8 +466,8 @@ export default [
     latitude: 52.52,
     longitude: 13.41,
     description: 'German capital city with history, culture, and vibrant nightlife.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679917558/Wanderlust/berlin_wnter_chxucr.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679917556/Wanderlust/berlin_autumn_dd4age.jpg',
+    images: ['https://www.tripsavvy.com/thmb/SCT7ukilSIZp1uFvwMwvw3z-nZM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/berlin-winter-skyline-with-snow-on-the-roofs-469450025-58e786de3df78c51621e27a9.jpg',
+      'https://theplanetd.com/images/places-to-visit-in-berlin-germany.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917556/Wanderlust/berlin_spring_jkheyp.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917556/Wanderlust/berlin_summer_cwfqqg.jpg'
     ],
@@ -483,10 +483,10 @@ export default [
     latitude: 37.98,
     longitude: 23.73,
     description: 'Ancient city with iconic landmarks and Mediterranean charm.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679917653/Wanderlust/athens_winter_vqk3pw.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679917654/Wanderlust/athens_spring_ppasp8.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679917654/Wanderlust/athens_spring_ppasp8.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679917654/Wanderlust/athens_summer_x4aq7w.jpg'
+    images: ['https://cms.ferryscanner.com/media/2022/10/ferryscanner-%E2%80%93-athens-in-the-winter-.jpg',
+      'https://www.visitgreece.gr/images/1743x752/jpg/files/s_1852670350_athens_1743x752.jpg',
+      'https://www.tastingtable.com/img/gallery/16-places-to-eat-and-drink-in-athens-greece/l-intro-1673379087.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679917654/Wanderlust/athens_spring_ppasp8.jpg'
     ],
     features: [],
     highTemps: [13, 14, 16, 20, 25, 29, 32, 32, 28, 23, 18, 15],
@@ -517,8 +517,8 @@ export default [
     latitude: 60.32,
     longitude: 24.96,
     description: 'Design-centric city with a lively atmosphere and island charm.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679918715/Wanderlust/helsinki_winter_mc9pp5.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679918715/Wanderlust/helsinki_summer_yppewg.jpg',
+    images: ['https://herfinland.com/wp-content/uploads/2019/01/winter-things-to-do-in-helsinki.jpg',
+      'https://www.whereandwhen.net/site/images/illustration/oualler/finlande-helsinki_643.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679918715/Wanderlust/helsinki_summer_yppewg.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679918716/Wanderlust/helsinki_summer2_qfyrjp.jpg'
     ],
@@ -526,23 +526,23 @@ export default [
     highTemps: [-2, -2, 2, 7, 14, 19, 21, 20, 15, 9, 4, 1],
     lowTemps: [-7, -7, -4, 1, 6, 11, 14, 13, 9, 4, 0, -4],
   },
-  {
-    name: 'Moscow',
-    country: 'Russia',
-    continent: 'Europe',
-    currency: 'Russian Ruble',
-    latitude: 50.93,
-    longitude: 0.53,
-    description: 'Historic city with grand architecture and rich cultural heritage.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679918890/Wanderlust/moscow_winter_is5ate.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679918891/Wanderlust/moscow_autumn_tdhu1j.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679918893/Wanderlust/moscow_spring_w2ujcr.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679918890/Wanderlust/moscow_summer_c2bija.jpg'
-    ],
-    features: [],
-    highTemps: [-5, -3, 2, 11, 19, 22, 24, 22, 16, 8, 1, -3],
-    lowTemps: [-10, -10, -5, 2, 8, 12, 14, 12, 7, 2, -3, -7],
-  },
+  // {
+  //   name: 'Moscow',
+  //   country: 'Russia',
+  //   continent: 'Europe',
+  //   currency: 'Russian Ruble',
+  //   latitude: 50.93,
+  //   longitude: 0.53,
+  //   description: 'Historic city with grand architecture and rich cultural heritage.',
+  //   images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679918890/Wanderlust/moscow_winter_is5ate.jpg',
+  //     'https://res.cloudinary.com/drrscrxod/image/upload/v1679918891/Wanderlust/moscow_autumn_tdhu1j.jpg',
+  //     'https://res.cloudinary.com/drrscrxod/image/upload/v1679918893/Wanderlust/moscow_spring_w2ujcr.jpg',
+  //     'https://res.cloudinary.com/drrscrxod/image/upload/v1679918890/Wanderlust/moscow_summer_c2bija.jpg'
+  //   ],
+  //   features: [],
+  //   highTemps: [-5, -3, 2, 11, 19, 22, 24, 22, 16, 8, 1, -3],
+  //   lowTemps: [-10, -10, -5, 2, 8, 12, 14, 12, 7, 2, -3, -7],
+  // },
   {
     name: 'Kyiv',
     country: 'Ukraine',
@@ -569,9 +569,9 @@ export default [
     longitude: 26.11,
     description: 'The Paris of the East with vibrant nightlife and cultural heritage.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679919222/Wanderlust/bucharest_winter_xvclvs.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919222/Wanderlust/bucharest_autumn_lgrzig.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919222/Wanderlust/bucharest_spring_ibbhbk.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919225/Wanderlust/bucharest_summer_m9xuff.jpg'
+      'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/104000/104366-Bucharest-And-Vicinity.jpg',
+      'https://content.r9cdn.net/rimg/dimg/02/2a/38330eba-city-25578-17f66349256.jpg?width=1366&height=768&xhint=1490&yhint=1292&crop=true'
     ],
     features: [],
     highTemps: [3, 7, 12, 19, 23, 27, 30, 30, 25, 17, 9, 4],
@@ -585,7 +585,7 @@ export default [
     latitude: 47.50,
     longitude: 19.04,
     description: 'Picturesque city with grand architecture and thermal baths.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679919416/Wanderlust/budapest_winter_ro47yt.jpg',
+    images: ['https://wallpapercave.com/wp/wp10183023.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919416/Wanderlust/budapest_autumn_y5xeee.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919416/Wanderlust/budapest_spring_vckfkf.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919416/Wanderlust/budapest_summer_reiymd.jpg'
@@ -602,9 +602,9 @@ export default [
     latitude: 36.82,
     longitude: 10.17,
     description: 'North African city with ancient ruins and coastal charm.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679919567/Wanderlust/tunis_winter_dx5gqw.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919568/Wanderlust/tunis_autumn_zldj3z.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919567/Wanderlust/tunis_summer_lbseul.jpg',
+    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679919568/Wanderlust/tunis_autumn_zldj3z.jpg',
+      'https://wp.inews.co.uk/sei_134138643',
+      'https://theluxurytraveller.com/wp-content/uploads/2020/01/FS-Tunis-145-1536x1123.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919567/Wanderlust/tunis_summer_lbseul.jpg'
     ],
     features: [],
@@ -621,8 +621,8 @@ export default [
     description: 'Moroccan city with vibrant souks and historic palaces.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679919680/Wanderlust/marrakesh_autumn_aj2nc3.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919679/Wanderlust/marrakesh_spring_lril3y.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919680/Wanderlust/marrakesh_summer_railgj.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919680/Wanderlust/marrakesh_summer_railgj.jpg'
+      'https://touristjourney.com/wp-content/uploads/2020/08/shutterstock_1384150292-scaled.jpg',
+      'https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/05/03/15/marrakech-hero.jpg'
     ],
     features: [],
     highTemps: [19, 20, 23, 25, 29, 33, 37, 37, 33, 28, 23, 20],
@@ -636,10 +636,10 @@ export default [
     latitude: -33.93,
     longitude: 18.42,
     description: 'South African coastal city with stunning views and rich history.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679919764/Wanderlust/cape_town_summer2_mnhauu.jpg',
+    images: ['https://media.timeout.com/images/105936767/image.jpg',
+      'https://resources.formula-e.pulselive.com/photo-resources/2023/02/20/042dd057-7157-4069-beb8-2aa3af8b21ba/Cape-Town.jpg?width=1440&height=810',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919764/Wanderlust/cape_town_summer_az9vx8.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919764/Wanderlust/cape_town_summer_az9vx8.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919764/Wanderlust/cape_town_summer_az9vx8.jpg'
+      'https://beta-people.gvi.co.uk/wp-content/uploads/2013/11/1990955891-2021-dec-16-10-35-19-000000-South-Africa-Cape-Town.jpg'
     ],
     features: [],
     highTemps: [29, 29, 27, 25, 22, 20, 20, 20, 21, 24, 25, 27],
@@ -655,8 +655,8 @@ export default [
     description: 'Mauritian capital with colonial architecture and tropical vibes.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679919846/Wanderlust/port_louis_summer2_psvlys.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919846/Wanderlust/port_louis_summer2_psvlys.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919846/Wanderlust/port_louis_summer_r3agri.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679919846/Wanderlust/port_louis_summer_r3agri.jpg'
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fc66011a6-22d9-11ec-a00c-ba7759562f04.jpg?crop=3972%2C2648%2C0%2C0',
+      'https://media.cntraveller.com/photos/611bf748042ccafe9a9aeb0b/16:9/w_2992,h_1683,c_limit/mauritius-gettyimages-115081730.jpg'
     ],
     features: [],
     highTemps: [31, 31, 30, 29, 28, 26, 25, 25, 26, 27, 29, 30],
@@ -704,31 +704,14 @@ export default [
     latitude: 28.64,
     longitude: 77.22,
     description: 'Capital city of India with iconic landmarks and rich culture.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679920194/Wanderlust/new_delhi2_n3yj2u.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920194/Wanderlust/new_delhi2_n3yj2u.jpg',
+    images: ['https://www.esl.co.uk/sites/default/files/city/esl-new-delhi-language-stay-hero.jpg',
+      'https://cdn.britannica.com/16/189816-050-5B006088/neighbourhood-Paharganj-New-Delhi-India.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920195/Wanderlust/new_delhi_rmq0ri.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920195/Wanderlust/new_delhi_rmq0ri.jpg'
     ],
     features: [],
     highTemps: [21, 24, 30, 37, 40, 39, 35, 34, 34, 33, 28, 23],
     lowTemps: [8, 10, 16, 21, 26, 28, 27, 26, 25, 19, 13, 8],
-  },
-  {
-    name: 'Mumbai',
-    country: 'India',
-    continent: 'Asia',
-    currency: 'Indian Rupee',
-    latitude: 19.07,
-    longitude: 72.88,
-    description: 'Cosmopolitan city with a mix of traditional and modern culture.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679920427/Wanderlust/mumbai_5_jqtoxm.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920427/Wanderlust/mumbai_3_uzpw31.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920360/Wanderlust/mumbai_2_y2ltjl.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920360/Wanderlust/mumbai_2_y2ltjl.jpg'
-    ],
-    features: [],
-    highTemps: [31, 32, 33, 33, 34, 32, 30, 30, 31, 34, 34, 32],
-    lowTemps: [17, 18, 21, 24, 27, 26, 25, 25, 25, 24, 21, 18],
   },
   {
     name: 'Goa',
@@ -738,9 +721,9 @@ export default [
     latitude: 15.47,
     longitude: 73.90,
     description: 'Indian state with sandy beaches and historic Portuguese architecture.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679920542/Wanderlust/goa_summer_zhcocj.jpg',
+    images: ['https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2022/11/08094949/Goa-Festival-2.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920542/Wanderlust/goa_summer_zhcocj.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920544/Wanderlust/goa_summer2_h0n4ip.jpg',
+      'https://i.dailymail.co.uk/1s/2022/06/07/08/58774831-0-image-a-3_1654587085793.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920544/Wanderlust/goa_summer2_h0n4ip.jpg'
     ],
     features: [],
@@ -757,8 +740,8 @@ export default [
     description: 'Nepalese city with ancient temples and Himalayan views.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679920655/Wanderlust/kathmandu_2_n7ntjg.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920656/Wanderlust/kathmandu_1_peoghs.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920655/Wanderlust/kathmandu_2_n7ntjg.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920655/Wanderlust/kathmandu_3_npkt2a.jpg'
+      'https://assets.vogue.in/photos/5ce431b346cf5953f8b18c74/master/pass/featured.2.jpg',
+      'https://images.squarespace-cdn.com/content/v1/55d729cfe4b00ab3960e7989/1631046058055-AK5GKSZVNT9NQQ5Z63NQ/Craig+Kassover1.jpg?format=2500w'
     ],
     features: [],
     highTemps: [18, 21, 25, 28, 29, 29, 28, 29, 28, 26, 23, 20],
@@ -773,9 +756,9 @@ export default [
     longitude: 98.40,
     description: 'Thai island with stunning beaches and vibrant nightlife.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679920752/Wanderlust/phuket_1_dz3r8f.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920751/Wanderlust/phuket_2_mj7eq4.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920751/Wanderlust/phuket_3_w55rxu.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920751/Wanderlust/phuket_3_w55rxu.jpg'
+      'https://www.letsphuket.com/wp-content/uploads/phuket1.jpg',
+      'https://lp-cms-production.imgix.net/2021-12/GettyImages-826977384.jpg?auto=format&q=75&w=3840'
     ],
     features: [],
     highTemps: [33, 34, 34, 34, 33, 32, 32, 32, 31, 32, 32, 32],
@@ -789,10 +772,10 @@ export default [
     latitude: 7.74,
     longitude: 98.77,
     description: 'Island paradise in Thailand with crystal-clear waters and natural beauty.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679920844/Wanderlust/phi_phi_island_2_uqiwxz.jpg',
+    images: ['https://youimg1.tripcdn.com/target/100u1f000001gq8i6324F.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920846/Wanderlust/phi_phi_island_1_ah5v05.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920844/Wanderlust/phi_phi_island_2_uqiwxz.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679920846/Wanderlust/phi_phi_island_1_ah5v05.jpg'
+      'https://a.cdn-hotels.com/gdcs/production22/d84/dfff6f95-5e76-4573-ad3f-4042d4c107c7.jpg'
     ],
     features: [],
     highTemps: [32, 33, 33, 33, 32, 31, 31, 31, 30, 30, 31, 31],
@@ -825,8 +808,8 @@ export default [
     description: 'Vietnamese city with historic landmarks and delicious cuisine.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679921042/Wanderlust/hanoi_1_uwhp1d.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679921042/Wanderlust/hanoi_2_wvtycs.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679921043/Wanderlust/hanoi_3_up9k8s.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679921042/Wanderlust/hanoi_2_wvtycs.jpg'
+      'https://www.abercrombiekent.co.uk/-/media/abercrombieandkent/images/page-header-images/asia/vietnam/hanoi-halong-bay-and-sapa/hanoi-halong-bay--sapa0000vietnamhalong-bayshutterstock243530122.jpg?w=1920&h=940',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679921043/Wanderlust/hanoi_3_up9k8s.jpg'
     ],
     features: [],
     highTemps: [20, 21, 23, 28, 32, 34, 33, 33, 32, 29, 26, 22],
@@ -841,9 +824,9 @@ export default [
     longitude: 101.69,
     description: 'Malaysian capital with modern architecture and vibrant street food.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679924503/Wanderlust/kuala_lumpur_1_obar8b.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679924502/Wanderlust/kuala_lumpur_2_e6qliy.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679924503/Wanderlust/kuala_lumpur_1_obar8b.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679924502/Wanderlust/kuala_lumpur_2_e6qliy.jpg'
+      'https://deih43ym53wif.cloudfront.net/batu-caves-entrance-malaysia-shutterstock_521296102_7e6c34b232.jpeg',
+      'https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt653561720b8df09b/61c04de5abe5293e657812b2/US_KualaLumpur_MY_Header.jpg',
+      'https://www.abercrombiekent.co.uk/-/media/abercrombieandkent/images/page-header-images/asia/malaysia-and-borneo/kuala-lumpur/kualalumpur_0000_malaysia-kuala-lumpur-shutterstock_240713407.jpg?w=1920&h=940'
     ],
     features: [],
     highTemps: [32, 33, 33, 33, 33, 33, 32, 32, 32, 32, 32, 32],
@@ -857,10 +840,10 @@ export default [
     latitude: 5.37,
     longitude: 100.25,
     description: 'Malaysian island with colonial heritage and street art.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679925222/Wanderlust/penang_3_h6e09u.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925223/Wanderlust/penang_2_z5wdcx.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925222/Wanderlust/penang_3_h6e09u.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925221/Wanderlust/penang_1_h4v9uq.jpg'
+    images: ['https://media.cntraveler.com/photos/6408b7ae3339d82dfef155eb/16:9/w_2560%2Cc_limit/Cheong%2520Fatt%2520Tze%2520-%2520The%2520Blue%2520Mansion%2520Central-Courtyard-2.jpg',
+      'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/41000/41310-Penang-National-Park.jpg',
+      'https://www.pocketnews.com.my/wp-content/uploads/2022/09/Third-Generation.jpg',
+      'https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt754ae6280305e90e/61c15954c52c5b292ce23d9d/US_Penang_MY_Header.jpg'
     ],
     features: [],
     highTemps: [32, 32, 32, 32, 32, 32, 31, 31, 31, 31, 31, 31],
@@ -876,8 +859,8 @@ export default [
     description: 'Nature retreat in Singapore with hiking trails and rustic charm.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679925367/Wanderlust/singapore_1_qnnz13.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679925368/Wanderlust/singapore_2_ty7us2.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925367/Wanderlust/singapore_1_qnnz13.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925368/Wanderlust/singapore_2_ty7us2.jpg'
+      'https://www.worldbeachguide.com/photos/palau-ubin-singapore.jpg',
+      'https://images.rove.me/w_1920,q_85/zec9830eludeknyvikio/singapore-ride-bikes-at-pulau-ubin.jpg'
     ],
     features: [],
     highTemps: [30, 32, 32, 32, 32, 32, 31, 31, 31, 32, 31, 30],
@@ -893,8 +876,8 @@ export default [
     description: 'Chinese capital with historic landmarks and modern architecture.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679925888/Wanderlust/beijing_winter_rneaag.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679925887/Wanderlust/beijing_2_ny5exl.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925888/Wanderlust/beijing_1_ytpacc.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925887/Wanderlust/beijing_2_ny5exl.jpg'
+      'https://cdn.britannica.com/03/198203-050-138BB1C3/entrance-Gate-of-Divine-Might-Beijing-Forbidden.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679925888/Wanderlust/beijing_1_ytpacc.jpg'
     ],
     features: [],
     highTemps: [2, 5, 12, 21, 27, 30, 31, 30, 26, 19, 10, 4],
@@ -911,7 +894,7 @@ export default [
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926219/Wanderlust/kyoto_winter_exjjhb.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926222/Wanderlust/kyoto_autumn_whjsmj.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926219/Wanderlust/kyoto_spring_lgnl4k.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926222/Wanderlust/kyoto_autumn_whjsmj.jpg'
+      'https://media.architecturaldigest.com/photos/5c3f984992ce212ce3f51233/master/w_1600%2Cc_limit/GettyImages-565448091.jpg'
     ],
     features: [],
     highTemps: [9, 10, 14, 20, 25, 28, 32, 33, 29, 23, 17, 11],
@@ -942,10 +925,10 @@ export default [
     latitude: 37.57,
     longitude: 126.98,
     description: 'Vibrant South Korean metropolis with street food and nightlife.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926444/Wanderlust/seoul_winter_md1bok.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926445/Wanderlust/seoul_autumn_xpgaao.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926443/Wanderlust/seoul_spring_cuu56j.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926446/Wanderlust/seoul_summer_bhux7h.jpg'
+    images: ['https://www.remotelands.com/travelogues/app/uploads/2019/09/Cold-Winter-Pick-Seoul-1.jpg',
+      'https://pix10.agoda.net/geo/city/14690/1_14690_02.jpg?ca=6&ce=1&s=1920x822',
+      'https://www.driver-group.com/userfiles/images/NewsImages/shutterstock_560728117%20(1).jpg',
+      'https://www.gsma.com/newsroom/wp-content/uploads//Korean-Mobile-IoT.jpg'
     ],
     features: [],
     highTemps: [1, 4, 10, 17, 23, 27, 28, 29, 25, 19, 11, 3],
@@ -961,8 +944,8 @@ export default [
     description: 'Philippine island with white sand beaches and crystal-clear waters.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926533/Wanderlust/boracay_2_xzwa4j.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926534/Wanderlust/boracay_1_przbtp.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926533/Wanderlust/boracay_2_xzwa4j.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926534/Wanderlust/boracay_1_przbtp.jpg'
+      'https://i.natgeofe.com/n/f2662f5e-fa1f-4fa7-a7db-00c8765cecaa/willys-rock-sunset-boracay-island-philippines_16x9.jpg',
+      'https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/12/22224603/boracay-travel-guide-philippines-beach.jpg'
     ],
     features: [],
     highTemps: [28, 29, 29, 27, 32, 31, 29, 30, 31, 30, 29, 28],
@@ -978,8 +961,8 @@ export default [
     description: 'Indonesian island with lush forests and ancient temples.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926639/Wanderlust/bali_1_ex3git.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926639/Wanderlust/bali_2_ilpsqp.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926639/Wanderlust/bali_1_ex3git.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926639/Wanderlust/bali_2_ilpsqp.jpg'
+      'https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg',
+      'https://media.cntraveler.com/photos/5c002dc9597f4e4be66f8f8e/2:1/w_2560%2Cc_limit/GettyImages-929838110.jpg'
     ],
     features: [],
     highTemps: [29, 30, 30, 32, 33, 31, 31, 31, 31, 31, 31, 30],
@@ -994,8 +977,8 @@ export default [
     longitude: 115.27,
     description: 'Balinese town with rice paddies and traditional crafts.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_1_jviiam.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_2_qtaam3.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_1_jviiam.jpg',
+      'https://twomonkeystravelgroup.com/wp-content/uploads/2021/01/DIY-Travel-Guide-to-Ubud-Bali-Indonesia-03.jpg',
+      'https://cdn.cnn.com/cnnnext/dam/assets/170424122747-ubud-bali-indonesia-guide-four-seasons-resort-bali-at-sayan-full-169.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_2_qtaam3.jpg'
     ],
     features: [],
@@ -1029,8 +1012,8 @@ export default [
     description: 'Discover stunning beaches, world-class wineries, and unique wildlife encounters.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927013/Wanderlust/perth_1_dckxut.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927015/Wanderlust/perth_2_dsfoci.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927013/Wanderlust/perth_1_dckxut.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927015/Wanderlust/perth_2_dsfoci.jpg'
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fa5bb1af8-d757-11ec-bfba-74fdf95f86cd.jpg?crop=3335%2C2223%2C1207%2C386',
+      'https://www.telegraph.co.uk/content/dam/Travel/Destinations/Oceania/Australia/Perth/perth-GettyImages-178291111.jpg'
     ],
     features: [],
     highTemps: [30, 31, 29, 25, 22, 19, 18, 19, 20, 22, 25, 28],
@@ -1062,8 +1045,8 @@ export default [
     longitude: 153.43,
     description: 'Enjoy the sun, surf, and theme parks of Australia’s playground, with breathtaking views.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927164/Wanderlust/gold_coast_2_gca8rd.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927164/Wanderlust/gold_coast_2_gca8rd.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927163/Wanderlust/gold_coast_1_izbktt.jpg',
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fcf6dcaf0-3f2e-11ed-a848-31b24887ed58.jpg?crop=4455%2C2970%2C785%2C8',
+      'https://content.r9cdn.net/rimg/dimg/b2/b6/89346d77-freereg-2001232-163f4a35d54.jpg?crop=true&width=1366&height=768&xhint=2020&yhint=1523',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927163/Wanderlust/gold_coast_1_izbktt.jpg'
     ],
     features: [],
@@ -1078,9 +1061,9 @@ export default [
     latitude: -27.47,
     longitude: 153.03,
     description: 'Discover the city’s relaxed charm, outdoor activities, and nearby wildlife sanctuaries.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927243/Wanderlust/brisbane_1_rxymrf.jpg',
+    images: ['https://www.telegraph.co.uk/content/dam/travel/Spark/ta-2019-20/brisbane-city-skyline.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927243/Wanderlust/brisbane_1_rxymrf.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927240/Wanderlust/brisbane_2_nbqufw.jpg',
+      'https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Brisbane-1.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927240/Wanderlust/brisbane_2_nbqufw.jpg'
     ],
     features: [],
@@ -1112,8 +1095,8 @@ export default [
     latitude: -45.03,
     longitude: 168.66,
     description: 'Experience thrilling outdoor adventures and stunning landscapes, with a laid-back vibe.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679927874/Wanderlust/queenstown_1_x1d2t8.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679927875/Wanderlust/queenstown_2_p8tzx4.jpg',
+    images: ['https://www.peppers.com.au/Portals/3/Images/Blog/2018/ThetopthingstodoinQueenstownthissummer/image2.jpg',
+      'https://www.twowanderingsoles.com/wp-content/uploads/2021/07/img_60ee7543edb23.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927874/Wanderlust/queenstown_1_x1d2t8.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927875/Wanderlust/queenstown_2_p8tzx4.jpg'
     ],
@@ -1146,8 +1129,8 @@ export default [
     latitude: 43.70,
     longitude: -79.42,
     description: 'Experience the city’s multicultural charm, impressive landmarks, and scenic waterfront.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928024/Wanderlust/toronto_winter_pgunmg.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928024/Wanderlust/toronto_autumn_qwgs8l.jpg',
+    images: ['https://media.blogto.com/articles/20221021-toronto-winter-forecast.jpeg?w=2048&cmd=resize_then_crop&height=1365&quality=70',
+      'https://www.med.unic.ac.cy/wp-content/uploads/toronto-73508_1920.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928024/Wanderlust/toronto_autumn_qwgs8l.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928025/Wanderlust/toronto_summer_ccksvr.jpg'
     ],
@@ -1163,7 +1146,7 @@ export default [
     latitude: 19.43,
     longitude: -99.13,
     description: 'Explore the city’s rich history, art, and cuisine, and visit ancient ruins and colorful markets.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928116/Wanderlust/mexico_city_2_plmmpw.jpg',
+    images: ['https://i.natgeofe.com/n/73d9e4e3-4884-4e93-ac41-6be6a90079f5/mexico-city-travel%20(1).jpg?w=2880&h=1920',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928116/Wanderlust/mexico_city_2_plmmpw.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928116/Wanderlust/mexico_city_1_crxoo3.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928117/Wanderlust/mexico_city_3_tiffuc.jpg'
@@ -1180,8 +1163,8 @@ export default [
     latitude: 25.77,
     longitude: -80.19,
     description: 'Experience the city’s glamorous beaches, vibrant nightlife, and cultural diversity.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_1_snjwjy.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_2_fdrnit.jpg',
+    images: ['https://a.travel-assets.com/findyours-php/viewfinder/images/res70/471000/471674-Miami.jpg',
+      'https://www.miamiandbeaches.com/getmedia/0bc680b3-ab3a-4690-a1f4-4aa138f31fde/South-Beach-Fisher-Island-aerial-1440x900.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_1_snjwjy.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_2_fdrnit.jpg'
     ],
@@ -1232,9 +1215,9 @@ export default [
     longitude: -77.34,
     description: 'Relax on the city’s white-sand beaches, explore its colonial history, and taste local cuisine.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929015/Wanderlust/nassau_1_of60xo.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929014/Wanderlust/nassau_2_z7qtr1.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929015/Wanderlust/nassau_1_of60xo.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929014/Wanderlust/nassau_2_z7qtr1.jpg'
+      'https://www.sandals.com/blog/content/images/2022/04/Nassau-The-Bahamas.jpg',
+      'https://www.sandals.com/blog/content/images/2022/04/Nassau-Bahamas-Aerial-View.jpg',
+      'https://www.sandals.co.uk/blog/content/images/2021/08/SRB_Beach4-18786.jpg'
     ],
     features: [],
     highTemps: [26, 26, 27, 28, 30, 32, 32, 33, 32, 30, 28, 27],
@@ -1250,8 +1233,8 @@ export default [
     description: 'Experience the city’s rich cultural heritage, explore Bob Marley’s birthplace, and enjoy local cuisine.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929111/Wanderlust/kingston_1_a33h4z.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929108/Wanderlust/kingston_2_od6ych.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929111/Wanderlust/kingston_1_a33h4z.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929108/Wanderlust/kingston_2_od6ych.jpg'
+      'https://cdn.britannica.com/15/93415-050-D97208F0/Devon-House-home-one-Kingston-millionaires-Jamaica.jpg',
+      'https://content.r9cdn.net/rimg/dimg/c5/77/d5f28d12-city-20407-164fcd4642a.jpg?width=1366&height=768&xhint=2011&yhint=1011&crop=true'
     ],
     features: [],
     highTemps: [31, 31, 31, 31, 32, 33, 33, 33, 33, 32, 32, 32],
@@ -1267,29 +1250,12 @@ export default [
     description: 'Discover the island’s pristine beaches, coral reefs, and laid-back Caribbean lifestyle.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929216/Wanderlust/ambergris_caye_1_ngalye.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929216/Wanderlust/ambergris_caye_2_glqll4.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929216/Wanderlust/ambergris_caye_1_ngalye.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929216/Wanderlust/ambergris_caye_2_glqll4.jpg'
+      'https://www.travelbelize.org/wp-content/uploads/2021/05/MGL5705.jpg',
+      'https://caribbeanlifestyle.com/wp-content/uploads/2020/10/Ambergris-by-Laminar-Media.jpg'
     ],
     features: [],
     highTemps: [27, 27, 28, 29, 31, 30, 30, 31, 31, 29, 28, 27],
     lowTemps: [20, 21, 22, 23, 24, 25, 24, 25, 24, 24, 22, 21],
-  },
-  {
-    name: 'Tikal',
-    country: 'Guatemala',
-    continent: 'North America',
-    currency: 'Quetzal',
-    latitude: 17.23,
-    longitude: -89.61,
-    description: 'Explore the ancient Mayan ruins and tropical rainforest of one of the world’s greatest archaeological sites.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929285/Wanderlust/tikal_1_ipcc1r.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929285/Wanderlust/tikal_2_qvmkf3.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929285/Wanderlust/tikal_1_ipcc1r.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929285/Wanderlust/tikal_2_qvmkf3.jpg'
-    ],
-    features: [],
-    highTemps: [28, 30, 33, 34, 35, 33, 33, 32, 32, 31, 30, 28],
-    lowTemps: [17, 18, 18, 20, 22, 22, 21, 22, 22, 21, 20, 18],
   },
   {
     name: 'Monteverde',
@@ -1299,10 +1265,10 @@ export default [
     latitude: 10.10,
     longitude: -83.45,
     description: 'Experience the cloud forest’s lush greenery, exotic wildlife, and thrilling zip-line adventures.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929332/Wanderlust/monteverde_2_t1rdud.jpg',
+    images: ['https://costa-rica-guide.com/wp-content/uploads/2015/04/PB080053.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929332/Wanderlust/monteverde_1_h0bzyk.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929332/Wanderlust/monteverde_2_t1rdud.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929332/Wanderlust/monteverde_1_h0bzyk.jpg'
+      'https://mediaim.expedia.com/destination/1/e1e84d638ee9bc3a942f2e9f724ba527.jpg',
+      'https://img.theculturetrip.com/wp-content/uploads/2020/12/hotel-spa-poco-a-poco.jpg'
     ],
     features: [],
     highTemps: [28, 28, 29, 29, 27, 26, 26, 26, 26, 26, 26, 27],
@@ -1318,8 +1284,8 @@ export default [
     description: 'Relax on the island’s pristine beaches, dive into its coral reefs, and taste local seafood.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929408/Wanderlust/roatan_2_jreyl7.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929406/Wanderlust/roatan_1_abhgh7.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929408/Wanderlust/roatan_2_jreyl7.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929406/Wanderlust/roatan_1_abhgh7.jpg'
+      'https://www.aboutroatanrealestate.com/wp-content/uploads/2019/01/bigstock-Roatan-Honduras-110106542.jpg',
+      'https://lp-cms-production.imgix.net/2022-06/Honduras-Roatan-Antonio-Busiello-GettyImages-1175191917-RFE.jpg?auto=format&q=75&w=3840'
     ],
     features: [],
     highTemps: [28, 29, 29, 31, 31, 32, 31, 32, 32, 30, 29, 28],
@@ -1333,8 +1299,8 @@ export default [
     latitude: 10.40,
     longitude: -75.51,
     description: 'Explore the city’s colonial charm, vibrant nightlife, and nearby beaches and islands.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_1_ezrv62.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_2_hfg8pw.jpg',
+    images: ['https://www.globeguide.ca/wp-content/uploads/2014/12/Cartagena-Colombia-scaled.jpg',
+      'https://mediaim.expedia.com/destination/1/2d925b68edff8855928174337ec11a1b.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_1_ezrv62.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_2_hfg8pw.jpg'
     ],
@@ -1350,10 +1316,10 @@ export default [
     latitude: 14.00,
     longitude: -61.01,
     description: 'Experience the city’s laid-back Caribbean charm, natural beauty, and local cuisine.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929624/Wanderlust/castries_2_c0foym.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929623/Wanderlust/castries_1_jcycfe.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929624/Wanderlust/castries_2_c0foym.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929623/Wanderlust/castries_1_jcycfe.jpg'
+    images: ['https://static.nationalgeographic.co.uk/files/styles/image_3200/public/cra95p.gif?w=1600',
+      'https://a.cdn-hotels.com/gdcs/production99/d55/f37a2a94-3d46-4c42-9160-a9a6071a6cf9.jpg',
+      'https://media.dertouristik.com/exports/KuoniUK/ImageGalleryLightboxLarge/498604_ImageGalleryLightboxLarge.jpg',
+      'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/244000/244198-St-Lucia.jpg'
     ],
     features: [],
     highTemps: [29, 29, 30, 30, 31, 31, 31, 31, 31, 31, 30, 29],
@@ -1369,8 +1335,8 @@ export default [
     description: 'Experience the awe-inspiring Inca ruins and stunning Andean landscapes of one of the world’s most iconic sites.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679929880/Wanderlust/machu_picchu_1_kdo4ec.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929881/Wanderlust/machu_picchu_2_mc4rwr.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929880/Wanderlust/machu_picchu_1_kdo4ec.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679929881/Wanderlust/machu_picchu_2_mc4rwr.jpg'
+      'https://m.fourseasons.com/alt/img-opt/~70..248,5333-49,4000-2502,9333-1877,2000/publish/content/dam/fourseasons/images/web/JTT/JTT_394_original.jpg',
+      'https://prod.static9.net.au/fs/f1ab49bd-0a55-423c-9857-982750be8508'
     ],
     features: [],
     highTemps: [13, 14, 14, 12, 11, 10, 9, 9, 9, 10, 11, 12],
@@ -1384,10 +1350,10 @@ export default [
     latitude: -34.61,
     longitude: -58.38,
     description: 'Experience the city’s vibrant culture, delicious cuisine, and tango-filled nightlife.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679930275/Wanderlust/buenos_aires_1_e1xdjv.jpg',
+    images: ['https://i.natgeofe.com/n/a1e26857-c047-436e-b8cb-7279820f12db/laboca-buenosaires-argentina_4x3.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930274/Wanderlust/buenos_aires_2_oecqkj.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930275/Wanderlust/buenos_aires_1_e1xdjv.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930274/Wanderlust/buenos_aires_2_oecqkj.jpg'
+      'https://media.cntraveler.com/photos/5b0457be7f70e97cf7c0de9a/2:1/w_2560%2Cc_limit/Buenos-Aires_GettyImages-507373482.jpg'
     ],
     features: [],
     highTemps: [29, 28, 26, 22, 19, 16, 15, 17, 18, 22, 25, 28],
@@ -1403,8 +1369,8 @@ export default [
     description: 'Discover the city’s colonial architecture, scenic waterfront, and lively cultural scene.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679930340/Wanderlust/montevideo_1_npznrm.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930341/Wanderlust/montevideo_2_bix8tf.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930340/Wanderlust/montevideo_1_npznrm.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930341/Wanderlust/montevideo_2_bix8tf.jpg'
+      'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/64000/64776-Montevideo.jpg',
+      'https://images.squarespace-cdn.com/content/v1/5d1a28b95422a10001b1aada/1650428528797-F9Q3I7AUARFID608S8AQ/montevideo.png'
     ],
     features: [],
     highTemps: [28, 27, 26, 23, 19, 16, 15, 17, 18, 21, 24, 27],
@@ -1418,10 +1384,10 @@ export default [
     latitude: 12.57,
     longitude: -70.03,
     description: 'A stunning Caribbean paradise with crystal-clear waters, white sand beaches, and endless sunshine.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679930413/Wanderlust/palm_beach_1_kra8cy.jpg',
+    images: ['https://www.casiola.com/wp-content/uploads/2022/03/shutterstock_701133862.webp',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930415/Wanderlust/palm_beach_2_cq26jg.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930413/Wanderlust/palm_beach_1_kra8cy.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930415/Wanderlust/palm_beach_2_cq26jg.jpg'
+      'https://purebreaks.com/wp-content/uploads/2021/06/sunset_huts.jpg'
     ],
     features: [],
     highTemps: [30, 30, 31, 31, 32, 32, 32, 33, 33, 32, 31, 30],
@@ -1435,9 +1401,9 @@ export default [
     latitude: -16.35,
     longitude: -56.67,
     description: 'Experience the world’s largest wetland, with its diverse wildlife, stunning scenery, and outdoor adventures.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679930512/Wanderlust/pantanal_02_h5j8pv.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930513/Wanderlust/pantanal_01_gesp9t.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679930512/Wanderlust/pantanal_02_h5j8pv.jpg',
+    images: ['https://landedtravel.com/wp-content/uploads/2020/02/Private-Custom-Travel-Design-Brazil-Pantanal-Howler-Monkey.jpg',
+      'https://images.takeshape.io/86ce9525-f5f2-4e97-81ba-54e8ce933da7/dev/dc214b0f-f0da-4257-ac95-1faa020a8613/584-Pantanal_jaguar-Eco584-CC-2015.jpg',
+      'https://lp-cms-production.imgix.net/2019-06/79387433.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930513/Wanderlust/pantanal_01_gesp9t.jpg'
     ],
     features: [],
@@ -1453,9 +1419,9 @@ export default [
     longitude: -68.32,
     description: 'Ushuaia is the southernmost city in the world and is surrounded by breathtaking mountains, glaciers, and wildlife.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936091/Wanderlust/ushuaia_04_tuuoe6.jpg',
+      'https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/ushuaia-1.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936094/Wanderlust/ushuaia_03_aqjd5x.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936095/Wanderlust/ushuaia_01_jgo2an.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936094/Wanderlust/ushuaia_02_xmxrfd.jpg'
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936095/Wanderlust/ushuaia_01_jgo2an.jpg'
     ],
     features: [],
     highTemps: [14, 14, 12, 9, 7, 4, 4, 6, 8, 10, 12, 13],
@@ -1469,9 +1435,9 @@ export default [
     latitude: -0.23,
     longitude: -78.52,
     description: 'Colonial architecture, vibrant culture, volcanoes and cloud forests.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936269/Wanderlust/quito_1_evmenh.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936269/Wanderlust/quito_3_xklsd2.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936273/Wanderlust/quito_2_wwwnpl.jpg',
+    images: ['https://deih43ym53wif.cloudfront.net/cotopaxi-el-panecillo-quito-ecuador-shutterstock_535492369_d3ba850037.jpeg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936269/Wanderlust/quito_1_evmenh.jpg',
+      'https://lp-cms-production.imgix.net/features/2018/06/Quito_Ecuador-56f41a5bc901.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936269/Wanderlust/quito_3_xklsd2.jpg'
     ],
     features: [],
@@ -1488,8 +1454,8 @@ export default [
     description: 'Surreal landscape of rock formations, geysers, and stargazing opportunities.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936401/Wanderlust/atacama_desert_2_llplnh.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936399/Wanderlust/atacama_desert_1_paso8d.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936401/Wanderlust/atacama_desert_2_llplnh.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936399/Wanderlust/atacama_desert_1_paso8d.jpg'
+      'https://www.travelandleisure.com/thmb/iFKAeI4oG43bldEvKG0-1tBxSnw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/02-flamingos-atacama-chile-ATACAMA1217-5bc318fa7676474db0bc4d0d4f188346.jpg',
+      'https://j5t6n2w7.rocketcdn.me/wp-content/uploads/2019/06/Cielo-Atacama-2.jpg'
     ],
     features: [],
     highTemps: [25, 24, 24, 23, 22, 21, 21, 22, 23, 24, 24, 24],
@@ -1503,10 +1469,10 @@ export default [
     latitude: -20.46,
     longitude: -66.83,
     description: 'World\'s largest salt flat, natural beauty and unique wildlife.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936492/Wanderlust/salar_de_uyuni_3_qb5u5g.jpg',
+    images: ['https://www.tourist-destinations.net/wp-content/uploads/2013/07/Salar-de-Uyuni-Bolivia-sunset-photo-wallpaper-1920x1080-1.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936494/Wanderlust/salar_de_uyuni_2_fsizv0.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936493/Wanderlust/salar_de_uyuni_1_lr8ndu.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936494/Wanderlust/salar_de_uyuni_2_fsizv0.jpg'
+      'https://www.voydeviaje.com.ar/resizer/IeV6kY8ZCYsd4BifSNxk07MWumU=/arc-anglerfish-arc2-prod-grupoclarin/public/L3GBYKVA5NBAPJ33O2Y5BBHQNM.jpg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936493/Wanderlust/salar_de_uyuni_1_lr8ndu.jpg'
     ],
     features: [],
     highTemps: [20, 19, 20, 20, 21, 20, 19, 21, 20, 21, 21, 21],
@@ -1520,10 +1486,10 @@ export default [
     latitude: -0.94,
     longitude: -90.95,
     description: 'Wonderland of biodiversity, featuring unique animals like giant tortoises.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936644/Wanderlust/galapagos_islands_2_zngzhz.jpg',
+    images: ['https://www.vayaadventures.com/wp-content/uploads/Galapagos-Sea-Turtle-1.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936646/Wanderlust/galapagos_islands_1_ljjtcu.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936644/Wanderlust/galapagos_islands_2_zngzhz.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936646/Wanderlust/galapagos_islands_1_ljjtcu.jpg'
+      'https://gulliver.com.ec/wp-content/uploads/2018/11/galapagos-islands.jpg'
     ],
     features: [],
     highTemps: [30, 30, 30, 31, 30, 29, 26, 27, 27, 27, 29, 30],
@@ -1537,10 +1503,10 @@ export default [
     latitude: -25.67,
     longitude: -54.45,
     description: 'Jaw-dropping natural wonder of cascading waterfalls and lush rainforest.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_2_av07hp.jpg',
+    images: ['https://cdn2.wanderlust.co.uk/media/1084/iguazu.jpg?anchor=center&mode=crop&width=1200&height=0&rnd=132150259210000000',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_3_w0ryyz.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_1_owabem.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_3_w0ryyz.jpg'
+      'https://media.cnn.com/api/v1/images/stellar/prod/150311151023-iguazu-brazilian-side-7.jpg?q=w_1600,h_1013,x_0,y_0,c_fill'
     ],
     features: [],
     highTemps: [32, 32, 32, 29, 24, 23, 24, 25, 26, 29, 30, 31],
@@ -1554,8 +1520,8 @@ export default [
     latitude: -6.16,
     longitude: 39.20,
     description: 'Tropical paradise with pristine beaches, coral reefs, and historic Stone Town.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_01_ij6w08.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_02_adqce6.jpg',
+    images: ['https://www.contiki.com/media/k3fpzg0y/zanzibar-beach-escape-4-day-trip-3.jpg',
+      'https://www.contiki.com/media/k3fpzg0y/zanzibar-beach-escape-4-day-trip-3.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_01_ij6w08.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_02_adqce6.jpg'
     ],
@@ -1572,8 +1538,8 @@ export default [
     longitude: 31.21,
     description: 'Iconic Great Sphinx and ancient pyramids, glimpse into one of the world\'s oldest civilizations.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679938797/Wanderlust/giza_2_ibouo1.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938801/Wanderlust/giza_1_zcamwg.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938797/Wanderlust/giza_2_ibouo1.jpg',
+      'https://lp-cms-production.imgix.net/2020-11/GettyRF_1085205362.jpg?auto=format&q=75&w=3840',
+      'https://s27363.pcdn.co/wp-content/uploads/2020/04/Pyramids-for-Facebook.jpg.optimal.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679938801/Wanderlust/giza_1_zcamwg.jpg'
     ],
     features: [],
@@ -1590,8 +1556,8 @@ export default [
     description: 'One of the world\'s largest waterfalls, surrounded by a stunning rainforest and offering adventurous activities.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679938920/Wanderlust/victoria_falls_2_pbstc2.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679938912/Wanderlust/victoria_falls_1_objzjc.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938920/Wanderlust/victoria_falls_2_pbstc2.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679938912/Wanderlust/victoria_falls_1_objzjc.jpg'
+      'https://media.cntraveler.com/photos/5de7c7b4d606100008e74137/16:9/w_2560%2Cc_limit/MAG20_JAN_TR0120_Zimbabwe11.jpg',
+      'https://africanbushcamps.com/wp-content/uploads/2018/05/Victoria-Falls_03.jpg'
     ],
     features: [],
     highTemps: [30, 30, 30, 30, 28, 25, 25, 29, 32, 34, 33, 31],
@@ -1607,8 +1573,8 @@ export default [
     description: 'Home to endangered mountain gorillas, featuring breathtaking views of lush rainforest, volcanic mountains, and crater lakes.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939032/Wanderlust/volcanoes_national_park_rwanda_2_khxlcd.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939028/Wanderlust/volcanoes_national_park_rwanda_1_e8tatn.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939032/Wanderlust/volcanoes_national_park_rwanda_2_khxlcd.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939028/Wanderlust/volcanoes_national_park_rwanda_1_e8tatn.jpg'
+      'https://www.tripsavvy.com/thmb/xJ8JCEcLAxhz9D1tSTIS9BxPPUQ=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1257695164-b0a337e4728443bf8c86b4087cf27712.jpg',
+      'https://www.andbeyond.com/wp-content/uploads/sites/5/Image-5-C-BISATE-LODGE.jpg'
     ],
     features: [],
     highTemps: [28, 27, 27, 25, 26, 26, 27, 28, 27, 27, 26, 26],
@@ -1624,8 +1590,8 @@ export default [
     description: 'Wildlife enthusiast\'s dream, abundant populations of lions, elephants, zebras, and other animals roaming the savannah.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939187/Wanderlust/masai_mara_kenya_1_qmoqe6.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939178/Wanderlust/masai_mara_kenya_2_w6xfx0.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939187/Wanderlust/masai_mara_kenya_1_qmoqe6.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939178/Wanderlust/masai_mara_kenya_2_w6xfx0.jpg'
+      'https://upload.wikimedia.org/wikipedia/commons/1/17/Masai_Mara_at_Sunset.jpg',
+      'https://www.masaimara.com/assets/img/masai-mara.jpg'
     ],
     features: [],
     highTemps: [26, 27, 27, 25, 24, 23, 22, 22, 25, 26, 24, 25],
@@ -1641,8 +1607,8 @@ export default [
     description: 'UNESCO World Heritage Site, unique ecosystem of lions, hyenas, and flamingos in a volcanic caldera.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939256/Wanderlust/ngorongoro_crater_tanzania_1_kou7lr.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939257/Wanderlust/ngorongoro_crater_tanzania_02_xk73aw.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939256/Wanderlust/ngorongoro_crater_tanzania_1_kou7lr.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939257/Wanderlust/ngorongoro_crater_tanzania_02_xk73aw.jpg'
+      'https://www.andbeyond.com/wp-content/uploads/sites/5/ngorongoro-crater-floor-teaming-with-game.jpg',
+      'https://www.abercrombiekent.co.uk/-/media/abercrombieandkent/images/accommodation/africa/tanzania/ngorongoro-crater-lodge-1.jpg?la=en&hash=2F9F07ED2B46DB4BFF9D35BC7CD2449B3CB62DA2'
     ],
     features: [],
     highTemps: [29, 29, 28, 26, 23, 23, 23, 24, 26, 27, 27, 28],
@@ -1656,10 +1622,10 @@ export default [
     latitude: -12.93,
     longitude: 34.30,
     description: 'Crystal-clear lake surrounded by white sand beaches and lush forests.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939307/Wanderlust/lake_malawi_1_bhwalr.jpg',
+    images: ['https://yellowzebrasafaris.com/media/41513/nkwichi-canoeing-malawi.jpg?anchor=center&mode=crop&width=2048&height=1024&format=jpg&rnd=132798904080000000',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939319/Wanderlust/lake_malawi_2_jde4og.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939307/Wanderlust/lake_malawi_1_bhwalr.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939319/Wanderlust/lake_malawi_2_jde4og.jpg'
+      'https://media.audleytravel.com/-/media/images/home/africa/malawi/places/istock_508580272_lake_malawi_800x2400.jpg',
+      'https://wheretheroadforks.com/wp-content/uploads/2018/12/lake-malawi-3-1.jpg'
     ],
     features: [],
     highTemps: [27, 27, 27, 27, 26, 24, 24, 25, 28, 30, 30, 28],
@@ -1675,8 +1641,8 @@ export default [
     description: 'Peaceful beach town with coral reefs, marine wildlife, and nearby Marine National Park.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939417/Wanderlust/watamu_kenya_1_a8rsjm.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939417/Wanderlust/watamu_kenya_2_z9sftw.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939417/Wanderlust/watamu_kenya_1_a8rsjm.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939417/Wanderlust/watamu_kenya_2_z9sftw.jpg'
+      'https://nostalgicsafaris.com/wp-content/uploads/2020/10/kenya-coast-02_watamu.jpg',
+      'https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,g_face/hj-web/2020/10/Hemingways-Watamu-Property-View-004-113752.jpg'
     ],
     features: [],
     highTemps: [31, 31, 32, 31, 29, 28, 27, 28, 28, 30, 31, 31],
@@ -1692,8 +1658,8 @@ export default [
     description: 'Scenic coastal city with lush tropical forests, waterfalls, and natural swimming hole.',
     images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939488/Wanderlust/apia_samoa_1_duq4ag.webp',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939486/Wanderlust/apia_samoa_02_lmmslg.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939488/Wanderlust/apia_samoa_1_duq4ag.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939486/Wanderlust/apia_samoa_02_lmmslg.webp'
+      'https://www.backpackerbanter.com/blog/wp-content/uploads/2020/05/travelling-samoa-islands-guide-tips-things-to-do-3-1.jpg',
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/a9/05/ef/caption.jpg?w=1600&h=900&s=1'
     ],
     features: [],
     highTemps: [31, 31, 31, 29, 29, 30, 29, 30, 28, 29, 31, 31],
@@ -1724,9 +1690,9 @@ export default [
     latitude: 45.42,
     longitude: 6.64,
     description: 'World-renowned ski resort with powdery slopes, luxury chalets, and stunning mountain vistas.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679939831/Wanderlust/courchevel_winter_lk9ix7.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679939831/Wanderlust/courchevel_autumn_qjoioa.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940322/Wanderlust/courchevel_spring_akribx.jpg',
+    images: ['https://www.johansens.com/wp-content/uploads/2017/12/Courchevel-1850-scaled.jpg',
+      'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/492000/492924-courchevel-ski-resort.jpg',
+      'https://www.finest-holidays.com/images2018/slideshows/cities/Courchevel-1850/1920/Courchevel1850.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939830/Wanderlust/courchevel_summer_kofk4h.jpg'
     ],
     features: [],
@@ -1758,8 +1724,8 @@ export default [
     latitude: 46.54,
     longitude: 12.14,
     description: 'Cortina D\'Ampezzo in the Italian Dolomites is a skiing and hiking paradise with stunning alpine scenery and charming mountain villages.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679940017/Wanderlust/cortina_winter_ygb1bq.webp',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940017/Wanderlust/cortina_autumn_hgl9gn.jpg',
+    images: ['https://www.skifun.eu/slir/w1600h800-p1-c1600.800/uploads/galleries/1525/Place,-Cortina-D-Ampezzo-19011.jpg',
+      'https://www.snowmagazine.com/images/ski-resorts/italy/cortina%20dampezzo%20ski%20resort%20italy%20credit%20istock.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940016/Wanderlust/cortina_spring_zdxs97.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940016/Wanderlust/cortina_summer_zcgdek.jpg'
     ],
@@ -1792,10 +1758,10 @@ export default [
     latitude: 40.58,
     longitude: -111.66,
     description: 'Snowbird, Utah is a premier ski destination with over 500 inches of snow annually and breathtaking views of the Wasatch Mountains.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679940196/Wanderlust/snowbird_utah_winter_ackyc8.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940583/Wanderlust/snowbird_utah_autumn_airiux.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940548/Wanderlust/snowbird_utah_spring_fo9bgu.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940200/Wanderlust/snowbird_utah_summer_ddyprc.jpg'
+    images: ['https://pbs.twimg.com/media/FpST3a9aQAc999M?format=jpg&name=4096x4096',
+      'https://i.pinimg.com/originals/8e/0a/38/8e0a38865c58dcbf148519b437d415a0.jpg',
+      'https://www.snowpine.com/content/uploads/2021/08/snowbird-resort-6.jpeg',
+      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940583/Wanderlust/snowbird_utah_autumn_airiux.jpg'
     ],
     features: [],
     highTemps: [0, 0, 3, 6, 12, 18, 23, 22, 17, 10, 3, 0],
@@ -1826,9 +1792,9 @@ export default [
     latitude: 36.70,
     longitude: 137.86,
     description: 'Hakuba, Japan is a winter wonderland with premier ski resorts, hot springs, and breathtaking views of the Japanese Alps.',
-    images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679940476/Wanderlust/hakuba_winter_wbrmch.jpg',
-      'https://res.cloudinary.com/drrscrxod/image/upload/v1679940474/Wanderlust/hakuba_summer_dgbcso.jpg',
+    images: ['https://res.cloudinary.com/jnto/image/upload/w_2560,h_1707,c_fill,f_auto,fl_lossy,q_60/v1/media/filer_public/07/68/0768e561-b002-4ee5-8bc1-85a4c5cf9c95/hakuba_valley_zqdlzu',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940475/Wanderlust/hakuba_spring_oksxsq.jpg',
+      'https://cdn.cheapoguides.com/wp-content/uploads/sites/3/2021/08/hakuba-summer-happo-pond-lake-iStock-1154513441.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940474/Wanderlust/hakuba_summer_dgbcso.jpg'
     ],
     features: [],
