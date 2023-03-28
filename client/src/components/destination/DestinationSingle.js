@@ -4,17 +4,18 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEarthAmericas, faWallet, faCoins, faCommentDots, faMapLocationDot, faPersonHiking, faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import mapboxgl from 'mapbox-gl'
 
 const DestinationIndex = () => {
 
   const [error, setError] = useState('')
   const [destination, setDestination] = useState(null)
+  const [sliderValue, setSliderValue] = useState(4)
 
   const { id } = useParams()
 
   // ! On Mount
   useEffect(() => {
-    // This function will get our bread data and save it to the bread state
     const getDestination = async () => {
       try {
         const { data } = await axios.get(`/api/destinations/${id}`)
@@ -27,6 +28,29 @@ const DestinationIndex = () => {
     }
     getDestination()
   }, [id])
+
+  useEffect(() => {
+    const getMap = async () => {
+      try {
+        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
+        const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v12',
+          // center: [-74.5, 40],
+          center: [destination.longitude, destination.latitude],
+          zoom: 10,
+        })
+      } catch (err) {
+        console.log(err)
+        setError(err.message)
+      }
+    }
+    getMap()
+  })
+
+  const handleSliderChange = (e) => {
+    setSliderValue(e.target.value)
+  }
 
   return (
     <>
@@ -73,16 +97,12 @@ const DestinationIndex = () => {
                   </div>
                 }
               </div>
-              <div id="forecast-container">Forecast data goes here</div>
+              {/* <div id="forecast-container">Forecast data goes here</div> */}
+              <div id="map"></div>
             </section>
             <section id="attractions">
               <div id="attraction-container">
                 <h3 className="first-info">Attractions</h3>
-                {/* <ul className="fa-ul">
-                  <li><span className="fa-li"><i className="restaurants"></i></span>{destination.features[0]}</li>
-                  <li><span className="fa-li"><i className="activites"></i></span>{destination.features[1]}</li>
-                  <li><span className="fa-li"><i className="sightseeing"></i></span>{destination.features[2]}</li>
-                </ul> */}
                 <div className="icon-container first-info">
                   <div className="icon sightseeing"><FontAwesomeIcon icon={faMapLocationDot} /></div><div>{destination.features[2]}Sightseeing goes here...  </div>
                 </div>
@@ -93,24 +113,40 @@ const DestinationIndex = () => {
                   <div className="icon restaurants"><FontAwesomeIcon icon={faUtensils} /></div><div>{destination.features[0]}Restaurants goes here...</div>
                 </div>
               </div>
-              <div id="map-container">
-                MAP
-              </div>
+              <div id="forecast-container">Forecast data goes here</div>
             </section>
-            <section className="reviews">
-              {destination.reviews.length > 0 ?
-                destination.reviews.map((review, i) => {
-                  return (
-                    <div key={i}>
-                      <h5>{review.title}</h5>
-                      <p className="reviewText">{review.text}</p>
-                      <div><span className="reviewOwner">{review.owner.username}</span><span className="rating">{'⭐️'.repeat(review.rating)}</span></div>
-                    </div>
-                  )
-                })
-                :
-                'Not yet reviewed'
-              }
+            <section id="reviews">
+              <div id="reviews-container">
+                {destination.reviews.length > 0 ?
+                  destination.reviews.map((review, i) => {
+                    const date = new Date(review.createdAt)
+                    const shortDate = date.toLocaleDateString()
+                    return (
+                      <div className="individual-review" key={i}>
+                        <h3 className="first-info">{review.title}</h3>
+                        <p className="reviewText">{review.text}</p>
+                        <div><span className="reviewOwner">{review.owner.username}</span><span className="rating">{'⭐️'.repeat(review.rating)}</span><span className="created-date">{shortDate}</span></div>
+                        {/* <p className="created-date">{shortDate}</p> */}
+                        <hr />
+                      </div>
+                    )
+                  })
+                  :
+                  'Not yet reviewed'
+                }
+              </div>
+              <div id="add-review-container">
+                <h3 className="first-info">Add a review...</h3>
+                <form>
+                  <label htmlFor="title">Summary:</label>
+                  <input type="text" id="title" name="title" placeholder={`Summary of ${destination.name}`}/>
+                  <label htmlFor="review">Review:</label>
+                  <input type="textarea" id="review" name="review" placeholder={`Post your review of ${destination.name}`}/>
+                  <label htmlFor="rating">Rating: {sliderValue}</label>
+                  <input type="range" name="slider" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleSliderChange}/>
+                </form>
+                <button id="add-review">Add</button>
+              </div>
             </section>
           </>
         }
