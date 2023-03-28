@@ -44,9 +44,18 @@
   }
 }
 
-#common-container, #forecast-container, #attraction-container {
+#forecast-container, #attraction-container {
   width: 50%;
   // border: 1px solid black;
+}
+
+#common-container {
+  width: 30%;
+}
+
+#map {
+  width: 70%;
+  margin-top: 1em;
 }
 
 .first-info {
@@ -63,16 +72,6 @@
   margin-right: 0.5em;
 }
 
-// #attraction-container {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: baseline;
-// }
-
 #attractions .icon-container {
   margin-top: 0.5em;
 }
-
-// .sightseeing, .activities, .restaurants {
-//   margin-top: 0.5em;
-// }

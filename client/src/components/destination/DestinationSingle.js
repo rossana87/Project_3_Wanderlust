@@ -4,6 +4,15 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEarthAmericas, faWallet, faCoins, faCommentDots, faMapLocationDot, faPersonHiking, faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons'
+import mapboxgl from 'mapbox-gl'
+
+// mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
+// const map = new mapboxgl.Map({
+//   container: 'map',
+//   style: 'mapbox://styles/mapbox/streets-v12',
+//   center: [-74.5, 40],
+//   zoom: 9,
+// })
 
 const DestinationIndex = () => {
 
@@ -27,6 +36,39 @@ const DestinationIndex = () => {
     }
     getDestination()
   }, [id])
+
+  useEffect(() => {
+    // This function will get our bread data and save it to the bread state
+    const getMap = async () => {
+      try {
+        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
+        const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v12',
+          // center: [-74.5, 40],
+          center: [destination.longitude, destination.latitude],
+          zoom: 10,
+        })
+      } catch (err) {
+        console.log(err)
+        setError(err.message)
+      }
+    }
+    getMap()
+  })
+
+  // const updateMap = () => {
+
+  //   const long = destination.longitude
+  //   const map = new mapboxgl.Map({
+  //         container: 'map',
+  //         style: 'mapbox://styles/mapbox/streets-v12',
+  //         // center: [-74.5, 40],
+  //         center: [, 40],
+  //         zoom: 9,
+  //   })
+  // }
+  
 
   return (
     <>
@@ -73,7 +115,8 @@ const DestinationIndex = () => {
                   </div>
                 }
               </div>
-              <div id="forecast-container">Forecast data goes here</div>
+              {/* <div id="forecast-container">Forecast data goes here</div> */}
+              <div id="map"></div>
             </section>
             <section id="attractions">
               <div id="attraction-container">
@@ -93,9 +136,12 @@ const DestinationIndex = () => {
                   <div className="icon restaurants"><FontAwesomeIcon icon={faUtensils} /></div><div>{destination.features[0]}Restaurants goes here...</div>
                 </div>
               </div>
-              <div id="map-container">
-                MAP
-              </div>
+              {/* <div id="map"></div> */}
+              <div id="forecast-container">Forecast data goes here</div>
+            </section>
+            <section className="map">
+              This should be the map
+              {/* <div id="map"></div> */}
             </section>
             <section className="reviews">
               {destination.reviews.length > 0 ?
