@@ -2,6 +2,8 @@ import Nav from '../common/Nav'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEarthAmericas, faWallet, faCoins, faCommentDots, faMapLocationDot, faPersonHiking, faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons'
 
 const DestinationIndex = () => {
 
@@ -32,46 +34,41 @@ const DestinationIndex = () => {
       <main>
         {destination &&
           <>
-            <section id="hero" style={{ backgroundImage: `url(${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]})` }}>
+            <section id="hero" style={{ backgroundImage: `url("${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]}")` }}>
               <h1>{destination.name}</h1>
               <p>{destination.description}</p>
             </section>
             <section id="common">
               <div id="common-container">
-                <div className='info'>
-                  <div><img src="" alt="countryIcon" /></div>
-                  <div>
-                    <h3>Country</h3>
-                    {destination.country}
+                <div className="info">
+                  <h3 className="first-info">Country</h3>
+                  <div className="icon-container">
+                    <div className="icon"><FontAwesomeIcon icon={faEarthAmericas} /></div><div>{destination.country}, {destination.continent}</div>
                   </div>
                 </div>
-                <div className='info'>
-                  <div><img src="" alt="continentIcon" /></div>
-                  <div>
-                    <h3>Continent</h3>
-                    {destination.continent}
-                  </div>
-                </div>
-                <div className='info'>
-                  <div><img src="" alt="currencyIcon" /></div>
+                <div className="info">
                   <div>
                     <h3>Currency</h3>
-                    {destination.currency}
+                    <div className="icon-container">
+                      <div className="icon"><FontAwesomeIcon icon={faWallet} /></div><div>{destination.currency}</div>
+                    </div>
                   </div>
                 </div>
-                <div className='info'>
-                  <div><img src="" alt="currencyIcon" /></div>
+                <div className="info">
                   <div>
                     <h3>Price</h3>
-                    {destination.price}
+                    <div className="icon-container">
+                      <div className="icon"><FontAwesomeIcon icon={faCoins} /></div><div>{destination.price} $$$</div>
+                    </div>
                   </div>
                 </div>
                 {destination.averageRating &&
-                  <div className='info'>
-                    <div><img src="" alt="ratingIcon" /></div>
+                  <div className="info">
                     <div>
                       <h3>Average Rating</h3>
-                      {destination.averageRating}
+                      <div className="icon-container">
+                        <div className="icon"><FontAwesomeIcon icon={faCommentDots} /></div><div>{destination.averageRating}</div>
+                      </div>
                     </div>
                   </div>
                 }
@@ -80,11 +77,21 @@ const DestinationIndex = () => {
             </section>
             <section id="attractions">
               <div id="attraction-container">
-                <ul className="fa-ul">
+                <h3 className="first-info">Attractions</h3>
+                {/* <ul className="fa-ul">
                   <li><span className="fa-li"><i className="restaurants"></i></span>{destination.features[0]}</li>
                   <li><span className="fa-li"><i className="activites"></i></span>{destination.features[1]}</li>
                   <li><span className="fa-li"><i className="sightseeing"></i></span>{destination.features[2]}</li>
-                </ul>
+                </ul> */}
+                <div className="icon-container first-info">
+                  <div className="icon sightseeing"><FontAwesomeIcon icon={faMapLocationDot} /></div><div>{destination.features[2]}Sightseeing goes here...  </div>
+                </div>
+                <div className="icon-container">
+                  <div className="icon activities"><FontAwesomeIcon icon={faPersonHiking} /></div><div>{destination.features[1]}Activities goes here...</div>
+                </div>
+                <div className="icon-container">
+                  <div className="icon restaurants"><FontAwesomeIcon icon={faUtensils} /></div><div>{destination.features[0]}Restaurants goes here...</div>
+                </div>
               </div>
               <div id="map-container">
                 MAP
