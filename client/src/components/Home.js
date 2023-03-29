@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import React from 'react'
 import Nav from './common/Nav'
+import Dialog from './common/Dialog'
 import axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom'
 
@@ -42,7 +43,7 @@ const Home = () => {
   }, [])
 
   // ! Executions
-  const handleChange = (e) => {
+  const handleLogin = (e) => {
     setFormFields({ ...formFields, [e.target.name]: e.target.value })
     setError('')
   }
@@ -133,14 +134,14 @@ const Home = () => {
   return (
     <>
       <Nav openModal={openModal} />
-
       <main>
+        <Dialog modalRef={modalRef} closeModal={closeModal} handleLogin={handleLogin} handleSubmit={handleSubmit} formFields={formFields} />
         {/* <!-- BUTTONS (input/labels) --> */}
         <input type="radio" name="slider" id="slide-1-trigger" className="trigger" value="0" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-1-trigger"></label>
         <input type="radio" name="slider" id="slide-2-trigger" className="trigger" value="1" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-2-trigger"></label>
-        <input type="radio" name="slider" id="slide-3-trigger" className="trigger" value="2" onChange={(e) => handleFilter(e.target.value)} defaultChecked/>
+        <input type="radio" name="slider" id="slide-3-trigger" className="trigger" value="2" onChange={(e) => handleFilter(e.target.value)} defaultChecked />
         <label className="btn" htmlFor="slide-3-trigger"></label>
         <input type="radio" name="slider" id="slide-4-trigger" className="trigger" value="3" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-4-trigger"></label>
@@ -148,7 +149,7 @@ const Home = () => {
         <div className="emoji" id="emoji-mild">⛅️</div>
         <div className="emoji" id="emoji-warm">☀️</div>
         <div className="emoji" id="emoji-hot">🔥</div>
-        
+
         {/* <!-- SLIDES --> */}
         <div className="slide-wrapper">
           <div className="homepage-heading">
@@ -201,18 +202,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        {/* <!-- LOGIN MODAL --> */}
-        <dialog className="modal" id="modal" ref={modalRef}>
-          <h2>Log into Wanderlust</h2>
-          <button className="close-button" onClick={closeModal}>X</button>
-          <form className="form" method="dialog" onSubmit={handleSubmit}>
-            <label>Email:<input type="email" name="email" placeholder='Email' onChange={handleChange} value={formFields.email} /></label>
-            <label>Password:<input type="password" name="password" placeholder='Password' onChange={handleChange} value={formFields.password} /></label>
-            <button className="button" type="submit">Submit form</button>
-            {error && <p className='text-danger'>{error}</p>}
-          </form>
-        </dialog>
       </main>
     </>
   )

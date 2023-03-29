@@ -1,24 +1,64 @@
 import Nav from '../common/Nav'
-import { useLocation, Link, useFetcher } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useLocation, Link, useNavigate } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
+import Dialog from '../common/Dialog'
 
 const DestinationIndex = () => {
   const location = useLocation()
+  const modalRef = useRef(null)
+  const navigate = useNavigate()
 
   const [error, setError] = useState('')
   const [filteredContinents, setFilteredContinents] = useState([])
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
   const [filters, setFilters] = useState({
-    temperature: location.state ? location.state.temperature : '2' ,
+    temperature: location.state ? location.state.temperature : '2',
     month: new Date().getMonth(),
     country: 'All',
     continent: 'All',
     rating: 'All',
   })
+
+  // State for the Form Fields
+  const [formFields, setFormFields] = useState({
+    email: '',
+    password: '',
+  })
+
+
+  function openModal() {
+    modalRef.current.showModal()
+  }
+
+  function closeModal() {
+    modalRef.current.close()
+  }
+
+  const handleLogin = (e) => {
+    setFormFields({ ...formFields, [e.target.name]: e.target.value })
+    setError('')
+  }
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      const { data } = await axios.post('/api/', formFields)
+      // Save the token to local storage for later use
+      localStorage.setItem('WANDERLUST-TOKEN', data.token)
+      closeModal()
+      navigate(location) // need this to trigger the 'logout' button to show
+    } catch (err) {
+      console.log('error', err)
+      setError(err.response.data.message)
+    }
+  }
+
+
 
   // ! On Mount
   useEffect(() => {
@@ -87,7 +127,7 @@ const DestinationIndex = () => {
     setFilteredContinents(continents)
     const updatedDestinations = destinations.filter(destination => {
       return (destination.country === filters.country || filters.country === 'All') && (destination.continent === filters.continent || filters.continent === 'All')
-        && minTemp <= destination.highTemps[searchMonth] && destination.highTemps[searchMonth] <= maxTemp 
+        && minTemp <= destination.highTemps[searchMonth] && destination.highTemps[searchMonth] <= maxTemp
         && (destination.averageRating === filters.rating || filters.rating === 'All')
     }).sort((a, b) => a.name > b.name ? 1 : -1)
     setFilteredDestinations(updatedDestinations)
@@ -96,8 +136,9 @@ const DestinationIndex = () => {
   return (
     <>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <Nav />
+        <Nav openModal={openModal} />
         <main>
+          <Dialog modalRef={modalRef} closeModal={closeModal} handleLogin={handleLogin} handleSubmit={handleSubmit} formFields={formFields} />
           <div id="grid-header">
             <h1>Select your destination...</h1>
           </div>

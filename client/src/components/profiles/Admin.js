@@ -36,12 +36,14 @@ const Profile = () => {
     console.log(destinationId)
     const deleteDestination = async () => {
       try {
-        await axios.create({
+        await axios.delete('/api/admin', {
           headers: {
             Authorization: `Bearer ${getToken()}`,
           },
+          data: {
+            destinationId: destinationId,
+          },
         })
-          .delete('/api/admin', { data: { destinationId: destinationId } })
         const updatedDestinations = adminDestinations.filter(destination => destination.id !== destinationId)
         setAdminDestinations(updatedDestinations)
       } catch (err) {

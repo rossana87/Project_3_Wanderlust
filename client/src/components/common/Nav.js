@@ -1,19 +1,19 @@
 import { useLocation, useNavigate, Link } from 'react-router-dom'
 import { authenticated, getUserID, isAuthenticated, removeToken } from '../../helpers/auth'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 
 const Nav = ({ openModal }) => {
-  const [error, setError] = useState('')
-  const [profileData, setProfileData] = useState()
 
   const location = useLocation()
   const navigate = useNavigate()
 
   const handleLogOut = () => {
-    // Remove token from local storage
+    (location.pathname === '/admin' || location.pathname === `/profile/${getUserID()}`) ? navigate('/') : navigate(location)
+    console.log(getUserID())
+    console.log(location === `/profile/${getUserID()}`)
+    console.log(location)
     removeToken()
-    navigate('/')
   }
 
   return (
