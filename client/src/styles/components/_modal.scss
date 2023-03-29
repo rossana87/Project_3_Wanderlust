@@ -1,56 +1,132 @@
-form {
+// form {
+//   display: grid;
+//   gap: 1em;
+// }
+
+.form {
   display: grid;
-  gap: 1em;
+  gap: 20px;
+  text-align: left;
 }
 
-form, h2 {
+.form label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.form input[type="email"]:focus,
+.form input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+form,
+h2 {
   font-family: $main-font;
 }
 
-.modal {
-  // padding: 1em;
-  min-width: 40ch;
-  max-width: 50ch;
-  border-radius: 8px;
-  // z-index: 300;
+// .modal {
+//   // padding: 1em;
+//   min-width: 40ch;
+//   max-width: 40ch;
+//   min-height: 50ch;
+//   max-height: 50ch;
+//   border-radius: 8px;
+//   // z-index: 300;
 
-  & > * {
-    margin: 0 0 0.5rem 0;
-  }
+//   &>* {
+//     margin: 0 0 0.5rem 0;
+//   }
+// }
+
+.modal {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content {
+  display: grid;
+  gap: 20px;
 }
 
 .modal::backdrop {
   background: rgb(0 0 0 / 0.75);
 }
 
-.close-button {
-  display: inline-block;
-  padding: 8px 8px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  // background-color: inherit;
+.modal h2 {
+  color: #333;
+  font-size: 25px;
   font-weight: bold;
-  text-align: center;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+// .close-button {
+//   display: inline-block;
+//   padding: 8px 8px;
+//   vertical-align: middle;
+//   overflow: hidden;
+//   text-decoration: none;
+//   color: inherit;
+//   // background-color: inherit;
+//   font-weight: bold;
+//   text-align: center;
+//   cursor: pointer;
+//   white-space: nowrap;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+// }
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
   cursor: pointer;
-  white-space: nowrap;
+  font-size: 15px;
+  font-weight: bold;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 10px;
+}
+
+.close-button:hover {
+  color: #666;
 }
 
 .button {
-  border: 0;
-  cursor: pointer;
-  font-weight: 700;
-  padding: 1em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .text-danger {
   font-size: 0.75em;
   margin: 0;
   color: red;
+  text-align: center;
+  min-height: 1em;
 }
-
-

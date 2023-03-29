@@ -168,7 +168,7 @@ const DestinationIndex = () => {
                       <Link to={`/destinations/${_id}`}>
                         <div id="card-header">
                           <div id="destination-image"><img src={background} alt={name} /></div>
-                          <div id="destination-name">{name} <br /> {country}</div>
+                          <div id="destination-name">{name} <br /><div id="country-name">{country}</div></div>
                           {/* <div id="country-name">{country}</div> */}
                         </div>
                         <div id="card-content">

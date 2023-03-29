@@ -1,5 +1,13 @@
 @media (max-width: 600px) {
 
+  header {
+    padding-left: 0.5em;
+  }
+
+  #hero h1 {
+    font-size: 3em;
+  }
+
   #grid-container, #common, #attractions, #reviews {
     display: block;
   }
@@ -8,6 +16,119 @@
     width: 80%;
     // border: 1px solid black;
   }
+}
+
+@media only screen and (max-width: 750px) {
+  .slide-wrapper {
+      height: 100%;
+  }
+
+  // #prev-next-controls {
+  //   bottom: 1.5%;
+  //   position: fixed;
+  //   // &:hover {
+  //   //   color: inherit;
+  //   // }
+  // }
+
+  #btn-next {
+    bottom: 1.5%;
+  }
+  
+  #btn-previous {
+    bottom: 1.5%;
+  }
+
+  // .btn:nth-of-type(1){
+  //   left: 93%;
+  //   bottom: 60%;
+  // }
+
+  // #emoji-cold {
+  //   left: 87%;
+  //   bottom: 59%;
+  // }
+
+  // .btn:nth-of-type(2) {
+  //   left: 93%;
+  //   bottom: 50%;
+  // }
+
+  // #emoji-mild {
+  //   left: 87%;
+  //   bottom: 49%;
+  // }
+
+  // .btn:nth-of-type(3) {
+  //   left: 93%;
+  //   bottom: 40%;
+  // }
+
+  // #emoji-warm {
+  //   left: 87%;
+  //   bottom: 39%;
+  // }
+
+  // .btn:nth-of-type(4) {
+  //   left: 93%;
+  //   bottom: 30%;
+  // }
+
+  // #emoji-hot {
+  //   left: 87%;
+  //   bottom: 29%;
+  // }
+}
+
+@media (max-width: 900px){
+  .btn:nth-of-type(1) {
+    left: 25%;
+  }
+  
+  #emoji-cold {
+    left:24.9%;
+  }
+  
+  .btn:nth-of-type(2) {
+    left: 40%;
+  }
+  
+  #emoji-mild {
+    left: 39.9%;
+  }
+  
+  .btn:nth-of-type(3) {
+    left: 55%;
+  }
+  
+  #emoji-warm {
+    left: 54.9%
+  }
+  
+  .btn:nth-of-type(4){
+    left: 70%;
+  }
+  
+  #emoji-hot {
+    left: 69.9%;
+  }
+  
+}
+
+@media only screen and (max-width: 450px) {
+
+  // .btn:nth-of-type(1) {
+  //     left: 85%;
+  // }
+  // .btn:nth-of-type(2), #emoji-mild {
+  //     left: 85%;
+  // }
+  // .btn:nth-of-type(3), #emoji-warm {
+  //     left: 85%;
+  // }
+  // .btn:nth-of-type(4), #emoji-hot {
+  //     left: 85%;
+  // }
 }
 
 @media (max-width: 1200px) {
