@@ -1,16 +1,29 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
+h1 {
+  font-size: 1.5em;
+}
+
+h1, h2, h3, p, .info {
+  font-family: "Inter", sans-serif;
+}
+
+#filters h2 {
+  font-size: 1em;
+  margin: 0 0 1em 0;
+}
+
 header {
   height: 8svh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  position: relative;
   font-size: 2em;
   padding-left: 1em;
-  /* position: sticky; */
   z-index: 400;
-  top: -10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 header > #logo {
@@ -39,110 +52,24 @@ ul li {
   text-decoration: none;
 }
 
-form {
-  display: grid;
-  gap: 1em;
+main {
+  background: rgb(255, 255, 255);
+  position: relative;
+  height: 92svh;
+  width: 100%;
+  z-index: 300;
 }
 
-form, h2 {
-  font-family: "Inter", sans-serif;
-}
-
-.modal {
-  min-width: 40ch;
-  max-width: 50ch;
-  border-radius: 8px;
-}
-.modal > * {
-  margin: 0 0 0.5rem 0;
-}
-
-.modal::backdrop {
-  background: rgba(0, 0, 0, 0.75);
-}
-
-.close-button {
-  display: inline-block;
-  padding: 8px 8px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.button {
-  border: 0;
-  cursor: pointer;
-  font-weight: 700;
-  padding: 1em;
-}
-
-.text-danger {
-  font-size: 0.75em;
-  margin: 0;
-  color: red;
-}
-
-#grid-container {
-  margin: 1em;
-  gap: 1em;
-}
-
-#filters {
-  border: 1px solid black;
-  width: 15em;
-}
-
-#grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.card {
-  border: 1px solid blue;
-  width: 15em;
-  height: 10em;
-  font-family: "Inter", sans-serif;
-  padding: 0.5em;
-  line-height: 2em;
-  background-size: cover;
-  color: white;
-}
-.card #destination-name {
-  font-size: 1.5em;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
+header {
+  z-index: 400;
 }
 
 input[type=radio] {
   display: none;
 }
 
-main {
-  background: rgb(255, 255, 255);
-  position: relative;
-  height: 92svh;
-  width: 100%;
-}
-
 .slide-wrapper {
   position: relative;
-  margin: 0 auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -168,22 +95,6 @@ main {
   background-position: center;
 }
 
-.slide-1 {
-  background-image: url("https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600");
-}
-
-.slide-2 {
-  background-image: url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600");
-}
-
-.slide-3 {
-  background-image: url("https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600");
-}
-
-.slide-4 {
-  background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600");
-}
-
 .btn, .btn::after {
   border-radius: 50%;
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -195,8 +106,8 @@ main {
   box-shadow: 0px 2px 2px rgba(56, 56, 56, 0.822);
   position: absolute;
   bottom: 12%;
-  width: 30px;
-  height: 30px;
+  width: 3em;
+  height: 3em;
   cursor: pointer;
   transform: scale(1.1);
   z-index: 1000;
@@ -205,33 +116,44 @@ main {
 .btn:nth-of-type(1) {
   left: 38%;
 }
+.btn:nth-of-type(1)::after {
+  font-size: 2.5em;
+  content: "❄️";
+}
 
 .btn:nth-of-type(2) {
   left: 45%;
+}
+.btn:nth-of-type(2)::after {
+  font-size: 2.5em;
+  content: "⛅️";
 }
 
 .btn:nth-of-type(3) {
   left: 52%;
 }
+.btn:nth-of-type(3)::after {
+  font-size: 2.5em;
+  content: "☀️";
+}
 
 .btn:nth-of-type(4) {
   left: 59%;
+}
+.btn:nth-of-type(4)::after {
+  font-size: 2.5em;
+  content: "🔥";
 }
 
 .btn:hover {
   transform: scale(1.4);
 }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  border: 1px solid white;
-  background: rgb(11, 185, 238);
-  width: 20px;
-  height: 20px;
-  margin: 3px 3px;
-  transform: scale(0.5, 0.5);
-  box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
+#prev-next-controls {
+  position: absolute;
+  width: 100%;
+  z-index: 400;
+  top: 40%;
 }
 
 #explore {
@@ -246,6 +168,29 @@ main {
   left: 46%;
   height: 2rem;
   width: 6rem;
+}
+
+.prev-next {
+  position: absolute;
+  font-size: 4em;
+  font-family: "Inter", sans-serif;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: inherit;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.prev-next:hover {
+  color: #f0ca00;
+}
+
+#btn-next {
+  right: 2.5%;
+}
+
+#btn-previous {
+  left: 2.5%;
 }
 
 input[type=radio]:checked#slide-2-trigger ~ div.slide-wrapper > div#slide-role {
@@ -270,9 +215,418 @@ input[type=radio]:checked + label.btn::after {
   background: lightskyblue;
 }
 
+.form {
+  display: grid;
+  gap: 20px;
+  text-align: left;
+}
+
+.form label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form input[type=email],
+.form input[type=password] {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.form input[type=email]:focus,
+.form input[type=password]:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+form,
+h2 {
+  font-family: "Inter", sans-serif;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content {
+  display: grid;
+  gap: 20px;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal h2 {
+  color: #333;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.close-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.close-button:hover {
+  color: #666;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.text-danger {
+  font-size: 0.75em;
+  margin: 0;
+  color: red;
+  text-align: center;
+  min-height: 1em;
+}
+
+#grid-header {
+  text-align: center;
+  margin: 2em;
+}
+
+#grid-container {
+  margin: 1em;
+  display: flex;
+  gap: 1em;
+  max-width: 100rem;
+}
+
+#filters {
+  min-width: 12em;
+  font-family: "Inter", sans-serif;
+}
+#filters hr {
+  margin: 2em 0;
+}
+#filters #filter-temp {
+  width: 100%;
+}
+#filters option {
+  margin-bottom: 1em;
+  width: 12em;
+  position: absolute;
+}
+#filters option:first-child {
+  left: 5px;
+}
+#filters option:nth-child(2) {
+  left: 66px;
+}
+#filters option:nth-child(3) {
+  left: 122px;
+}
+#filters option:nth-child(4) {
+  left: 182px;
+}
+#filters datalist {
+  display: flex;
+  flex-direction: column;
+  writing-mode: vertical-lr;
+}
+#filters input[type=range] {
+  margin: 0;
+  width: 100%;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.card {
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  line-height: 2em;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 3px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0));
+  transition: all 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(101%);
+}
+.card #card-header {
+  position: relative;
+}
+.card #country-name {
+  font-size: 0.75em;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: -1;
+  border-radius: 8px 8px 0 0;
+}
+.card #destination-name {
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  padding: 1.5rem;
+  color: white;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.card #card-content {
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0.25rem 1rem, rgb(0, 0, 0);
+}
+
+#hero {
+  min-height: 30em;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+  color: white;
+  font-family: "Inter", sans-serif;
+  padding: 2.5em;
+  align-items: last baseline;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+#hero > h1 {
+  font-size: 4em;
+  margin: 0;
+}
+#hero > p {
+  font-size: 1.5em;
+}
+
+#common, #attractions, #reviews {
+  display: flex;
+  border-bottom: 2px solid black;
+}
+#common > #common-container, #common #attraction-container, #common #reviews-container, #common #add-review-container, #attractions > #common-container, #attractions #attraction-container, #attractions #reviews-container, #attractions #add-review-container, #reviews > #common-container, #reviews #attraction-container, #reviews #reviews-container, #reviews #add-review-container {
+  font-family: "Inter", sans-serif;
+  margin: 2.5em;
+}
+
+#forecast-container, #attraction-container, #reviews-container, #add-review-container {
+  width: 50%;
+}
+
+#common-container {
+  width: 40%;
+}
+
+#map {
+  width: 60%;
+  margin-top: 1em;
+}
+
+.first-info {
+  margin-top: 0em;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+.icon-container:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.icon {
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+.reviewOwner, .rating {
+  margin-right: 0.5em;
+}
+
+#attractions .icon-container, #reviews-container {
+  margin-top: 0.5em;
+}
+
+.individual-review {
+  margin-top: 1.5em;
+}
+.individual-review:first-child {
+  margin-top: 0;
+}
+
+.created-date {
+  font-size: 0.75em;
+}
+
+#add-review-container input:not(#slider) {
+  height: 2.5em;
+  padding: 10px;
+}
+#add-review-container #review {
+  height: 100px;
+  line-height: 100px;
+}
+#add-review-container form {
+  max-width: 30em;
+}
+
+input[type=range] {
+  height: 26px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  outline: #000000;
+  box-shadow: 1px 1px 1px #8b93a0;
+  background: white;
+  border-radius: 14px;
+  border: 1px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 20px;
+  background: black;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: white;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #8b93a0;
+  background: white;
+  border-radius: 14px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: white;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #8b93a0;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: white;
+  border: 0px solid #000000;
+  border-radius: 28px;
+  box-shadow: 1px 1px 1px #8b93a0;
+}
+
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 40px;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: white;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: white;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-left: 0.5em;
+  }
+  #hero h1 {
+    font-size: 3em;
+  }
+  #grid-container, #common, #attractions, #reviews {
+    display: block;
+  }
+  #common-container, #forecast-container, #attraction-container, #reviews-container, #add-review-container {
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 750px) {
   .slide-wrapper {
     height: 100%;
+  }
+  #prev-next-controls {
+    bottom: 1.5%;
+    position: fixed;
+  }
+  #btn-next {
+    bottom: 1.5%;
+  }
+  #btn-previous {
+    bottom: 1.5%;
   }
   .btn:nth-of-type(1) {
     left: 93%;
@@ -304,4 +658,17 @@ input[type=radio]:checked + label.btn::after {
   .btn:nth-of-type(4) {
     left: 85%;
   }
+}
+@media (max-width: 1200px) {
+  #grid {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }/*# sourceMappingURL=main.css.map */
