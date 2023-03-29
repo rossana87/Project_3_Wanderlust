@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 
 
 const Nav = ({ openModal }) => {
-  const [ error, setError ] = useState('')
-  const [ profileData, setProfileData ] = useState()
+  const [error, setError] = useState('')
+  const [profileData, setProfileData] = useState()
 
   const location = useLocation()
   const navigate = useNavigate()
@@ -33,8 +33,9 @@ const Nav = ({ openModal }) => {
             </>
             :
             <>
-              <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={openModal}>Login</li>
-              <li to="/" className={location.pathname === '/' ? 'active' : ''}>Register</li>
+              <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => openModal('login')}>Login</li>
+              <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => openModal('register')}>Register</li>
+
             </>
           }
         </ul>

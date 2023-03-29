@@ -4,6 +4,8 @@ import DestinationIndex from './components/destination/DestinationIndex'
 import DestinationSingle from './components/destination/DestinationSingle'
 import Profile from './components/profiles/Profile'
 import Admin from './components/profiles/Admin'
+import Register from './components/auth/Register'
+import Nav from './components/common/Nav'
 
 const App = () => {
 
@@ -12,6 +14,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/" element={<Register />} />
           <Route path="/destinations" element={<DestinationIndex />} />
           <Route path="/destinations/:id" element={<DestinationSingle />} />
           <Route path="/profile/:userId" element={<Profile />} />
