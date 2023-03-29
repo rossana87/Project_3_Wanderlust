@@ -1,0 +1,56 @@
+#adminHeader {
+  display: flex;
+  align-items: center;
+}
+
+#adminH1 {
+  margin-left: calc(50vw - (115px + 2em + 30px));
+}
+
+#destinationsOwned {
+  width: 100%;
+}
+
+#yourDestinationsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#destination-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.destinationDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.destinationBtns {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edit {
+  margin-bottom: 10px;
+}
+
+.delete {
+  margin-top: 10px;
+}
+
+.destinationImageDiv {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinationImage {
+  width: 250px;
+  height: 180px;
+}
