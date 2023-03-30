@@ -7,18 +7,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEarthAmericas, faWallet, faCoins, faCommentDots, faMapLocationDot, faPersonHiking, faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import mapboxgl from 'mapbox-gl'
 import RegisterDialog from '../common/RegisterDialog'
+import { getToken } from '../../helpers/auth'
 
 const DestinationIndex = () => {
-
   const location = useLocation()
   const modalRef = useRef(null)
   const navigate = useNavigate()
   const registerRef = useRef(null)
-
   const [error, setError] = useState('')
   const [destination, setDestination] = useState(null)
+  const [reviews, setReviews] = useState([])
   const [sliderValue, setSliderValue] = useState(4)
-  // State for the Form Fields
+  
+  // State for the Login Form Fields
   const [formFields, setFormFields] = useState({
     email: '',
     password: '',
@@ -32,8 +33,51 @@ const DestinationIndex = () => {
     isAdmin: false,
   })
 
+  const [reviewFields, setReviewFields] = useState({
+    title: '',
+    text: '',
+    rating: '',
+  })
+
   const { id } = useParams()
 
+  // ! On Mount
+  useEffect(() => {
+    const getDestination = async () => {
+      try {
+        const { data } = await axios.get(`/api/destinations/${id}`)
+        setDestination(data)
+        console.log(data)
+      } catch (err) {
+        console.log(err)
+        setError(err.message)
+      }
+    }
+    getDestination()
+  }, [id, reviews])
+
+  // ! Get Map
+  useEffect(() => {
+    const getMap = async () => {
+      if (!destination) return
+      try {
+        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
+        const map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mapbox/streets-v12',
+          // center: [-74.5, 40],
+          center: [destination.longitude, destination.latitude],
+          zoom: 10,
+        })
+      } catch (err) {
+        console.log(err)
+        setError(err.message)
+      }
+    }
+    getMap()
+  })
+
+  // ! Login Modal
   function openModal() {
     modalRef.current.showModal()
   }
@@ -46,7 +90,6 @@ const DestinationIndex = () => {
     setFormFields({ ...formFields, [e.target.name]: e.target.value })
     setError('')
   }
-
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -62,6 +105,7 @@ const DestinationIndex = () => {
     }
   }
 
+  // ! Registration Modal
   function openRegisterModal() {
     registerRef.current.showModal()
   }
@@ -89,43 +133,28 @@ const DestinationIndex = () => {
     }
   }
 
-  // ! On Mount
-  useEffect(() => {
-    const getDestination = async () => {
-      try {
-        const { data } = await axios.get(`/api/destinations/${id}`)
-        setDestination(data)
-        console.log(data)
-      } catch (err) {
-        console.log(err)
-        setError(err.message)
-      }
-    }
-    getDestination()
-  }, [id])
+  // ! Review Functionality
+  const handleReview = (e) => {
+    setReviewFields({ ...reviewFields, [e.target.name]: e.target.value })
+    if (parseInt(e.target.value)) setSliderValue(e.target.value)
+    setError('')
+  }
 
-  useEffect(() => {
-    const getMap = async () => {
-      if (!destination) return
-      try {
-        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
-        const map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/streets-v12',
-          // center: [-74.5, 40],
-          center: [destination.longitude, destination.latitude],
-          zoom: 10,
+  const addReview = async (e) => {
+    e.preventDefault()
+    try {
+      await axios.post(`/api/destinations/${id}`, reviewFields,
+        {
+          headers: {
+            Authorization: `Bearer ${getToken()}`,
+          },
         })
-      } catch (err) {
-        console.log(err)
-        setError(err.message)
-      }
+      const updatedReviews = [...reviews, reviewFields]
+      setReviews(updatedReviews)
+    } catch (err) {
+      console.log('error', err)
+      setError(err.response.data.message)
     }
-    getMap()
-  })
-
-  const handleSliderChange = (e) => {
-    setSliderValue(e.target.value)
   }
 
   return (
@@ -215,15 +244,15 @@ const DestinationIndex = () => {
               </div>
               <div id="add-review-container">
                 <h3 className="first-info">Add a review...</h3>
-                <form>
-                  <label htmlFor="title">Summary:</label>
-                  <input type="text" id="title" name="title" placeholder={`Summary of ${destination.name}`} />
+                <form onSubmit={addReview}>
+                  <label htmlFor="title" name="title">Summary:</label>
+                  <input type="text" id="title" name="title" onChange={handleReview} placeholder={`Summary of ${destination.name}`} />
                   <label htmlFor="review">Review:</label>
-                  <input type="textarea" id="review-textarea" name="review" placeholder={`Post your review of ${destination.name}`}/>
-                  <label htmlFor="rating">Rating: {sliderValue}</label>
-                  <input type="range" name="slider" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleSliderChange} />
+                  <input type="textarea" id="review-textarea" name="text" onChange={handleReview} placeholder={`Post your review of ${destination.name}`} />
+                  <label htmlFor="rating" name="rating">Rating: {sliderValue}</label>
+                  <input type="range" name="rating" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleReview} />
+                  <button className="site-button" type="submit" id="add-review">Add</button>
                 </form>
-                <button className="site-button" id="add-review">Add</button>
               </div>
             </section>
           </>

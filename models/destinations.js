@@ -57,7 +57,7 @@ destinationSchema.virtual('averageRating')
     const sum = this.reviews.reduce((acc, review) => {
       return acc + review.rating
     }, 0)
-    return parseFloat((sum / this.reviews.length).toFixed(2))
+    return parseFloat((sum / this.reviews.length).toFixed(0))
   })
 
 destinationSchema.set('toJSON', { virtuals: true })
