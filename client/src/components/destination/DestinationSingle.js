@@ -1,18 +1,56 @@
 import Nav from '../common/Nav'
-import { useParams } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
+import Dialog from '../common/Dialog'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEarthAmericas, faWallet, faCoins, faCommentDots, faMapLocationDot, faPersonHiking, faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import mapboxgl from 'mapbox-gl'
 
 const DestinationIndex = () => {
 
+  const location = useLocation()
+  const modalRef = useRef(null)
+  const navigate = useNavigate()
+
   const [error, setError] = useState('')
   const [destination, setDestination] = useState(null)
   const [sliderValue, setSliderValue] = useState(4)
+  // State for the Form Fields
+  const [formFields, setFormFields] = useState({
+    email: '',
+    password: '',
+  })
 
   const { id } = useParams()
+
+  function openModal() {
+    modalRef.current.showModal()
+  }
+
+  function closeModal() {
+    modalRef.current.close()
+  }
+
+  const handleLogin = (e) => {
+    setFormFields({ ...formFields, [e.target.name]: e.target.value })
+    setError('')
+  }
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      const { data } = await axios.post('/api/', formFields)
+      // Save the token to local storage for later use
+      localStorage.setItem('WANDERLUST-TOKEN', data.token)
+      closeModal()
+      navigate(location) // need this to trigger the 'logout' button to show
+    } catch (err) {
+      console.log('error', err)
+      setError(err.response.data.message)
+    }
+  }
 
   // ! On Mount
   useEffect(() => {
@@ -54,8 +92,9 @@ const DestinationIndex = () => {
 
   return (
     <>
-      <Nav />
+      <Nav openModal={openModal}/>
       <main>
+        <Dialog modalRef={modalRef} closeModal={closeModal} handleLogin={handleLogin} handleSubmit={handleSubmit} formFields={formFields} />
         {destination &&
           <>
             <section id="hero" style={{ backgroundImage: `url("${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]}")` }}>

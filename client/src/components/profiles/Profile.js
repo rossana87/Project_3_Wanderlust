@@ -4,7 +4,6 @@ import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { getToken } from '../../helpers/auth'
 
-
 const Profile = () => {
 
   const [error, setError] = useState('')
@@ -32,38 +31,66 @@ const Profile = () => {
     getProfile()
   }, [])
 
-  const isAdmin = () => {
-    if (profileData.isAdmin)
-      return (
-        <>
-          <Link to="/admin" as={Link}>Admin</Link>
-        </>
-      )
-  }
-
   useEffect(() => {
     console.log(profileData)
   }, [profileData])
+
+  const displayReviews = () => {
+    return profileData.Reviews.map((destination, i) => {
+      const myReview = destination.reviews.filter(review => review.owner === profileData._id)[0]
+      return (
+        <div key={i}>
+          <h3>Your review of {destination.name}, {destination.country}</h3>
+          <div className="individual-review" >
+            <h3 className="first-info">{myReview.title}</h3>
+            <p className="reviewText">{myReview.text}</p>
+            <div><span className="rating">{'⭐️'.repeat(myReview.rating)}</span></div>
+            <hr />
+          </div>
+        </div>
+      )
+    })
+  }
 
   return (
     <>
       <Nav />
       <main>
         <div id="grid-header">
-          <h1>Profile</h1>
+          <section>
+            <h1>Profile</h1>
+          </section>
           <div id="grid-container">
-            <div id="filters">
+            <section id="userDetails">
               {profileData &&
                 <>
-                  <h2>{profileData.username}</h2>
-                  <Link to="/profile" as={Link}>Profile</Link>
-                  <Link to="/admin" as={Link}>{profileData.isAdmin ? 'Admin' : ''}</Link>
+                  <h3>{profileData.username}</h3>
+                  <div className='profilePicture'>
+                    <img src="" alt="userImage" />
+                  </div>
+                  {profileData.isAdmin ?
+                    <Link to="/admin" as={Link}>Admin</Link>
+                    :
+                    ''}
                 </>
               }
-            </div>
+            </section>
+            {profileData &&
+              <>
+                <section id="reviewsOwned">
+                  <h3>Your reviews:</h3>
+                  <div id="reviews-container">
+                    {profileData.Reviews.length > 0 ?
+                      displayReviews()
+                      :
+                      <div>You haven&#39;t reviewed anything yet.</div>}
+                  </div>
+                </section>
+              </>
+            }
           </div>
         </div>
-      </main>
+      </main >
     </>
   )
 }
