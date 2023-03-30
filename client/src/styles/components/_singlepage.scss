@@ -72,6 +72,24 @@ section:not(#hero) {
   text-justify: inter-word;
 }
 
+#forecast-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // width: 100%;
+  & div {
+    grid-row: 1;
+    justify-content: center;
+    text-align: center;
+    // height: 1.5em;
+    padding: 0.25em 0.25em;
+  }
+  & .weather-emoji {
+    font-size: 3em;
+  }
+}
+
 .icon {
   font-size: 1.5em;
   margin-right: 0.5em;
@@ -124,7 +142,6 @@ section:not(#hero) {
       margin: 0 0 0.5em 0;
     }
   }
-
 }
 
 input[type=range] {

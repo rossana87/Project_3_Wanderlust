@@ -18,6 +18,8 @@ const DestinationIndex = () => {
   const [error, setError] = useState('')
   const [destination, setDestination] = useState(null)
   const [sliderValue, setSliderValue] = useState(4)
+  const [weatherData, setWeatherData] = useState([])
+
   // State for the Form Fields
   const [formFields, setFormFields] = useState({
     email: '',
@@ -95,7 +97,7 @@ const DestinationIndex = () => {
       try {
         const { data } = await axios.get(`/api/destinations/${id}`)
         setDestination(data)
-        console.log(data)
+        // console.log(data, destination.longitude, destination.latitude)
       } catch (err) {
         console.log(err)
         setError(err.message)
@@ -106,6 +108,7 @@ const DestinationIndex = () => {
 
   useEffect(() => {
     const getMap = async () => {
+      if (!destination) return
       try {
         mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
         const map = new mapboxgl.Map({
@@ -121,10 +124,51 @@ const DestinationIndex = () => {
       }
     }
     getMap()
-  })
+  }, [destination])
+
+  // ! On Mount get the weather data
+  useEffect(() => {
+    // This function will get our bread data and save it to the bread state
+    const getWeather = async () => {
+      if (!destination) return
+      try {
+        const { data } = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${destination.latitude}&longitude=${destination.latitude}&timezone=auto&forecast_days=7&daily=temperature_2m_max`)
+        setWeatherData(data.daily.temperature_2m_max)
+        console.log('This is the weather data', data.daily.temperature_2m_max, destination.longitude, destination.latitude)
+      } catch (err) {
+        console.log(err)
+        setError(err.message)
+      }
+    }
+    getWeather()
+  }, [destination])
 
   const handleSliderChange = (e) => {
     setSliderValue(e.target.value)
+  }
+
+  const getDate = (i) => {
+    const today = new Date()
+    const targetDate = new Date(today)
+    targetDate.setDate(today.getDate() + i)
+    
+    const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+    const dayOfWeek = daysOfWeek[targetDate.getDay()]
+    const date = targetDate.getDate()
+    
+    return `${dayOfWeek} ${date}`
+  }
+
+  const getWeatherEmoji = (temp) => {
+    if (temp < 10) {
+      return '❄️' 
+    } else if (temp > 10 && temp < 20) {
+      return '⛅️'
+    } else if (temp > 20 && temp < 30) {
+      return '☀️' 
+    } else {
+      return '🔥'
+    }
   }
 
   return (
@@ -190,7 +234,21 @@ const DestinationIndex = () => {
                   <div className="icon restaurants"><FontAwesomeIcon icon={faUtensils} /></div><div className="attraction">{destination.features[2]}</div>
                 </div>
               </div>
-              <div id="forecast-container">Forecast data goes here</div>
+              <div id="forecast-container">
+                {weatherData &&
+                  // 
+                  // console.log(dailyDate[0])
+                  weatherData.map((weatherDay, i) => {
+                    return (
+                      <div key={i}>
+                        <div className="weather-emoji">{getWeatherEmoji(weatherDay)}</div>
+                        <div>{weatherData[i]}</div>
+                        <div>{getDate(i)}</div>
+                      </div>
+                    )
+                  })
+                }
+              </div>
             </section>
             <section id="reviews">
               <div id="destination-reviews-container">
