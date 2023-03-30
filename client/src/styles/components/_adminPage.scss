@@ -1,11 +1,12 @@
 #adminHeader {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-#adminH1 {
-  margin-left: calc(50vw - (115px + 2em + 30px));
-}
+// #adminH1 {
+//   margin-left: calc(50vw - (115px + 2em + 30px));
+// }
 
 #destinationsOwned {
   width: 100%;

@@ -87,7 +87,7 @@ const DestinationIndex = () => {
       // Save the token to local storage for later use
       // localStorage.setItem('WANDERLUST-TOKEN', data.token)
       closeRegisterModal()
-      navigate('/') // needs this to trigger the 'register' button to show
+      navigate(location.pathname) // needs this to trigger the 'register' button to show
     } catch (err) {
       console.log('error', err)
       setError(err.response.data.message)

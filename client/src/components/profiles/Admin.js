@@ -12,7 +12,7 @@ const Admin = () => {
   const [adminData, setAdminData] = useState({})
   const [adminDestinations, setAdminDestinations] = useState([])
   const [deleteId, setDeleteID] = useState({
-    destinationId: '',
+    id: '',
   })
   const [editId, setEditID] = useState('')
   const [addId, setAddId] = useState('')
@@ -28,7 +28,7 @@ const Admin = () => {
     features: [],
     highTemps: [],
     lowTemps: [],
-    destinationId: '',
+    id: '',
     owner: getUserID(),
   })
   const [addBody, setAddBody] = useState({
@@ -79,7 +79,7 @@ const Admin = () => {
             Authorization: `Bearer ${getToken()}`,
           },
           data: {
-            destinationId: deleteId,
+            id: deleteId,
           },
         })
         const updatedDestinations = adminDestinations.filter(destination => destination.id !== deleteId)
@@ -101,6 +101,7 @@ const Admin = () => {
     const destination = adminData.filter(destination => destination.id === value)[0]
     console.log('DESTINATION ->', destination)
     const { name, country, continent, currency, latitude, longitude, description, images, features, highTemps, lowTemps } = destination
+    console.log('DESTINATION ->', destination)
     setEditBody({
       name: name,
       country: country,
@@ -109,11 +110,11 @@ const Admin = () => {
       latitude: latitude,
       longitude: longitude,
       description: description,
-      images: [images],
-      features: [features],
-      highTemps: [highTemps],
-      lowTemps: [lowTemps],
-      destinationId: value,
+      images: images.join(','),
+      features: features.join(','),
+      highTemps: highTemps.join(','),
+      lowTemps: lowTemps.join(','),
+      id: value,
       owner: getUserID(),
     })
     openEditModal('edit')
@@ -257,7 +258,7 @@ const Admin = () => {
           <section id='adminHeader'>
             <Link to={`/profile/${getUserID()}`} as={Link} className='backToProfile'>← Back to profile</Link>
             <h1 id='adminH1'>Admin</h1>
-            <button className='edit' onClick={(e) => handleAdd(e.target.value)} value='proxy'>⊕ Add a destination</button>
+            <button className='add' onClick={(e) => handleAdd(e.target.value)} value='proxy'>⊕ Add a destination</button>
           </section>
           <div id="grid-container">
             {adminDestinations &&
@@ -304,16 +305,16 @@ const Admin = () => {
               <label>Description:</label><input type="text" name="description" placeholder='Description' onChange={handleUpdate} value={editBody.description} />
             </span>
             <span>
-              <label>Images:</label><input type="text" name="images" placeholder='Images' onChange={handleUpdate} value={editBody.images} />
+              <label>Images:</label><input name="images" placeholder='Images' onChange={handleUpdate} value={editBody.images} />
             </span>
             <span>
-              <label>Features:</label><input type="text" name="features" placeholder='Features' onChange={handleUpdate} value={editBody.features} />
+              <label>Features:</label><input name="features" placeholder='Features' onChange={handleUpdate} value={editBody.features} />
             </span>
             <span>
-              <label>High Temperatures:</label><input type="text" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdate} value={editBody.highTemps} />
+              <label>High Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdate} value={editBody.highTemps} />
             </span>
             <span>
-              <label>Low Temperatures:</label><input type="text" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdate} value={editBody.lowTemps} />
+              <label>Low Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdate} value={editBody.lowTemps} />
             </span>
             <button id="submitEdit" type="submit">Submit edit</button>
             {error && <p className='text-danger'>{error}</p>}
@@ -325,37 +326,37 @@ const Admin = () => {
           <button className="close-button" onClick={closeAddModal}>X</button>
           <form id="editForm" method="dialog" onSubmit={submitAdd}>
             <span>
-              <label>Name:</label><input type="text" name="name" placeholder='Destination Name' onChange={handleUpdateAdd} value={addBody.name} />
+              <label>Name:</label><input type="text" name="name" placeholder='Destination Name' onChange={handleUpdateAdd} value={addBody.name} required/>
             </span>
             <span>
-              <label>Country:</label><input type="text" name="country" placeholder='Country Name' onChange={handleUpdateAdd} value={addBody.country} />
+              <label>Country:</label><input type="text" name="country" placeholder='Country Name' onChange={handleUpdateAdd} value={addBody.country} required/>
             </span>
             <span>
-              <label>Continent:</label><input type="text" name="continent" placeholder='Continent Name' onChange={handleUpdateAdd} value={addBody.continent} />
+              <label>Continent:</label><input type="text" name="continent" placeholder='Continent Name' onChange={handleUpdateAdd} value={addBody.continent} required/>
             </span>
             <span>
-              <label>Currency:</label><input type="text" name="currency" placeholder='Currency' onChange={handleUpdateAdd} value={addBody.currency} />
+              <label>Currency:</label><input type="text" name="currency" placeholder='Currency' onChange={handleUpdateAdd} value={addBody.currency} required/>
             </span>
             <span>
-              <label>Latitude:</label><input type="text" name="latitude" placeholder='Latitude' onChange={handleUpdateAdd} value={addBody.latitude} />
+              <label>Latitude:</label><input type="text" name="latitude" placeholder='Latitude' onChange={handleUpdateAdd} value={addBody.latitude} required/>
             </span>
             <span>
-              <label>Longitude:</label><input type="text" name="longitude" placeholder='Longitude' onChange={handleUpdateAdd} value={addBody.longitude} />
+              <label>Longitude:</label><input type="text" name="longitude" placeholder='Longitude' onChange={handleUpdateAdd} value={addBody.longitude} required/>
             </span>
             <span>
-              <label>Description:</label><input type="text" name="description" placeholder='Description' onChange={handleUpdateAdd} value={addBody.description} />
+              <label>Description:</label><input type="text" name="description" placeholder='Description' onChange={handleUpdateAdd} value={addBody.description} required/>
             </span>
             <span>
-              <label>Images:</label><input type="text" name="images" placeholder='Images' onChange={handleUpdateAdd} value={addBody.images} />
+              <label>Images:</label><input type="text" name="images" placeholder='Images' onChange={handleUpdateAdd} value={addBody.images} required/>
             </span>
             <span>
-              <label>Features:</label><input type="text" name="features" placeholder='Features' onChange={handleUpdateAdd} value={addBody.features} />
+              <label>Features:</label><input type="text" name="features" placeholder='Features' onChange={handleUpdateAdd} value={addBody.features} required/>
             </span>
             <span>
-              <label>High Temperatures:</label><input type="text" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdateAdd} value={addBody.highTemps} />
+              <label>High Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdateAdd} value={addBody.highTemps} />
             </span>
             <span>
-              <label>Low Temperatures:</label><input type="text" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdateAdd} value={addBody.lowTemps} />
+              <label>Low Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdateAdd} value={addBody.lowTemps} />
             </span>
             <button id="submitEdit" type="submit">Submit destination</button>
             {error && <p className='text-danger'>{error}</p>}

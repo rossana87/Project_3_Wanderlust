@@ -82,7 +82,7 @@ const DestinationIndex = () => {
       // Save the token to local storage for later use
       // localStorage.setItem('WANDERLUST-TOKEN', data.token)
       closeRegisterModal()
-      navigate('/') // needs this to trigger the 'register' button to show
+      navigate(location.pathname) // needs this to trigger the 'register' button to show
     } catch (err) {
       console.log('error', err)
       setError(err.response.data.message)
@@ -106,6 +106,7 @@ const DestinationIndex = () => {
 
   useEffect(() => {
     const getMap = async () => {
+      if (!destination) return
       try {
         mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
         const map = new mapboxgl.Map({
