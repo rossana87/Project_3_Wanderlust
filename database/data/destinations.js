@@ -12,7 +12,9 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679907554/Wanderlust/barcelona_spring_wzljbd.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679907092/Wanderlust/Barcelona_summer_zotkqj.jpg'
     ],
-    features: [],
+    features: ['Experience Barcelona\'s vibrant culture through its cuisine, architecture, and beaches, with highlights including the Sagrada Familia.',
+      'Explore the stunning landmarks of Barcelona, from the whimsical Park Guell to the awe-inspiring Sagrada Familia and Gothic Quarter\'s historic charm.',
+      'Taste the Mediterranean and Catalan flavours that define Barcelonas cuisine, featuring fresh seafood, bold spices, meats, and loads of tapas.'],
     highTemps: [15, 15, 17, 20, 23, 27, 29, 29, 26, 23, 18, 15],
     lowTemps: [9, 8, 10, 13, 16, 20, 23, 23, 20, 17, 12, 9],
   },
@@ -29,7 +31,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679908565/Wanderlust/val_disere_spring_j0mdmj.webp',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679908562/Wanderlust/val_disere_summer_eiraye.jpg'
     ],
-    features: [],
+    features: [
+      'Experience Val d\'Isere\'s breathtaking Alpine scenery, ski slopes, and snow-capped peaks in the heart of the French Alps.',
+      'Ski or snowboard in the world-class slopes, go ice skating, snowshoeing, or dog sledding in the winter wonderland.',
+      'Taste hearty Savoyard cuisine, featuring fondue, raclette, tartiflette, and charcuterie, perfect after a day of skiing.'
+    ],
     highTemps: [-1, 1, 6, 9, 14, 18, 20, 20, 15, 10, 3, -1],
     lowTemps: [-10, -9, -6, -3, 1, 4, 6, 6, 3, -1, -6, -9],
   },
@@ -46,7 +52,11 @@ export default [
       'https://www.enjoylondon.com/wp-content/uploads/2022/02/enjoy-london.webp',
       'http://london.com/wp-content/uploads/2019/03/london_001.jpg'
     ],
-    features: [],
+    features: [
+      'Discover iconic landmarks, museums, shopping districts, and diverse culture, from Big Ben to the British Museum.',
+      'Shop, dine, and explore in the diverse neighborhoods, catch a West End show, or visit landmarks such as the Tower of London.',
+      'London\'s cuisine is diverse, from classic fish and chips to Indian curries, trendy gastropubs, and Michelin - starred restaurants.'
+    ],
     highTemps: [7, 8, 10, 13, 17, 20, 22, 22, 19, 15, 10, 8],
     lowTemps: [2, 2, 3, 5, 8, 11, 13, 13, 11, 8, 4, 2],
   },
@@ -63,7 +73,11 @@ export default [
       'https://www.fodors.com/wp-content/uploads/2018/10/HERO_UltimateRome_Hero_shutterstock789412159.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909214/Wanderlust/rome_summer_rctmxw.jpg'
     ],
-    features: [],
+    features: [
+      'Explore ancient ruins, historic churches, fountains, and piazzas, including the Colosseum, Pantheon, and Trevi Fountain.',
+      'Walk or bike historic streets, visit Vatican City, indulge in Italian cuisine, or take a cooking class to learn how to make pasta.',
+      'Taste the traditional Italian dishes, such as carbonara, amatriciana, suppli and pizza served in cozy trattorias.'
+    ],
     highTemps: [12, 14, 17, 19, 24, 28, 31, 31, 27, 22, 17, 13],
     lowTemps: [3, 3, 6, 9, 13, 17, 19, 19, 15, 12, 7, 4],
   },
@@ -80,7 +94,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909311/Wanderlust/munich_spring_pekaym.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909311/Wanderlust/munich_spring_pekaym.jpg'
     ],
-    features: [],
+    features: [
+      'Immerse yourself in the Bavarian charm, with its beer gardens, historic architecture, and landmarks such as Nymphenburg Palace and Marienplatz.',
+      'Savor Munich\'s famous beer and cuisine, visit its museums, attend the Oktoberfest, or explore the scenic countryside.',
+      'Munich\'s cuisine features Bavarian specialties such as sausages, pretzels, and beer, as well as international options and modern cuisine.'
+    ],
     highTemps: [3, 5, 9, 14, 19, 22, 24, 24, 19, 14, 8, 4],
     lowTemps: [-3, -2, 1, 4, 8, 11, 13, 13, 10, 5, 1, -2],
   },
@@ -97,7 +115,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909402/Wanderlust/amsterdam_spring_qxyrve.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909402/Wanderlust/amsterdam_spring_qxyrve.jpg'
     ],
-    features: [],
+    features: [
+      'Wander the picturesque canals of Amsterdam, visiting its museums, cafes, and landmarks such as the Rijksmuseum and Anne Frank House.',
+      'Cruise the canals, visit its famous art museums, shop in trendy neighborhoods, or take a bike tour of the city.',
+      'Try the best Danish classics such as herring, stroopwafels, and bitterballen, as well as trendy cafes.'
+    ],
     highTemps: [6, 6, 10, 13, 17, 20, 22, 22, 19, 15, 10, 7],
     lowTemps: [1, 0, 2, 4, 8, 11, 13, 13, 11, 7, 4, 2],
   },
@@ -114,7 +136,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909599/Wanderlust/stockholm_spring_qut4ia.jpg',
       'https://www.lifeinnorway.net/wp-content/uploads/2022/06/waterside-view-of-stockholm-in-sweden.jpg.webp'
     ],
-    features: [],
+    features: [
+      'Explore the picturesque Old Town, visit its museums, parks, and markets, and admire its stunning architecture and waterfront views.',
+      'Enjoy the outdoor activities such as kayaking, cycling, or skating, and visit its museums, cafes, and stylish boutiques.',
+      'Try the best fresh seafood, traditional Swedish dishes, and innovative Nordic cuisine served in trendy restaurants.'
+    ],
     highTemps: [0, 0, 4, 10, 16, 21, 23, 21, 16, 10, 5, 2],
     lowTemps: [-4, -4, -2, 2, 7, 11, 14, 14, 10, 5, 1, -2],
   },
@@ -131,7 +157,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909672/Wanderlust/copenhagen_summer_nfbmch.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909672/Wanderlust/copenhagen_summer_nfbmch.jpg'
     ],
-    features: [],
+    features: [
+      'Discover charming streets, canals, and colorful houses, and visit its landmarks such as Tivoli Gardens and the Little Mermaid statue.',
+      'Copenhagen offers canal tours, amusement parks, and world-class dining, as well as castles, museums, and cultural events.',
+      'Enjoy Nordic specialties, classic Danish dishes, and Michelin-starred restaurants, as well as craft beer and coffee shops.'
+    ],
     highTemps: [3, 3, 6, 11, 16, 20, 22, 22, 17, 12, 7, 5],
     lowTemps: [-1, -1, 1, 4, 8, 12, 14, 14, 11, 7, 4, 1],
   },
@@ -148,7 +178,11 @@ export default [
       'https://www.originaltravel.co.uk/travel-blog/ShowPhoto/3583/0',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909730/Wanderlust/paris_summer_bt7ip5.jpg'
     ],
-    features: [],
+    features: [
+      'Wonder around the iconic landmarks, such as the Eiffel Tower, Louvre Museum, and Notre - Dame Cathedral, as well as trendy neighborhoods.',
+      'Paris activities range from visiting its iconic landmarks to shopping in chic boutiques, attending art exhibitions, and enjoying its vibrant nightlife.',
+      'Enjoy the haute cuisine, patisseries, bistros, and street food, with must-tries such as croissants, macarons, and escargot.'
+    ],
     highTemps: [7, 8, 12, 16, 19, 23, 25, 25, 21, 16, 11, 8],
     lowTemps: [2, 2, 5, 7, 10, 13, 15, 15, 12, 9, 5, 3],
   },
@@ -165,7 +199,11 @@ export default [
       'https://deih43ym53wif.cloudfront.net/cibeles-fountain-madrid-spain-shutterstock_556870582_cf4a306a5b.jpeg',
       'https://www.roadaffair.com/wp-content/uploads/2018/07/metropolis-hotel-madrid-spain-shutterstock_333044603.jpg'
     ],
-    features: ['beach', 'mountain', 'ocean'],
+    features: [
+      'Madrid\'s attractions range from its royal palace and historic plazas to its museums, parks, and world - renowned cuisine, including tapas and paella.',
+      'Enjoy art tours, flamenco shows, and enjoying its vibrant food and wine scene, as well as exploring its museums and parks.',
+      'This cuisine is known for its tapas, paella, and cured meats, as well as its wine and sherry served in traditional taverns and trendy bars.'
+    ],
     highTemps: [10, 12, 16, 18, 22, 28, 32, 31, 26, 19, 13, 10],
     lowTemps: [3, 4, 6, 8, 11, 16, 19, 19, 15, 11, 6, 4],
   },
@@ -182,7 +220,11 @@ export default [
       'https://woody.cloudly.space/app/uploads/crt-cotedazur/2020/07/thumbs/landing-monaco-istock-686004938-xantana-1920x1080-1-1920x960.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679909976/Wanderlust/monaco_summer_rafww8.jpg'
     ],
-    features: [],
+    features: [
+      'Monaco\'s glamour is reflected in its yachts, casinos, and Formula 1 Grand Prix, as well as its stunning Mediterranean coast and Prince\'s Palace.',
+      'Enjoy yacht tours, gambling, and visiting its famous Formula 1 racecourse, as well as enjoying its beaches and nightlife.',
+      'Try the fusion of French and Mediterranean flavors, with seafood, Provençal dishes, and Michelin-starred restaurants.'
+    ],
     highTemps: [12, 12, 14, 16, 20, 24, 27, 27, 24, 20, 16, 13],
     lowTemps: [8, 7, 9, 11, 14, 18, 21, 21, 19, 15, 11, 9],
   },
@@ -199,7 +241,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679910133/Wanderlust/lisbon_autumn_c8zgll.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679910132/Wanderlust/lisbon_summer_wtxkva.jpg'
     ],
-    features: [],
+    features: [
+      'Walk around colorful neighborhoods, stunning viewpoints, and traditional Fado music performances.',
+      'Explore the historic neighborhoods, enjoy the vibrant nightlife, and take in the stunning views from the city\'s many viewpoints.',
+      'Savor fresh seafood dishes, custard tarts, and hearty stews with Portuguese wine.'
+    ],
     highTemps: [15, 16, 18, 20, 22, 25, 28, 28, 26, 23, 18, 15],
     lowTemps: [8, 9, 10, 12, 14, 16, 18, 18, 17, 15, 12, 9],
   },
@@ -216,7 +262,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679910247/Wanderlust/zurich_spring_o98yaj.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679910247/Wanderlust/zurich_summer_tua88o.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the picturesque Old Town, lakefront views, museums, and outdoor activities such as skiing and hiking.',
+      'Ski in the nearby mountains, explore the museums and galleries, enjoy the city\'s many festivals, and take a scenic boat ride on Lake Zurich.',
+      'Enjoy Swiss cheese and chocolate, traditional sausages, and delicious pastries.'
+    ],
     highTemps: [4, 6, 11, 15, 19, 23, 25, 24, 20, 15, 9, 5],
     lowTemps: [-1, 0, 3, 6, 10, 13, 15, 15, 12, 8, 3, 0],
   },
@@ -233,7 +283,11 @@ export default [
       'https://lp-cms-production.imgix.net/2020-11/shutterstockRF_1564421236.jpg?auto=format&q=75&w=3840',
       'https://cdn.getyourguide.com/img/location/5ffeb528d3d6f.jpeg/75.jpg'
     ],
-    features: [],
+    features: [
+      'Explore iconic landmarks such as the Statue of Liberty, Central Park, and Empire State Building, as well as trendy neighborhoods.',
+      'Catch a Broadway show, visit world-class museums, explore the diverse neighborhoods, and take a stroll in Central Park.',
+      'Indulge in a diverse range of cuisines, from classic deli sandwiches to Michelin-starred fine dining.'
+    ],
     highTemps: [4, 6, 11, 18, 22, 27, 29, 29, 25, 18, 13, 7],
     lowTemps: [-3, -2, 2, 7, 12, 18, 20, 20, 16, 10, 6, 0],
   },
@@ -250,7 +304,11 @@ export default [
       'https://upload.wikimedia.org/wikipedia/commons/5/58/Seattle_Center_as_night_falls.jpg',
       'https://hiretop.com/content/images/2023/02/5639157682e2053e7cfaddeea35c03a1.jpeg'
     ],
-    features: [],
+    features: [
+      'Explore the Space Needle, Pike Place Market, and waterfront views, as well as outdoor activities and vibrant arts and music scene.',
+      'Sip coffee in cozy cafes, enjoy the music and arts scene, take in the stunning natural scenery.',
+      'Enjoy fresh seafood, and taste delicious Pacific Northwest cuisine.'
+    ],
     highTemps: [8, 9, 11, 14, 17, 19, 22, 22, 19, 15, 11, 8],
     lowTemps: [4, 5, 6, 7, 10, 12, 14, 14, 13, 10, 6, 4],
   },
@@ -267,7 +325,11 @@ export default [
       'https://content.r9cdn.net/rimg/dimg/69/1b/cca1e76b-city-13852-16eeb19be6a.jpg?width=1750&height=1000&xhint=1566&yhint=1117&crop=true',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911234/Wanderlust/san_francisco_summer_cbptky.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the most famous landmarks, such as Golden Gate Bridge, Alcatraz Island, and cable cars, as well as its hilly streets, parks.',
+      'Explore the diverse neighborhoods, take in breathtaking views, and ride a cable car up and down the city\'s famous hills.',
+      'Savor sourdough bread, fresh seafood, and locally grown produce in farm-to-table restaurants.'
+    ],
     highTemps: [14, 16, 17, 17, 18, 19, 19, 20, 21, 21, 18, 14],
     lowTemps: [8, 9, 10, 10, 11, 12, 12, 13, 13, 13, 11, 8],
   },
@@ -284,7 +346,11 @@ export default [
       'https://www.costacruises.eu/content/dam/costa/inventory-assets/ports/RIO/c035_rio_de_janeiro.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911310/Wanderlust/rio_summer2_u8rykd.jpg'
     ],
-    features: [],
+    features: [
+      'Walk around sandy beaches, Sugarloaf Mountain, Christ the Redeemer statue, and vibrant culture, including samba and carnival.',
+      'Lounge on world-famous beaches, enjoy the samba and carnival culture, visit iconic landmarks, and take a hike to stunning viewpoints.',
+      'Try feijoada, a black bean and meat stew, and enjoy churrasco-style barbecued meats.'
+    ],
     highTemps: [30, 31, 30, 28, 26, 25, 25, 25, 26, 27, 28, 29],
     lowTemps: [24, 25, 24, 23, 21, 20, 19, 19, 20, 21, 22, 23],
   },
@@ -301,7 +367,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911380/Wanderlust/santiago_summer_a2jtwb.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911380/Wanderlust/santiago_summer_a2jtwb.jpg'
     ],
-    features: [],
+    features: [
+      'Explore the stunning views of the Andes mountains, as well as its wine country and outdoor activities.',
+      'Hike in nearby mountains, explore the city\'s museums and parks, and take a trip to nearby wine country.',
+      'Savor Chilean seafood, try traditional empanadas, and taste the country\'s famous wines.'
+    ],
     highTemps: [30, 30, 28, 24, 19, 16, 15, 17, 20, 23, 26, 29],
     lowTemps: [12, 11, 9, 7, 4, 3, 2, 3, 5, 7, 9, 11],
   },
@@ -318,7 +388,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679911817/Wanderlust/istanbul_spring_ix5ulk.jpg',
       'https://www.cuddlynest.com/blog/wp-content/uploads/2022/10/day-trips-from-istanbul-scaled.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the magnificent Hagia Sophia, Blue Mosque, and Topkapi Palace, as well as the bustling Grand Bazaar and Bosphorus cruises.',
+      'Explore the historic mosques and palaces, take a relaxing Bosphorus cruise, and experience the vibrant nightlife.',
+      'Delight in Turkish kebabs, mezze dishes, and baklava, as well as the city\'s famous street food.'
+    ],
     highTemps: [9, 9, 12, 17, 22, 27, 29, 29, 25, 20, 15, 11],
     lowTemps: [3, 3, 5, 8, 13, 18, 20, 20, 17, 13, 8, 5],
   },
@@ -335,7 +409,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916635/Wanderlust/bari_spring_dxbzwl.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916633/Wanderlust/bari_summer_pfjwtl.jpg'
     ],
-    features: [],
+    features: [
+      'Stroll around the historic Old Town, the Basilica di San Nicola, and the seafront promenade, as well as charming alleyways.',
+      'Enjoy the seaside views, taste delicious local cuisine, and take a day trip to Polignano a Mare, Ostuni or Monopoli.',
+      'Enjoy fresh seafood, local cheeses and charcuterie, and orecchiette with cime di rapa.'
+    ],
     highTemps: [13, 13, 15, 19, 23, 27, 30, 30, 26, 22, 17, 14],
     lowTemps: [5, 5, 6, 9, 13, 17, 20, 20, 16, 13, 9, 6],
   },
@@ -352,7 +430,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916726/Wanderlust/tokyo_spring_szctaj.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916726/Wanderlust/tokyo_summer_xh463y.jpg'
     ],
-    features: [],
+    features: [
+      'Marvel at the neon-lit streets, visit the famous Shibuya crossing, and explore traditional temples and gardens.',
+      'Visit the world-famous Tsukiji fish market, attend a sumo wrestling match, and soak in a traditional hot spring.',
+      'Savor sushi, ramen, tempura, and yakitori at local restaurants and street vendors.'
+    ],
     highTemps: [10, 10, 14, 19, 23, 26, 30, 31, 27, 22, 17, 12],
     lowTemps: [2, 2, 5, 10, 15, 19, 23, 24, 20, 15, 9, 4],
   },
@@ -369,7 +451,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916888/Wanderlust/chamonix_spring_gaaeia.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916888/Wanderlust/chamonix_autumn_hdyxel.jpg'
     ],
-    features: [],
+    features: [
+      'Enjoy stunning views of the French Alps, visit the Mer de Glace glacier, and ski in winter.',
+      'Ski or snowboard down the slopes, hike or climb in the mountains, and explore the town\'s shops and restaurants.',
+      'Enjoy traditional French cuisine, including fondue, raclette, and local cheeses.'
+    ],
     highTemps: [5, 5, 6, 9, 13, 18, 21, 21, 17, 13, 8, 6],
     lowTemps: [0, -1, 1, 4, 8, 12, 14, 15, 12, 8, 3, 1],
   },
@@ -386,7 +472,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679916992/Wanderlust/kochi_s3h74j.jpg',
       'https://media.architecturaldigest.com/photos/5e5d70acb84db300091bfc22/16:9/w_2560%2Cc_limit/GettyImages-562722429.jpg'
     ],
-    features: [],
+    features: [
+      'Cruise the backwaters, visit tea plantations, and relax on the pristine beaches of southern India.',
+      'Take a houseboat ride, attend a Kathakali dance performance, and try Ayurvedic spa treatments.',
+      'Try spicy curries, seafood dishes, and local specialties like dosa, idli, and sambar.'
+    ],
     highTemps: [32, 32, 33, 33, 32, 30, 30, 30, 30, 31, 31, 32],
     lowTemps: [23, 24, 25, 26, 26, 24, 24, 24, 24, 24, 24, 23],
   },
@@ -403,7 +493,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917176/Wanderlust/bangkok_dn1jyq.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917135/Wanderlust/bangkok_night_life_r7b718.webp'
     ],
-    features: [],
+    features: [
+      'Explore ornate temples, shop at vibrant markets, and savor delicious street food in the Thai capital.',
+      'Take a cooking class, visit the floating markets, and enjoy a Thai massage.',
+      'Indulge in spicy and aromatic street food, like pad thai, green curry, and mango sticky rice.'
+    ],
     highTemps: [32, 33, 34, 35, 35, 34, 33, 33, 33, 33, 32, 32],
     lowTemps: [22, 24, 26, 27, 26, 26, 26, 25, 25, 25, 24, 22],
   },
@@ -420,7 +514,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917270/Wanderlust/prague_summer_l7rdlx.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917270/Wanderlust/prague_summer_l7rdlx.jpg'
     ],
-    features: [],
+    features: [
+      'Admire the historic architecture of Old Town, visit the castle and the Charles Bridge, and enjoy the vibrant nightlife.',
+      'Take a walking tour, enjoy a river cruise, and attend a classical music concert in a historic venue.',
+      'Savor hearty Czech dishes like goulash, roast pork with dumplings, and schnitzel, paired with Czech beer.'
+    ],
     highTemps: [3, 5, 10, 17, 20, 24, 26, 26, 20, 14, 8, 4],
     lowTemps: [-1, -1, 2, 7, 10, 14, 16, 15, 11, 6, 3, 0],
   },
@@ -437,7 +535,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917343/Wanderlust/florence_autumn_f150ed.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917343/Wanderlust/florence_summer_fdrzs3.jpg'
     ],
-    features: [],
+    features: [
+      'Admire the stunning art and architecture of the Duomo, Uffizi Gallery, Ponte Vecchio, and Pitti Palace.',
+      'Take a cooking class, stroll through the Boboli Gardens, shop at the San Lorenzo Market, and sip wine in Chianti.',
+      'Indulge in Tuscan cuisine with steak Florentine, ribollita soup, pappa al pomodoro, and gelato.'
+    ],
     highTemps: [11, 12, 16, 19, 24, 29, 32, 32, 27, 21, 15, 11],
     lowTemps: [2, 3, 5, 8, 12, 16, 18, 18, 15, 11, 6, 3],
   },
@@ -454,7 +556,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917482/Wanderlust/venice_spring_ugqb76.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917481/Wanderlust/venice_summer_ymxllu.webp'
     ],
-    features: [],
+    features: [
+      'Glide along the Grand Canal in a gondola, visit St. Mark\'s Basilica, Doge\'s Palace, and the Rialto Bridge.',
+      'Attend a mask-making workshop, enjoy a wine tasting, go on a food tour, and take a boat ride to Murano Island.',
+      'Savor seafood with risotto al nero di seppia, sarde in saor, baccala mantecato with an aperol spritz.'
+    ],
     highTemps: [7, 9, 13, 17, 22, 26, 28, 28, 24, 18, 12, 8],
     lowTemps: [0, 1, 4, 8, 13, 17, 19, 18, 15, 10, 5, 1],
   },
@@ -471,7 +577,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917556/Wanderlust/berlin_spring_jkheyp.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917556/Wanderlust/berlin_summer_cwfqqg.jpg'
     ],
-    features: [],
+    features: [
+      'Explore the Brandenburg Gate, Berlin Wall, Checkpoint Charlie, Reichstag building, and Museum Island.',
+      'Cycle around the city, visit a brewery, and attend a concert at the Berlin Philharmonic.',
+      'Enjoy hearty German fare with currywurst, schnitzel, eisbein, and beer from local breweries.'
+    ],
     highTemps: [3, 4, 9, 14, 19, 22, 24, 24, 19, 14, 8, 4],
     lowTemps: [-2, -1, 1, 5, 9, 12, 15, 14, 11, 6, 3, 0],
   },
@@ -488,7 +598,12 @@ export default [
       'https://www.visitgreece.gr/images/1743x752/jpg/files/s_1852670350_athens_1743x752.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917654/Wanderlust/athens_spring_ppasp8.jpg'
     ],
-    features: [],
+    features: [
+      'Climb up the Acropolis to see the Parthenon, Ancient Agora, Temple of Olympian Zeus, and National Archaeological Museum.',
+      'Enjoy a Greek food walking tour, go on a day trip to Cape Sounion, take a sunset cruise.',
+      'Delight in Greek cuisine with moussaka, souvlaki, spanakopita, feta cheese, and baklava.'
+
+    ],
     highTemps: [13, 14, 16, 20, 25, 29, 32, 32, 28, 23, 18, 15],
     lowTemps: [7, 7, 9, 12, 16, 20, 23, 23, 20, 15, 12, 8],
   },
@@ -505,7 +620,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917726/Wanderlust/oslo_spring_is4rpz.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679917724/Wanderlust/summer_xzx71m.jpg'
     ],
-    features: [],
+    features: [
+      'Discover the natural beauty of the Vigeland Sculpture Park, Oslofjord, and Holmenkollen Ski Jump.',
+      'Hike in Nordmarka forest, go skiing in the winter, take a fjord sightseeing cruise, and visit the Munch Museum.',
+      'Taste Scandinavian specialties with smoked salmon, reindeer stew, gravlaks, brunost cheese, and waffles.'
+    ],
     highTemps: [0, 1, 5, 11, 17, 21, 23, 21, 16, 10, 4, 1],
     lowTemps: [-5, -5, -2, 2, 7, 11, 14, 13, 9, 4, 0, -4],
   },
@@ -522,7 +641,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679918715/Wanderlust/helsinki_summer_yppewg.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679918716/Wanderlust/helsinki_summer2_qfyrjp.jpg'
     ],
-    features: [],
+    features: [
+      'Admire the stunning architecture of the Lutheran Cathedral, Uspenski Cathedral, Helsinki Central Station.',
+      'Take a ferry to Suomenlinna Island, visit the sauna, explore the Design District, and enjoy Finnish cuisine.',
+      'Try Finnish salmon soup, reindeer meat, Karelian pasties, rye bread, and cloudberry jam.'
+    ],
     highTemps: [-2, -2, 2, 7, 14, 19, 21, 20, 15, 9, 4, 1],
     lowTemps: [-7, -7, -4, 1, 6, 11, 14, 13, 9, 4, 0, -4],
   },
@@ -556,7 +679,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919049/Wanderlust/kyiv_spring_vfftph.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919048/Wanderlust/Kyiv_summer_akf87d.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the golden-domed St. Sophia\'s Cathedral, Kyiv Pechersk Lavra monastery, and Independence Square.',
+      'Take a Chernobyl tour, visit Mezhyhirya Residence, and see a ballet at the Opera House.',
+      'Enjoy Ukrainian cuisine with borscht, varenyky dumplings, chicken Kiev, salo, and horilka vodka.'
+    ],
     highTemps: [-1, 0, 6, 14, 21, 24, 26, 25, 19, 12, 5, 0],
     lowTemps: [-7, -6, -2, 5, 10, 14, 16, 15, 10, 4, 0, -5],
   },
@@ -573,7 +700,11 @@ export default [
       'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/104000/104366-Bucharest-And-Vicinity.jpg',
       'https://content.r9cdn.net/rimg/dimg/02/2a/38330eba-city-25578-17f66349256.jpg?width=1366&height=768&xhint=1490&yhint=1292&crop=true'
     ],
-    features: [],
+    features: [
+      'Explore the Palace of the Parliament, the largest administrative building in the world, the Arcul de Triumf, and the Old Town.',
+      'Go on a bike ride in Herastrau Park, visit the Therme Bucharest spa, and explore the street art.',
+      'Savor Romanian cuisine with sarmale stuffed cabbage, mici grilled sausages, ciorba soup, and covrigi pretzels.'
+    ],
     highTemps: [3, 7, 12, 19, 23, 27, 30, 30, 25, 17, 9, 4],
     lowTemps: [-4, -2, 2, 7, 12, 16, 18, 18, 13, 7, 2, -2],
   },
@@ -590,7 +721,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919416/Wanderlust/budapest_spring_vckfkf.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919416/Wanderlust/budapest_summer_reiymd.jpg'
     ],
-    features: [],
+    features: [
+      'Admire the Chain Bridge, Fisherman\'s Bastion, Parliament Building, and relax in one of the thermal baths.',
+      'Take a Danube River cruise, visit the Ruin Bars, and attend a classical music concert.',
+      'Indulge in Hungarian cuisine with goulash soup, chimney cake, langos fried dough, Tokaji wine, and palinka fruit brandy.'
+    ],
     highTemps: [3, 6, 11, 17, 23, 26, 28, 28, 23, 16, 9, 4],
     lowTemps: [-2, 0, 3, 8, 12, 15, 17, 17, 13, 8, 4, 0],
   },
@@ -607,7 +742,11 @@ export default [
       'https://theluxurytraveller.com/wp-content/uploads/2020/01/FS-Tunis-145-1536x1123.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919567/Wanderlust/tunis_summer_lbseul.jpg'
     ],
-    features: [],
+    features: [
+      'Discover the ancient ruins of Carthage, Sidi Bou Said, and the medina, a UNESCO World Heritage Site.',
+      'Ride a camel in the Sahara Desert, visit the Bardo Museum, and explore the ancient city of Dougga.',
+      'Delight in Tunisian cuisine with couscous, brik pastries, mechouia salad, merguez sausage, and mint tea.'
+    ],
     highTemps: [16, 17, 19, 22, 26, 31, 34, 34, 30, 26, 21, 17],
     lowTemps: [7, 7, 9, 11, 14, 18, 21, 22, 20, 16, 12, 8],
   },
@@ -624,7 +763,11 @@ export default [
       'https://touristjourney.com/wp-content/uploads/2020/08/shutterstock_1384150292-scaled.jpg',
       'https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/05/03/15/marrakech-hero.jpg'
     ],
-    features: [],
+    features: [
+      'Explore the bustling souks, visit the Bahia Palace and Koutoubia Mosque, and relax in the Jardin Majorelle.',
+      'Take a cooking class, experience a traditional hammam, ride a hot air balloon, and attend a Gnawa music festival.',
+      'Savor Moroccan cuisine with tagine, couscous, pastilla, harira soup, and mint tea with pastries.'
+    ],
     highTemps: [19, 20, 23, 25, 29, 33, 37, 37, 33, 28, 23, 20],
     lowTemps: [6, 8, 10, 12, 15, 17, 20, 21, 19, 15, 11, 7],
   },
@@ -641,7 +784,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919764/Wanderlust/cape_town_summer_az9vx8.jpg',
       'https://beta-people.gvi.co.uk/wp-content/uploads/2013/11/1990955891-2021-dec-16-10-35-19-000000-South-Africa-Cape-Town.jpg'
     ],
-    features: [],
+    features: [
+      'Take the cable car up Table Mountain, visit Robben Island, stroll along the Victoria & Alfred Waterfront.',
+      'Go on a wine tasting tour, take a scenic drive along Chapman\'s Peak, hike up Lion\'s Head, and watch a sunset at Camps Bay.',
+      'Try South African cuisine with braai barbecues, bobotie, biltong jerky, bunny chow, and rooibos tea.'
+    ],
     highTemps: [29, 29, 27, 25, 22, 20, 20, 20, 21, 24, 25, 27],
     lowTemps: [17, 17, 16, 15, 13, 12, 11, 12, 13, 14, 15, 17],
   },
@@ -658,7 +805,11 @@ export default [
       'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fc66011a6-22d9-11ec-a00c-ba7759562f04.jpg?crop=3972%2C2648%2C0%2C0',
       'https://media.cntraveller.com/photos/611bf748042ccafe9a9aeb0b/16:9/w_2992,h_1683,c_limit/mauritius-gettyimages-115081730.jpg'
     ],
-    features: [],
+    features: [
+      'Discover the history and culture of the city at Aapravasi Ghat, Fort Adelaide, and the Blue Penny Museum.',
+      'Visit the Central Market, take a street food tour, go on a dolphin and whale watching excursion, and relax on the beach.',
+      'Enjoy Mauritian cuisine with dholl puri, samosas, vindaye fish, gateau piment, and alouda milkshake.'
+    ],
     highTemps: [31, 31, 30, 29, 28, 26, 25, 25, 26, 27, 29, 30],
     lowTemps: [24, 24, 24, 23, 21, 19, 19, 19, 19, 20, 21, 23],
   },
@@ -675,7 +826,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919952/Wanderlust/cairo_summer2_luwpg6.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679919952/Wanderlust/cairo_summer2_luwpg6.jpg'
     ],
-    features: [],
+    features: [
+      'Marvel at the Pyramids of Giza, explore the Egyptian Museum, and visit the Citadel of Salah al-Din.',
+      'Explore the Khan el-Khalili bazaar, see a sound and light show at the Pyramids, and go on a camel ride.',
+      'Delight in Egyptian cuisine with koshari, ful medames, taameya falafel, mahshi stuffed vegetables, and hibiscus tea.'
+    ],
     highTemps: [19, 21, 24, 29, 33, 35, 35, 35, 34, 30, 25, 21],
     lowTemps: [10, 11, 13, 16, 19, 22, 23, 24, 22, 19, 15, 11],
   },
@@ -692,7 +847,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920100/Wanderlust/dubai_summer2_j4gbva.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920100/Wanderlust/dubai_summer2_j4gbva.jpg'
     ],
-    features: [],
+    features: [
+      'Admire the Burj Khalifa, shop at the Dubai Mall, visit the Dubai Museum and the Palm Jumeirah, and go on a desert safari.',
+      'Ski at Ski Dubai, go on a helicopter tour, take a boat ride on the Dubai Creek, and visit the Dubai Miracle Garden.',
+      'Indulge in Emirati cuisine with machboos rice, shawarma, luqaimat dumplings, balaleet vermicelli, and karak tea.'
+    ],
     highTemps: [24, 25, 29, 33, 38, 40, 41, 41, 39, 35, 31, 26],
     lowTemps: [14, 16, 18, 21, 25, 28, 30, 31, 28, 24, 20, 16],
   },
@@ -709,7 +868,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920195/Wanderlust/new_delhi_rmq0ri.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920195/Wanderlust/new_delhi_rmq0ri.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the Red Fort, Jama Masjid mosque, Lotus Temple, and Humayun\'s Tomb, and explore Chandni Chowk bazaar.',
+      'Attend a cricket match, go on a food tour, take a rickshaw ride, and watch a sound and light show.',
+      'Try Indian cuisine with butter chicken, naan, chaat, biryani, and lassi.'
+    ],
     highTemps: [21, 24, 30, 37, 40, 39, 35, 34, 34, 33, 28, 23],
     lowTemps: [8, 10, 16, 21, 26, 28, 27, 26, 25, 19, 13, 8],
   },
@@ -726,7 +889,11 @@ export default [
       'https://i.dailymail.co.uk/1s/2022/06/07/08/58774831-0-image-a-3_1654587085793.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920544/Wanderlust/goa_summer2_h0n4ip.jpg'
     ],
-    features: [],
+    features: [
+      'Relax on the beaches of Calangute and Palolem, explore the historic Old Goa churches, and visit the Dudhsagar Waterfalls.',
+      'Go on a dolphin watching tour, try water sports, attend a beach party, and take a yoga class.',
+      'Savor Goan cuisine with fish curry, vindaloo, pork sorpotel, prawn balchão, and bebinca dessert.'
+    ],
     highTemps: [31, 31, 33, 33, 33, 32, 30, 30, 31, 33, 34, 32],
     lowTemps: [20, 20, 23, 26, 28, 27, 26, 26, 27, 25, 23, 21],
   },
@@ -743,7 +910,11 @@ export default [
       'https://assets.vogue.in/photos/5ce431b346cf5953f8b18c74/master/pass/featured.2.jpg',
       'https://images.squarespace-cdn.com/content/v1/55d729cfe4b00ab3960e7989/1631046058055-AK5GKSZVNT9NQQ5Z63NQ/Craig+Kassover1.jpg?format=2500w'
     ],
-    features: [],
+    features: [
+      'Take a trek to Everest Base Camp, explore Durbar Square, visit Swayambhunath Stupa and Boudhanath Stupa.',
+      'Take a helicopter tour of Mount Everest, go on a wildlife safari, go bungee jumping, and try Nepali cooking classes.',
+      'Enjoy Nepali cuisine with momos, dal bhat, choila, chatamari, and lassi.'
+    ],
     highTemps: [18, 21, 25, 28, 29, 29, 28, 29, 28, 26, 23, 20],
     lowTemps: [3, 5, 9, 13, 16, 20, 20, 20, 19, 14, 8, 4],
   },
@@ -760,7 +931,11 @@ export default [
       'https://www.letsphuket.com/wp-content/uploads/phuket1.jpg',
       'https://lp-cms-production.imgix.net/2021-12/GettyImages-826977384.jpg?auto=format&q=75&w=3840'
     ],
-    features: [],
+    features: [
+      'Go island hopping, visit the Big Buddha statue, watch a Thai boxing match, and relax on the beaches of Patong and Kata.',
+      'Take a Thai cooking class, go on a jungle trek, visit the Tiger Kingdom, and attend the Phuket FantaSea show.',
+      'Delight in Thai cuisine with tom yum soup, pad Thai, green curry, mango sticky rice, and Thai iced tea.'
+    ],
     highTemps: [33, 34, 34, 34, 33, 32, 32, 32, 31, 32, 32, 32],
     lowTemps: [24, 25, 25, 26, 25, 25, 25, 25, 24, 24, 25, 24],
   },
@@ -777,7 +952,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920844/Wanderlust/phi_phi_island_2_uqiwxz.jpg',
       'https://a.cdn-hotels.com/gdcs/production22/d84/dfff6f95-5e76-4573-ad3f-4042d4c107c7.jpg'
     ],
-    features: [],
+    features: [
+      'Snorkel and dive at Maya Bay, visit the Viking Cave, and hike to the Phi Phi Viewpoint for panoramic views.',
+      'Swim with sharks, visit the Monkey Beach, attend a beach party, and take a scuba diving course.',
+      'Enjoy fresh seafood with grilled squid, shrimp pad Thai, seafood platters, and coconut ice cream.'
+    ],
     highTemps: [32, 33, 33, 33, 32, 31, 31, 31, 30, 30, 31, 31],
     lowTemps: [24, 24, 24, 25, 25, 25, 25, 25, 24, 24, 24, 23],
   },
@@ -794,7 +973,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920935/Wanderlust/ha_long_bay_1_zpuvv4.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679920935/Wanderlust/ha_long_bay_2_yrfvnj.jpg'
     ],
-    features: [],
+    features: [
+      'Take a cruise to see the limestone karst islands, visit the Sung Sot Cave and Ti Top Island, and kayak in the bay.',
+      'Go squid fishing, take a seaplane tour, visit the Cat Ba Island, and attend a floating market.',
+      'Savor Vietnamese cuisine with pho, bun cha, banh mi, goi cuon spring rolls, and Vietnamese coffee.'
+    ],
     highTemps: [20, 21, 23, 27, 30, 30, 31, 32, 31, 28, 24, 21],
     lowTemps: [14, 15, 18, 21, 24, 24, 25, 25, 24, 21, 18, 15],
   },
@@ -811,7 +994,11 @@ export default [
       'https://www.abercrombiekent.co.uk/-/media/abercrombieandkent/images/page-header-images/asia/vietnam/hanoi-halong-bay-and-sapa/hanoi-halong-bay--sapa0000vietnamhalong-bayshutterstock243530122.jpg?w=1920&h=940',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679921043/Wanderlust/hanoi_3_up9k8s.jpg'
     ],
-    features: [],
+    features: [
+      'Visit Hoan Kiem Lake, the Temple of Literature, the Old Quarter, the Hanoi Opera House, and the Ho Chi Minh Mausoleum.',
+      'Take a street food tour, attend a water puppet show, try egg coffee, bike around the countryside, and visit Halong Bay.',
+      'Try pho, bun cha, banh mi, egg coffee, and cha ca la vong.'
+    ],
     highTemps: [20, 21, 23, 28, 32, 34, 33, 33, 32, 29, 26, 22],
     lowTemps: [14, 16, 18, 22, 24, 26, 26, 26, 25, 22, 19, 15],
   },
@@ -828,7 +1015,11 @@ export default [
       'https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt653561720b8df09b/61c04de5abe5293e657812b2/US_KualaLumpur_MY_Header.jpg',
       'https://www.abercrombiekent.co.uk/-/media/abercrombieandkent/images/page-header-images/asia/malaysia-and-borneo/kuala-lumpur/kualalumpur_0000_malaysia-kuala-lumpur-shutterstock_240713407.jpg?w=1920&h=940'
     ],
-    features: [],
+    features: [
+      'See the Petronas Twin Towers, the Batu Caves, the KL Tower, Chinatown, and the Islamic Arts Museum.',
+      'Visit the Batu Caves, shop at the night markets, try local cuisine, hike in the rainforest, and attend a cultural performance.',
+      'Savor nasi lemak, satay, char kway teow, roti canai, and teh tarik'
+    ],
     highTemps: [32, 33, 33, 33, 33, 33, 32, 32, 32, 32, 32, 32],
     lowTemps: [23, 23, 24, 24, 24, 24, 23, 24, 23, 24, 23, 23],
   },
@@ -845,7 +1036,11 @@ export default [
       'https://www.pocketnews.com.my/wp-content/uploads/2022/09/Third-Generation.jpg',
       'https://images.contentstack.io/v3/assets/blt00454ccee8f8fe6b/blt754ae6280305e90e/61c15954c52c5b292ce23d9d/US_Penang_MY_Header.jpg'
     ],
-    features: [],
+    features: [
+      'Explore Georgetown\'s heritage sites, the Kek Lok Si Temple, Penang Hill, the Clan Jetties, and the Batu Ferringhi Beach.',
+      'Go on a street art tour, visit the Penang Hill Railway, take a cooking class, relax at the beach, and try the street food.',
+      'Enjoy laksa, char koay teow, nasi kandar, cendol, and chendol.'
+    ],
     highTemps: [32, 32, 32, 32, 32, 32, 31, 31, 31, 31, 31, 31],
     lowTemps: [24, 24, 24, 25, 25, 24, 24, 24, 24, 24, 24, 24],
   },
@@ -862,7 +1057,11 @@ export default [
       'https://www.worldbeachguide.com/photos/palau-ubin-singapore.jpg',
       'https://images.rove.me/w_1920,q_85/zec9830eludeknyvikio/singapore-ride-bikes-at-pulau-ubin.jpg'
     ],
-    features: [],
+    features: [
+      'Visit Gardens by the Bay, the Merlion Park, Sentosa Island, Marina Bay Sands, and the Singapore Zoo.',
+      'Visit the Universal Studios, shop at Orchard Road, take a night safari, attend a light show, and visit the ArtScience Museum.',
+      'Delight in chicken rice, chili crab, laksa, hainanese pork chop, and kaya toast.'
+    ],
     highTemps: [30, 32, 32, 32, 32, 32, 31, 31, 31, 32, 31, 30],
     lowTemps: [24, 24, 25, 25, 25, 25, 25, 25, 24, 25, 24, 24],
   },
@@ -879,7 +1078,11 @@ export default [
       'https://cdn.britannica.com/03/198203-050-138BB1C3/entrance-Gate-of-Divine-Might-Beijing-Forbidden.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679925888/Wanderlust/beijing_1_ytpacc.jpg'
     ],
-    features: [],
+    features: [
+      'See the Great Wall of China, the Forbidden City, the Temple of Heaven, the Summer Palace, and the Ming Tombs.',
+      'Walk the Great Wall of China, visit the Olympic Park, attend a tea ceremony, try Peking duck, and explore the hutongs.',
+      'Savor Peking duck, dumplings, hot pot, jianbing, and Beijing noodles.'
+    ],
     highTemps: [2, 5, 12, 21, 27, 30, 31, 30, 26, 19, 10, 4],
     lowTemps: [-8, -6, 1, 8, 14, 19, 22, 21, 15, 8, 0, -6],
   },
@@ -896,7 +1099,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926219/Wanderlust/kyoto_spring_lgnl4k.jpg',
       'https://media.architecturaldigest.com/photos/5c3f984992ce212ce3f51233/master/w_1600%2Cc_limit/GettyImages-565448091.jpg'
     ],
-    features: [],
+    features: [
+      'Explore the Fushimi Inari Shrine, the Kinkaku-ji Temple, the Arashiyama Bamboo Grove, the Nijo Castle, and the Gion district.',
+      'Try Japanese tea ceremony, visit a Zen garden, attend a traditional festival, and try kaiseki cuisine.',
+      'Enjoy sushi, tempura, wagashi, matcha tea, and tofu dishes such as yudofu and agedashi tofu.'
+    ],
     highTemps: [9, 10, 14, 20, 25, 28, 32, 33, 29, 23, 17, 11],
     lowTemps: [1, 1, 3, 8, 14, 19, 23, 24, 20, 13, 7, 2],
   },
@@ -913,7 +1120,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926340/Wanderlust/gyeongju_spring_z9uzj4.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926340/Wanderlust/gyeongju_summer_juswzd.jpg'
     ],
-    features: [],
+    features: [
+      'Visit Bulguksa Temple, Seokguram Grotto, and Anapji Pond to experience ancient Korean history and architecture.',
+      'Rent a bike to explore the countryside, visit the Gyeongju National Museum, and try traditional Korean cuisine.',
+      'Try Ssambap, a dish of lettuce leaves wrapped around rice and vegetables, and Sujebi, a Korean-style hand-torn noodle soup.'
+    ],
     highTemps: [5, 7, 12, 18, 23, 25, 29, 29, 25, 20, 14, 8],
     lowTemps: [-3, -1, 3, 9, 14, 18, 22, 23, 17, 12, 5, 0],
   },
@@ -930,7 +1141,11 @@ export default [
       'https://www.driver-group.com/userfiles/images/NewsImages/shutterstock_560728117%20(1).jpg',
       'https://www.gsma.com/newsroom/wp-content/uploads//Korean-Mobile-IoT.jpg'
     ],
-    features: [],
+    features: [
+      'Explore Gyeongbokgung Palace, Namsan Tower, and Myeongdong for a mix of traditional and modern Korean culture.',
+      'Shop in Myeongdong, visit a Korean sauna, watch a K-pop performance, and eat street food in Gwangjang Market.',
+      'Eat Korean fried chicken, bibimbap, and Korean barbecue, and enjoy street food like tteokbokki and hotteok.'
+    ],
     highTemps: [1, 4, 10, 17, 23, 27, 28, 29, 25, 19, 11, 3],
     lowTemps: [-8, -5, 0, 6, 12, 17, 21, 21, 16, 9, 1, -5],
   },
@@ -947,7 +1162,11 @@ export default [
       'https://i.natgeofe.com/n/f2662f5e-fa1f-4fa7-a7db-00c8765cecaa/willys-rock-sunset-boracay-island-philippines_16x9.jpg',
       'https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/12/22224603/boracay-travel-guide-philippines-beach.jpg'
     ],
-    features: [],
+    features: [
+      'Relax on the famous White Beach, island hop to Puka Beach and Ariel\'s Point, and go scuba diving and snorkeling.',
+      'Parasail, kiteboard, and windsurf at Bulabog Beach, take a sunset cruise, and party at the beach clubs.',
+      'Savor fresh seafood, including grilled fish and shrimp, and try Filipino dishes like adobo and lechon.'
+    ],
     highTemps: [28, 29, 29, 27, 32, 31, 29, 30, 31, 30, 29, 28],
     lowTemps: [23, 24, 24, 23, 25, 25, 24, 25, 25, 25, 24, 24],
   },
@@ -964,7 +1183,11 @@ export default [
       'https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg',
       'https://media.cntraveler.com/photos/5c002dc9597f4e4be66f8f8e/2:1/w_2560%2Cc_limit/GettyImages-929838110.jpg'
     ],
-    features: [],
+    features: [
+      'Discover ancient temples like Tanah Lot and Uluwatu, and beachside towns like Seminyak and Kuta.',
+      'Take a yoga class, learn how to surf, visit art galleries, and indulge in a traditional Balinese spa treatment.',
+      'Taste Balinese specialties like babi guling (suckling pig), nasi campur (mixed rice dish), and spicy meat skewers.'
+    ],
     highTemps: [29, 30, 30, 32, 33, 31, 31, 31, 31, 31, 31, 30],
     lowTemps: [23, 22, 23, 22, 23, 22, 22, 22, 22, 23, 23, 23],
   },
@@ -981,7 +1204,11 @@ export default [
       'https://cdn.cnn.com/cnnnext/dam/assets/170424122747-ubud-bali-indonesia-guide-four-seasons-resort-bali-at-sayan-full-169.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926750/Wanderlust/ubud_2_qtaam3.jpg'
     ],
-    features: [],
+    features: [
+      'Experience Balinese culture and nature by visiting the Ubud Monkey Forest, and Tegalalang Rice Terrace.',
+      'Take a cooking class, explore the Ubud Art Market, hike up Mount Batur for sunrise, and relax at a Balinese spa.',
+      'Enjoy traditional Balinese dishes like fried rice, chicken skewers, vegetable salad with peanut sauce.'
+    ],
     highTemps: [29, 29, 29, 29, 29, 28, 27, 27, 28, 29, 30, 29],
     lowTemps: [23, 23, 23, 23, 23, 23, 22, 22, 22, 23, 23, 23],
   },
@@ -998,7 +1225,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926897/Wanderlust/sydney_2_r0ly3k.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679926897/Wanderlust/sydney_2_r0ly3k.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the Opera House, climb the Harbour Bridge, explore the Royal Botanic Garden, and relax at Bondi Beach.',
+      'Climb the Harbour Bridge, visit Taronga Zoo, attend a performance at the Opera House, and take a coastal walk.',
+      'Try fresh seafood, modern Australian and Asian fusion cuisine, and strong coffee culture.'
+    ],
     highTemps: [26, 26, 25, 23, 20, 17, 17, 18, 21, 22, 23, 25],
     lowTemps: [19, 19, 18, 15, 12, 9, 8, 9, 11, 14, 16, 18],
   },
@@ -1015,7 +1246,11 @@ export default [
       'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fa5bb1af8-d757-11ec-bfba-74fdf95f86cd.jpg?crop=3335%2C2223%2C1207%2C386',
       'https://www.telegraph.co.uk/content/dam/Travel/Destinations/Oceania/Australia/Perth/perth-GettyImages-178291111.jpg'
     ],
-    features: [],
+    features: [
+      'Discover the Swan River, visit Kings Park and Botanic Garden, and explore Fremantle.',
+      'Swim with dolphins, go on a wine tour in the Swan Valley, visit Rottnest Island, and see the sunset at Cottesloe Beach.',
+      'Try fresh seafood, local wine, gourmet burgers, and craft beer options.'
+    ],
     highTemps: [30, 31, 29, 25, 22, 19, 18, 19, 20, 22, 25, 28],
     lowTemps: [19, 20, 18, 15, 12, 11, 10, 10, 11, 13, 15, 17],
   },
@@ -1032,7 +1267,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927086/Wanderlust/melbourne_1_a9xlkb.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927094/Wanderlust/melbourne_2_clfdhv.jpg'
     ],
-    features: [],
+    features: [
+      'Stroll through the laneways and street art, visit the Melbourne Cricket Ground, and go to Victoria Market.',
+      'Watch a sports game, take a hot air balloon ride, go on a food tour, and visit the Melbourne Zoo.',
+      'Multicultural cuisine, laneway cafes, fine dining, and specialty coffee.'
+    ],
     highTemps: [26, 27, 24, 21, 17, 15, 14, 16, 18, 20, 22, 24],
     lowTemps: [16, 16, 15, 12, 10, 8, 7, 8, 9, 11, 12, 14],
   },
@@ -1049,7 +1288,11 @@ export default [
       'https://content.r9cdn.net/rimg/dimg/b2/b6/89346d77-freereg-2001232-163f4a35d54.jpg?crop=true&width=1366&height=768&xhint=2020&yhint=1523',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927163/Wanderlust/gold_coast_1_izbktt.jpg'
     ],
-    features: [],
+    features: [
+      'Go to the theme parks, visit the Surfers Paradise Beach, and explore the Gold Coast Hinterland.',
+      'Surf at the beach, visit the Gold Coast Hinterland, and go whale watching.',
+      'Healthy eats, beachfront cafes, craft beer, and fresh seafood.'
+    ],
     highTemps: [29, 28, 28, 26, 24, 21, 21, 22, 24, 25, 27, 28],
     lowTemps: [21, 21, 19, 17, 14, 11, 9, 10, 12, 15, 18, 20],
   },
@@ -1066,7 +1309,11 @@ export default [
       'https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/Brisbane-1.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927240/Wanderlust/brisbane_2_nbqufw.jpg'
     ],
-    features: [],
+    features: [
+      'Take a cruise on the Brisbane River, visit South Bank Parklands, and see the Brisbane City Hall and Clock Tower.',
+      'Visit the Lone Pine Koala Sanctuary, explore Moreton Island, and go on a Segway tour of the city.',
+      'Locally sourced produce, modern Australian cuisine, craft beer, and specialty coffee.'
+    ],
     highTemps: [29, 29, 29, 27, 24, 21, 21, 22, 24, 26, 28, 29],
     lowTemps: [22, 21, 20, 18, 15, 12, 10, 12, 14, 16, 19, 21],
   },
@@ -1083,7 +1330,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927401/Wanderlust/auckland_2_lxb7ur.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927402/Wanderlust/auckland_1_grfask.jpg'
     ],
-    features: [],
+    features: [
+      'Visit sky-high views, island hopping, historic museums, and lush gardens.',
+      'Explore the Sky Tower, stroll through the Auckland Domain, visit the Auckland Art Gallery, and take a ferry to Waiheke Island.',
+      'Try Maori hangi, Pacific Rim fusion cuisine, fresh seafood, and artisanal coffee and craft beer.'
+    ],
     highTemps: [24, 24, 23, 20, 18, 15, 14, 15, 16, 18, 20, 22],
     lowTemps: [16, 16, 15, 13, 10, 8, 7, 8, 10, 11, 12, 15],
   },
@@ -1100,7 +1351,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927874/Wanderlust/queenstown_1_x1d2t8.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927875/Wanderlust/queenstown_2_p8tzx4.jpg'
     ],
-    features: [],
+    features: [
+      'Visit epic landscapes, adventure sports, charming towns, and pristine lakes.',
+      'Go skiing or snowboarding in the winter, hike the Routeburn Track, and bungee jump off Kawarau Bridge.',
+      'Savor venison and lamb dishes, Central Otago wines, and delicious local cheeses and chocolate.'
+    ],
     highTemps: [22, 22, 19, 15, 12, 8, 8, 10, 13, 15, 18, 20],
     lowTemps: [9, 9, 7, 4, 2, 0, -1, 0, 2, 4, 6, 8],
   },
@@ -1117,7 +1372,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927951/Wanderlust/vancouver_spring_onensu.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679927948/Wanderlust/vancouver_summer_rpdlky.jpg'
     ],
-    features: [],
+    features: [
+      'Scenic parks, thrilling suspension bridges, bustling markets, and historic neighborhoods.',
+      'Visit Stanley Park, walk across Capilano Suspension Bridge, shop on Robson Street, and take a ferry to Granville Island.',
+      'Indulge in fresh seafood, Asian fusion cuisine, craft beer and cocktails, and tasty poutine.'
+    ],
     highTemps: [7, 8, 10, 13, 17, 20, 22, 22, 19, 14, 9, 7],
     lowTemps: [3, 3, 4, 6, 10, 12, 14, 14, 12, 8, 5, 3],
   },
@@ -1134,7 +1393,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928024/Wanderlust/toronto_autumn_qwgs8l.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928025/Wanderlust/toronto_summer_ccksvr.jpg'
     ],
-    features: [],
+    features: [
+      'Iconic landmarks, world-class museums, natural wonders, vibrant markets, and majestic castles.',
+      'Visit the CN Tower, explore the Royal Ontario Museum, watch a Toronto Raptors game, and take a walk along the Harbourfront.',
+      'Enjoy diverse global cuisine, from street food to fine dining, and try local favorites like peameal bacon and butter tarts.'
+    ],
     highTemps: [0, 0, 5, 12, 19, 24, 27, 26, 23, 15, 9, 3],
     lowTemps: [-7, -7, -2, 4, 10, 15, 18, 18, 14, 8, 2, -3],
   },
@@ -1151,7 +1414,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928116/Wanderlust/mexico_city_1_crxoo3.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928117/Wanderlust/mexico_city_3_tiffuc.jpg'
     ],
-    features: [],
+    features: [
+      'Cultural hotspots, ancient ruins, impressive museums, colorful markets, and floating gardens.',
+      'Visit the National Museum of Anthropology, taste local cuisine at Mercado de San Juan, and climb the Pyramids of Teotihuacan.',
+      'Sample street food like tacos and tamales, mole sauces, tequila and mezcal, and tasty churros and hot chocolate.'
+    ],
     highTemps: [22, 24, 26, 27, 27, 26, 24, 25, 24, 24, 23, 23],
     lowTemps: [5, 6, 8, 10, 12, 13, 12, 12, 12, 10, 7, 6],
   },
@@ -1168,7 +1435,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_1_snjwjy.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928189/Wanderlust/miami_2_fdrnit.jpg'
     ],
-    features: [],
+    features: [
+      'Visit South Beach, the Art Deco Historic District, Little Havana, and take a boat tour of Biscayne Bay.',
+      'Enjoy a day at the beach, visit the Vizcaya Museum and Gardens, go shopping on Lincoln Road, and try water sports.',
+      'Savor fresh seafood, Cuban cuisine, Latin American flavors, and tropical fruits like mango and papaya.'
+    ],
     highTemps: [23, 24, 25, 26, 28, 30, 31, 31, 30, 28, 26, 24],
     lowTemps: [17, 18, 19, 21, 23, 25, 26, 26, 25, 24, 21, 19],
   },
@@ -1185,7 +1456,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928253/Wanderlust/key_west_2_cvynyr.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928255/Wanderlust/key_west_1_azlt7g.jpg'
     ],
-    features: [],
+    features: [
+      'See the Ernest Hemingway Home and Museum, Mallory Square for sunset, and Southernmost Point Buoy.',
+      'Take a snorkeling or scuba diving trip, ride the Conch Train, and visit the Key West Butterfly and Nature Conservatory.',
+      'Enjoy fresh seafood, conch fritters, key lime pie, and Caribbean-inspired dishes like jerk chicken and plantains.'
+    ],
     highTemps: [24, 24, 26, 28, 30, 31, 32, 33, 31, 29, 26, 25],
     lowTemps: [19, 20, 21, 23, 25, 27, 27, 27, 27, 25, 22, 21],
   },
@@ -1202,7 +1477,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928406/Wanderlust/havana_1_h7vlvy.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679928407/Wanderlust/havana_2_uie8xa.jpg'
     ],
-    features: [],
+    features: [
+      'Explore Old Havana, the Malecon seawall, El Capitolio, and visit the Museum of the Revolution and the Tropicana nightclub.',
+      'Take a vintage car tour, try salsa dancing, visit the Malecon at sunset, and explore the local art and music scene.',
+      'Try classic Cuban dishes like ropa vieja, black beans and rice, and mojitos, and enjoy local churros and empanadas.'
+    ],
     highTemps: [27, 27, 28, 29, 31, 31, 32, 32, 32, 30, 29, 27],
     lowTemps: [18, 18, 19, 21, 22, 23, 24, 24, 24, 23, 21, 19],
   },
@@ -1219,7 +1498,11 @@ export default [
       'https://www.sandals.com/blog/content/images/2022/04/Nassau-Bahamas-Aerial-View.jpg',
       'https://www.sandals.co.uk/blog/content/images/2021/08/SRB_Beach4-18786.jpg'
     ],
-    features: [],
+    features: [
+      'Visit Atlantis Paradise Island, Fort Charlotte, explore the Straw Market, and take a tour of the historic downtown.',
+      'Go snorkeling in the turquoise waters, take a dolphin encounter, ride a jet ski, and try local cuisine.',
+      'Savor Bahamian seafood, conch fritters, and local dishes like peas and rice, and try Goombay Punch.'
+    ],
     highTemps: [26, 26, 27, 28, 30, 32, 32, 33, 32, 30, 28, 27],
     lowTemps: [18, 18, 19, 20, 22, 24, 24, 24, 24, 23, 21, 19],
   },
@@ -1236,7 +1519,11 @@ export default [
       'https://cdn.britannica.com/15/93415-050-D97208F0/Devon-House-home-one-Kingston-millionaires-Jamaica.jpg',
       'https://content.r9cdn.net/rimg/dimg/c5/77/d5f28d12-city-20407-164fcd4642a.jpg?width=1366&height=768&xhint=2011&yhint=1011&crop=true'
     ],
-    features: [],
+    features: [
+      'See the Bob Marley Museum, visit the National Gallery of Jamaica, explore Devon House, and climb Blue Mountain.',
+      'Take a reggae music tour, hike to Blue Hole Mineral Spring, explore the city\'s nightlife, and visit Hope Botanical Garden.',
+      'Try Jamaican jerk chicken, beef patties, ackee and saltfish, and enjoy local rum and Red Stripe beer.'
+    ],
     highTemps: [31, 31, 31, 31, 32, 33, 33, 33, 33, 32, 32, 32],
     lowTemps: [22, 22, 23, 24, 25, 26, 26, 25, 25, 25, 24, 23],
   },
@@ -1253,7 +1540,11 @@ export default [
       'https://www.travelbelize.org/wp-content/uploads/2021/05/MGL5705.jpg',
       'https://caribbeanlifestyle.com/wp-content/uploads/2020/10/Ambergris-by-Laminar-Media.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the Great Blue Hole, go snorkeling or scuba diving in the Belize Barrier Reef, explore the Mayan ruins of Xunantunich.',
+      'Go cave tubing in the jungle, visit the Belize Zoo, try local rum and chocolate, and relax on the beaches of Ambergris Caye.',
+      'Enjoy fresh seafood like lobster and shrimp, traditional dishes like rice and beans, and local hot sauce.'
+    ],
     highTemps: [27, 27, 28, 29, 31, 30, 30, 31, 31, 29, 28, 27],
     lowTemps: [20, 21, 22, 23, 24, 25, 24, 25, 24, 24, 22, 21],
   },
@@ -1270,7 +1561,11 @@ export default [
       'https://mediaim.expedia.com/destination/1/e1e84d638ee9bc3a942f2e9f724ba527.jpg',
       'https://img.theculturetrip.com/wp-content/uploads/2020/12/hotel-spa-poco-a-poco.jpg'
     ],
-    features: [],
+    features: [
+      'Explore the Monteverde Cloud Forest Reserve, ride the Sky Tram and Zip Lines, visit the Butterfly Garden and Hummingbird Gallery.',
+      'Go hiking in the cloud forest, visit the Frog Pond and Bat Jungle, ride a horse or a mountain bike, and enjoy local coffee.',
+      'Savor Costa Rican coffee, try local cheese and dairy products, and enjoy fresh fruit like guanabana and papaya.'
+    ],
     highTemps: [28, 28, 29, 29, 27, 26, 26, 26, 26, 26, 26, 27],
     lowTemps: [16, 16, 17, 18, 18, 18, 18, 17, 17, 17, 17, 16],
   },
@@ -1287,7 +1582,11 @@ export default [
       'https://www.aboutroatanrealestate.com/wp-content/uploads/2019/01/bigstock-Roatan-Honduras-110106542.jpg',
       'https://lp-cms-production.imgix.net/2022-06/Honduras-Roatan-Antonio-Busiello-GettyImages-1175191917-RFE.jpg?auto=format&q=75&w=3840'
     ],
-    features: [],
+    features: [
+      'Take a tour of the Roatan Marine Park, enjoy the beaches of West Bay, and explore the local culture at Gumbalimba Park.',
+      'Go scuba diving or snorkeling to see the coral reefs and sea life, and take a dolphin encounter.',
+      'Try Honduran seafood like conch soup and coconut shrimp, and enjoy local rum and coffee.'
+    ],
     highTemps: [28, 29, 29, 31, 31, 32, 31, 32, 32, 30, 29, 28],
     lowTemps: [22, 22, 23, 24, 25, 25, 25, 25, 25, 24, 23, 22],
   },
@@ -1304,7 +1603,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_1_ezrv62.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679929538/Wanderlust/cartagena_2_hfg8pw.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the walled city, see the Castillo San Felipe de Barajas, take a boat tour of the Rosario Islands.',
+      'Take a city walking tour, enjoy a mud bath in Totumo Volcano, try street food, and visit the Gold Museum.',
+      'Savor Colombian arepas, seafood, ceviche, and coconut rice, and try local sweets like cocadas and dulce de leche.'
+    ],
     highTemps: [31, 31, 31, 31, 32, 32, 32, 32, 32, 31, 31, 31],
     lowTemps: [24, 24, 25, 26, 26, 26, 26, 26, 26, 25, 25, 25],
   },
@@ -1321,7 +1624,11 @@ export default [
       'https://media.dertouristik.com/exports/KuoniUK/ImageGalleryLightboxLarge/498604_ImageGalleryLightboxLarge.jpg',
       'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/244000/244198-St-Lucia.jpg'
     ],
-    features: [],
+    features: [
+      'Take a catamaran tour of the island, visit the Pigeon Island National Park, explore the Castries Market, and relax on the beaches.',
+      'Go snorkeling or diving, take a sunset cruise, visit the Sulphur Springs, and try local cuisine like callaloo soup.',
+      'Try Caribbean dishes like fish fry, conch fritters, and plantains, and enjoy local rum and beer.'
+    ],
     highTemps: [29, 29, 30, 30, 31, 31, 31, 31, 31, 31, 30, 29],
     lowTemps: [23, 23, 23, 24, 25, 25, 25, 25, 25, 25, 24, 24],
   },
@@ -1338,7 +1645,11 @@ export default [
       'https://m.fourseasons.com/alt/img-opt/~70..248,5333-49,4000-2502,9333-1877,2000/publish/content/dam/fourseasons/images/web/JTT/JTT_394_original.jpg',
       'https://prod.static9.net.au/fs/f1ab49bd-0a55-423c-9857-982750be8508'
     ],
-    features: [],
+    features: [
+      'Explore the ancient Inca ruins, hike the Inca Trail, visit the Sun Gate and Temple of the Sun, and see the llamas and alpacas.',
+      'Take a train ride to Aguas Calientes, go birdwatching in the cloud forest, and visit the local market in Cusco.',
+      'Savor Peruvian ceviche, quinoa soup, and dishes like lomo saltado and ají de gallina, and enjoy local fruits like lucuma and chirimoya.'
+    ],
     highTemps: [13, 14, 14, 12, 11, 10, 9, 9, 9, 10, 11, 12],
     lowTemps: [0, 1, 1, 0, -1, -3, -3, -3, -3, -2, -2, 0],
   },
@@ -1355,7 +1666,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930275/Wanderlust/buenos_aires_1_e1xdjv.jpg',
       'https://media.cntraveler.com/photos/5b0457be7f70e97cf7c0de9a/2:1/w_2560%2Cc_limit/Buenos-Aires_GettyImages-507373482.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the colorful La Boca neighborhood, see the Recoleta Cemetery, attend a tango show, and try Argentine beef and wine.',
+      'Attend a football game, take a bike tour, visit the MALBA Museum, and take a wine tasting tour.',
+      'Try Argentine steak, empanadas, and chimichurri sauce, and enjoy local wine like Malbec and Torrontés.'
+    ],
     highTemps: [29, 28, 26, 22, 19, 16, 15, 17, 18, 22, 25, 28],
     lowTemps: [21, 20, 18, 15, 12, 9, 8, 10, 11, 14, 17, 19],
   },
@@ -1372,7 +1687,11 @@ export default [
       'https://a.travel-assets.com/findyours-php/viewfinder/images/res70/64000/64776-Montevideo.jpg',
       'https://images.squarespace-cdn.com/content/v1/5d1a28b95422a10001b1aada/1650428528797-F9Q3I7AUARFID608S8AQ/montevideo.png'
     ],
-    features: [],
+    features: [
+      'See the Plaza Independencia and Palacio Salvo, visit the Teatro Solis and Mercado del Puerto, and enjoy local mate and beef.',
+      'Visit the Rambla and the beach, go to a tango show, explore the Ciudad Vieja, and try local wine and steak.',
+      'Savor Uruguayan beef, chivito sandwiches, and mate tea, and try local sweets like alfajores and dulce de leche.'
+    ],
     highTemps: [28, 27, 26, 23, 19, 16, 15, 17, 18, 21, 24, 27],
     lowTemps: [18, 18, 16, 13, 10, 7, 6, 7, 9, 11, 13, 16],
   },
@@ -1389,7 +1708,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930413/Wanderlust/palm_beach_1_kra8cy.jpg',
       'https://purebreaks.com/wp-content/uploads/2021/06/sunset_huts.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the Flagler Museum, go snorkeling or diving, see the Worth Avenue shopping district, and relax on the beaches.',
+      'Go on a fishing trip, play golf, take a bike tour, and visit the Palm Beach Zoo.',
+      'Try fresh seafood, Cuban sandwiches, key lime pie, and conch fritters.'
+    ],
     highTemps: [30, 30, 31, 31, 32, 32, 32, 33, 33, 32, 31, 30],
     lowTemps: [24, 25, 25, 26, 26, 27, 26, 27, 27, 26, 26, 25],
   },
@@ -1406,7 +1729,11 @@ export default [
       'https://lp-cms-production.imgix.net/2019-06/79387433.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679930513/Wanderlust/pantanal_01_gesp9t.jpg'
     ],
-    features: [],
+    features: [
+      'Go on a wildlife safari, visit the wetlands and rivers, see the jaguars and capybaras, and try local cuisine.',
+      'Go on a canoe tour, take a horseback ride, birdwatching, and try fishing and piranha catching.',
+      'Try grilled meats, fish stews, tapioca cakes, and piranha soup.'
+    ],
     highTemps: [33, 33, 33, 33, 32, 31, 32, 34, 34, 34, 31, 32],
     lowTemps: [23, 23, 23, 22, 20, 17, 16, 18, 22, 18, 23, 23],
   },
@@ -1423,7 +1750,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936094/Wanderlust/ushuaia_03_aqjd5x.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936095/Wanderlust/ushuaia_01_jgo2an.jpg'
     ],
-    features: [],
+    features: [
+      'Explore Tierra del Fuego National Park, take a boat tour of the Beagle Channel, and ski at Cerro Castor',
+      'Take a cruise to Antarctica, visit the Martial Glacier, try dog sledding, and take a helicopter tour.',
+      'Try fresh seafood, lamb dishes, king crab, and Argentine wines.'
+    ],
     highTemps: [14, 14, 12, 9, 7, 4, 4, 6, 8, 10, 12, 13],
     lowTemps: [5, 5, 4, 2, 1, -1, -1, -1, 1, 2, 3, 5],
   },
@@ -1440,7 +1771,11 @@ export default [
       'https://lp-cms-production.imgix.net/features/2018/06/Quito_Ecuador-56f41a5bc901.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936269/Wanderlust/quito_3_xklsd2.jpg'
     ],
-    features: [],
+    features: [
+      'Visit the historic city center and La Ronda street, and take the TeleferiQo cable car.',
+      'Take a cooking class, visit the Mindo Cloud Forest, take a hot air balloon ride, and go paragliding.',
+      'Try ceviche, roasted guinea pig, potato soup, and Ecuadorian chocolate.'
+    ],
     highTemps: [19, 19, 19, 19, 19, 19, 19, 20, 20, 20, 19, 19],
     lowTemps: [9, 10, 9, 10, 9, 9, 8, 9, 9, 9, 9, 9],
   },
@@ -1457,7 +1792,11 @@ export default [
       'https://www.travelandleisure.com/thmb/iFKAeI4oG43bldEvKG0-1tBxSnw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/02-flamingos-atacama-chile-ATACAMA1217-5bc318fa7676474db0bc4d0d4f188346.jpg',
       'https://j5t6n2w7.rocketcdn.me/wp-content/uploads/2019/06/Cielo-Atacama-2.jpg'
     ],
-    features: [],
+    features: [
+      'See the Valle de la Luna, visit the El Tatio geysers, go stargazing, and try local cuisine like quinoa soup.',
+      'Take a hot springs bath, go sandboarding, take a tour of the Valley of the Moon, and see the Tatio geysers.',
+      'Try llama meat, quinoa dishes, pastel de choclo, and pisco sour.'
+    ],
     highTemps: [25, 24, 24, 23, 22, 21, 21, 22, 23, 24, 24, 24],
     lowTemps: [8, 8, 7, 5, 3, 2, 1, 2, 3, 4, 5, 7],
   },
@@ -1474,7 +1813,11 @@ export default [
       'https://www.voydeviaje.com.ar/resizer/IeV6kY8ZCYsd4BifSNxk07MWumU=/arc-anglerfish-arc2-prod-grupoclarin/public/L3GBYKVA5NBAPJ33O2Y5BBHQNM.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936493/Wanderlust/salar_de_uyuni_1_lr8ndu.jpg'
     ],
-    features: [],
+    features: [
+      'See the world\'s largest salt flat, visit the Isla Incahuasi, see the flamingos and llamas, and take a sunset tour.',
+      'Take a 4x4 tour, visit the Train Cemetery, see the red and green lagoons, and take a hike in the Tunupa Volcano.',
+      'Try llama steak, salteñas, empanadas, and api con pastel.'
+    ],
     highTemps: [20, 19, 20, 20, 21, 20, 19, 21, 20, 21, 21, 21],
     lowTemps: [10, 9, 9, 8, 7, 5, 4, 6, 6, 8, 9, 9],
   },
@@ -1491,7 +1834,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936644/Wanderlust/galapagos_islands_2_zngzhz.jpg',
       'https://gulliver.com.ec/wp-content/uploads/2018/11/galapagos-islands.jpg'
     ],
-    features: [],
+    features: [
+      'See the giant tortoises, go snorkeling or diving, visit Darwin\'s Arch, see the sea lions and penguins, and try local cuisine.',
+      'Go on a wildlife tour, snorkel with sea turtles, hike to Sierra Negra volcano, and take a boat tour.',
+      'Try seafood ceviche, lobster dishes, Ecuadorian coffee, and fresh fruit juices.'
+    ],
     highTemps: [30, 30, 30, 31, 30, 29, 26, 27, 27, 27, 29, 30],
     lowTemps: [24, 24, 24, 24, 23, 20, 20, 19, 21, 20, 22, 23],
   },
@@ -1508,7 +1855,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679936753/Wanderlust/iguazu_falls_1_owabem.jpg',
       'https://media.cnn.com/api/v1/images/stellar/prod/150311151023-iguazu-brazilian-side-7.jpg?q=w_1600,h_1013,x_0,y_0,c_fill'
     ],
-    features: [],
+    features: [
+      'See the Devil\'s Throat, take a boat tour, explore the rainforest, and visit the bird park.',
+      'Go on a jungle hike, take a helicopter tour, visit the Three Borders landmark, and go rafting.',
+      'Try traditional Argentinean steak, empanadas, alfajores, and mate tea.'
+    ],
     highTemps: [32, 32, 32, 29, 24, 23, 24, 25, 26, 29, 30, 31],
     lowTemps: [22, 22, 21, 18, 15, 13, 12, 13, 15, 17, 19, 21],
   },
@@ -1525,7 +1876,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_01_ij6w08.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679937770/Wanderlust/zanzibar_02_adqce6.jpg'
     ],
-    features: [],
+    features: [
+      'Visit Stone Town, go on a spice tour, go snorkeling, and see giant tortoises.',
+      'Go on a spice tour, see red colobus monkeys, go diving, and take a sunset dhow cruise.',
+      'Sample Zanzibari cuisine, including seafood, biryani, pilau rice, and coconut-based dishes.'
+    ],
     highTemps: [32, 33, 32, 31, 30, 29, 29, 29, 30, 31, 31, 32],
     lowTemps: [24, 24, 24, 25, 24, 23, 22, 21, 21, 22, 23, 24],
   },
@@ -1542,7 +1897,11 @@ export default [
       'https://s27363.pcdn.co/wp-content/uploads/2020/04/Pyramids-for-Facebook.jpg.optimal.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679938801/Wanderlust/giza_1_zcamwg.jpg'
     ],
-    features: [],
+    features: [
+      'See the Great Pyramid, visit the Sphinx, explore the pyramids of Saqqara, and visit the Egyptian Museum.',
+      'Go inside the Great Pyramid, take a camel ride, visit the Solar Boat Museum, and see the Sound and Light Show.',
+      'Taste Egyptian staples, such as falafel, shawarma, koshari, and hawawshi.'
+    ],
     highTemps: [19, 21, 24, 29, 33, 35, 35, 35, 34, 30, 25, 21],
     lowTemps: [10, 11, 13, 16, 19, 22, 23, 24, 22, 19, 15, 11],
   },
@@ -1559,7 +1918,11 @@ export default [
       'https://media.cntraveler.com/photos/5de7c7b4d606100008e74137/16:9/w_2560%2Cc_limit/MAG20_JAN_TR0120_Zimbabwe11.jpg',
       'https://africanbushcamps.com/wp-content/uploads/2018/05/Victoria-Falls_03.jpg'
     ],
-    features: [],
+    features: [
+      'Visit Victoria Falls, go on a safari, take a canoe trip, and see ancient rock art.',
+      'Go bungee jumping, take a microlight flight, go whitewater rafting, and visit the Chinhoyi Caves.',
+      'Try local delicacies like sadza, biltong, chakalaka, and boerewors sausage.'
+    ],
     highTemps: [30, 30, 30, 30, 28, 25, 25, 29, 32, 34, 33, 31],
     lowTemps: [19, 19, 18, 15, 10, 7, 7, 10, 15, 18, 19, 19],
   },
@@ -1576,7 +1939,11 @@ export default [
       'https://www.tripsavvy.com/thmb/xJ8JCEcLAxhz9D1tSTIS9BxPPUQ=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1257695164-b0a337e4728443bf8c86b4087cf27712.jpg',
       'https://www.andbeyond.com/wp-content/uploads/sites/5/Image-5-C-BISATE-LODGE.jpg'
     ],
-    features: [],
+    features: [
+      'Go gorilla trekking, visit Nyungwe Forest, see the Kigali Genocide Memorial, and visit Lake Kivu.',
+      'Go on a coffee tour, visit the Volcanoes National Park, see the Karisoke Research Center, and visit the Kigali Genocide Memorial.',
+      'Sample Rwandan dishes like sambaza, isombe, brochette, and agatogo.'
+    ],
     highTemps: [28, 27, 27, 25, 26, 26, 27, 28, 27, 27, 26, 26],
     lowTemps: [17, 17, 17, 18, 18, 17, 16, 17, 17, 17, 17, 17],
   },
@@ -1593,7 +1960,11 @@ export default [
       'https://upload.wikimedia.org/wikipedia/commons/1/17/Masai_Mara_at_Sunset.jpg',
       'https://www.masaimara.com/assets/img/masai-mara.jpg'
     ],
-    features: [],
+    features: [
+      'Go on a wildlife safari, see the Great Migration, visit a Masai village, and take a hot air balloon ride.',
+      'Go on a hot air balloon ride, visit a Maasai village, take a nature walk, and go on a night safari.',
+      'Taste traditional Kenyan dishes like ugali, nyama choma, pilau rice, and samosas.'
+    ],
     highTemps: [26, 27, 27, 25, 24, 23, 22, 22, 25, 26, 24, 25],
     lowTemps: [16, 16, 16, 16, 15, 14, 13, 13, 13, 15, 16, 16],
   },
@@ -1610,7 +1981,11 @@ export default [
       'https://www.andbeyond.com/wp-content/uploads/sites/5/ngorongoro-crater-floor-teaming-with-game.jpg',
       'https://www.abercrombiekent.co.uk/-/media/abercrombieandkent/images/accommodation/africa/tanzania/ngorongoro-crater-lodge-1.jpg?la=en&hash=2F9F07ED2B46DB4BFF9D35BC7CD2449B3CB62DA2'
     ],
-    features: [],
+    features: [
+      'See the Big Five, go on a cultural tour, visit Olduvai Gorge, and see the flamingos at Lake Magadi.',
+      'Go on a walking safari, visit a Maasai village, see the Ol Doinyo Lengai volcano, and take a birdwatching tour.',
+      'Sample Tanzanian cuisine, such as mtori, wali na maharage, ugali, and vitumbua.'
+    ],
     highTemps: [29, 29, 28, 26, 23, 23, 23, 24, 26, 27, 27, 28],
     lowTemps: [16, 17, 18, 18, 17, 15, 15, 15, 15, 16, 17, 16],
   },
@@ -1627,7 +2002,11 @@ export default [
       'https://media.audleytravel.com/-/media/images/home/africa/malawi/places/istock_508580272_lake_malawi_800x2400.jpg',
       'https://wheretheroadforks.com/wp-content/uploads/2018/12/lake-malawi-3-1.jpg'
     ],
-    features: [],
+    features: [
+      'Enjoy crystal-clear waters, stunning sunsets, and visits to local villages.',
+      'Swim in crystal-clear water, visit a traditional village, go on a safari, explore the local markets.',
+      'Try Chambo, local fish grilled or fried, and Nsima, a cornmeal porridge, or sample goat stew and cassava leaves.'
+    ],
     highTemps: [27, 27, 27, 27, 26, 24, 24, 25, 28, 30, 30, 28],
     lowTemps: [19, 18, 18, 16, 13, 10, 10, 11, 14, 17, 19, 19],
   },
@@ -1644,7 +2023,11 @@ export default [
       'https://nostalgicsafaris.com/wp-content/uploads/2020/10/kenya-coast-02_watamu.jpg',
       'https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,g_face/hj-web/2020/10/Hemingways-Watamu-Property-View-004-113752.jpg'
     ],
-    features: [],
+    features: [
+      'Visit Watamu Marine National Park and enjoy coral reefs, snorkeling, and wildlife.',
+      'Snorkel or dive with sea turtles, dolphins, and whale sharks, or relax on the white sandy beaches.',
+      'Enjoy fresh seafood, Swahili-inspired dishes, and tropical fruit cocktails.'
+    ],
     highTemps: [31, 31, 32, 31, 29, 28, 27, 28, 28, 30, 31, 31],
     lowTemps: [24, 24, 25, 25, 24, 23, 23, 22, 23, 23, 24, 24],
   },
@@ -1661,7 +2044,11 @@ export default [
       'https://www.backpackerbanter.com/blog/wp-content/uploads/2020/05/travelling-samoa-islands-guide-tips-things-to-do-3-1.jpg',
       'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/a9/05/ef/caption.jpg?w=1600&h=900&s=1'
     ],
-    features: [],
+    features: [
+      'Explore the beauty of Samoa\'s waterfalls, beaches, and pristine rainforests.',
+      'Go on a rainforest trek, swim with turtles, or explore the island\'s volcanic craters.',
+      'Savor traditional Polynesian cuisine, including taro, coconut, and fresh seafood.'
+    ],
     highTemps: [31, 31, 31, 29, 29, 30, 29, 30, 28, 29, 31, 31],
     lowTemps: [25, 24, 24, 24, 25, 24, 23, 24, 24, 25, 25, 24],
   },
@@ -1678,7 +2065,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939596/Wanderlust/dubrovnik_1_sfckcq.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939597/Wanderlust/dubrovnik_3_psvl0i.jpg'
     ],
-    features: [],
+    features: [
+      'Admire the stunning medieval architecture, city walls, and forts of Dubrovnik\'s old town.',
+      'Walk the city walls, visit the medieval fortresses, or take a Game of Thrones-themed tour.',
+      'Taste Mediterranean-inspired seafood dishes, fresh pasta, and local wines.'
+    ],
     highTemps: [12, 13, 15, 18, 23, 27, 30, 30, 26, 22, 17, 14],
     lowTemps: [7, 7, 9, 13, 16, 21, 23, 23, 19, 15, 12, 8],
   },
@@ -1695,7 +2086,11 @@ export default [
       'https://www.finest-holidays.com/images2018/slideshows/cities/Courchevel-1850/1920/Courchevel1850.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939830/Wanderlust/courchevel_summer_kofk4h.jpg'
     ],
-    features: [],
+    features: [
+      'Enjoy skiing, snowboarding, and winter sports in the French Alps.',
+      'Ski or snowboard on the slopes, go ice skating, or relax in a luxurious spa.',
+      'Indulge in hearty Alpine dishes, including fondue, raclette, and tartiflette.'
+    ],
     highTemps: [-1, 1, 5, 9, 13, 17, 20, 19, 15, 10, 3, -1],
     lowTemps: [-10, -10, -6, -3, 1, 4, 6, 5, 2, -2, -6, -9],
   },
@@ -1712,7 +2107,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939906/Wanderlust/zermatt_autumn_iuehsf.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679939906/Wanderlust/zermatt_summer_kqxyz6.jpg'
     ],
-    features: [],
+    features: [
+      'Take in the views of the Matterhorn and the Swiss Alps and enjoy skiing and snowboarding.',
+      'Ski or snowboard on some of the world\'s most iconic slopes, hike, or enjoy the après - ski scene.',
+      'Try Swiss cheese fondue, rösti, or the famous Valais apricot tart.'
+    ],
     highTemps: [1, 2, 6, 11, 14, 19, 21, 20, 16, 12, 6, 2],
     lowTemps: [-7, -7, -3, 0, 4, 8, 9, 9, 6, 2, -2, -6],
   },
@@ -1729,7 +2128,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940016/Wanderlust/cortina_spring_zdxs97.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940016/Wanderlust/cortina_summer_zcgdek.jpg'
     ],
-    features: [],
+    features: [
+      'Experience the charm of this Italian ski resort town and its scenic mountains and valleys.',
+      'Ski or snowboard, take a scenic snowshoe hike, or go on a guided snowmobile tour.',
+      'Experience the flavors of the Italian Alps, including hearty stews, polenta, and local wines.'
+    ],
     highTemps: [0, 3, 7, 11, 16, 20, 22, 21, 17, 12, 5, 0],
     lowTemps: [-8, -7, -3, 1, 5, 8, 10, 10, 7, 3, -3, -7],
   },
@@ -1746,7 +2149,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940092/Wanderlust/telluride_summer_r6ekyz.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940092/Wanderlust/telluride_spring_bksxxc.webp'
     ],
-    features: [],
+    features: [
+      'Take in the breathtaking mountain views, explore the historic mining town, and hike scenic trails.',
+      'Ski on world-class slopes, hike scenic trails, attend a festival, visit ghost towns, ride a gondola.',
+      'Enjoy Rocky Mountain fare like bison burgers, elk steaks, or trout, as well as craft beer and artisanal cheeses.'
+    ],
     highTemps: [2, 4, 6, 11, 16, 22, 25, 23, 20, 14, 7, 3],
     lowTemps: [-16, -13, -10, -5, -1, 2, 5, 5, 1, -4, -10, -15],
   },
@@ -1763,7 +2170,11 @@ export default [
       'https://www.snowpine.com/content/uploads/2021/08/snowbird-resort-6.jpeg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940583/Wanderlust/snowbird_utah_autumn_airiux.jpg'
     ],
-    features: [],
+    features: [
+      'Ski or snowboard the legendary slopes, take in the stunning mountain views, and relax in the luxurious spa.',
+      'Ski in fresh powder, snowshoe through the forest, relax at a spa, ride a scenic tram, attend a concert.',
+      'Savor Utah-inspired dishes like fry sauce, Jell-O salads, and pastrami burgers, as well as international cuisine.'
+    ],
     highTemps: [0, 0, 3, 6, 12, 18, 23, 22, 17, 10, 3, 0],
     lowTemps: [-9, -9, -7, -4, 1, 6, 10, 10, 5, 0, -6, -9],
   },
@@ -1780,7 +2191,11 @@ export default [
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940411/Wanderlust/niseko_spring_cwasai.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940411/Wanderlust/niseko_summer_fqxvzg.jpg'
     ],
-    features: [],
+    features: [
+      'Ski or snowboard on the famous powder snow, enjoy hot springs, and take in the stunning natural beauty.',
+      'Soak in hot springs, go on a snowshoe hike, enjoy Japanese cuisine, visit a temple.',
+      'Indulge in sushi, ramen, and soba noodles, along with hot pot dishes like shabu-shabu or sukiyaki.'
+    ],
     highTemps: [-2, -1, 3, 9, 16, 21, 24, 25, 21, 15, 7, 0],
     lowTemps: [-11, -11, -7, -1, 5, 10, 15, 16, 10, 3, -2, -8],
   },
@@ -1797,7 +2212,11 @@ export default [
       'https://cdn.cheapoguides.com/wp-content/uploads/sites/3/2021/08/hakuba-summer-happo-pond-lake-iStock-1154513441.jpg',
       'https://res.cloudinary.com/drrscrxod/image/upload/v1679940474/Wanderlust/hakuba_summer_dgbcso.jpg'
     ],
-    features: [],
+    features: [
+      'Ski or snowboard on world-class slopes, experience Japanese culture, and visit the famous snow monkeys.',
+      'Try cross-country skiing, go on a snowmobile tour, visit a hot spring, explore local markets.',
+      'Delight in traditional Japanese cuisine, including soba noodles, tempura, sushi, yakitori, and sake.'
+    ],
     highTemps: [1, 3, 7, 15, 21, 23, 27, 29, 23, 17, 11, 4],
     lowTemps: [-7, -7, -4, 2, 8, 13, 18, 19, 14, 7, 0, -5],
   }
