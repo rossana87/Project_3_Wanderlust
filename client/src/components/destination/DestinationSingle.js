@@ -214,6 +214,10 @@ const DestinationIndex = () => {
     }
   }
 
+  const handleImageChange = () => {
+
+  }
+
   return (
     <>
       <Nav openModal={openModal} openRegisterModal={openRegisterModal} />
@@ -225,11 +229,15 @@ const DestinationIndex = () => {
             <section id="hero" style={{ backgroundImage: `url("${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]}")` }}>
               <h1>{destination.name}</h1>
               <p>{destination.description}</p>
+              <div id="destination-prev-next-controls">
+                <button id="destination-btn-previous" className="prev-next" value='-1' onClick={(e) => handleImageChange(e.target.value)} >&#60;</button>
+                <button id="destination-btn-next" className="prev-next" value='1' onClick={(e) => handleImageChange(e.target.value)}>&#62;</button>
+              </div>
             </section>
             <section id="common">
               <div id="common-container">
                 <div className="info">
-                  <h3 className="first-info">Country</h3>
+                  <h3>Country</h3>
                   <div className="icon-container">
                     <div className="icon"><FontAwesomeIcon icon={faEarthAmericas} /></div><div>{destination.country}, {destination.continent}</div>
                   </div>
@@ -239,14 +247,6 @@ const DestinationIndex = () => {
                     <h3>Currency</h3>
                     <div className="icon-container">
                       <div className="icon"><FontAwesomeIcon icon={faWallet} /></div><div>{destination.currency}</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="info">
-                  <div>
-                    <h3>Price</h3>
-                    <div className="icon-container">
-                      <div className="icon"><FontAwesomeIcon icon={faCoins} /></div><div>{destination.price} $$$</div>
                     </div>
                   </div>
                 </div>
@@ -260,9 +260,30 @@ const DestinationIndex = () => {
                     </div>
                   </div>
                 }
+                <div className="info">
+                  <div>
+                    <h3>Price</h3>
+                    <div className="icon-container">
+                      <div className="icon"><FontAwesomeIcon icon={faCoins} /></div><div>{destination.price} $$$</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              {/* <div id="forecast-container">Forecast data goes here</div> */}
-              <div id="map"></div>
+              <div id="forecast-container">
+                {weatherData &&
+                  // 
+                  // console.log(dailyDate[0])
+                  weatherData.map((weatherDay, i) => {
+                    return (
+                      <div key={i}>
+                        <div>{getDate(i)}</div>
+                        <div className="weather-emoji">{getWeatherEmoji(weatherDay)}</div>
+                        <div id="weather-data">{weatherData[i]}</div>
+                      </div>
+                    )
+                  })
+                }
+              </div>
             </section>
             <section id="attractions">
               <div id="attraction-container">
@@ -277,21 +298,8 @@ const DestinationIndex = () => {
                   <div className="icon restaurants"><FontAwesomeIcon icon={faUtensils} /></div><div className="attraction">{destination.features[2]}</div>
                 </div>
               </div>
-              <div id="forecast-container">
-                {weatherData &&
-                  // 
-                  // console.log(dailyDate[0])
-                  weatherData.map((weatherDay, i) => {
-                    return (
-                      <div key={i}>
-                        <div className="weather-emoji">{getWeatherEmoji(weatherDay)}</div>
-                        <div>{weatherData[i]}</div>
-                        <div>{getDate(i)}</div>
-                      </div>
-                    )
-                  })
-                }
-              </div>
+              {/* map go here */}
+              <div id="map"></div>
             </section>
             <section id="reviews">
               <div id="destination-reviews-container">
