@@ -162,11 +162,11 @@ const Home = () => {
     if (temperature === '0') {
       setSlide1Destination(slide1Destination + parseInt(value))
     } else if (temperature === '1') {
-      setSlide2Destination(slide2Destination + 1)
+      setSlide2Destination(slide2Destination + parseInt(value))
     } else if (temperature === '2') {
-      setSlide3Destination(slide3Destination + 1)
+      setSlide3Destination(slide3Destination + parseInt(value))
     } else {
-      setSlide4Destination(slide4Destination + 1)
+      setSlide4Destination(slide4Destination + parseInt(value))
     }
   }
 
