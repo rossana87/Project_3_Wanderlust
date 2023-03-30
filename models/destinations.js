@@ -24,8 +24,27 @@ const destinationSchema = new Schema({
   description: { type: String, required: true },
   images: [{ type: String, required: true }],
   features: [{ type: String, required: true }],
-  highTemps: [{ type: Number, required: true }],
-  lowTemps: [{ type: Number, required: true }],
+  highTemps: {
+    type: [Number],
+    required: true,
+    validate: {
+      validator: function(highTemps) {
+        return highTemps.length === 12 && highTemps.every(Number.isInteger)
+      },
+      message: 'highTemps must be an array of 12 integers',
+    },
+  },
+  lowTemps: {
+    type: [Number],
+    required: true,
+    validate: {
+      validator: function(lowTemps) {
+        return lowTemps.length === 12 && lowTemps.every(Number.isInteger)
+      },
+      message: 'lowTemps must be an array of 12 integers',
+    },
+  },
+  // lowTemps: [{ type: Number, required: true }],
   owner: { type: Schema.ObjectId, ref: 'User', required: true },
   reviews: [reviewSchema],
 })

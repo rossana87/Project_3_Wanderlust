@@ -1,6 +1,6 @@
 import Nav from '../common/Nav'
 import axios from 'axios'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 import { getToken, getUserID } from '../../helpers/auth'
 import { v4 as uuid } from 'uuid'
@@ -12,9 +12,10 @@ const Admin = () => {
   const [adminData, setAdminData] = useState({})
   const [adminDestinations, setAdminDestinations] = useState([])
   const [deleteId, setDeleteID] = useState({
-    destinationId: '',
+    id: '',
   })
   const [editId, setEditID] = useState('')
+  const [addId, setAddId] = useState('')
   const [editBody, setEditBody] = useState({
     name: '',
     country: '',
@@ -27,7 +28,7 @@ const Admin = () => {
     features: [],
     highTemps: [],
     lowTemps: [],
-    destinationId: '',
+    id: '',
     owner: getUserID(),
   })
   const [addBody, setAddBody] = useState({
@@ -42,7 +43,7 @@ const Admin = () => {
     features: [],
     highTemps: [],
     lowTemps: [],
-    destinationId: uuid(),
+    id: uuid(),
     owner: getUserID(),
   })
 
@@ -68,7 +69,7 @@ const Admin = () => {
       }
     }
     getProfile()
-  }, [])
+  }, [addId])
 
   useEffect(() => {
     const deleteDestination = async () => {
@@ -78,7 +79,7 @@ const Admin = () => {
             Authorization: `Bearer ${getToken()}`,
           },
           data: {
-            destinationId: deleteId,
+            id: deleteId,
           },
         })
         const updatedDestinations = adminDestinations.filter(destination => destination.id !== deleteId)
@@ -100,6 +101,7 @@ const Admin = () => {
     const destination = adminData.filter(destination => destination.id === value)[0]
     console.log('DESTINATION ->', destination)
     const { name, country, continent, currency, latitude, longitude, description, images, features, highTemps, lowTemps } = destination
+    console.log('DESTINATION ->', destination)
     setEditBody({
       name: name,
       country: country,
@@ -108,20 +110,18 @@ const Admin = () => {
       latitude: latitude,
       longitude: longitude,
       description: description,
-      images: [images],
-      features: [features],
-      highTemps: [highTemps],
-      lowTemps: [lowTemps],
-      destinationId: value,
+      images: images.join(','),
+      features: features.join(','),
+      highTemps: highTemps.join(','),
+      lowTemps: lowTemps.join(','),
+      id: value,
       owner: getUserID(),
     })
-
     openEditModal('edit')
     setEditID(value)
   }
 
   const handleAdd = () => {
-    console.log('CLICKED')
     setAddBody({
       name: '',
       country: '',
@@ -134,7 +134,7 @@ const Admin = () => {
       features: [],
       highTemps: [],
       lowTemps: [],
-      destinationId: uuid(),
+      id: uuid(),
       owner: getUserID(),
     })
     openAddModal('add')
@@ -173,13 +173,12 @@ const Admin = () => {
 
   // ! Edit Modal functions
 
-  const location = useLocation()
   const editModal = useRef(null)
   const addModal = useRef(null)
-  const navigate = useNavigate()
 
 
   const submitEdit = async (e) => {
+    console.log('EDIT ID ->', editId)
     console.log(editBody)
     e.preventDefault()
     try {
@@ -189,7 +188,9 @@ const Admin = () => {
             Authorization: `Bearer ${getToken()}`,
           },
         })
-      const updatedDestinations = adminDestinations.filter(destination => destination.id !== deleteId)
+      const filteredArray = adminDestinations.filter(destination => destination.id !== editId)
+      const updatedDestinations = [...filteredArray, editBody]
+      console.log('EDITED DESTINATIONS ARRAY ->', updatedDestinations)
       setAdminDestinations(updatedDestinations)
       closeEditModal()
     } catch (err) {
@@ -228,22 +229,24 @@ const Admin = () => {
   }
 
   const submitAdd = async (e) => {
-    console.log(addBody)
-    // e.preventDefault()
-    // try {
-    //   await axios.put('/api/admin', addBody,
-    //     {
-    //       headers: {
-    //         Authorization: `Bearer ${getToken()}`,
-    //       },
-    //     })
-    //   const updatedDestinations = adminDestinations.filter(destination => destination.id !== deleteId)
-    //   setAdminDestinations(updatedDestinations)
-    //   closeAddModal()
-    // } catch (err) {
-    //   console.log('error', err)
-    //   setError(err.response.data.message)
-    // }
+    console.log('ADD BODY ->', addBody)
+    e.preventDefault()
+    try {
+      await axios.post('/api/admin', addBody,
+        {
+          headers: {
+            Authorization: `Bearer ${getToken()}`,
+          },
+        })
+      const updatedDestinations = [...adminDestinations, addBody]
+      console.log('NEW DESTINATIONS ARRAY ->', updatedDestinations)
+      setAdminDestinations(updatedDestinations)
+      closeAddModal()
+      setAddId(addBody.id)
+    } catch (err) {
+      console.log('error', err)
+      setError(err.response.data.message)
+    }
   }
 
 
@@ -255,7 +258,7 @@ const Admin = () => {
           <section id='adminHeader'>
             <Link to={`/profile/${getUserID()}`} as={Link} className='backToProfile'>← Back to profile</Link>
             <h1 id='adminH1'>Admin</h1>
-            <button className='edit' onClick={(e) => handleAdd(e.target.value)} value='proxy'>⊕ Add a destination</button>
+            <button className='add' onClick={(e) => handleAdd(e.target.value)} value='proxy'>⊕ Add a destination</button>
           </section>
           <div id="grid-container">
             {adminDestinations &&
@@ -302,62 +305,62 @@ const Admin = () => {
               <label>Description:</label><input type="text" name="description" placeholder='Description' onChange={handleUpdate} value={editBody.description} />
             </span>
             <span>
-              <label>Images:</label><input type="text" name="images" placeholder='Images' onChange={handleUpdate} value={editBody.images} />
+              <label>Images:</label><input name="images" placeholder='Images' onChange={handleUpdate} value={editBody.images} />
             </span>
             <span>
-              <label>Features:</label><input type="text" name="features" placeholder='Features' onChange={handleUpdate} value={editBody.features} />
+              <label>Features:</label><input name="features" placeholder='Features' onChange={handleUpdate} value={editBody.features} />
             </span>
             <span>
-              <label>High Temperatures:</label><input type="text" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdate} value={editBody.highTemps} />
+              <label>High Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdate} value={editBody.highTemps} />
             </span>
             <span>
-              <label>Low Temperatures:</label><input type="text" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdate} value={editBody.lowTemps} />
+              <label>Low Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdate} value={editBody.lowTemps} />
             </span>
             <button id="submitEdit" type="submit">Submit edit</button>
             {error && <p className='text-danger'>{error}</p>}
           </form>
+        </dialog>
 
-          <dialog className="editModal" id="editModal" ref={addModal}>
-            <h2>Add destination:</h2>
-            <button className="close-button" onClick={closeAddModal}>X</button>
-            <form id="editForm" method="dialog" onSubmit={submitAdd}>
-              <span>
-                <label>Name:</label><input type="text" name="name" placeholder='Destination Name' onChange={handleUpdateAdd} value={addBody.name} />
-              </span>
-              <span>
-                <label>Country:</label><input type="text" name="country" placeholder='Country Name' onChange={handleUpdateAdd} value={addBody.country} />
-              </span>
-              <span>
-                <label>Continent:</label><input type="text" name="continent" placeholder='Continent Name' onChange={handleUpdateAdd} value={addBody.continent} />
-              </span>
-              <span>
-                <label>Currency:</label><input type="text" name="currency" placeholder='Currency' onChange={handleUpdateAdd} value={addBody.currency} />
-              </span>
-              <span>
-                <label>Latitude:</label><input type="text" name="latitude" placeholder='Latitude' onChange={handleUpdateAdd} value={addBody.latitude} />
-              </span>
-              <span>
-                <label>Longitude:</label><input type="text" name="longitude" placeholder='Longitude' onChange={handleUpdateAdd} value={addBody.longitude} />
-              </span>
-              <span>
-                <label>Description:</label><input type="text" name="description" placeholder='Description' onChange={handleUpdateAdd} value={addBody.description} />
-              </span>
-              <span>
-                <label>Images:</label><input type="text" name="images" placeholder='Images' onChange={handleUpdateAdd} value={addBody.images} />
-              </span>
-              <span>
-                <label>Features:</label><input type="text" name="features" placeholder='Features' onChange={handleUpdateAdd} value={addBody.features} />
-              </span>
-              <span>
-                <label>High Temperatures:</label><input type="text" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdateAdd} value={addBody.highTemps} />
-              </span>
-              <span>
-                <label>Low Temperatures:</label><input type="text" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdateAdd} value={addBody.lowTemps} />
-              </span>
-              <button id="submitEdit" type="submit">Submit destination</button>
-              {error && <p className='text-danger'>{error}</p>}
-            </form>
-          </dialog>
+        <dialog className="editModal" id="editModal" ref={addModal}>
+          <h2>Add destination:</h2>
+          <button className="close-button" onClick={closeAddModal}>X</button>
+          <form id="editForm" method="dialog" onSubmit={submitAdd}>
+            <span>
+              <label>Name:</label><input type="text" name="name" placeholder='Destination Name' onChange={handleUpdateAdd} value={addBody.name} required/>
+            </span>
+            <span>
+              <label>Country:</label><input type="text" name="country" placeholder='Country Name' onChange={handleUpdateAdd} value={addBody.country} required/>
+            </span>
+            <span>
+              <label>Continent:</label><input type="text" name="continent" placeholder='Continent Name' onChange={handleUpdateAdd} value={addBody.continent} required/>
+            </span>
+            <span>
+              <label>Currency:</label><input type="text" name="currency" placeholder='Currency' onChange={handleUpdateAdd} value={addBody.currency} required/>
+            </span>
+            <span>
+              <label>Latitude:</label><input type="text" name="latitude" placeholder='Latitude' onChange={handleUpdateAdd} value={addBody.latitude} required/>
+            </span>
+            <span>
+              <label>Longitude:</label><input type="text" name="longitude" placeholder='Longitude' onChange={handleUpdateAdd} value={addBody.longitude} required/>
+            </span>
+            <span>
+              <label>Description:</label><input type="text" name="description" placeholder='Description' onChange={handleUpdateAdd} value={addBody.description} required/>
+            </span>
+            <span>
+              <label>Images:</label><input type="text" name="images" placeholder='Images' onChange={handleUpdateAdd} value={addBody.images} required/>
+            </span>
+            <span>
+              <label>Features:</label><input type="text" name="features" placeholder='Features' onChange={handleUpdateAdd} value={addBody.features} required/>
+            </span>
+            <span>
+              <label>High Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdateAdd} value={addBody.highTemps} />
+            </span>
+            <span>
+              <label>Low Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdateAdd} value={addBody.lowTemps} />
+            </span>
+            <button id="submitEdit" type="submit">Submit destination</button>
+            {error && <p className='text-danger'>{error}</p>}
+          </form>
         </dialog>
       </main >
     </>
