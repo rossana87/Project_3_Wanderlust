@@ -143,19 +143,19 @@ const DestinationIndex = () => {
               <div id="attraction-container">
                 <h3 className="first-info">Attractions</h3>
                 <div className="icon-container first-info">
-                  <div className="icon sightseeing"><FontAwesomeIcon icon={faMapLocationDot} /></div><div>{destination.features[2]}Sightseeing goes here...  </div>
+                  <div className="icon sightseeing"><FontAwesomeIcon icon={faMapLocationDot} /></div><div className="attraction">{destination.features[0]}</div>
                 </div>
                 <div className="icon-container">
-                  <div className="icon activities"><FontAwesomeIcon icon={faPersonHiking} /></div><div>{destination.features[1]}Activities goes here...</div>
+                  <div className="icon activities"><FontAwesomeIcon icon={faPersonHiking} /></div><div className="attraction">{destination.features[1]}</div>
                 </div>
                 <div className="icon-container">
-                  <div className="icon restaurants"><FontAwesomeIcon icon={faUtensils} /></div><div>{destination.features[0]}Restaurants goes here...</div>
+                  <div className="icon restaurants"><FontAwesomeIcon icon={faUtensils} /></div><div className="attraction">{destination.features[2]}</div>
                 </div>
               </div>
               <div id="forecast-container">Forecast data goes here</div>
             </section>
             <section id="reviews">
-              <div id="reviews-container">
+              <div id="destination-reviews-container">
                 {destination.reviews.length > 0 ?
                   destination.reviews.map((review, i) => {
                     const date = new Date(review.createdAt)
@@ -180,11 +180,11 @@ const DestinationIndex = () => {
                   <label htmlFor="title">Summary:</label>
                   <input type="text" id="title" name="title" placeholder={`Summary of ${destination.name}`}/>
                   <label htmlFor="review">Review:</label>
-                  <input type="textarea" id="review" name="review" placeholder={`Post your review of ${destination.name}`}/>
+                  <input type="textarea" id="review-textarea" name="review" placeholder={`Post your review of ${destination.name}`}/>
                   <label htmlFor="rating">Rating: {sliderValue}</label>
                   <input type="range" name="slider" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleSliderChange}/>
                 </form>
-                <button id="add-review">Add</button>
+                <button className="site-button" id="add-review">Add</button>
               </div>
             </section>
           </>

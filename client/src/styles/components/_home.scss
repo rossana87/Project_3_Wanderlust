@@ -188,8 +188,9 @@ input[type="radio"] {
 #btn-explore {
   // position: absolute;
   left: 46%;
-  height: 2rem;
-  width: 6rem;
+  // left: 26%;
+  // height: 2rem;
+  // width: 6rem;
 }
 
 .prev-next {
@@ -276,13 +277,13 @@ input[type="radio"]:checked#slide-4-trigger+label.btn::after {
 
 // EXPLORE BUTTON STYLING
 
-#btn-explore {
+.site-button {
   width: 8em;
   font-size: 1em;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  height: 2.75em;
+  height: 2.5em;
   text-align: center;
   border: none;
   background-size: 300% 100%;
@@ -292,18 +293,18 @@ input[type="radio"]:checked#slide-4-trigger+label.btn::after {
   transition: all .4s ease-in-out;
 }
 
-#btn-explore:hover {
+.site-button:hover {
   background-position: 100% 0;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 
-#btn-explore:focus {
+.site-button:focus {
   outline: none;
 }
 
-#btn-explore {
+.site-button {
   background-image: linear-gradient(
     to right,
     $accent-colour1,

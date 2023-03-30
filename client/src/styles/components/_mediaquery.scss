@@ -1,3 +1,10 @@
+@media (max-width: 1200px) {
+
+  #grid {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  }
+}
+
 @media (max-width: 600px) {
 
   header {
@@ -10,11 +17,7 @@
 
   #grid-container, #common, #attractions, #reviews {
     display: block;
-  }
-
-  #common-container, #forecast-container, #attraction-container, #reviews-container, #add-review-container {
-    width: 80%;
-    // border: 1px solid black;
+    width: 100%;
   }
 
   #filters{
@@ -133,11 +136,14 @@
   // .btn:nth-of-type(4), #emoji-hot {
   //     left: 85%;
   // }
-}
-
-@media (max-width: 1200px) {
-
-  #grid {
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  #common, #attractions, #reviews {
+    & #common-container, #forecast-container, #attraction-container, #destination-reviews-container, #add-review-container {
+    width: 80%;
+    // border: 1px solid black;
+    }
+    #attraction-container .icon-container { 
+      display: block;
+      // width: 80%;
+    }
   }
 }

@@ -247,7 +247,7 @@ const Home = () => {
             </div> */}
             <div id="explore-button-container">
               <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations, temperature: temperature }}>
-                <button id="btn-explore" >Explore!</button>
+                <button className="site-button" id="btn-explore" >Explore!</button>
               </Link>
               {/* <button id="btn-next" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>next</button> */}
             </div>
