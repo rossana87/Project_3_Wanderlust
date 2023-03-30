@@ -303,7 +303,7 @@ const Home = () => {
           <form className="form" method="dialog" onSubmit={handleSubmit}>
             <label>Email:<input type="email" name="email" placeholder='Email' onChange={handleChange} value={formFields.email} /></label>
             <label>Password:<input type="password" name="password" placeholder='Password' onChange={handleChange} value={formFields.password} /></label>
-            <button className="button" type="submit">Submit form</button>
+            <button className="button" type="submit">Login</button>
             {error && <p className='text-danger'>{error}</p>}
           </form>
         </dialog>
