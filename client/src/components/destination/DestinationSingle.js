@@ -6,12 +6,14 @@ import Dialog from '../common/Dialog'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEarthAmericas, faWallet, faCoins, faCommentDots, faMapLocationDot, faPersonHiking, faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import mapboxgl from 'mapbox-gl'
+import RegisterDialog from '../common/RegisterDialog'
 
 const DestinationIndex = () => {
 
   const location = useLocation()
   const modalRef = useRef(null)
   const navigate = useNavigate()
+  const registerRef = useRef(null)
 
   const [error, setError] = useState('')
   const [destination, setDestination] = useState(null)
@@ -20,6 +22,14 @@ const DestinationIndex = () => {
   const [formFields, setFormFields] = useState({
     email: '',
     password: '',
+  })
+
+  const [registerFormFields, setRegisterFormFields] = useState({
+    username: '',
+    email: '',
+    password: '',
+    passwordConfirmation: '',
+    isAdmin: false,
   })
 
   const { id } = useParams()
@@ -46,6 +56,33 @@ const DestinationIndex = () => {
       localStorage.setItem('WANDERLUST-TOKEN', data.token)
       closeModal()
       navigate(location) // need this to trigger the 'logout' button to show
+    } catch (err) {
+      console.log('error', err)
+      setError(err.response.data.message)
+    }
+  }
+
+  function openRegisterModal() {
+    registerRef.current.showModal()
+  }
+
+  function closeRegisterModal() {
+    registerRef.current.close()
+  }
+
+  const handleChangeRegister = (e) => {
+    setRegisterFormFields({ ...registerFormFields, [e.target.name]: e.target.value })
+    setError('')
+  }
+
+  const submitRegistration = async (e) => {
+    e.preventDefault()
+    try {
+      await axios.post('/api/', registerFormFields)
+      // Save the token to local storage for later use
+      // localStorage.setItem('WANDERLUST-TOKEN', data.token)
+      closeRegisterModal()
+      navigate('/') // needs this to trigger the 'register' button to show
     } catch (err) {
       console.log('error', err)
       setError(err.response.data.message)
@@ -92,9 +129,10 @@ const DestinationIndex = () => {
 
   return (
     <>
-      <Nav openModal={openModal}/>
+      <Nav openModal={openModal} openRegisterModal={openRegisterModal} />
       <main>
         <Dialog modalRef={modalRef} closeModal={closeModal} handleLogin={handleLogin} handleSubmit={handleSubmit} formFields={formFields} />
+        <RegisterDialog registerRef={registerRef} closeRegisterModal={closeRegisterModal} handleChangeRegister={handleChangeRegister} submitRegistration={submitRegistration} registerFormFields={registerFormFields} />
         {destination &&
           <>
             <section id="hero" style={{ backgroundImage: `url("${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]}")` }}>
@@ -178,11 +216,11 @@ const DestinationIndex = () => {
                 <h3 className="first-info">Add a review...</h3>
                 <form>
                   <label htmlFor="title">Summary:</label>
-                  <input type="text" id="title" name="title" placeholder={`Summary of ${destination.name}`}/>
+                  <input type="text" id="title" name="title" placeholder={`Summary of ${destination.name}`} />
                   <label htmlFor="review">Review:</label>
                   <input type="textarea" id="review-textarea" name="review" placeholder={`Post your review of ${destination.name}`}/>
                   <label htmlFor="rating">Rating: {sliderValue}</label>
-                  <input type="range" name="slider" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleSliderChange}/>
+                  <input type="range" name="slider" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleSliderChange} />
                 </form>
                 <button className="site-button" id="add-review">Add</button>
               </div>
