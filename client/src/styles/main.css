@@ -785,18 +785,48 @@ input[type=range]:focus::-ms-fill-upper {
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   }
 }
-#reviewsOwned, #userDetails {
+#grid-profile-container {
+  display: flex;
+  margin: 0 auto;
+}
+
+#reviewsOwned,
+.userDetails {
   width: 50%;
   text-align: center;
 }
 
 #reviews-container {
   width: 100%;
-  margin: 0 auto;
 }
 
 .destinationImage {
   width: 250px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.admin {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 10px;
+  width: 20%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.profile-picture {
+  width: 25%;
+}
+
+.profile-name {
+  margin-bottom: 0;
 }
 
 #adminHeader {
