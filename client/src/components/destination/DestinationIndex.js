@@ -157,8 +157,9 @@ const DestinationIndex = () => {
                   </datalist>
                   <hr />
                 </div>
-              </div>Date
-              <DatePicker inputFormat="DD/MM/YYYY" format="DD/MM/YYYY" name="month" onChange={handleDateChange} />
+              </div>
+              <div>Date</div>
+              <div><DatePicker id="date-picker" inputFormat="DD/MM/YYYY" format="DD/MM/YYYY" name="month" onChange={handleDateChange} /></div>
               <hr />
               <div id="continent-selector">
                 <label htmlFor="continent">Continent:</label>
@@ -187,11 +188,11 @@ const DestinationIndex = () => {
                 <label htmlFor="rating">Average rating:</label>
                 <select name="rating" id="" onChange={handleChange}>
                   <option value="All">All</option>
-                  <option value="1">1 Star</option>
-                  <option value="2">2 Star</option>
-                  <option value="3">3 Star</option>
-                  <option value="4">4 Star</option>
-                  <option value="5">5 Star</option>
+                  <option value="1">⭐️</option>
+                  <option value="2">⭐️⭐️</option>
+                  <option value="3">⭐️⭐️⭐️</option>
+                  <option value="4">⭐️⭐️⭐️⭐️</option>
+                  <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
                 </select>
               </div>
             </div>
