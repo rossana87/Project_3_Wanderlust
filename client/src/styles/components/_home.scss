@@ -71,25 +71,6 @@ input[type="radio"] {
   background-position: center;
 }
 
-// BACKGROUNDS
-
-// .slide-1 {
-//   background-image: url("https://images.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600");
-// }
-
-// .slide-2 {
-//   background-image: url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&h=1200&w=1600");
-// }
-
-// .slide-3 {
-//   background-image: url("https://images.pexels.com/photos/448714/pexels-photo-448714.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600");
-// }
-
-// .slide-4 {
-//   background-image: url("https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?auto=compress&cs=tinysrgb&h=1200&w=1600");
-// }
-
-
 // BUTTONS LOGIC
 
 .btn, .btn::after {
@@ -152,12 +133,29 @@ input[type="radio"] {
   content: "";
   display: inline-block;
   border: 1px solid white;
-  background: rgb(11, 185, 238);
+  // background: rgb(11, 185, 238);
+  background: $accent-colour1;
   width: 20px;
   height: 20px;
   margin: 3px 3px;
   transform: scale(.5, .5);
   box-shadow: 0px 1px 5px rgba(56, 56, 56, 0.822);
+}
+
+#slide-1-trigger+.btn::after {
+  background: $cold-colour;
+}
+
+#slide-2-trigger+.btn::after {
+  background: $mild-colour;
+}
+
+#slide-3-trigger+.btn::after {
+  background: $warm-colour;
+}
+
+#slide-4-trigger+.btn::after {
+  background: $hot-colour;
 }
 
 .emoji, .emoji::after {
@@ -181,7 +179,7 @@ input[type="radio"] {
   width: 100%;
   // border: 1px solid yellow;
   z-index: 400;
-  bottom: 5%;
+  bottom: 3%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -193,14 +191,6 @@ input[type="radio"] {
   height: 2rem;
   width: 6rem;
 }
-
-// #radio-container {
-//   border: 1px solid aqua;
-// }
-
-// #explore-button-container {
-//   border: 1px pink;
-// }
 
 .prev-next {
   position: absolute;
@@ -225,7 +215,7 @@ input[type="radio"] {
     0 20px 20px rgba(0,0,0,.15);
   // top: 40%
   &:hover {
-    color: darken(gold, 3%);
+    color: darken($accent-colour1, 3%);
   }
 }
 
@@ -260,5 +250,66 @@ input[type="radio"]:checked+label.btn {
 
 input[type="radio"]:checked+label.btn::after {
     transform: scale(1.1, 1.1);
-    background: lightskyblue;
+    // background: lightskyblue;
+    // background: $accent-colour1;
+}
+
+input[type="radio"]:checked#slide-1-trigger+label.btn::after {
+  // background: lightskyblue;
+  background: $cold-colour;
+}
+
+input[type="radio"]:checked#slide-2-trigger+label.btn::after {
+  // background: lightskyblue;
+  background: $mild-colour;
+}
+
+input[type="radio"]:checked#slide-3-trigger+label.btn::after {
+  // background: lightskyblue;
+  background: $warm-colour;
+}
+
+input[type="radio"]:checked#slide-4-trigger+label.btn::after {
+  // background: lightskyblue;
+  background: $hot-colour;
+}
+
+// EXPLORE BUTTON STYLING
+
+#btn-explore {
+  width: 8em;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  height: 2.75em;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#btn-explore:hover {
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+#btn-explore:focus {
+  outline: none;
+}
+
+#btn-explore {
+  background-image: linear-gradient(
+    to right,
+    $accent-colour1,
+    $accent-colour2,
+    $accent-colour3,
+    $accent-colour4,
+  );
+  box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
 }
