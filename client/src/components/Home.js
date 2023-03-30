@@ -3,18 +3,31 @@ import React from 'react'
 import Nav from './common/Nav'
 import axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom'
+import RegisterDialog from './common/RegisterDialog'
 
 const Home = () => {
 
   // ! State
   // State for the Modal to either show or not show
   const modalRef = useRef(null)
+  const registerRef = useRef(null)
 
   // State for the Form Fields
   const [formFields, setFormFields] = useState({
     email: '',
     password: '',
   })
+
+  // State for Register
+  const [registerFormFields, setRegisterFormFields] = useState({
+    username: '',
+    email: '',
+    password: '',
+    passwordConfirmation: '',
+    isAdmin: false,
+  })
+
+
 
   const [error, setError] = useState('')
   const [destinations, setDestinations] = useState([])
@@ -26,10 +39,10 @@ const Home = () => {
   const [slide2Destination, setSlide2Destination] = useState(0)
   const [slide3Destination, setSlide3Destination] = useState(0)
   const [slide4Destination, setSlide4Destination] = useState(0)
-  const [coldDestinations,setColdDestinations] = useState([])
-  const [mildDestinations,setMildDestinations] = useState([])
-  const [warmDestinations,setWarmDestinations] = useState([])
-  const [hotDestinations,setHotDestinations] = useState([])
+  const [coldDestinations, setColdDestinations] = useState([])
+  const [mildDestinations, setMildDestinations] = useState([])
+  const [warmDestinations, setWarmDestinations] = useState([])
+  const [hotDestinations, setHotDestinations] = useState([])
 
   // ! On Mount
   useEffect(() => {
@@ -102,6 +115,14 @@ const Home = () => {
 
   function closeModal() {
     modalRef.current.close()
+  }
+
+  function openRegisterModal() {
+    registerRef.current.showModal()
+  }
+
+  function closeRegisterModal() {
+    registerRef.current.close()
   }
 
   const handleFilter = (value) => {
@@ -182,11 +203,32 @@ const Home = () => {
     disableButtons()
   }, [filteredDestinations, slide1Destination, slide2Destination, slide3Destination, slide4Destination])
 
+  const handleChangeRegister = (e) => {
+    setRegisterFormFields({ ...registerFormFields, [e.target.name]: e.target.value })
+    setError('')
+  }
+
+  const submitRegistration = async (e) => {
+    e.preventDefault()
+    try {
+      await axios.post('/api/', registerFormFields)
+      // Save the token to local storage for later use
+      // localStorage.setItem('WANDERLUST-TOKEN', data.token)
+      closeRegisterModal()
+      navigate('/') // needs this to trigger the 'register' button to show
+    } catch (err) {
+      console.log('error', err)
+      setError(err.response.data.message)
+    }
+  }
+
   return (
     <>
-      <Nav openModal={openModal} />
+      <Nav openModal={openModal} openRegisterModal={openRegisterModal} />
 
       <main>
+        <RegisterDialog registerRef={registerRef} closeRegisterModal={closeRegisterModal} handleChangeRegister={handleChangeRegister} submitRegistration={submitRegistration} registerFormFields={registerFormFields} />
+
         {/* <!-- BUTTONS (input/labels) --> */}
         <input type="radio" name="slider" id="slide-1-trigger" className="trigger" value="0" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-1-trigger"></label>
