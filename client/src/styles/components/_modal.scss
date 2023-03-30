@@ -38,20 +38,6 @@ h2 {
   font-family: $main-font;
 }
 
-// .modal {
-//   // padding: 1em;
-//   min-width: 40ch;
-//   max-width: 40ch;
-//   min-height: 50ch;
-//   max-height: 50ch;
-//   border-radius: 8px;
-//   // z-index: 300;
-
-//   &>* {
-//     margin: 0 0 0.5rem 0;
-//   }
-// }
-
 .modal {
   background-color: white;
   border-radius: 10px;
@@ -78,23 +64,6 @@ h2 {
   margin: 0;
   padding-bottom: 15px;
 }
-
-// .close-button {
-//   display: inline-block;
-//   padding: 8px 8px;
-//   vertical-align: middle;
-//   overflow: hidden;
-//   text-decoration: none;
-//   color: inherit;
-//   // background-color: inherit;
-//   font-weight: bold;
-//   text-align: center;
-//   cursor: pointer;
-//   white-space: nowrap;
-//   position: absolute;
-//   right: 0;
-//   top: 0;
-// }
 
 .close-button {
   background-color: transparent;

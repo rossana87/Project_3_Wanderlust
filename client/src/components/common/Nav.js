@@ -3,7 +3,7 @@ import { authenticated, getUserID, isAuthenticated, removeToken } from '../../he
 import { useState, useEffect, useRef } from 'react'
 
 
-const Nav = ({ openModal }) => {
+const Nav = ({ openModal, openRegisterModal }) => {
 
   const location = useLocation()
   const navigate = useNavigate()
@@ -34,7 +34,7 @@ const Nav = ({ openModal }) => {
             :
             <>
               <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => openModal('login')}>Login</li>
-              <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => openModal('register')}>Register</li>
+              <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => openRegisterModal('register')}>Register</li>
 
             </>
           }
