@@ -289,7 +289,7 @@ const Home = () => {
             </div> */}
             <div id="explore-button-container">
               <Link to='/destinations' state={{ filtered: filteredDestinations, unfiltered: destinations, temperature: temperature }}>
-                <button id="btn-explore" >Explore!</button>
+                <button className="site-button" id="btn-explore" >Explore!</button>
               </Link>
               {/* <button id="btn-next" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>next</button> */}
             </div>
@@ -303,7 +303,7 @@ const Home = () => {
           <form className="form" method="dialog" onSubmit={handleSubmit}>
             <label>Email:<input type="email" name="email" placeholder='Email' onChange={handleChange} value={formFields.email} /></label>
             <label>Password:<input type="password" name="password" placeholder='Password' onChange={handleChange} value={formFields.password} /></label>
-            <button className="button" type="submit">Submit form</button>
+            <button className="button" type="submit">Login</button>
             {error && <p className='text-danger'>{error}</p>}
           </form>
         </dialog>
