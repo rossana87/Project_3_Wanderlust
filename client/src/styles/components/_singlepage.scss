@@ -33,6 +33,14 @@ section:not(#hero) {
     inline-size: clamp(10em, 70vw, 30em);
     overflow-wrap: break-word;
   }
+
+  #destination-btn-next {
+    right: 2.5%;
+  }
+  
+  #destination-btn-previous {
+    left: 2.5%;
+  }
 }
 
 #common, #attractions, #reviews {

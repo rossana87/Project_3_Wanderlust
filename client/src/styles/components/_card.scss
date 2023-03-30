@@ -5,10 +5,10 @@
 
 #grid-container {
   // border: 1px dotted black;
-  margin: 1em;
+  padding: 0 1em;
   display: flex;
   gap: 1em;
-  max-width: 100rem;
+  // max-width: 100rem;
 }
 
 #grid {
@@ -16,6 +16,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   // grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 1em;
+  // margin: 0 auto;
 }
 
 .card {

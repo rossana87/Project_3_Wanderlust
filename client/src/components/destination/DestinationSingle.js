@@ -214,6 +214,10 @@ const DestinationIndex = () => {
     }
   }
 
+  const handleImageChange = () => {
+
+  }
+
   return (
     <>
       <Nav openModal={openModal} openRegisterModal={openRegisterModal} />
@@ -225,6 +229,10 @@ const DestinationIndex = () => {
             <section id="hero" style={{ backgroundImage: `url("${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]}")` }}>
               <h1>{destination.name}</h1>
               <p>{destination.description}</p>
+              <div id="destination-prev-next-controls">
+                <button id="destination-btn-previous" className="prev-next" value='-1' onClick={(e) => handleImageChange(e.target.value)} >&#60;</button>
+                <button id="destination-btn-next" className="prev-next" value='1' onClick={(e) => handleImageChange(e.target.value)}>&#62;</button>
+              </div>
             </section>
             <section id="common">
               <div id="common-container">
