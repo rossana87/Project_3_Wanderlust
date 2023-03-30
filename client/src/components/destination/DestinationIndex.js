@@ -5,11 +5,13 @@ import axios from 'axios'
 import { LocalizationProvider, DatePicker } from '@mui/x-date-pickers'
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import Dialog from '../common/Dialog'
+import RegisterDialog from '../common/RegisterDialog'
 
 const DestinationIndex = () => {
   const location = useLocation()
   const modalRef = useRef(null)
   const navigate = useNavigate()
+  const registerRef = useRef(null)
 
   const [error, setError] = useState('')
   const [filteredContinents, setFilteredContinents] = useState([])
@@ -29,6 +31,13 @@ const DestinationIndex = () => {
     password: '',
   })
 
+  const [registerFormFields, setRegisterFormFields] = useState({
+    username: '',
+    email: '',
+    password: '',
+    passwordConfirmation: '',
+    isAdmin: false,
+  })
 
   function openModal() {
     modalRef.current.showModal()
@@ -58,7 +67,32 @@ const DestinationIndex = () => {
     }
   }
 
+  function openRegisterModal() {
+    registerRef.current.showModal()
+  }
 
+  function closeRegisterModal() {
+    registerRef.current.close()
+  }
+
+  const handleChangeRegister = (e) => {
+    setRegisterFormFields({ ...registerFormFields, [e.target.name]: e.target.value })
+    setError('')
+  }
+
+  const submitRegistration = async (e) => {
+    e.preventDefault()
+    try {
+      await axios.post('/api/', registerFormFields)
+      // Save the token to local storage for later use
+      // localStorage.setItem('WANDERLUST-TOKEN', data.token)
+      closeRegisterModal()
+      navigate('/') // needs this to trigger the 'register' button to show
+    } catch (err) {
+      console.log('error', err)
+      setError(err.response.data.message)
+    }
+  }
 
   // ! On Mount
   useEffect(() => {
@@ -136,9 +170,10 @@ const DestinationIndex = () => {
   return (
     <>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <Nav openModal={openModal} />
+        <Nav openModal={openModal} openRegisterModal={openRegisterModal} />
         <main>
           <Dialog modalRef={modalRef} closeModal={closeModal} handleLogin={handleLogin} handleSubmit={handleSubmit} formFields={formFields} />
+          <RegisterDialog registerRef={registerRef} closeRegisterModal={closeRegisterModal} handleChangeRegister={handleChangeRegister} submitRegistration={submitRegistration} registerFormFields={registerFormFields} />
           <div id="grid-header">
             <h1>Select your destination...</h1>
           </div>
@@ -177,9 +212,7 @@ const DestinationIndex = () => {
                   <option value="All">All</option>
                   {filteredDestinations.length > 0 &&
                     [...new Set(filteredContinents.filter(destination => destination.continent === filters.continent || filters.continent === 'All')
-                      .map(destination => destination.country))].sort().map(country => {
-                      return <option key={country} value={country}>{country}</option>
-                    })}
+                      .map(destination => destination.country))].sort().map(country => <option key={country} value={country}>{country}</option>)}
                 </select>
               </div>
               <hr />
