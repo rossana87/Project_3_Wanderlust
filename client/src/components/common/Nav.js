@@ -27,14 +27,14 @@ const Nav = ({ openModal, openRegisterModal }) => {
           {isAuthenticated() ?
             <>
               {/* <Link to="/admin" as={Link}>Admin</Link> */}
-              <Link to={`/profile/${getUserID()}`} as={Link}>Profile</Link>
+              <Link className="profile" to={`/profile/${getUserID()}`} as={Link}>Profile</Link>
               {/* <li className="" onClick={handleLogOut}>Profile</li> */}
-              <li className="" onClick={handleLogOut}>Logout</li>
+              <li className="logout" onClick={handleLogOut}>Logout</li>
             </>
             :
             <>
               <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => openModal('login')}>Login</li>
-              <li to="/" className={location.pathname === '/' ? 'active' : ''} onClick={() => openRegisterModal('register')}>Register</li>
+              <li to="/" id="register" className={location.pathname === '/' ? 'active' : ''} onClick={() => openRegisterModal('register')}>Register</li>
 
             </>
           }
