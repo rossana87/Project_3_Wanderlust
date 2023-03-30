@@ -1,6 +1,6 @@
 import Nav from '../common/Nav'
 import axios from 'axios'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useState, useEffect, useRef } from 'react'
 import { getToken, getUserID } from '../../helpers/auth'
 import { v4 as uuid } from 'uuid'
