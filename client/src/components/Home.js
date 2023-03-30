@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import React from 'react'
 import Nav from './common/Nav'
-import Dialog from './common/Dialog'
 import axios from 'axios'
 import { useNavigate, Link } from 'react-router-dom'
 
@@ -20,10 +19,17 @@ const Home = () => {
   const [error, setError] = useState('')
   const [destinations, setDestinations] = useState([])
   const [filteredDestinations, setFilteredDestinations] = useState([])
-  const [temperature, setTemperature] = useState('0')
-  const [image, setImage] = useState(0)
+  const [temperature, setTemperature] = useState('2')
   const [previousDisabled, setPreviousDisabled] = useState(true)
   const [nextDisabled, setNextDisabled] = useState(false)
+  const [slide1Destination, setSlide1Destination] = useState(0)
+  const [slide2Destination, setSlide2Destination] = useState(0)
+  const [slide3Destination, setSlide3Destination] = useState(0)
+  const [slide4Destination, setSlide4Destination] = useState(0)
+  const [coldDestinations,setColdDestinations] = useState([])
+  const [mildDestinations,setMildDestinations] = useState([])
+  const [warmDestinations,setWarmDestinations] = useState([])
+  const [hotDestinations,setHotDestinations] = useState([])
 
   // ! On Mount
   useEffect(() => {
@@ -32,20 +38,46 @@ const Home = () => {
       try {
         const { data } = await axios.get('/api/')
         setDestinations(data)
+        setTemperature('2')
+        createDestinationArrays()
+        console.log('COLD ->', coldDestinations)
+        console.log('MILD ->', mildDestinations)
+        console.log('WARM ->', warmDestinations)
+        console.log('HOT ->', hotDestinations)
       } catch (err) {
         console.log(err)
         setError(err.message)
       }
     }
     getDestinations()
-    // handleFilter()
-    // applyFilter()
   }, [])
 
   // ! Executions
-  const handleLogin = (e) => {
+  const handleChange = (e) => {
     setFormFields({ ...formFields, [e.target.name]: e.target.value })
     setError('')
+  }
+
+  const createDestinationArrays = () => {
+    if (destinations.length > 0) {
+      const currentMonth = new Date().getMonth()
+      const cold = destinations.filter(destination => {
+        return Math.min(...destinations.map(destination => destination.highTemps[currentMonth])) <= destination.highTemps[currentMonth] && destination.highTemps[currentMonth] <= 10
+      })
+      const mild = destinations.filter(destination => {
+        return 11 <= destination.highTemps[currentMonth] && destination.highTemps[currentMonth] <= 19
+      })
+      const warm = destinations.filter(destination => {
+        return 20 <= destination.highTemps[currentMonth] && destination.highTemps[currentMonth] <= 29
+      })
+      const hot = destinations.filter(destination => {
+        return 30 <= destination.highTemps[currentMonth] && destination.highTemps[currentMonth] <= Math.max(...destinations.map(destination => destination.highTemps[currentMonth]))
+      })
+      setColdDestinations(cold)
+      setMildDestinations(mild)
+      setWarmDestinations(warm)
+      setHotDestinations(hot)
+    }
   }
 
   const navigate = useNavigate()
@@ -74,7 +106,6 @@ const Home = () => {
 
   const handleFilter = (value) => {
     console.log(value)
-    setImage(0)
     setTemperature(value)
   }
 
@@ -107,35 +138,55 @@ const Home = () => {
 
   useEffect(() => {
     applyFilter()
+    createDestinationArrays()
   }, [destinations, temperature])
 
   useEffect(() => {
-    console.log('FILTERED DESTINATIONS', filteredDestinations)
   }, [filteredDestinations])
 
   const handleImageChange = (value) => {
-    setImage(image + parseInt(value))
+    if (temperature === '0') {
+      setSlide1Destination(slide1Destination + parseInt(value))
+    } else if (temperature === '1') {
+      setSlide2Destination(slide2Destination + 1)
+    } else if (temperature === '2') {
+      setSlide3Destination(slide3Destination + 1)
+    } else {
+      setSlide4Destination(slide4Destination + 1)
+    }
   }
 
   const disableButtons = () => {
-    if (image === 0) {
-      setPreviousDisabled(true)
-    } else setPreviousDisabled(false)
-    if (image >= filteredDestinations.length - 1) {
+    if (temperature === '0' && slide1Destination >= coldDestinations.length - 1) {
+      setNextDisabled(true)
+    } else if (temperature === '1' && slide2Destination >= mildDestinations.length - 1) {
+      setNextDisabled(true)
+    } else if (temperature === '2' && slide3Destination >= warmDestinations.length - 1) {
+      setNextDisabled(true)
+    } else if (temperature === '3' && slide4Destination >= hotDestinations.length - 1) {
       setNextDisabled(true)
     } else setNextDisabled(false)
+
+    if (temperature === '0' && slide1Destination === 0) {
+      setPreviousDisabled(true)
+    } else if (temperature === '1' && slide2Destination === 0) {
+      setPreviousDisabled(true)
+    } else if (temperature === '2' && slide3Destination === 0) {
+      setPreviousDisabled(true)
+    } else if (temperature === '3' && slide4Destination === 0) {
+      setPreviousDisabled(true)
+    } else setPreviousDisabled(false)
   }
 
   useEffect(() => {
     disableButtons()
-    console.log(image)
-  }, [filteredDestinations, image])
+  }, [filteredDestinations, slide1Destination, slide2Destination, slide3Destination, slide4Destination])
 
   return (
     <>
       <Nav openModal={openModal} />
+
       <main>
-        <Dialog modalRef={modalRef} closeModal={closeModal} handleLogin={handleLogin} handleSubmit={handleSubmit} formFields={formFields} />
         {/* <!-- BUTTONS (input/labels) --> */}
         <input type="radio" name="slider" id="slide-1-trigger" className="trigger" value="0" onChange={(e) => handleFilter(e.target.value)} />
         <label className="btn" htmlFor="slide-1-trigger"></label>
@@ -157,12 +208,12 @@ const Home = () => {
             <h2>Need to get away? Choose your weather mood and lets go travelling!</h2>
           </div>
           <div id="slide-role">
-            {filteredDestinations.length > 0 ?
+            {coldDestinations.length > 0 || mildDestinations.length > 0 || warmDestinations.length > 0 || hotDestinations.length > 0 ?
               <>
-                <div className="slide slide-1" style={{ backgroundImage: `url("${filteredDestinations[image].images[0]}")` }}></div>
-                <div className="slide slide-2" style={{ backgroundImage: `url("${filteredDestinations[image].images[1]}")` }}></div>
-                <div className="slide slide-3" style={{ backgroundImage: `url("${filteredDestinations[image].images[2]}")` }}></div>
-                <div className="slide slide-4" style={{ backgroundImage: `url("${filteredDestinations[image].images[3]}")` }}></div>
+                <div className="slide slide-1" style={{ backgroundImage: `url("${coldDestinations[slide1Destination].images[0]}")` }}></div>
+                <div className="slide slide-2" style={{ backgroundImage: `url("${mildDestinations[slide2Destination].images[1]}")` }}></div>
+                <div className="slide slide-3" style={{ backgroundImage: `url("${warmDestinations[slide3Destination].images[2]}")` }}></div>
+                <div className="slide slide-4" style={{ backgroundImage: `url("${hotDestinations[slide4Destination].images[3]}")` }}></div>
               </>
               :
               console.log('error - filtered destinations')
@@ -202,6 +253,18 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        {/* <!-- LOGIN MODAL --> */}
+        <dialog className="modal" id="modal" ref={modalRef}>
+          <h2>Log into Wanderlust</h2>
+          <button className="close-button" onClick={closeModal}>X</button>
+          <form className="form" method="dialog" onSubmit={handleSubmit}>
+            <label>Email:<input type="email" name="email" placeholder='Email' onChange={handleChange} value={formFields.email} /></label>
+            <label>Password:<input type="password" name="password" placeholder='Password' onChange={handleChange} value={formFields.password} /></label>
+            <button className="button" type="submit">Submit form</button>
+            {error && <p className='text-danger'>{error}</p>}
+          </form>
+        </dialog>
       </main>
     </>
   )
