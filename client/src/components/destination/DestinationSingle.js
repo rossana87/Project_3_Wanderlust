@@ -19,7 +19,10 @@ const DestinationIndex = () => {
   const [reviews, setReviews] = useState([])
   const [sliderValue, setSliderValue] = useState(4)
   const [weatherData, setWeatherData] = useState([])
-  
+  const [currentImage, setCurrentImage] = useState(0)
+  const [nextDisabled, setNextDisabled] = useState(false)
+  const [previousDisabled, setPreviousDisabled] = useState(true)
+
   // State for the Login Form Fields
   const [formFields, setFormFields] = useState({
     email: '',
@@ -151,7 +154,7 @@ const DestinationIndex = () => {
 
   // ! On Mount get the weather data
   useEffect(() => {
-    
+
     const getWeather = async () => {
       if (!destination) return
       try {
@@ -194,29 +197,36 @@ const DestinationIndex = () => {
     const today = new Date()
     const targetDate = new Date(today)
     targetDate.setDate(today.getDate() + i)
-    
+
     const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     const dayOfWeek = daysOfWeek[targetDate.getDay()]
     const date = targetDate.getDate()
-    
+
     return `${dayOfWeek} ${date}`
   }
 
   const getWeatherEmoji = (temp) => {
     if (temp < 10) {
-      return '❄️' 
+      return '❄️'
     } else if (temp > 10 && temp < 20) {
       return '⛅️'
     } else if (temp > 20 && temp < 30) {
-      return '☀️' 
+      return '☀️'
     } else {
       return '🔥'
     }
   }
 
-  const handleImageChange = () => {
-
+  const handleImageChange = (value) => {
+    setCurrentImage(currentImage + parseInt(value))
   }
+
+  useEffect(() => {
+    console.log(currentImage)
+    destination && console.log(destination.images.length - 1)
+    destination && currentImage >= destination.images.length - 1 ? setNextDisabled(true) : setNextDisabled(false)
+    destination && currentImage === 0 ? setPreviousDisabled(true) : setPreviousDisabled(false)
+  }, [destination, currentImage])
 
   return (
     <>
@@ -226,12 +236,12 @@ const DestinationIndex = () => {
         <RegisterDialog registerRef={registerRef} closeRegisterModal={closeRegisterModal} handleChangeRegister={handleChangeRegister} submitRegistration={submitRegistration} registerFormFields={registerFormFields} />
         {destination &&
           <>
-            <section id="hero" style={{ backgroundImage: `url("${destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[0]}")` }}>
+            <section id="hero" style={{ backgroundImage: `url("${destination.images[currentImage]}")` }}>
               <h1>{destination.name}</h1>
               <p>{destination.description}</p>
               <div id="destination-prev-next-controls">
-                <button id="destination-btn-previous" className="prev-next" value='-1' onClick={(e) => handleImageChange(e.target.value)} >&#60;</button>
-                <button id="destination-btn-next" className="prev-next" value='1' onClick={(e) => handleImageChange(e.target.value)}>&#62;</button>
+                <button id="destination-btn-previous" className="prev-next" value='-1' onClick={(e) => handleImageChange(e.target.value)} disabled={previousDisabled}>&#60;</button>
+                <button id="destination-btn-next" className="prev-next" value='1' onClick={(e) => handleImageChange(e.target.value)} disabled={nextDisabled}>&#62;</button>
               </div>
             </section>
             <section id="common">
