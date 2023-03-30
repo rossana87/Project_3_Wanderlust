@@ -11,52 +11,6 @@
   max-width: 100rem;
 }
 
-#filters {
-  // border: 1px solid blue;
-  min-width: 12em;
-  font-family: $main-font;
-
-  hr {
-    margin: 2em 0;
-  }
-
-  #filter-temp {
-    width: 100%;
-  }
-
-  option {
-    // padding: 0;
-    margin-bottom: 1em;
-    width: 12em;
-    position: absolute;
-    &:first-child {
-      left:5px;
-    }
-    &:nth-child(2) {
-      left:66px;
-    }
-    &:nth-child(3) {
-      left:122px;
-    }
-    &:nth-child(4) {
-      left:182px;
-    }
-  }
-
-  datalist {
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-evenly;
-    writing-mode: vertical-lr;
-    // width: 100%;
-  }
-  
-  input[type="range"] {
-    margin: 0;
-    width: 100%;
-  }
-}
-
 #grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
