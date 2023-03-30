@@ -1,12 +1,27 @@
 #adminHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin: 0;
 }
 
-// #adminH1 {
-//   margin-left: calc(50vw - (115px + 2em + 30px));
-// }
+#adminH1 {
+  text-align: center;
+  // margin-right: calc(50vw - (160px + 115px));
+}
+
+#adminH1 {
+  text-align: center;
+  // margin-right: calc(50vw - (160px + 115px));
+}
+
+#headerBtnDiv {
+  // margin: 0 auto;
+  position: relative;
+}
+
+#admin-container {
+  margin: 0 auto;
+}
 
 #destinationsOwned {
   width: 100%;
@@ -23,6 +38,19 @@
   margin: 0 auto;
 }
 
+.backToProfile {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 3px;
+  height: 30px;
+  width: 160px;
+  position: absolute left 15%;
+
+
+}
+
 .destinationDetails {
   display: flex;
   align-items: center;
@@ -36,12 +64,36 @@
   align-items: center;
 }
 
+.add {
+  background-color: green;
+  border-radius: 3px;
+  height: 30px;
+  width: 160px;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
 .edit {
   margin-bottom: 10px;
+  background-color: rgb(246, 180, 59);
+  border-radius: 3px;
+  height: 30px;
+  width: 60px;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .delete {
+  height: 30px;
+  width: 90px;
   margin-top: 10px;
+  background-color: red;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .destinationImageDiv {

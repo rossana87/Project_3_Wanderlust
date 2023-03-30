@@ -76,7 +76,7 @@ const DestinationIndex = () => {
       }
     }
     getMap()
-  })
+  }, [destination])
 
   // ! Login Modal
   function openModal() {
@@ -148,26 +148,6 @@ const DestinationIndex = () => {
     }
     getDestination()
   }, [id])
-
-  useEffect(() => {
-    const getMap = async () => {
-      if (!destination) return
-      try {
-        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
-        const map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/streets-v12',
-          // center: [-74.5, 40],
-          center: [destination.longitude, destination.latitude],
-          zoom: 10,
-        })
-      } catch (err) {
-        console.log(err)
-        setError(err.message)
-      }
-    }
-    getMap()
-  }, [destination])
 
   // ! On Mount get the weather data
   useEffect(() => {

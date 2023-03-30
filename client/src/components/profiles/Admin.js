@@ -256,17 +256,20 @@ const Admin = () => {
       <main>
         <div id="grid-header">
           <section id='adminHeader'>
-            <Link to={`/profile/${getUserID()}`} as={Link} className='backToProfile'>← Back to profile</Link>
-            <h1 id='adminH1'>Admin</h1>
-            <button className='add' onClick={(e) => handleAdd(e.target.value)} value='proxy'>⊕ Add a destination</button>
+            <div id='adminH1Div'>
+              <h1 id='adminH1'>Admin</h1>
+            </div>
           </section>
-          <div id="grid-container">
+          <div id='headerBtnDiv'>
+            <Link to={`/profile/${getUserID()}`} as={Link} className='backToProfile'>← Back to profile</Link>
+          </div>
+          <div id="#admin-container">
             {adminDestinations &&
               <>
                 <section id="destinationsOwned">
                   <div id='yourDestinationsHeader'>
                     <h3>Your destinations:</h3>
-                    <input type="text" placeholder='Search destinations...' />
+                    <button className='add' onClick={(e) => handleAdd(e.target.value)} value='proxy'>Add a destination</button>
                   </div>
                   <div id="destinations-container">
                     {adminDestinations.length > 0 ?
@@ -326,31 +329,31 @@ const Admin = () => {
           <button className="close-button" onClick={closeAddModal}>X</button>
           <form id="editForm" method="dialog" onSubmit={submitAdd}>
             <span>
-              <label>Name:</label><input type="text" name="name" placeholder='Destination Name' onChange={handleUpdateAdd} value={addBody.name} required/>
+              <label>Name:</label><input type="text" name="name" placeholder='Destination Name' onChange={handleUpdateAdd} value={addBody.name} required />
             </span>
             <span>
-              <label>Country:</label><input type="text" name="country" placeholder='Country Name' onChange={handleUpdateAdd} value={addBody.country} required/>
+              <label>Country:</label><input type="text" name="country" placeholder='Country Name' onChange={handleUpdateAdd} value={addBody.country} required />
             </span>
             <span>
-              <label>Continent:</label><input type="text" name="continent" placeholder='Continent Name' onChange={handleUpdateAdd} value={addBody.continent} required/>
+              <label>Continent:</label><input type="text" name="continent" placeholder='Continent Name' onChange={handleUpdateAdd} value={addBody.continent} required />
             </span>
             <span>
-              <label>Currency:</label><input type="text" name="currency" placeholder='Currency' onChange={handleUpdateAdd} value={addBody.currency} required/>
+              <label>Currency:</label><input type="text" name="currency" placeholder='Currency' onChange={handleUpdateAdd} value={addBody.currency} required />
             </span>
             <span>
-              <label>Latitude:</label><input type="text" name="latitude" placeholder='Latitude' onChange={handleUpdateAdd} value={addBody.latitude} required/>
+              <label>Latitude:</label><input type="text" name="latitude" placeholder='Latitude' onChange={handleUpdateAdd} value={addBody.latitude} required />
             </span>
             <span>
-              <label>Longitude:</label><input type="text" name="longitude" placeholder='Longitude' onChange={handleUpdateAdd} value={addBody.longitude} required/>
+              <label>Longitude:</label><input type="text" name="longitude" placeholder='Longitude' onChange={handleUpdateAdd} value={addBody.longitude} required />
             </span>
             <span>
-              <label>Description:</label><input type="text" name="description" placeholder='Description' onChange={handleUpdateAdd} value={addBody.description} required/>
+              <label>Description:</label><input type="text" name="description" placeholder='Description' onChange={handleUpdateAdd} value={addBody.description} required />
             </span>
             <span>
-              <label>Images:</label><input type="text" name="images" placeholder='Images' onChange={handleUpdateAdd} value={addBody.images} required/>
+              <label>Images:</label><input type="text" name="images" placeholder='Images' onChange={handleUpdateAdd} value={addBody.images} required />
             </span>
             <span>
-              <label>Features:</label><input type="text" name="features" placeholder='Features' onChange={handleUpdateAdd} value={addBody.features} required/>
+              <label>Features:</label><input type="text" name="features" placeholder='Features' onChange={handleUpdateAdd} value={addBody.features} required />
             </span>
             <span>
               <label>High Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="highTemps" placeholder='Daily average high temp for each month' onChange={handleUpdateAdd} value={addBody.highTemps} />
