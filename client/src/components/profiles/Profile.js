@@ -3,6 +3,7 @@ import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { getToken } from '../../helpers/auth'
+import profilePicture from '../images/profile_picture.png'
 
 const Profile = () => {
 
@@ -60,16 +61,20 @@ const Profile = () => {
           <section>
             <h1>Profile</h1>
           </section>
-          <div id="grid-container">
-            <section id="userDetails">
+          <div id="grid-profile-container">
+            <section className="userDetails">
               {profileData &&
                 <>
-                  <h3>{profileData.username}</h3>
-                  <div className='profilePicture'>
-                    <img src="" alt="userImage" />
+                  <h3 className="profile-name">{profileData.username}</h3>
+                  <div>
+                    <img className="profile-picture" src={profilePicture} alt="profile" />
                   </div>
                   {profileData.isAdmin ?
-                    <Link to="/admin" as={Link}>Admin</Link>
+                    <Link to="/admin" as={Link}>
+                      <div className="button-box">
+                        <button className="admin">Admin</button>
+                      </div>
+                    </Link>
                     :
                     ''}
                 </>
