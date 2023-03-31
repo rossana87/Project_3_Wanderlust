@@ -10,6 +10,7 @@ const Admin = () => {
   // const uuid = uuid()
   const [error, setError] = useState('')
   const [adminData, setAdminData] = useState({})
+  const [editedDestinations, setEditedDestinations] = useState([])
   const [adminDestinations, setAdminDestinations] = useState([])
   const [deleteId, setDeleteID] = useState({
     id: '',
@@ -28,6 +29,7 @@ const Admin = () => {
     features: [],
     highTemps: [],
     lowTemps: [],
+    reviews: [],
     id: '',
     owner: getUserID(),
   })
@@ -47,10 +49,7 @@ const Admin = () => {
     owner: getUserID(),
   })
 
-
-
   // ! On Mount
-
   useEffect(() => {
     const getProfile = async () => {
       try {
@@ -69,7 +68,7 @@ const Admin = () => {
       }
     }
     getProfile()
-  }, [addId])
+  }, [addId, editedDestinations])
 
   useEffect(() => {
     const deleteDestination = async () => {
@@ -100,7 +99,7 @@ const Admin = () => {
   const handleEdit = (value) => {
     const destination = adminData.filter(destination => destination.id === value)[0]
     console.log('DESTINATION ->', destination)
-    const { name, country, continent, currency, latitude, longitude, description, images, features, highTemps, lowTemps } = destination
+    const { name, country, continent, currency, latitude, longitude, description, images, features, highTemps, lowTemps, reviews } = destination
     console.log('DESTINATION ->', destination)
     setEditBody({
       name: name,
@@ -114,6 +113,7 @@ const Admin = () => {
       features: features.join(','),
       highTemps: highTemps.join(','),
       lowTemps: lowTemps.join(','),
+      reviews: reviews,
       id: value,
       owner: getUserID(),
     })
@@ -192,6 +192,7 @@ const Admin = () => {
       const updatedDestinations = [...filteredArray, editBody]
       console.log('EDITED DESTINATIONS ARRAY ->', updatedDestinations)
       setAdminDestinations(updatedDestinations)
+      setEditedDestinations(updatedDestinations)
       closeEditModal()
     } catch (err) {
       console.log('error', err)

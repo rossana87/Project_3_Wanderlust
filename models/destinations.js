@@ -2,18 +2,17 @@ import mongoose from 'mongoose'
 
 // ! Review schema
 const { Schema } = mongoose
-
 const reviewSchema = new Schema({
   title: { type: String, required: true, maxlength: 20 },
   text: { type: String, required: true, maxlength: 300 },
   rating: { type: Number, required: true, min: 1, max: 5 },
+  // destinationId: { type: String, required: true },
   owner: { type: Schema.ObjectId, ref: 'User', required: true },
 }, {
   timestamps: true,
 })
 
 // ! Schema
-
 const destinationSchema = new Schema({
   name: { type: String, required: true, unique: true },
   country: { type: String, required: true },

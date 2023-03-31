@@ -17,9 +17,10 @@ const seedDatabase = async () => {
 
     const createUsers = await User.create(userData)
     console.log(`${createUsers.length} users added`)
-
+    
     const destinationWithOwner = destinationData.map(destination => {
-      const randomUser = createUsers[Math.floor(Math.random() * createUsers.length)]
+      const filteredUsers = createUsers.filter(user => user.isAdmin === true)
+      const randomUser = filteredUsers[Math.floor(Math.random() * filteredUsers.length)]
       return { ...destination, owner: randomUser._id }
     })
 
