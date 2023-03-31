@@ -147,22 +147,24 @@ section:not(#hero) {
 #add-review-container {
   display: block;
   
-  & input {
+  & input, textarea {
     margin-bottom: 1.5em;
+    font-family: inherit;
   }
 
-  & input:not(#slider) {
+  & input:not(#slider), textarea {
     // height: 2.5em;
     padding: 10px;
     width: 100%;
-    
   }
 
-  #review-textarea {
+  & textarea {
     height: 100px;
-    line-height: 100px;
     vertical-align: top;
-    // padding: 10em;
+    resize: vertical;
+    // word-wrap: break-word;
+    overflow-wrap: break-word;
+    // // padding: 10em;
   }
 
   & form {

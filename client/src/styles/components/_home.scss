@@ -41,9 +41,9 @@ input[type="radio"] {
   }
   & h2 {
     // max-width: 30em;
+    line-height: 1.5em;
     inline-size: clamp(10em, 70vw, 20em);
     overflow-wrap: break-word;
-
   }
 }
 
@@ -192,7 +192,9 @@ input[type="radio"] {
 
 #btn-explore {
   // position: absolute;
-  left: 46%;
+  // left: 42%;
+  font-family: $brand-font;
+  font-size: 1.25em;
   // left: 26%;
   // height: 2rem;
   // width: 6rem;

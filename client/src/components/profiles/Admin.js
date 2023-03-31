@@ -71,6 +71,7 @@ const Admin = () => {
   }, [addId, editedDestinations])
 
   useEffect(() => {
+    if (deleteId.id === '') return
     const deleteDestination = async () => {
       try {
         await axios.delete('/api/admin', {

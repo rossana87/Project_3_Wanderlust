@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 // ! Review schema
 const { Schema } = mongoose
 const reviewSchema = new Schema({
-  title: { type: String, required: true, maxlength: 20 },
+  title: { type: String, required: true, maxlength: 100 },
   text: { type: String, required: true, maxlength: 300 },
   rating: { type: Number, required: true, min: 1, max: 5 },
   // destinationId: { type: String, required: true },
