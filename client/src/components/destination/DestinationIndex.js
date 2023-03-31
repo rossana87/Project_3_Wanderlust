@@ -235,7 +235,8 @@ const DestinationIndex = () => {
                 filteredDestinations.map(destination => {
                   const currentMonth = new Date().getMonth()
                   const { _id, name, country, highTemps } = destination
-                  const avgRating = destination.averageRating ? destination.averageRating : '-'
+                  // const avgRating = destination.averageRating ? destination.averageRating : '-'
+                  const avgRating = ('Not yet rated' === destination.averageRating) ? 'Not yet rated' : '⭐️'.repeat(destination.averageRating)
                   const background = destination.images.length === 0 ? 'https://maketimetoseetheworld.com/wp-content/uploads/2018/01/Off-the-beaten-path-places-in-2018-720x540.jpg' : destination.images[filters.temperature]
                   return (
                     // <div key={_id} className="card" style={{ backgroundImage: `url(${background})` }} >

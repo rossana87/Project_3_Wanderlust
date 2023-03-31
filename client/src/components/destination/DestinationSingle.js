@@ -207,14 +207,14 @@ const DestinationIndex = () => {
   }
 
   const getWeatherEmoji = (temp) => {
-    if (temp < 10) {
+    if (temp <= 10) {
       return '❄️'
-    } else if (temp > 10 && temp < 20) {
+    } else if (temp > 10 && temp <= 20) {
       return '⛅️'
     } else if (temp > 20 && temp < 30) {
       return '☀️'
     } else {
-      return '☀️'
+      return '🔥'
     }
   }
 
@@ -336,9 +336,10 @@ const DestinationIndex = () => {
                 <h3 className="first-info">Add a review...</h3>
                 <form onSubmit={addReview}>
                   <label htmlFor="title" name="title">Summary:</label>
-                  <input type="text" id="title" name="title" onChange={handleReview} placeholder={`Summary of ${destination.name}`} />
+                  <input type="text" id="title" name="title" onChange={handleReview} placeholder={`Summary of ${destination.name} (max 100 chars)` } />
                   <label htmlFor="review">Review:</label>
-                  <input type="textarea" id="review-textarea" name="text" onChange={handleReview} placeholder={`Post your review of ${destination.name}`} />
+                  {/* <input type="textarea" id="review-textarea" name="text" onChange={handleReview} placeholder={`Post your review of ${destination.name}`} /> */}
+                  <textarea id="review-textarea" name="text" onChange={handleReview} placeholder={`Post your review of ${destination.name}`} />
                   <label htmlFor="rating" name="rating">Rating: {sliderValue}</label>
                   <input type="range" name="rating" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleReview} />
                   <button className="site-button" type="submit" id="add-review">Add</button>
