@@ -172,7 +172,7 @@ const DestinationIndex = () => {
   // ! Review Functionality
   const handleReview = (e) => {
     setReviewFields({ ...reviewFields, [e.target.name]: e.target.value })
-    if (parseInt(e.target.value)) setSliderValue(e.target.value)
+    if (e.target.name === 'rating') setSliderValue(e.target.value)
     setError('')
   }
 

@@ -18,6 +18,11 @@
   width: 250px;
 }
 
+.individual-review {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 hr {
   border: 0;
   height: 1px;
@@ -40,6 +45,22 @@ hr {
   width: 25%;
 }
 
-.profile-name {
+.profileh2 {
   margin-bottom: 0;
+  font-size: 21px;
+}
+
+.profileh3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.reviewTitle{
+  font-size: 17px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.reviewText {
+  margin: 5px 0;
 }

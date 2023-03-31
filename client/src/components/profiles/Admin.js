@@ -70,7 +70,9 @@ const Admin = () => {
     getProfile()
   }, [addId, editedDestinations])
 
+  // Delete functionality
   useEffect(() => {
+    if (deleteId.id === '') return
     const deleteDestination = async () => {
       try {
         await axios.delete('/api/admin', {
@@ -96,6 +98,7 @@ const Admin = () => {
     setDeleteID(value)
   }
 
+  // Edit functionality
   const handleEdit = (value) => {
     const destination = adminData.filter(destination => destination.id === value)[0]
     console.log('DESTINATION ->', destination)
@@ -261,10 +264,12 @@ const Admin = () => {
               <h1 id='adminH1'>Admin</h1>
             </div>
           </section>
-          <div id='headerBtnDiv'>
-            <Link to={`/profile/${getUserID()}`} as={Link} className='backToProfile'>← Back to profile</Link>
-          </div>
           <div id="#admin-container">
+            <div id='headerBtnDiv'>
+              <button className='backToProfile'>
+                <Link to={`/profile/${getUserID()}`} as={Link} >← Back to profile</Link>
+              </button>
+            </div>
             {adminDestinations &&
               <>
                 <section id="destinationsOwned">

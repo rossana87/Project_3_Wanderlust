@@ -36,18 +36,15 @@ const Profile = () => {
     getProfile()
   }, [editedReviews])
 
-  useEffect(() => {
-    console.log(profileData)
-  }, [profileData])
-
   const handleDelete = (value) => {
-    console.log(value)
     setDeleteID(value)
   }
 
   useEffect(() => {
+    if (deleteId === '') return
     const deleteReview = async () => {
-      const destinationId = profileData.Reviews.filter(destination => destination.reviews[0]._id === deleteId)[0].id
+      let destinationId
+      if (profileData) destinationId = profileData.Reviews.filter(destination => destination.reviews[0]._id === deleteId)[0].id
       try {
         await axios.delete(`/api/profile/${userId}`, {
           headers: {
@@ -75,14 +72,16 @@ const Profile = () => {
       const myReview = destination.reviews.filter(review => review.owner === profileData._id)[0]
       return (
         <div key={i}>
-          <h3>Your review of {destination.name}, {destination.country}</h3>
+          <h3 className="profileh3">{destination.name}, {destination.country}</h3>
           <div className="individual-review" >
-            <h3 className="first-info">{myReview.title}</h3>
-            <button className='delete' onClick={(e) => handleDelete(e.target.value)} value={myReview._id}>Delete</button>
+            <h3 className="reviewTitle">{myReview.title}</h3>
             <p className="reviewText">{myReview.text}</p>
             <div><span className="rating">{'⭐️'.repeat(myReview.rating)}</span></div>
-            <hr />
           </div>
+          <div className='deleteBtnDiv'>
+            <button className='delete' onClick={(e) => handleDelete(e.target.value)} value={myReview._id}>Delete</button>
+          </div>
+          <hr />
         </div>
       )
     })
@@ -104,7 +103,7 @@ const Profile = () => {
             <section className="userDetails">
               {profileData &&
                 <>
-                  <h3 className="profile-name">{profileData.username}</h3>
+                  <h2 className="profileh2">{profileData.username}</h2>
                   <div>
                     <img className="profile-picture" src={profilePicture} alt="profile" />
                   </div>
@@ -122,7 +121,7 @@ const Profile = () => {
             {profileData &&
               <>
                 <section id="reviewsOwned">
-                  <h3>Your reviews:</h3>
+                  <h2 className="profileh2">Your reviews:</h2>
                   <div id="reviews-container">
                     {profileData.Reviews.length > 0 ?
                       displayReviews()
