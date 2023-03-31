@@ -10,6 +10,7 @@ import RegisterDialog from '../common/RegisterDialog'
 import { getToken } from '../../helpers/auth'
 
 const DestinationIndex = () => {
+  const { id } = useParams()
   const location = useLocation()
   const modalRef = useRef(null)
   const navigate = useNavigate()
@@ -40,10 +41,9 @@ const DestinationIndex = () => {
   const [reviewFields, setReviewFields] = useState({
     title: '',
     text: '',
-    rating: '',
+    rating: 4,
   })
 
-  const { id } = useParams()
 
   // ! On Mount
   useEffect(() => {
@@ -177,6 +177,7 @@ const DestinationIndex = () => {
   }
 
   const addReview = async (e) => {
+    console.log('REVIEW FIELDS ->', reviewFields)
     e.preventDefault()
     try {
       await axios.post(`/api/destinations/${id}`, reviewFields,
@@ -213,7 +214,7 @@ const DestinationIndex = () => {
     } else if (temp > 20 && temp < 30) {
       return '☀️'
     } else {
-      return '🔥'
+      return '☀️'
     }
   }
 

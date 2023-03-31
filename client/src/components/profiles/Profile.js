@@ -9,6 +9,9 @@ const Profile = () => {
 
   const [error, setError] = useState('')
   const [profileData, setProfileData] = useState(null)
+  const [deleteId, setDeleteID] = useState('')
+  const [userReviews, setUserReviews] = useState([])
+  const [editedReviews, setEditedReviews] = useState([])
 
   const { userId } = useParams()
 
@@ -24,17 +27,48 @@ const Profile = () => {
         })
           .get(`/api/profile/${userId}`)
         setProfileData(data)
+        setUserReviews(data.Reviews)
       } catch (err) {
         console.log(err)
         setError(err.message)
       }
     }
     getProfile()
-  }, [])
+  }, [editedReviews])
 
   useEffect(() => {
     console.log(profileData)
   }, [profileData])
+
+  const handleDelete = (value) => {
+    console.log(value)
+    setDeleteID(value)
+  }
+
+  useEffect(() => {
+    const deleteReview = async () => {
+      const destinationId = profileData.Reviews.filter(destination => destination.reviews[0]._id === deleteId)[0].id
+      try {
+        await axios.delete(`/api/profile/${userId}`, {
+          headers: {
+            Authorization: `Bearer ${getToken()}`,
+          },
+          data: {
+            id: deleteId,
+            destinationId: destinationId,
+          },
+        })
+        const updatedReviews = userReviews.filter(review => review.id !== deleteId)
+        setUserReviews(updatedReviews)
+        setEditedReviews(updatedReviews)
+      } catch (err) {
+        console.log(err)
+        setError(err.message)
+      }
+      // displayDetinations()
+    }
+    deleteReview()
+  }, [deleteId])
 
   const displayReviews = () => {
     return profileData.Reviews.map((destination, i) => {
@@ -44,6 +78,7 @@ const Profile = () => {
           <h3>Your review of {destination.name}, {destination.country}</h3>
           <div className="individual-review" >
             <h3 className="first-info">{myReview.title}</h3>
+            <button className='delete' onClick={(e) => handleDelete(e.target.value)} value={myReview._id}>Delete</button>
             <p className="reviewText">{myReview.text}</p>
             <div><span className="rating">{'⭐️'.repeat(myReview.rating)}</span></div>
             <hr />
@@ -52,6 +87,10 @@ const Profile = () => {
       )
     })
   }
+
+  // useEffect(() => {
+  //   displayReviews()
+  // }, [profileData, userReviews])
 
   return (
     <>
