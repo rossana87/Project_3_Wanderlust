@@ -239,8 +239,8 @@ const Home = () => {
         {/* <!-- SLIDES --> */}
         <div className="slide-wrapper">
           <div className="homepage-heading">
-            <h1>Explore the world with wander</h1>
-            <h2>Need to get away? Choose your weather mood and lets go travelling!</h2>
+            <h1>Explore the world with Wanderlust</h1>
+            <h2>Need to get away? Choose your weather mood and let&apos;s go travelling!</h2>
           </div>
           <div id="slide-role">
             {coldDestinations.length > 0 || mildDestinations.length > 0 || warmDestinations.length > 0 || hotDestinations.length > 0 ?
