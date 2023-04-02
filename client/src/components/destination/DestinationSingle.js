@@ -211,7 +211,7 @@ const DestinationIndex = () => {
       return '❄️'
     } else if (temp > 10 && temp <= 20) {
       return '⛅️'
-    } else if (temp > 20 && temp < 30) {
+    } else if (temp > 20 && temp <= 30) {
       return '☀️'
     } else {
       return '🔥'
