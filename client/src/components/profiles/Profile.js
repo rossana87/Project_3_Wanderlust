@@ -10,13 +10,12 @@ const Profile = () => {
   const [error, setError] = useState('')
   const [profileData, setProfileData] = useState(null)
   const [deleteId, setDeleteID] = useState('')
-  const [userReviews, setUserReviews] = useState([])
+  const [userDestinationsReviewed, setUserDestinationsReviewed] = useState([])
   const [editedReviews, setEditedReviews] = useState([])
 
   const { userId } = useParams()
 
   // ! On Mount
-
   useEffect(() => {
     const getProfile = async () => {
       try {
@@ -27,7 +26,6 @@ const Profile = () => {
         })
           .get(`/api/profile/${userId}`)
         setProfileData(data)
-        setUserReviews(data.Reviews)
       } catch (err) {
         console.log(err)
         setError(err.message)
@@ -37,17 +35,45 @@ const Profile = () => {
   }, [editedReviews])
 
   useEffect(() => {
-    console.log(profileData)
+    if (profileData) {
+      const destinationsReviewed = profileData.Reviews.map(destination => {
+        return { ...destination, reviews: destination.reviews.find(review => review.owner === profileData._id) }
+      })
+      setUserDestinationsReviewed(destinationsReviewed)
+    }
   }, [profileData])
 
+  const displayReviews = () => {
+    return userDestinationsReviewed.map((destination, i) => {
+      const { name, country, reviews: { title, text, rating, _id } } = destination
+      return (
+        <div key={i}>
+          <h3 className="profileh3">{name}, {country}</h3>
+          <div className="individual-review" >
+            <h3 className="reviewTitle">{title}</h3>
+            <p className="reviewText">{text}</p>
+            <div><span className="rating">{'⭐️'.repeat(rating)}</span></div>
+          </div>
+          <div className='deleteBtnDiv'>
+            <button className='delete' onClick={(e) => handleDelete(e.target.value)} value={_id}>Delete</button>
+          </div>
+          <hr />
+        </div>
+      )
+    })
+  }
+
+  // Delete review functionality
   const handleDelete = (value) => {
-    console.log(value)
     setDeleteID(value)
   }
 
   useEffect(() => {
+    if (deleteId === '') return
     const deleteReview = async () => {
-      const destinationId = profileData.Reviews.filter(destination => destination.reviews[0]._id === deleteId)[0].id
+      let destinationId
+      if (profileData) destinationId = userDestinationsReviewed.find(destination => destination.reviews._id === deleteId).id
+      console.log(destinationId)
       try {
         await axios.delete(`/api/profile/${userId}`, {
           headers: {
@@ -58,39 +84,16 @@ const Profile = () => {
             destinationId: destinationId,
           },
         })
-        const updatedReviews = userReviews.filter(review => review.id !== deleteId)
-        setUserReviews(updatedReviews)
+        const updatedReviews = userDestinationsReviewed.filter(review => review.id !== deleteId)
+        setUserDestinationsReviewed(updatedReviews)
         setEditedReviews(updatedReviews)
       } catch (err) {
         console.log(err)
         setError(err.message)
       }
-      // displayDetinations()
     }
     deleteReview()
   }, [deleteId])
-
-  const displayReviews = () => {
-    return profileData.Reviews.map((destination, i) => {
-      const myReview = destination.reviews.filter(review => review.owner === profileData._id)[0]
-      return (
-        <div key={i}>
-          <h3>Your review of {destination.name}, {destination.country}</h3>
-          <div className="individual-review" >
-            <h3 className="first-info">{myReview.title}</h3>
-            <button className='delete' onClick={(e) => handleDelete(e.target.value)} value={myReview._id}>Delete</button>
-            <p className="reviewText">{myReview.text}</p>
-            <div><span className="rating">{'⭐️'.repeat(myReview.rating)}</span></div>
-            <hr />
-          </div>
-        </div>
-      )
-    })
-  }
-
-  // useEffect(() => {
-  //   displayReviews()
-  // }, [profileData, userReviews])
 
   return (
     <>
@@ -104,7 +107,7 @@ const Profile = () => {
             <section className="userDetails">
               {profileData &&
                 <>
-                  <h3 className="profile-name">{profileData.username}</h3>
+                  <h2 className="profileh2">{profileData.username}</h2>
                   <div>
                     <img className="profile-picture" src={profilePicture} alt="profile" />
                   </div>
@@ -122,9 +125,9 @@ const Profile = () => {
             {profileData &&
               <>
                 <section id="reviewsOwned">
-                  <h3>Your reviews:</h3>
+                  <h2 className="profileh2">Your reviews:</h2>
                   <div id="reviews-container">
-                    {profileData.Reviews.length > 0 ?
+                    {userDestinationsReviewed.length > 0 ?
                       displayReviews()
                       :
                       <div>You haven&#39;t reviewed anything yet.</div>}
