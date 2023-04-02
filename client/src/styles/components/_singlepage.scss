@@ -70,6 +70,11 @@ section:not(#hero) {
 
 }
 
+#add-review:disabled, #edit-review:disabled {
+    opacity: 50%;
+    pointer-events: none;
+}
+
 #map {
   width: 50%;
   min-height: 30em;

@@ -25,6 +25,7 @@ export const addReview = async (req, res) => {
 
 // * DELETE Review
 export const deleteReview = async (req, res) => {
+  console.log('REQ BODY', req.body)
   try {
     const { id, destinationId } = req.body
     const loggedInUserId = req.loggedInUser._id
@@ -49,6 +50,7 @@ export const deleteReview = async (req, res) => {
 // * UPDATE Review
 export const updateteReview = async (req, res) => {
   try {
+    console.log('REQ BODY ->', req.body)
     const { destinationId } = req.params
     const { title, text, rating, id } = req.body
     console.log('REVIEW ID ->', id)

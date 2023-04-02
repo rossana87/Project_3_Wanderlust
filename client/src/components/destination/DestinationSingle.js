@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEarthAmericas, faWallet, faCoins, faCommentDots, faMapLocationDot, faPersonHiking, faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons'
 import mapboxgl from 'mapbox-gl'
 import RegisterDialog from '../common/RegisterDialog'
-import { getToken } from '../../helpers/auth'
+import { getToken, getUserID } from '../../helpers/auth'
 
 const DestinationIndex = () => {
   const { id } = useParams()
@@ -19,10 +19,13 @@ const DestinationIndex = () => {
   const [destination, setDestination] = useState(null)
   const [reviews, setReviews] = useState([])
   const [sliderValue, setSliderValue] = useState(4)
+  const [editSliderValue, setEditSliderValue] = useState(4)
   const [weatherData, setWeatherData] = useState([])
   const [currentImage, setCurrentImage] = useState(0)
   const [nextDisabled, setNextDisabled] = useState(false)
   const [previousDisabled, setPreviousDisabled] = useState(true)
+  const [reviewStatus, setReviewStatus] = useState(false)
+  const [inputStatus, setInputStatus] = useState(true)
 
   // State for the Login Form Fields
   const [formFields, setFormFields] = useState({
@@ -42,6 +45,13 @@ const DestinationIndex = () => {
     title: '',
     text: '',
     rating: 4,
+  })
+
+  const [editReviewFields, setEditReviewFields] = useState({
+    title: '',
+    text: '',
+    rating: 4,
+    id: '',
   })
 
 
@@ -99,7 +109,7 @@ const DestinationIndex = () => {
     e.preventDefault()
     try {
       const { data } = await axios.post('/api/', formFields)
-      // Save the token to local storage for later use
+      // Save the token to local storage for latecfr use
       localStorage.setItem('WANDERLUST-TOKEN', data.token)
       closeModal()
       navigate(location) // need this to trigger the 'logout' button to show
@@ -137,30 +147,13 @@ const DestinationIndex = () => {
     }
   }
 
-  // ! On Mount
-  useEffect(() => {
-    const getDestination = async () => {
-      try {
-        const { data } = await axios.get(`/api/destinations/${id}`)
-        setDestination(data)
-        // console.log(data, destination.longitude, destination.latitude)
-      } catch (err) {
-        console.log(err)
-        setError(err.message)
-      }
-    }
-    getDestination()
-  }, [id])
-
   // ! On Mount get the weather data
   useEffect(() => {
-
     const getWeather = async () => {
       if (!destination) return
       try {
         const { data } = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${destination.latitude}&longitude=${destination.latitude}&timezone=auto&forecast_days=7&daily=temperature_2m_max`)
         setWeatherData(data.daily.temperature_2m_max)
-        console.log('This is the weather data', data.daily.temperature_2m_max, destination.longitude, destination.latitude)
       } catch (err) {
         console.log(err)
         setError(err.message)
@@ -187,6 +180,8 @@ const DestinationIndex = () => {
           },
         })
       const updatedReviews = [...reviews, reviewFields]
+      setEditReviewFields(reviewFields)
+      setInputStatus(true)
       setReviews(updatedReviews)
     } catch (err) {
       console.log('error', err)
@@ -198,11 +193,9 @@ const DestinationIndex = () => {
     const today = new Date()
     const targetDate = new Date(today)
     targetDate.setDate(today.getDate() + i)
-
     const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     const dayOfWeek = daysOfWeek[targetDate.getDay()]
     const date = targetDate.getDate()
-
     return `${dayOfWeek} ${date}`
   }
 
@@ -223,11 +216,71 @@ const DestinationIndex = () => {
   }
 
   useEffect(() => {
-    console.log(currentImage)
-    destination && console.log(destination.images.length - 1)
     destination && currentImage >= destination.images.length - 1 ? setNextDisabled(true) : setNextDisabled(false)
     destination && currentImage === 0 ? setPreviousDisabled(true) : setPreviousDisabled(false)
   }, [destination, currentImage])
+
+  // Review Button Logic
+  useEffect(() => {
+    if (!destination) return
+    const disableAddBtn = () => {
+      const userReview = destination.reviews.find(review => review.owner.id === getUserID())
+      // console.log(userReview._id)
+      !userReview ?
+        setReviewStatus(false)
+        :
+        setReviewStatus(true) &
+        // setEditReviewFields(userReview._id) &
+        setEditReviewFields({
+          title: userReview.title,
+          text: userReview.text,
+          rating: userReview.rating,
+          id: userReview._id,
+        })
+    }
+    disableAddBtn()
+  }, [destination])
+
+  // Edit Review
+  const handleEditReview = (e) => {
+    setEditReviewFields({ ...editReviewFields, [e.target.name]: e.target.value })
+    if (e.target.name === 'rating') setEditSliderValue(e.target.value)
+    console.log('CHANGING FIELD ->', [e.target.name], e.target.value)
+    setError('')
+  }
+
+  const editReview = (e) => {
+    console.log('EDIT REVIEW FIELDS ->', editReviewFields)
+    e.preventDefault()
+    inputStatus ?
+      setInputStatus(!inputStatus)
+      :
+      submitEdit()
+  }
+
+  const submitEdit = async () => {
+    try {
+      await axios.put(`/api/destinations/${id}`, editReviewFields,
+        {
+          headers: {
+            Authorization: `Bearer ${getToken()}`,
+          },
+        })
+      const updatedReviews = [...reviews, editReviewFields]
+      setEditReviewFields(editReviewFields)
+      setInputStatus(true)
+      setReviews(updatedReviews)
+    } catch (err) {
+      console.log('error', err)
+      setError(err.response.data.message)
+    }
+  }
+
+  useEffect(() => {
+    console.log('EDIT REVIEW FIELDS ->', editReviewFields)
+    setEditSliderValue(editReviewFields.rating)
+  }, [editReviewFields])
+
 
   return (
     <>
@@ -282,8 +335,6 @@ const DestinationIndex = () => {
               </div>
               <div id="forecast-container">
                 {weatherData &&
-                  // 
-                  // console.log(dailyDate[0])
                   weatherData.map((weatherDay, i) => {
                     return (
                       <div key={i}>
@@ -309,7 +360,6 @@ const DestinationIndex = () => {
                   <div className="icon restaurants"><FontAwesomeIcon icon={faUtensils} /></div><div className="attraction">{destination.features[2]}</div>
                 </div>
               </div>
-              {/* map go here */}
               <div id="map"></div>
             </section>
             <section id="reviews">
@@ -332,19 +382,34 @@ const DestinationIndex = () => {
                   'Not yet reviewed'
                 }
               </div>
-              <div id="add-review-container">
-                <h3 className="first-info">Add a review...</h3>
-                <form onSubmit={addReview}>
-                  <label htmlFor="title" name="title">Summary:</label>
-                  <input type="text" id="title" name="title" onChange={handleReview} placeholder={`Summary of ${destination.name} (max 100 chars)` } />
-                  <label htmlFor="review">Review:</label>
-                  {/* <input type="textarea" id="review-textarea" name="text" onChange={handleReview} placeholder={`Post your review of ${destination.name}`} /> */}
-                  <textarea id="review-textarea" name="text" onChange={handleReview} placeholder={`Post your review of ${destination.name}`} />
-                  <label htmlFor="rating" name="rating">Rating: {sliderValue}</label>
-                  <input type="range" name="rating" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleReview} />
-                  <button className="site-button" type="submit" id="add-review">Add</button>
-                </form>
-              </div>
+              {!reviewStatus ?
+                <div id="add-review-container">
+                  <h3 className="first-info">Add a review...</h3>
+                  <form onSubmit={addReview}>
+                    <label htmlFor="title" name="title">Summary:</label>
+                    <input type="text" id="title" name="title" onChange={handleReview} placeholder={`Summary of ${destination.name} (max 100 chars)`} />
+                    <label htmlFor="review">Review:</label>
+                    {/* <input type="textarea" id="review-textarea" name="text" onChange={handleReview} placeholder={`Post your review of ${destination.name}`} /> */}
+                    <textarea id="review-textarea" name="text" onChange={handleReview} placeholder={`Post your review of ${destination.name}`} />
+                    <label htmlFor="rating" name="rating">Rating: {sliderValue}</label>
+                    <input type="range" name="rating" id="slider" min="1" max="5" step="1" defaultValue="4" onChange={handleReview} />
+                    <button className="site-button" type="submit" id="add-review" >Add</button>
+                  </form>
+                </div>
+                :
+                <div id="add-review-container">
+                  <h3 className="first-info">Your review:</h3>
+                  <form>
+                    <label htmlFor="title" name="title">Summary:</label>
+                    <input type="text" id="title" name="title" onChange={handleEditReview} value={editReviewFields.title} disabled={inputStatus} />
+                    <label htmlFor="review">Review:</label>
+                    <textarea id="review-textarea" name="text" onChange={handleEditReview} value={editReviewFields.text} disabled={inputStatus} />
+                    <label htmlFor="rating" name="rating">Rating: {editSliderValue}</label>
+                    <input type="range" name="rating" id="slider" min="1" max="5" step="1" value={editReviewFields.rating} onChange={handleEditReview} disabled={inputStatus} />
+                    <button className="site-button" type="submit" id="edit-review" onClick={editReview}>{inputStatus ? 'Edit Review' : 'Submit Edit'}</button>
+                  </form>
+                </div>
+              }
             </section>
           </>
         }

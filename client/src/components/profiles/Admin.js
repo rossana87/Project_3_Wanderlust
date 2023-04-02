@@ -70,6 +70,10 @@ const Admin = () => {
     getProfile()
   }, [addId, editedDestinations])
 
+  useEffect(() => {
+    console.log(adminData)
+  }, [adminData])
+
   // Delete functionality
   useEffect(() => {
     if (deleteId.id === '') return

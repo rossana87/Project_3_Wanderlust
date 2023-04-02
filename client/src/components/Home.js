@@ -51,10 +51,6 @@ const Home = () => {
         setDestinations(data)
         setTemperature('2')
         createDestinationArrays()
-        console.log('COLD ->', coldDestinations)
-        console.log('MILD ->', mildDestinations)
-        console.log('WARM ->', warmDestinations)
-        console.log('HOT ->', hotDestinations)
       } catch (err) {
         console.log(err)
         setError(err.message)
@@ -251,7 +247,7 @@ const Home = () => {
                 <div className="slide slide-4" style={{ backgroundImage: `url("${hotDestinations[slide4Destination].images[3]}")` }}></div>
               </>
               :
-              console.log('error - filtered destinations')
+              console.log('Loading destinations')
             }
           </div>
           <div id="prev-next-controls">
