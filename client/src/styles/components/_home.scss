@@ -36,7 +36,7 @@ input[type="radio"] {
   padding: 0 2em;
   & h1 {
     margin-top: 5%;
-    font-size: clamp(2em, 60vw, $main-title);
+    font-size: clamp(3em, 4em, $main-title);
     font-family: $brand-font;
   }
   & h2 {

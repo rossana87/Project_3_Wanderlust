@@ -89,35 +89,35 @@
 
 @media (max-width: 900px){
   .btn:nth-of-type(1) {
-    left: 25%;
+    left: 18%;
   }
   
   #emoji-cold {
-    left:24.9%;
+    left: 17.9%;
   }
   
   .btn:nth-of-type(2) {
-    left: 40%;
+    left: 38%;
   }
   
   #emoji-mild {
-    left: 39.9%;
+    left: 37.9%;
   }
   
   .btn:nth-of-type(3) {
-    left: 55%;
+    left: 57%;
   }
   
   #emoji-warm {
-    left: 54.9%
+    left: 56.9%
   }
   
   .btn:nth-of-type(4){
-    left: 70%;
+    left: 76%;
   }
   
   #emoji-hot {
-    left: 69.9%;
+    left: 75.9%;
   }
   
 }
@@ -138,12 +138,40 @@
   // }
   #common, #attractions, #reviews {
     & #common-container, #forecast-container, #attraction-container, #destination-reviews-container, #add-review-container {
-    width: 80%;
+    width: 90%;
+    margin: 2em;
     // border: 1px solid black;
     }
+    
     #attraction-container .icon-container { 
       display: block;
       // width: 80%;
     }
+
+    #common-container {
+      gap: 1.5em;
+    }
+
+    #forecast-container {
+      // margin-right: 40px;
+      overflow-x: auto;  
+    }
+
+    #map {
+      width: auto;
+    }
   }
+
+  .homepage-heading {
+    & h1 {
+      font-size: 3em;
+      margin-top: 2em;
+    }
+    & h2 {
+      font-size: 1.25em;
+    }
+  }
+
+  
+  
 }

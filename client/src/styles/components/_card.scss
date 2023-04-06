@@ -6,7 +6,9 @@
 #grid-container {
   // border: 1px dotted black;
   padding: 0 1em;
-  display: flex;
+  // display: flex;
+  display: grid;
+  grid-template-columns: 12em 1fr;
   gap: 1em;
   // max-width: 100rem;
 }
