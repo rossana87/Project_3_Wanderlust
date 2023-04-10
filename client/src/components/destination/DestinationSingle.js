@@ -217,11 +217,11 @@ const DestinationIndex = () => {
 
   const getValueField = (value) => {
     if (value === 3) {
-      'Good'
+      return 'Good Value'
     } else if (value === 2) {
-      'Mid-Range'
+      return 'Mid-range'
     } else {
-      'Luxury'
+      return 'Luxury'
     }
   }
 
