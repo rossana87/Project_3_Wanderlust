@@ -215,6 +215,16 @@ const DestinationIndex = () => {
     setCurrentImage(currentImage + parseInt(value))
   }
 
+  const getValueField = (value) => {
+    if (value === 3) {
+      'Good'
+    } else if (value === 2) {
+      'Mid-Range'
+    } else {
+      'Luxury'
+    }
+  }
+
   useEffect(() => {
     destination && currentImage >= destination.images.length - 1 ? setNextDisabled(true) : setNextDisabled(false)
     destination && currentImage === 0 ? setPreviousDisabled(true) : setPreviousDisabled(false)
@@ -326,9 +336,9 @@ const DestinationIndex = () => {
                 }
                 <div className="info">
                   <div>
-                    <h3>Price</h3>
+                    <h3>Value</h3>
                     <div className="icon-container">
-                      <div className="icon"><FontAwesomeIcon icon={faCoins} /></div><div>{destination.price} $$$</div>
+                      <div className="icon"><FontAwesomeIcon icon={faCoins} /></div><div>{getValueField(destination.valueForMoney)}</div>
                     </div>
                   </div>
                 </div>

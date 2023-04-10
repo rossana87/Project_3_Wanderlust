@@ -30,6 +30,7 @@ const Admin = () => {
     highTemps: [],
     lowTemps: [],
     reviews: [],
+    valueForMoney: '',
     id: '',
     owner: getUserID(),
   })
@@ -45,6 +46,7 @@ const Admin = () => {
     features: [],
     highTemps: [],
     lowTemps: [],
+    valueForMoney: '',
     id: uuid(),
     owner: getUserID(),
   })
@@ -106,7 +108,7 @@ const Admin = () => {
   const handleEdit = (value) => {
     const destination = adminData.filter(destination => destination.id === value)[0]
     console.log('DESTINATION ->', destination)
-    const { name, country, continent, currency, latitude, longitude, description, images, features, highTemps, lowTemps, reviews } = destination
+    const { name, country, continent, currency, latitude, longitude, description, images, features, highTemps, lowTemps, valueForMoney, reviews } = destination
     console.log('DESTINATION ->', destination)
     setEditBody({
       name: name,
@@ -120,6 +122,7 @@ const Admin = () => {
       features: features.join(','),
       highTemps: highTemps.join(','),
       lowTemps: lowTemps.join(','),
+      valueForMoney: valueForMoney,
       reviews: reviews,
       id: value,
       owner: getUserID(),
@@ -141,6 +144,7 @@ const Admin = () => {
       features: [],
       highTemps: [],
       lowTemps: [],
+      valueForMoney: '',
       id: uuid(),
       owner: getUserID(),
     })
@@ -329,6 +333,14 @@ const Admin = () => {
             <span>
               <label>Low Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdate} value={editBody.lowTemps} />
             </span>
+            <span>
+              <label>Value:</label>
+              <select name="valueForMoney" onChange={handleUpdate} value={editBody.valueForMoney}>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </span>
             <button id="submitEdit" type="submit">Submit edit</button>
             {error && <p className='text-danger'>{error}</p>}
           </form>
@@ -370,6 +382,14 @@ const Admin = () => {
             </span>
             <span>
               <label>Low Temperatures:</label><input type="text" pattern="^-?\d+(,\s*-?\d+){11}$" name="lowTemps" placeholder='Daily average low temp for each month' onChange={handleUpdateAdd} value={addBody.lowTemps} />
+            </span>
+            <span>
+              <label>Value:</label>
+              <select name="valueForMoney" onChange={handleUpdateAdd} value={addBody.valueForMoney}>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
             </span>
             <button id="submitEdit" type="submit">Submit destination</button>
             {error && <p className='text-danger'>{error}</p>}

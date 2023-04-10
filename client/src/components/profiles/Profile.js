@@ -26,6 +26,7 @@ const Profile = () => {
         })
           .get(`/api/profile/${userId}`)
         setProfileData(data)
+        console.log(data)
       } catch (err) {
         console.log(err)
         setError(err.message)

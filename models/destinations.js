@@ -43,6 +43,7 @@ const destinationSchema = new Schema({
       message: 'lowTemps must be an array of 12 integers',
     },
   },
+  valueForMoney: { type: Number, required: true },
   // lowTemps: [{ type: Number, required: true }],
   owner: { type: Schema.ObjectId, ref: 'User', required: true },
   reviews: [reviewSchema],
