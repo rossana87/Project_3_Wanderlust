@@ -17,6 +17,7 @@ export default [
       'Taste the Mediterranean and Catalan flavours that define Barcelonas cuisine, featuring fresh seafood, bold spices, meats, and loads of tapas.'],
     highTemps: [15, 15, 17, 20, 23, 27, 29, 29, 26, 23, 18, 15],
     lowTemps: [9, 8, 10, 13, 16, 20, 23, 23, 20, 17, 12, 9],
+    valueForMoney: 2,
   },
   {
     name: 'Val d\'Isère',
@@ -38,6 +39,7 @@ export default [
     ],
     highTemps: [-1, 1, 6, 9, 14, 18, 20, 20, 15, 10, 3, -1],
     lowTemps: [-10, -9, -6, -3, 1, 4, 6, 6, 3, -1, -6, -9],
+    valueForMoney: 1,
   },
   {
     name: 'London',
@@ -59,6 +61,7 @@ export default [
     ],
     highTemps: [7, 8, 10, 13, 17, 20, 22, 22, 19, 15, 10, 8],
     lowTemps: [2, 2, 3, 5, 8, 11, 13, 13, 11, 8, 4, 2],
+    valueForMoney: 1,
   },
   {
     name: 'Rome',
@@ -80,6 +83,7 @@ export default [
     ],
     highTemps: [12, 14, 17, 19, 24, 28, 31, 31, 27, 22, 17, 13],
     lowTemps: [3, 3, 6, 9, 13, 17, 19, 19, 15, 12, 7, 4],
+    valueForMoney: 2,
   },
   {
     name: 'Munich',
@@ -101,6 +105,7 @@ export default [
     ],
     highTemps: [3, 5, 9, 14, 19, 22, 24, 24, 19, 14, 8, 4],
     lowTemps: [-3, -2, 1, 4, 8, 11, 13, 13, 10, 5, 1, -2],
+    valueForMoney: 2,
   },
   {
     name: 'Amsterdam',
@@ -122,6 +127,7 @@ export default [
     ],
     highTemps: [6, 6, 10, 13, 17, 20, 22, 22, 19, 15, 10, 7],
     lowTemps: [1, 0, 2, 4, 8, 11, 13, 13, 11, 7, 4, 2],
+    valueForMoney: 2,
   },
   {
     name: 'Stockholm',
@@ -143,6 +149,7 @@ export default [
     ],
     highTemps: [0, 0, 4, 10, 16, 21, 23, 21, 16, 10, 5, 2],
     lowTemps: [-4, -4, -2, 2, 7, 11, 14, 14, 10, 5, 1, -2],
+    valueForMoney: 1,
   },
   {
     name: 'Copenhagen',
@@ -164,6 +171,7 @@ export default [
     ],
     highTemps: [3, 3, 6, 11, 16, 20, 22, 22, 17, 12, 7, 5],
     lowTemps: [-1, -1, 1, 4, 8, 12, 14, 14, 11, 7, 4, 1],
+    valueForMoney: 2,
   },
   {
     name: 'Paris',
@@ -185,6 +193,7 @@ export default [
     ],
     highTemps: [7, 8, 12, 16, 19, 23, 25, 25, 21, 16, 11, 8],
     lowTemps: [2, 2, 5, 7, 10, 13, 15, 15, 12, 9, 5, 3],
+    valueForMoney: 1,
   },
   {
     name: 'Madrid',
@@ -206,6 +215,7 @@ export default [
     ],
     highTemps: [10, 12, 16, 18, 22, 28, 32, 31, 26, 19, 13, 10],
     lowTemps: [3, 4, 6, 8, 11, 16, 19, 19, 15, 11, 6, 4],
+    valueForMoney: 2,
   },
   {
     name: 'Monaco',
@@ -227,6 +237,7 @@ export default [
     ],
     highTemps: [12, 12, 14, 16, 20, 24, 27, 27, 24, 20, 16, 13],
     lowTemps: [8, 7, 9, 11, 14, 18, 21, 21, 19, 15, 11, 9],
+    valueForMoney: 1,
   },
   {
     name: 'Lisbon',
@@ -248,6 +259,7 @@ export default [
     ],
     highTemps: [15, 16, 18, 20, 22, 25, 28, 28, 26, 23, 18, 15],
     lowTemps: [8, 9, 10, 12, 14, 16, 18, 18, 17, 15, 12, 9],
+    valueForMoney: 2,
   },
   {
     name: 'Zurich',
@@ -269,6 +281,7 @@ export default [
     ],
     highTemps: [4, 6, 11, 15, 19, 23, 25, 24, 20, 15, 9, 5],
     lowTemps: [-1, 0, 3, 6, 10, 13, 15, 15, 12, 8, 3, 0],
+    valueForMoney: 1,
   },
   {
     name: 'New York, NY',
@@ -290,6 +303,7 @@ export default [
     ],
     highTemps: [4, 6, 11, 18, 22, 27, 29, 29, 25, 18, 13, 7],
     lowTemps: [-3, -2, 2, 7, 12, 18, 20, 20, 16, 10, 6, 0],
+    valueForMoney: 1,
   },
   {
     name: 'Seattle, WA',
@@ -311,6 +325,7 @@ export default [
     ],
     highTemps: [8, 9, 11, 14, 17, 19, 22, 22, 19, 15, 11, 8],
     lowTemps: [4, 5, 6, 7, 10, 12, 14, 14, 13, 10, 6, 4],
+    valueForMoney: 2,
   },
   {
     name: 'San Francisco, CA',
@@ -332,6 +347,7 @@ export default [
     ],
     highTemps: [14, 16, 17, 17, 18, 19, 19, 20, 21, 21, 18, 14],
     lowTemps: [8, 9, 10, 10, 11, 12, 12, 13, 13, 13, 11, 8],
+    valueForMoney: 1,
   },
   {
     name: 'Rio de Janeiro',
@@ -353,6 +369,7 @@ export default [
     ],
     highTemps: [30, 31, 30, 28, 26, 25, 25, 25, 26, 27, 28, 29],
     lowTemps: [24, 25, 24, 23, 21, 20, 19, 19, 20, 21, 22, 23],
+    valueForMoney: 3,
   },
   {
     name: 'Santiago',
@@ -374,6 +391,7 @@ export default [
     ],
     highTemps: [30, 30, 28, 24, 19, 16, 15, 17, 20, 23, 26, 29],
     lowTemps: [12, 11, 9, 7, 4, 3, 2, 3, 5, 7, 9, 11],
+    valueForMoney: 3,
   },
   {
     name: 'Istanbul',
@@ -395,6 +413,7 @@ export default [
     ],
     highTemps: [9, 9, 12, 17, 22, 27, 29, 29, 25, 20, 15, 11],
     lowTemps: [3, 3, 5, 8, 13, 18, 20, 20, 17, 13, 8, 5],
+    valueForMoney: 3,
   },
   {
     name: 'Bari',
@@ -416,6 +435,7 @@ export default [
     ],
     highTemps: [13, 13, 15, 19, 23, 27, 30, 30, 26, 22, 17, 14],
     lowTemps: [5, 5, 6, 9, 13, 17, 20, 20, 16, 13, 9, 6],
+    valueForMoney: 3,
   },
   {
     name: 'Tokyo',
@@ -437,6 +457,7 @@ export default [
     ],
     highTemps: [10, 10, 14, 19, 23, 26, 30, 31, 27, 22, 17, 12],
     lowTemps: [2, 2, 5, 10, 15, 19, 23, 24, 20, 15, 9, 4],
+    valueForMoney: 1,
   },
   {
     name: 'Chamonix',
@@ -458,6 +479,7 @@ export default [
     ],
     highTemps: [5, 5, 6, 9, 13, 18, 21, 21, 17, 13, 8, 6],
     lowTemps: [0, -1, 1, 4, 8, 12, 14, 15, 12, 8, 3, 1],
+    valueForMoney: 1,
   },
   {
     name: 'Kochi',
@@ -479,6 +501,7 @@ export default [
     ],
     highTemps: [32, 32, 33, 33, 32, 30, 30, 30, 30, 31, 31, 32],
     lowTemps: [23, 24, 25, 26, 26, 24, 24, 24, 24, 24, 24, 23],
+    valueForMoney: 3,
   },
   {
     name: 'Bangkok',
@@ -500,6 +523,7 @@ export default [
     ],
     highTemps: [32, 33, 34, 35, 35, 34, 33, 33, 33, 33, 32, 32],
     lowTemps: [22, 24, 26, 27, 26, 26, 26, 25, 25, 25, 24, 22],
+    valueForMoney: 3,
   },
   {
     name: 'Prague',
@@ -521,6 +545,7 @@ export default [
     ],
     highTemps: [3, 5, 10, 17, 20, 24, 26, 26, 20, 14, 8, 4],
     lowTemps: [-1, -1, 2, 7, 10, 14, 16, 15, 11, 6, 3, 0],
+    valueForMoney: 3,
   },
   {
     name: 'Florence',
@@ -542,6 +567,7 @@ export default [
     ],
     highTemps: [11, 12, 16, 19, 24, 29, 32, 32, 27, 21, 15, 11],
     lowTemps: [2, 3, 5, 8, 12, 16, 18, 18, 15, 11, 6, 3],
+    valueForMoney: 2,
   },
   {
     name: 'Venice',
@@ -563,6 +589,7 @@ export default [
     ],
     highTemps: [7, 9, 13, 17, 22, 26, 28, 28, 24, 18, 12, 8],
     lowTemps: [0, 1, 4, 8, 13, 17, 19, 18, 15, 10, 5, 1],
+    valueForMoney: 2,
   },
   {
     name: 'Berlin',
@@ -584,6 +611,7 @@ export default [
     ],
     highTemps: [3, 4, 9, 14, 19, 22, 24, 24, 19, 14, 8, 4],
     lowTemps: [-2, -1, 1, 5, 9, 12, 15, 14, 11, 6, 3, 0],
+    valueForMoney: 2,
   },
   {
     name: 'Athens',
@@ -606,6 +634,7 @@ export default [
     ],
     highTemps: [13, 14, 16, 20, 25, 29, 32, 32, 28, 23, 18, 15],
     lowTemps: [7, 7, 9, 12, 16, 20, 23, 23, 20, 15, 12, 8],
+    valueForMoney: 2,
   },
   {
     name: 'Oslo',
@@ -627,6 +656,7 @@ export default [
     ],
     highTemps: [0, 1, 5, 11, 17, 21, 23, 21, 16, 10, 4, 1],
     lowTemps: [-5, -5, -2, 2, 7, 11, 14, 13, 9, 4, 0, -4],
+    valueForMoney: 2,
   },
   {
     name: 'Helsinki',
@@ -648,24 +678,8 @@ export default [
     ],
     highTemps: [-2, -2, 2, 7, 14, 19, 21, 20, 15, 9, 4, 1],
     lowTemps: [-7, -7, -4, 1, 6, 11, 14, 13, 9, 4, 0, -4],
+    valueForMoney: 2,
   },
-  // {
-  //   name: 'Moscow',
-  //   country: 'Russia',
-  //   continent: 'Europe',
-  //   currency: 'Russian Ruble',
-  //   latitude: 50.93,
-  //   longitude: 0.53,
-  //   description: 'Historic city with grand architecture and rich cultural heritage.',
-  //   images: ['https://res.cloudinary.com/drrscrxod/image/upload/v1679918890/Wanderlust/moscow_winter_is5ate.jpg',
-  //     'https://res.cloudinary.com/drrscrxod/image/upload/v1679918891/Wanderlust/moscow_autumn_tdhu1j.jpg',
-  //     'https://res.cloudinary.com/drrscrxod/image/upload/v1679918893/Wanderlust/moscow_spring_w2ujcr.jpg',
-  //     'https://res.cloudinary.com/drrscrxod/image/upload/v1679918890/Wanderlust/moscow_summer_c2bija.jpg'
-  //   ],
-  //   features: [],
-  //   highTemps: [-5, -3, 2, 11, 19, 22, 24, 22, 16, 8, 1, -3],
-  //   lowTemps: [-10, -10, -5, 2, 8, 12, 14, 12, 7, 2, -3, -7],
-  // },
   {
     name: 'Kyiv',
     country: 'Ukraine',
@@ -686,6 +700,7 @@ export default [
     ],
     highTemps: [-1, 0, 6, 14, 21, 24, 26, 25, 19, 12, 5, 0],
     lowTemps: [-7, -6, -2, 5, 10, 14, 16, 15, 10, 4, 0, -5],
+    valueForMoney: 3,
   },
   {
     name: 'Bucharest',
@@ -707,6 +722,7 @@ export default [
     ],
     highTemps: [3, 7, 12, 19, 23, 27, 30, 30, 25, 17, 9, 4],
     lowTemps: [-4, -2, 2, 7, 12, 16, 18, 18, 13, 7, 2, -2],
+    valueForMoney: 3,
   },
   {
     name: 'Budapest',
@@ -728,6 +744,7 @@ export default [
     ],
     highTemps: [3, 6, 11, 17, 23, 26, 28, 28, 23, 16, 9, 4],
     lowTemps: [-2, 0, 3, 8, 12, 15, 17, 17, 13, 8, 4, 0],
+    valueForMoney: 3,
   },
   {
     name: 'Tunis',
@@ -749,6 +766,7 @@ export default [
     ],
     highTemps: [16, 17, 19, 22, 26, 31, 34, 34, 30, 26, 21, 17],
     lowTemps: [7, 7, 9, 11, 14, 18, 21, 22, 20, 16, 12, 8],
+    valueForMoney: 3,
   },
   {
     name: 'Marrakesh',
@@ -770,6 +788,7 @@ export default [
     ],
     highTemps: [19, 20, 23, 25, 29, 33, 37, 37, 33, 28, 23, 20],
     lowTemps: [6, 8, 10, 12, 15, 17, 20, 21, 19, 15, 11, 7],
+    valueForMoney: 2,
   },
   {
     name: 'Cape Town',
@@ -791,6 +810,7 @@ export default [
     ],
     highTemps: [29, 29, 27, 25, 22, 20, 20, 20, 21, 24, 25, 27],
     lowTemps: [17, 17, 16, 15, 13, 12, 11, 12, 13, 14, 15, 17],
+    valueForMoney: 2,
   },
   {
     name: 'Port Louis',
@@ -812,6 +832,7 @@ export default [
     ],
     highTemps: [31, 31, 30, 29, 28, 26, 25, 25, 26, 27, 29, 30],
     lowTemps: [24, 24, 24, 23, 21, 19, 19, 19, 19, 20, 21, 23],
+    valueForMoney: 3,
   },
   {
     name: 'Cairo',
@@ -833,6 +854,7 @@ export default [
     ],
     highTemps: [19, 21, 24, 29, 33, 35, 35, 35, 34, 30, 25, 21],
     lowTemps: [10, 11, 13, 16, 19, 22, 23, 24, 22, 19, 15, 11],
+    valueForMoney: 3,
   },
   {
     name: 'Dubai',
@@ -854,6 +876,7 @@ export default [
     ],
     highTemps: [24, 25, 29, 33, 38, 40, 41, 41, 39, 35, 31, 26],
     lowTemps: [14, 16, 18, 21, 25, 28, 30, 31, 28, 24, 20, 16],
+    valueForMoney: 1,
   },
   {
     name: 'New Delhi',
@@ -875,6 +898,7 @@ export default [
     ],
     highTemps: [21, 24, 30, 37, 40, 39, 35, 34, 34, 33, 28, 23],
     lowTemps: [8, 10, 16, 21, 26, 28, 27, 26, 25, 19, 13, 8],
+    valueForMoney: 3,
   },
   {
     name: 'Goa',
@@ -896,6 +920,7 @@ export default [
     ],
     highTemps: [31, 31, 33, 33, 33, 32, 30, 30, 31, 33, 34, 32],
     lowTemps: [20, 20, 23, 26, 28, 27, 26, 26, 27, 25, 23, 21],
+    valueForMoney: 3,
   },
   {
     name: 'Kathmandu',
@@ -917,6 +942,7 @@ export default [
     ],
     highTemps: [18, 21, 25, 28, 29, 29, 28, 29, 28, 26, 23, 20],
     lowTemps: [3, 5, 9, 13, 16, 20, 20, 20, 19, 14, 8, 4],
+    valueForMoney: 3,
   },
   {
     name: 'Phuket',
@@ -938,6 +964,7 @@ export default [
     ],
     highTemps: [33, 34, 34, 34, 33, 32, 32, 32, 31, 32, 32, 32],
     lowTemps: [24, 25, 25, 26, 25, 25, 25, 25, 24, 24, 25, 24],
+    valueForMoney: 3,
   },
   {
     name: 'Ko Phi Phi Lee',
@@ -959,6 +986,7 @@ export default [
     ],
     highTemps: [32, 33, 33, 33, 32, 31, 31, 31, 30, 30, 31, 31],
     lowTemps: [24, 24, 24, 25, 25, 25, 25, 25, 24, 24, 24, 23],
+    valueForMoney: 3,
   },
   {
     name: 'Ha Long Bay',
@@ -980,6 +1008,7 @@ export default [
     ],
     highTemps: [20, 21, 23, 27, 30, 30, 31, 32, 31, 28, 24, 21],
     lowTemps: [14, 15, 18, 21, 24, 24, 25, 25, 24, 21, 18, 15],
+    valueForMoney: 3,
   },
   {
     name: 'Hanoi',
@@ -1001,6 +1030,7 @@ export default [
     ],
     highTemps: [20, 21, 23, 28, 32, 34, 33, 33, 32, 29, 26, 22],
     lowTemps: [14, 16, 18, 22, 24, 26, 26, 26, 25, 22, 19, 15],
+    valueForMoney: 3,
   },
   {
     name: 'Kuala Lumpur',
@@ -1022,6 +1052,7 @@ export default [
     ],
     highTemps: [32, 33, 33, 33, 33, 33, 32, 32, 32, 32, 32, 32],
     lowTemps: [23, 23, 24, 24, 24, 24, 23, 24, 23, 24, 23, 23],
+    valueForMoney: 3,
   },
   {
     name: 'Penang',
@@ -1043,6 +1074,7 @@ export default [
     ],
     highTemps: [32, 32, 32, 32, 32, 32, 31, 31, 31, 31, 31, 31],
     lowTemps: [24, 24, 24, 25, 25, 24, 24, 24, 24, 24, 24, 24],
+    valueForMoney: 3,
   },
   {
     name: 'Pulau Ubin',
@@ -1064,6 +1096,7 @@ export default [
     ],
     highTemps: [30, 32, 32, 32, 32, 32, 31, 31, 31, 32, 31, 30],
     lowTemps: [24, 24, 25, 25, 25, 25, 25, 25, 24, 25, 24, 24],
+    valueForMoney: 2,
   },
   {
     name: 'Beijing',
@@ -1085,6 +1118,7 @@ export default [
     ],
     highTemps: [2, 5, 12, 21, 27, 30, 31, 30, 26, 19, 10, 4],
     lowTemps: [-8, -6, 1, 8, 14, 19, 22, 21, 15, 8, 0, -6],
+    valueForMoney: 2,
   },
   {
     name: 'Kyoto',
@@ -1106,6 +1140,7 @@ export default [
     ],
     highTemps: [9, 10, 14, 20, 25, 28, 32, 33, 29, 23, 17, 11],
     lowTemps: [1, 1, 3, 8, 14, 19, 23, 24, 20, 13, 7, 2],
+    valueForMoney: 2,
   },
   {
     name: 'Gyeongju',
@@ -1127,6 +1162,7 @@ export default [
     ],
     highTemps: [5, 7, 12, 18, 23, 25, 29, 29, 25, 20, 14, 8],
     lowTemps: [-3, -1, 3, 9, 14, 18, 22, 23, 17, 12, 5, 0],
+    valueForMoney: 3,
   },
   {
     name: 'Seoul',
@@ -1148,6 +1184,7 @@ export default [
     ],
     highTemps: [1, 4, 10, 17, 23, 27, 28, 29, 25, 19, 11, 3],
     lowTemps: [-8, -5, 0, 6, 12, 17, 21, 21, 16, 9, 1, -5],
+    valueForMoney: 2,
   },
   {
     name: 'Boracay',
@@ -1169,6 +1206,7 @@ export default [
     ],
     highTemps: [28, 29, 29, 27, 32, 31, 29, 30, 31, 30, 29, 28],
     lowTemps: [23, 24, 24, 23, 25, 25, 24, 25, 25, 25, 24, 24],
+    valueForMoney: 2,
   },
   {
     name: 'Bali',
@@ -1190,6 +1228,7 @@ export default [
     ],
     highTemps: [29, 30, 30, 32, 33, 31, 31, 31, 31, 31, 31, 30],
     lowTemps: [23, 22, 23, 22, 23, 22, 22, 22, 22, 23, 23, 23],
+    valueForMoney: 2,
   },
   {
     name: 'Ubud',
@@ -1211,6 +1250,7 @@ export default [
     ],
     highTemps: [29, 29, 29, 29, 29, 28, 27, 27, 28, 29, 30, 29],
     lowTemps: [23, 23, 23, 23, 23, 23, 22, 22, 22, 23, 23, 23],
+    valueForMoney: 3,
   },
   {
     name: 'Sydney',
@@ -1232,6 +1272,7 @@ export default [
     ],
     highTemps: [26, 26, 25, 23, 20, 17, 17, 18, 21, 22, 23, 25],
     lowTemps: [19, 19, 18, 15, 12, 9, 8, 9, 11, 14, 16, 18],
+    valueForMoney: 2,
   },
   {
     name: 'Perth',
@@ -1253,6 +1294,7 @@ export default [
     ],
     highTemps: [30, 31, 29, 25, 22, 19, 18, 19, 20, 22, 25, 28],
     lowTemps: [19, 20, 18, 15, 12, 11, 10, 10, 11, 13, 15, 17],
+    valueForMoney: 2,
   },
   {
     name: 'Melbourne',
@@ -1274,6 +1316,7 @@ export default [
     ],
     highTemps: [26, 27, 24, 21, 17, 15, 14, 16, 18, 20, 22, 24],
     lowTemps: [16, 16, 15, 12, 10, 8, 7, 8, 9, 11, 12, 14],
+    valueForMoney: 2,
   },
   {
     name: 'Gold Coast',
@@ -1295,6 +1338,7 @@ export default [
     ],
     highTemps: [29, 28, 28, 26, 24, 21, 21, 22, 24, 25, 27, 28],
     lowTemps: [21, 21, 19, 17, 14, 11, 9, 10, 12, 15, 18, 20],
+    valueForMoney: 3,
   },
   {
     name: 'Brisbane',
@@ -1316,6 +1360,7 @@ export default [
     ],
     highTemps: [29, 29, 29, 27, 24, 21, 21, 22, 24, 26, 28, 29],
     lowTemps: [22, 21, 20, 18, 15, 12, 10, 12, 14, 16, 19, 21],
+    valueForMoney: 2,
   },
   {
     name: 'Auckland',
@@ -1337,6 +1382,7 @@ export default [
     ],
     highTemps: [24, 24, 23, 20, 18, 15, 14, 15, 16, 18, 20, 22],
     lowTemps: [16, 16, 15, 13, 10, 8, 7, 8, 10, 11, 12, 15],
+    valueForMoney: 2,
   },
   {
     name: 'Queenstown',
@@ -1358,6 +1404,7 @@ export default [
     ],
     highTemps: [22, 22, 19, 15, 12, 8, 8, 10, 13, 15, 18, 20],
     lowTemps: [9, 9, 7, 4, 2, 0, -1, 0, 2, 4, 6, 8],
+    valueForMoney: 1,
   },
   {
     name: 'Vancouver',
@@ -1379,6 +1426,7 @@ export default [
     ],
     highTemps: [7, 8, 10, 13, 17, 20, 22, 22, 19, 14, 9, 7],
     lowTemps: [3, 3, 4, 6, 10, 12, 14, 14, 12, 8, 5, 3],
+    valueForMoney: 2,
   },
   {
     name: 'Toronto',
@@ -1400,6 +1448,7 @@ export default [
     ],
     highTemps: [0, 0, 5, 12, 19, 24, 27, 26, 23, 15, 9, 3],
     lowTemps: [-7, -7, -2, 4, 10, 15, 18, 18, 14, 8, 2, -3],
+    valueForMoney: 2,
   },
   {
     name: 'Mexico City',
@@ -1421,6 +1470,7 @@ export default [
     ],
     highTemps: [22, 24, 26, 27, 27, 26, 24, 25, 24, 24, 23, 23],
     lowTemps: [5, 6, 8, 10, 12, 13, 12, 12, 12, 10, 7, 6],
+    valueForMoney: 3,
   },
   {
     name: 'Miami, FL',
@@ -1442,6 +1492,7 @@ export default [
     ],
     highTemps: [23, 24, 25, 26, 28, 30, 31, 31, 30, 28, 26, 24],
     lowTemps: [17, 18, 19, 21, 23, 25, 26, 26, 25, 24, 21, 19],
+    valueForMoney: 2,
   },
   {
     name: 'Key West, FL',
@@ -1463,6 +1514,7 @@ export default [
     ],
     highTemps: [24, 24, 26, 28, 30, 31, 32, 33, 31, 29, 26, 25],
     lowTemps: [19, 20, 21, 23, 25, 27, 27, 27, 27, 25, 22, 21],
+    valueForMoney: 2,
   },
   {
     name: 'Havana',
@@ -1484,6 +1536,7 @@ export default [
     ],
     highTemps: [27, 27, 28, 29, 31, 31, 32, 32, 32, 30, 29, 27],
     lowTemps: [18, 18, 19, 21, 22, 23, 24, 24, 24, 23, 21, 19],
+    valueForMoney: 3,
   },
   {
     name: 'Nassau',
@@ -1505,6 +1558,7 @@ export default [
     ],
     highTemps: [26, 26, 27, 28, 30, 32, 32, 33, 32, 30, 28, 27],
     lowTemps: [18, 18, 19, 20, 22, 24, 24, 24, 24, 23, 21, 19],
+    valueForMoney: 2,
   },
   {
     name: 'Kingston',
@@ -1526,6 +1580,7 @@ export default [
     ],
     highTemps: [31, 31, 31, 31, 32, 33, 33, 33, 33, 32, 32, 32],
     lowTemps: [22, 22, 23, 24, 25, 26, 26, 25, 25, 25, 24, 23],
+    valueForMoney: 3,
   },
   {
     name: 'Ambergris Caye',
@@ -1547,6 +1602,7 @@ export default [
     ],
     highTemps: [27, 27, 28, 29, 31, 30, 30, 31, 31, 29, 28, 27],
     lowTemps: [20, 21, 22, 23, 24, 25, 24, 25, 24, 24, 22, 21],
+    valueForMoney: 2,
   },
   {
     name: 'Monteverde',
@@ -1568,6 +1624,7 @@ export default [
     ],
     highTemps: [28, 28, 29, 29, 27, 26, 26, 26, 26, 26, 26, 27],
     lowTemps: [16, 16, 17, 18, 18, 18, 18, 17, 17, 17, 17, 16],
+    valueForMoney: 2,
   },
   {
     name: 'Roatan',
@@ -1589,6 +1646,7 @@ export default [
     ],
     highTemps: [28, 29, 29, 31, 31, 32, 31, 32, 32, 30, 29, 28],
     lowTemps: [22, 22, 23, 24, 25, 25, 25, 25, 25, 24, 23, 22],
+    valueForMoney: 2,
   },
   {
     name: 'Cartagena',
@@ -1610,6 +1668,7 @@ export default [
     ],
     highTemps: [31, 31, 31, 31, 32, 32, 32, 32, 32, 31, 31, 31],
     lowTemps: [24, 24, 25, 26, 26, 26, 26, 26, 26, 25, 25, 25],
+    valueForMoney: 2,
   },
   {
     name: 'Castries',
@@ -1631,6 +1690,7 @@ export default [
     ],
     highTemps: [29, 29, 30, 30, 31, 31, 31, 31, 31, 31, 30, 29],
     lowTemps: [23, 23, 23, 24, 25, 25, 25, 25, 25, 25, 24, 24],
+    valueForMoney: 3,
   },
   {
     name: 'Machu Picchu',
@@ -1652,6 +1712,7 @@ export default [
     ],
     highTemps: [13, 14, 14, 12, 11, 10, 9, 9, 9, 10, 11, 12],
     lowTemps: [0, 1, 1, 0, -1, -3, -3, -3, -3, -2, -2, 0],
+    valueForMoney: 2,
   },
   {
     name: 'Buenos Aires',
@@ -1673,6 +1734,7 @@ export default [
     ],
     highTemps: [29, 28, 26, 22, 19, 16, 15, 17, 18, 22, 25, 28],
     lowTemps: [21, 20, 18, 15, 12, 9, 8, 10, 11, 14, 17, 19],
+    valueForMoney: 2,
   },
   {
     name: 'Montevideo',
@@ -1694,6 +1756,7 @@ export default [
     ],
     highTemps: [28, 27, 26, 23, 19, 16, 15, 17, 18, 21, 24, 27],
     lowTemps: [18, 18, 16, 13, 10, 7, 6, 7, 9, 11, 13, 16],
+    valueForMoney: 2,
   },
   {
     name: 'Palm Beach',
@@ -1715,6 +1778,7 @@ export default [
     ],
     highTemps: [30, 30, 31, 31, 32, 32, 32, 33, 33, 32, 31, 30],
     lowTemps: [24, 25, 25, 26, 26, 27, 26, 27, 27, 26, 26, 25],
+    valueForMoney: 1,
   },
   {
     name: 'Pantanal',
@@ -1736,6 +1800,7 @@ export default [
     ],
     highTemps: [33, 33, 33, 33, 32, 31, 32, 34, 34, 34, 31, 32],
     lowTemps: [23, 23, 23, 22, 20, 17, 16, 18, 22, 18, 23, 23],
+    valueForMoney: 3,
   },
   {
     name: 'Ushuaia',
@@ -1757,6 +1822,7 @@ export default [
     ],
     highTemps: [14, 14, 12, 9, 7, 4, 4, 6, 8, 10, 12, 13],
     lowTemps: [5, 5, 4, 2, 1, -1, -1, -1, 1, 2, 3, 5],
+    valueForMoney: 2,
   },
   {
     name: 'Quito',
@@ -1778,6 +1844,7 @@ export default [
     ],
     highTemps: [19, 19, 19, 19, 19, 19, 19, 20, 20, 20, 19, 19],
     lowTemps: [9, 10, 9, 10, 9, 9, 8, 9, 9, 9, 9, 9],
+    valueForMoney: 3,
   },
   {
     name: 'Atacama Desert',
@@ -1799,6 +1866,7 @@ export default [
     ],
     highTemps: [25, 24, 24, 23, 22, 21, 21, 22, 23, 24, 24, 24],
     lowTemps: [8, 8, 7, 5, 3, 2, 1, 2, 3, 4, 5, 7],
+    valueForMoney: 2,
   },
   {
     name: 'Salar de Uyuni',
@@ -1820,6 +1888,7 @@ export default [
     ],
     highTemps: [20, 19, 20, 20, 21, 20, 19, 21, 20, 21, 21, 21],
     lowTemps: [10, 9, 9, 8, 7, 5, 4, 6, 6, 8, 9, 9],
+    valueForMoney: 2,
   },
   {
     name: 'Galapagos Islands',
@@ -1841,6 +1910,7 @@ export default [
     ],
     highTemps: [30, 30, 30, 31, 30, 29, 26, 27, 27, 27, 29, 30],
     lowTemps: [24, 24, 24, 24, 23, 20, 20, 19, 21, 20, 22, 23],
+    valueForMoney: 1,
   },
   {
     name: 'Iguazu Falls',
@@ -1862,6 +1932,7 @@ export default [
     ],
     highTemps: [32, 32, 32, 29, 24, 23, 24, 25, 26, 29, 30, 31],
     lowTemps: [22, 22, 21, 18, 15, 13, 12, 13, 15, 17, 19, 21],
+    valueForMoney: 2,
   },
   {
     name: 'Zanzibar',
@@ -1883,6 +1954,7 @@ export default [
     ],
     highTemps: [32, 33, 32, 31, 30, 29, 29, 29, 30, 31, 31, 32],
     lowTemps: [24, 24, 24, 25, 24, 23, 22, 21, 21, 22, 23, 24],
+    valueForMoney: 2,
   },
   {
     name: 'Giza',
@@ -1904,6 +1976,7 @@ export default [
     ],
     highTemps: [19, 21, 24, 29, 33, 35, 35, 35, 34, 30, 25, 21],
     lowTemps: [10, 11, 13, 16, 19, 22, 23, 24, 22, 19, 15, 11],
+    valueForMoney: 2,
   },
   {
     name: 'Victoria Falls',
@@ -1925,6 +1998,7 @@ export default [
     ],
     highTemps: [30, 30, 30, 30, 28, 25, 25, 29, 32, 34, 33, 31],
     lowTemps: [19, 19, 18, 15, 10, 7, 7, 10, 15, 18, 19, 19],
+    valueForMoney: 2,
   },
   {
     name: 'Volcanoes National Park',
@@ -1946,6 +2020,7 @@ export default [
     ],
     highTemps: [28, 27, 27, 25, 26, 26, 27, 28, 27, 27, 26, 26],
     lowTemps: [17, 17, 17, 18, 18, 17, 16, 17, 17, 17, 17, 17],
+    valueForMoney: 3,
   },
   {
     name: 'Masai Mara',
@@ -1967,6 +2042,7 @@ export default [
     ],
     highTemps: [26, 27, 27, 25, 24, 23, 22, 22, 25, 26, 24, 25],
     lowTemps: [16, 16, 16, 16, 15, 14, 13, 13, 13, 15, 16, 16],
+    valueForMoney: 1,
   },
   {
     name: 'Ngorongoro Crater',
@@ -1988,6 +2064,7 @@ export default [
     ],
     highTemps: [29, 29, 28, 26, 23, 23, 23, 24, 26, 27, 27, 28],
     lowTemps: [16, 17, 18, 18, 17, 15, 15, 15, 15, 16, 17, 16],
+    valueForMoney: 1,
   },
   {
     name: 'Lake Malawi',
@@ -2009,6 +2086,7 @@ export default [
     ],
     highTemps: [27, 27, 27, 27, 26, 24, 24, 25, 28, 30, 30, 28],
     lowTemps: [19, 18, 18, 16, 13, 10, 10, 11, 14, 17, 19, 19],
+    valueForMoney: 3,
   },
   {
     name: 'Watamu',
@@ -2030,6 +2108,7 @@ export default [
     ],
     highTemps: [31, 31, 32, 31, 29, 28, 27, 28, 28, 30, 31, 31],
     lowTemps: [24, 24, 25, 25, 24, 23, 23, 22, 23, 23, 24, 24],
+    valueForMoney: 3,
   },
   {
     name: 'Apia',
@@ -2051,6 +2130,7 @@ export default [
     ],
     highTemps: [31, 31, 31, 29, 29, 30, 29, 30, 28, 29, 31, 31],
     lowTemps: [25, 24, 24, 24, 25, 24, 23, 24, 24, 25, 25, 24],
+    valueForMoney: 3,
   },
   {
     name: 'Dubrovnik',
@@ -2072,6 +2152,7 @@ export default [
     ],
     highTemps: [12, 13, 15, 18, 23, 27, 30, 30, 26, 22, 17, 14],
     lowTemps: [7, 7, 9, 13, 16, 21, 23, 23, 19, 15, 12, 8],
+    valueForMoney: 2,
   },
   {
     name: 'Courchevel',
@@ -2093,6 +2174,7 @@ export default [
     ],
     highTemps: [-1, 1, 5, 9, 13, 17, 20, 19, 15, 10, 3, -1],
     lowTemps: [-10, -10, -6, -3, 1, 4, 6, 5, 2, -2, -6, -9],
+    valueForMoney: 1,
   },
   {
     name: 'Zermatt',
@@ -2114,6 +2196,7 @@ export default [
     ],
     highTemps: [1, 2, 6, 11, 14, 19, 21, 20, 16, 12, 6, 2],
     lowTemps: [-7, -7, -3, 0, 4, 8, 9, 9, 6, 2, -2, -6],
+    valueForMoney: 1,
   },
   {
     name: 'Cortina D\'Ampezzo',
@@ -2135,6 +2218,7 @@ export default [
     ],
     highTemps: [0, 3, 7, 11, 16, 20, 22, 21, 17, 12, 5, 0],
     lowTemps: [-8, -7, -3, 1, 5, 8, 10, 10, 7, 3, -3, -7],
+    valueForMoney: 1,
   },
   {
     name: 'Telluride, CO',
@@ -2156,6 +2240,7 @@ export default [
     ],
     highTemps: [2, 4, 6, 11, 16, 22, 25, 23, 20, 14, 7, 3],
     lowTemps: [-16, -13, -10, -5, -1, 2, 5, 5, 1, -4, -10, -15],
+    valueForMoney: 1,
   },
   {
     name: 'Snowbird, UT',
@@ -2177,6 +2262,7 @@ export default [
     ],
     highTemps: [0, 0, 3, 6, 12, 18, 23, 22, 17, 10, 3, 0],
     lowTemps: [-9, -9, -7, -4, 1, 6, 10, 10, 5, 0, -6, -9],
+    valueForMoney: 1,
   },
   {
     name: 'Niseko',
@@ -2198,6 +2284,7 @@ export default [
     ],
     highTemps: [-2, -1, 3, 9, 16, 21, 24, 25, 21, 15, 7, 0],
     lowTemps: [-11, -11, -7, -1, 5, 10, 15, 16, 10, 3, -2, -8],
+    valueForMoney: 2,
   },
   {
     name: 'Hakuba',
@@ -2219,5 +2306,6 @@ export default [
     ],
     highTemps: [1, 3, 7, 15, 21, 23, 27, 29, 23, 17, 11, 4],
     lowTemps: [-7, -7, -4, 2, 8, 13, 18, 19, 14, 7, 0, -5],
+    valueForMoney: 2,
   }
 ]
