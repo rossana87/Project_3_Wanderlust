@@ -12,12 +12,12 @@ const seedDatabase = async () => {
     await mongoose.connect(process.env.MONGO_URI, { keepAlive: true, keepAliveInitialDelay: 300000 })
     console.log('🚀 Database connection established')
 
-    await mongoose.connection.db.dropDatabase()
+    await Promise.all(Object.values(mongoose.connection.collections).map(async collection => await collection.deleteMany()))
     console.log('🫳 Database dropped')
 
     const createUsers = await User.create(userData)
     console.log(`${createUsers.length} users added`)
-    
+
     const destinationWithOwner = destinationData.map(destination => {
       const filteredUsers = createUsers.filter(user => user.isAdmin === true)
       const randomUser = filteredUsers[Math.floor(Math.random() * filteredUsers.length)]
