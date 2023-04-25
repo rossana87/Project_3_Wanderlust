@@ -60,21 +60,15 @@ const Admin = () => {
             Authorization: `Bearer ${getToken()}`,
           },
         })
-        console.log('ADMIN OBJECT ->', data)
         const { Destinations } = data
         setAdminData(Destinations)
         setAdminDestinations(Destinations)
       } catch (err) {
-        console.log(err)
         setError(err.message)
       }
     }
     getProfile()
   }, [addId, editedDestinations])
-
-  useEffect(() => {
-    console.log(adminData)
-  }, [adminData])
 
   // Delete functionality
   useEffect(() => {
@@ -92,7 +86,6 @@ const Admin = () => {
         const updatedDestinations = adminDestinations.filter(destination => destination.id !== deleteId)
         setAdminDestinations(updatedDestinations)
       } catch (err) {
-        console.log(err)
         setError(err.message)
       }
       displayDetinations()
@@ -107,9 +100,7 @@ const Admin = () => {
   // Edit functionality
   const handleEdit = (value) => {
     const destination = adminData.filter(destination => destination.id === value)[0]
-    console.log('DESTINATION ->', destination)
     const { name, country, continent, currency, latitude, longitude, description, images, features, highTemps, lowTemps, valueForMoney, reviews } = destination
-    console.log('DESTINATION ->', destination)
     setEditBody({
       name: name,
       country: country,
@@ -178,10 +169,6 @@ const Admin = () => {
     displayDetinations()
   }, [adminDestinations])
 
-  useEffect(() => {
-    console.log('ADMIN DATA ->', adminData)
-  }, [adminData])
-
   // ! Edit Modal functions
 
   const editModal = useRef(null)
@@ -189,8 +176,6 @@ const Admin = () => {
 
 
   const submitEdit = async (e) => {
-    console.log('EDIT ID ->', editId)
-    console.log(editBody)
     e.preventDefault()
     try {
       await axios.put('/api/admin', editBody,
@@ -201,12 +186,10 @@ const Admin = () => {
         })
       const filteredArray = adminDestinations.filter(destination => destination.id !== editId)
       const updatedDestinations = [...filteredArray, editBody]
-      console.log('EDITED DESTINATIONS ARRAY ->', updatedDestinations)
       setAdminDestinations(updatedDestinations)
       setEditedDestinations(updatedDestinations)
       closeEditModal()
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
@@ -241,7 +224,6 @@ const Admin = () => {
   }
 
   const submitAdd = async (e) => {
-    console.log('ADD BODY ->', addBody)
     e.preventDefault()
     try {
       await axios.post('/api/admin', addBody,
@@ -251,12 +233,10 @@ const Admin = () => {
           },
         })
       const updatedDestinations = [...adminDestinations, addBody]
-      console.log('NEW DESTINATIONS ARRAY ->', updatedDestinations)
       setAdminDestinations(updatedDestinations)
       closeAddModal()
       setAddId(addBody.id)
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }

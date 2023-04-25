@@ -44,7 +44,6 @@ const Home = () => {
 
   // ! On Mount
   useEffect(() => {
-    // This function will get our bread data and save it to the bread state
     const getDestinations = async () => {
       try {
         const { data } = await axios.get('/api/')
@@ -52,7 +51,6 @@ const Home = () => {
         setTemperature('2')
         createDestinationArrays()
       } catch (err) {
-        console.log(err)
         setError(err.message)
       }
     }
@@ -98,7 +96,6 @@ const Home = () => {
       closeModal()
       navigate('/') // need this to trigger the 'logout' button to show
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
@@ -120,7 +117,6 @@ const Home = () => {
   }
 
   const handleFilter = (value) => {
-    console.log(value)
     setTemperature(value)
   }
 
@@ -206,7 +202,6 @@ const Home = () => {
       closeRegisterModal()
       navigate('/') // needs this to trigger the 'register' button to show
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
@@ -247,7 +242,8 @@ const Home = () => {
                 <div className="slide slide-4" style={{ backgroundImage: `url("${hotDestinations[slide4Destination].images[3]}")` }}></div>
               </>
               :
-              console.log('Loading destinations')
+              <>
+              </>
             }
           </div>
           <div id="prev-next-controls">

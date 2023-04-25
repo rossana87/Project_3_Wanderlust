@@ -26,9 +26,7 @@ const Profile = () => {
         })
           .get(`/api/profile/${userId}`)
         setProfileData(data)
-        console.log(data)
       } catch (err) {
-        console.log(err)
         setError(err.message)
       }
     }
@@ -74,7 +72,6 @@ const Profile = () => {
     const deleteReview = async () => {
       let destinationId
       if (profileData) destinationId = userDestinationsReviewed.find(destination => destination.reviews._id === deleteId).id
-      console.log(destinationId)
       try {
         await axios.delete(`/api/profile/${userId}`, {
           headers: {
@@ -89,7 +86,6 @@ const Profile = () => {
         setUserDestinationsReviewed(updatedReviews)
         setEditedReviews(updatedReviews)
       } catch (err) {
-        console.log(err)
         setError(err.message)
       }
     }

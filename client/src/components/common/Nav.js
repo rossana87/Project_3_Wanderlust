@@ -10,9 +10,6 @@ const Nav = ({ openModal, openRegisterModal }) => {
 
   const handleLogOut = () => {
     (location.pathname === '/admin' || location.pathname === `/profile/${getUserID()}`) ? navigate('/') : navigate(location)
-    console.log(getUserID())
-    console.log(location === `/profile/${getUserID()}`)
-    console.log(location)
     removeToken()
   }
 

@@ -5,7 +5,7 @@ import axios from 'axios'
 import Dialog from '../common/Dialog'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEarthAmericas, faWallet, faCoins, faCommentDots, faMapLocationDot, faPersonHiking, faMountainSun, faUtensils } from '@fortawesome/free-solid-svg-icons'
-import mapboxgl from 'mapbox-gl'
+import mapboxgl, { accessToken } from 'mapbox-gl'
 import RegisterDialog from '../common/RegisterDialog'
 import { getToken, getUserID } from '../../helpers/auth'
 
@@ -27,12 +27,13 @@ const DestinationIndex = () => {
   const [reviewStatus, setReviewStatus] = useState(false)
   const [inputStatus, setInputStatus] = useState(true)
 
+  
   // State for the Login Form Fields
   const [formFields, setFormFields] = useState({
     email: '',
     password: '',
   })
-
+  
   const [registerFormFields, setRegisterFormFields] = useState({
     username: '',
     email: '',
@@ -40,42 +41,40 @@ const DestinationIndex = () => {
     passwordConfirmation: '',
     isAdmin: false,
   })
-
+  
   const [reviewFields, setReviewFields] = useState({
     title: '',
     text: '',
     rating: 4,
   })
-
+  
   const [editReviewFields, setEditReviewFields] = useState({
     title: '',
     text: '',
     rating: 4,
     id: '',
   })
-
-
+  
+  
   // ! On Mount
   useEffect(() => {
     const getDestination = async () => {
       try {
         const { data } = await axios.get(`/api/destinations/${id}`)
         setDestination(data)
-        console.log(data)
       } catch (err) {
-        console.log(err)
         setError(err.message)
       }
     }
     getDestination()
   }, [id, reviews])
-
+  
   // ! Get Map
   useEffect(() => {
     const getMap = async () => {
       if (!destination) return
       try {
-        mapboxgl.accessToken = 'pk.eyJ1IjoiamFtZXNndWxsYW5kIiwiYSI6ImNsZnM1dTBsbzAzNGczcW1ocThldWt5bDkifQ.W8F3EzE7Ap170SOD3_VRDg'
+        mapboxgl.accessToken = process.env.REACT_APP_API_KEY
         const map = new mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mapbox/streets-v12',
@@ -84,7 +83,6 @@ const DestinationIndex = () => {
           zoom: 10,
         })
       } catch (err) {
-        console.log(err)
         setError(err.message)
       }
     }
@@ -114,7 +112,6 @@ const DestinationIndex = () => {
       closeModal()
       navigate(location) // need this to trigger the 'logout' button to show
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
@@ -142,7 +139,6 @@ const DestinationIndex = () => {
       closeRegisterModal()
       navigate(location.pathname) // needs this to trigger the 'register' button to show
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
@@ -155,7 +151,6 @@ const DestinationIndex = () => {
         const { data } = await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${destination.latitude}&longitude=${destination.latitude}&timezone=auto&forecast_days=7&daily=temperature_2m_max`)
         setWeatherData(data.daily.temperature_2m_max)
       } catch (err) {
-        console.log(err)
         setError(err.message)
       }
     }
@@ -170,7 +165,6 @@ const DestinationIndex = () => {
   }
 
   const addReview = async (e) => {
-    console.log('REVIEW FIELDS ->', reviewFields)
     e.preventDefault()
     try {
       await axios.post(`/api/destinations/${id}`, reviewFields,
@@ -184,7 +178,6 @@ const DestinationIndex = () => {
       setInputStatus(true)
       setReviews(updatedReviews)
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
@@ -235,12 +228,10 @@ const DestinationIndex = () => {
     if (!destination) return
     const disableAddBtn = () => {
       const userReview = destination.reviews.find(review => review.owner.id === getUserID())
-      // console.log(userReview._id)
       !userReview ?
         setReviewStatus(false)
         :
         setReviewStatus(true) &
-        // setEditReviewFields(userReview._id) &
         setEditReviewFields({
           title: userReview.title,
           text: userReview.text,
@@ -255,12 +246,10 @@ const DestinationIndex = () => {
   const handleEditReview = (e) => {
     setEditReviewFields({ ...editReviewFields, [e.target.name]: e.target.value })
     if (e.target.name === 'rating') setEditSliderValue(e.target.value)
-    console.log('CHANGING FIELD ->', [e.target.name], e.target.value)
     setError('')
   }
 
   const editReview = (e) => {
-    console.log('EDIT REVIEW FIELDS ->', editReviewFields)
     e.preventDefault()
     inputStatus ?
       setInputStatus(!inputStatus)
@@ -281,13 +270,11 @@ const DestinationIndex = () => {
       setInputStatus(true)
       setReviews(updatedReviews)
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
 
   useEffect(() => {
-    console.log('EDIT REVIEW FIELDS ->', editReviewFields)
     setEditSliderValue(editReviewFields.rating)
   }, [editReviewFields])
 

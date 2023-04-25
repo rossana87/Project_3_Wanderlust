@@ -62,7 +62,6 @@ const DestinationIndex = () => {
       closeModal()
       navigate(location) // need this to trigger the 'logout' button to show
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
@@ -89,14 +88,12 @@ const DestinationIndex = () => {
       closeRegisterModal()
       navigate(location.pathname) // needs this to trigger the 'register' button to show
     } catch (err) {
-      console.log('error', err)
       setError(err.response.data.message)
     }
   }
 
   // ! On Mount
   useEffect(() => {
-    // This function will get our bread data and save it to the bread state
     if (!location.state) {
       const getDestinations = async () => {
         try {
@@ -105,7 +102,6 @@ const DestinationIndex = () => {
           setFilteredDestinations(data)
           setFilters({ ...filters })
         } catch (err) {
-          console.log(err)
           setError(err.message)
         }
       }
@@ -118,7 +114,6 @@ const DestinationIndex = () => {
   }, [])
 
   const handleChange = (e) => {
-    console.log('FILTERS BEFORE->', filters)
     let newFilters
     if (e.target.name === 'continent') {
       newFilters = { ...filters, [e.target.name]: e.target.value, newFilters, country: 'All' }
@@ -135,7 +130,6 @@ const DestinationIndex = () => {
   }
 
   useEffect(() => {
-    console.log('FILTERS', filters)
   }, [filters])
 
   useEffect(() => {
@@ -257,7 +251,6 @@ const DestinationIndex = () => {
                 })
                 :
                 <>
-                  {console.log('error')}
                 </>
               }
             </div>
