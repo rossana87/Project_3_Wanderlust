@@ -6,7 +6,7 @@ The third project of the Software Engineering immersive course at General Assemb
 
 ## Brief
 * Work in a team, using git to code collaboratively
-* Build a full-stack application by building a own backend and front-end
+* Build a full-stack application by building your own back-end and front-end
 * Use an Express API to serve data from a Mongo database
 * Consume the API with a separate front-end using React
 * Be a complete product that has CRUD functionality implemented and a few models that have relationships
@@ -41,24 +41,24 @@ This was a group project of 3 people, with [James Gulland](https://github.com/ja
 
 ## Installation
 * Clone repo or download zip
-* In the Terminal run this command to connect the `databasemongod --dbpath ~/data/db`
+* In the terminal run this command to connect the `databasemongod --dbpath ~/data/db`
 * Install dependencies in the root of the project `npm install`
-* Still in root, seed database with `npm run seed`
-* Split Terminal window and move into client folder with `cd client`
-* Install all frontend dependencies by running `npm install`
+* In the root, seed database with `npm run seed`
+* Split Terminal window and move into client folder writing `cd client`
+* Install all front-end dependencies by running `npm install`
 * In the ROOT start the server with `npm run serve`
-* In the CLIENT start the frontend with `npm run start`
+* In the CLIENT start the front-end with `npm run start`
 * Head to localhost: 3000 to view the site.
 * You can register as a new user or to enter as an authenticated admin, you can use rosie@email.com and password: rosie1
 
 ## Planning
-Inspired by the weather in the UK, we thought that every time it is raining we are thinking that we would like to be somewhere where it is sunny and hot, therefore we decided to build a travel website called Wanderlust. This was the first full-stack app created during my time on General Assembly's Software Engineering Immersive course, and it was the third project overall.
+Inspired by the weather in the UK, we thought that every time it is raining we are thinking that we would like to be somewhere where it is sunny and hot, therefore we decided to build a travel website called Wanderlust. This was the first full-stack app created during my time at General Assembly's Software Engineering Immersive course, and it was the third project overall.
 The app includes a third party API, RESTful API, built using Express, MongoDB, NodeJS and uses a React front-end.
 This was a group project of 3 people to be completed in one week. And it was an amazing experience working with them.
 The wireframe was created in Excalidraw and the main plan was to have a landing page with a nav bar that included a logo on the left hand side and all destinations, login and registration on the right handside.
-At the bottom, we decided to go for a sliding bar,  where the user is able to click on the icons, which describe the range of temperature. According to the icon clicked, it will show a different image and location depending on the weather.
+At the bottom, we decided to go for a sliding bar,  where the user is able to click on the icons, which describes the range of temperature. According to the icon clicked, it will show a different image and location depending on the weather.
 Finally, there is the explore button that will take the user to the destination endpoint.
-On this page, the user will be able to filter the destinations, according to the temperature, date, country, continent and rating. Once everything has been filtered, multiple locations will show up showing an image and the degrees at the very top. Clicking on the destination or city will take the user to another endpoint, which is the destination name endpoint. This will show everything about the city. Such as, images, the 7-day forecast, which will be an external api, attractions, another external api that shows the map of the location and the different reviews. Please see the wireframe below:
+On this page, the user can filter the destinations, according to the temperature, date, country, continent and rating. Once everything has been filtered, multiple locations will show up showing an image and the degrees at the very top. Clicking on the destination or city will take the user to another endpoint, which is the destination name endpoint. This will show everything about the city. Such as, images, the 7-day forecast, which is an external api, attractions, another external api that shows the map of the location and the different reviews. Please see the wireframe below:
 
 ![](https://res.cloudinary.com/dtu5wu4i9/image/upload/v1683898432/Project_3/project-3-readme-google-docs-0_cij1dn.png)
 
@@ -75,7 +75,7 @@ Finally we created the different relationships with a diagram before signing off
 
 ![](https://res.cloudinary.com/dtu5wu4i9/image/upload/v1683898601/Project_3/project-3-readme-google-docs-4_lzxku3.png)
 
-We preferred to keep it democratic and everyone was free to work on whatever they liked. However, the most important thing was to keep each other updated before starting working on a particular task. Especially because we didn’t want to have any conflicts when pulling or pushing to GitHub. 
+We preferred to keep it democratic and everyone was free to work on whatever they liked. However, the most important thing was to keep each other updated before starting working on a particular task. We didn’t want to have any conflicts when pulling or pushing to GitHub. 
 
 ## Approach
 
@@ -83,7 +83,7 @@ We preferred to keep it democratic and everyone was free to work on whatever the
 
 #### Models
 
-* For our collections, we have 2 schemas. They are linked to a collection in the database and sets out the structure. Each of these models are very detailed, so the users received a high level of detail from every destination.
+* For our collections, we have 2 schemas. They are linked to a collection in the database and sets out the structure. 
 * The first model is the Destination Schema. From the code below, the destination name is unique, which means that only one destination can have that name. While, almost every property in this schema has a required property, which means that when creating the database, these properties must be provided, or the creation will fail.
 
 Destination Schema for our destinations:
