@@ -12,7 +12,7 @@ The third project of the Software Engineering immersive course at General Assemb
 * Be a complete product that has CRUD functionality implemented and a few models that have relationships
 
 ## Deployment
-<a href="https://project-3-wanderlust.herokuapp.com/" target="_blank">Wanderlust</a>
+<a href="https://project-3-wanderlust.herokuapp.com/">Wanderlust</a>
 
 ## Timeframe
 This was a group project of 3 people, with [James Gulland](https://github.com/james-gulland) and [Ross Rogerson](https://github.com/Ross-Rogerson), and the timeframe was 7 days.
