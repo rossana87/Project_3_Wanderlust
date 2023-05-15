@@ -52,13 +52,13 @@ This was a group project of 3 people, with [James Gulland](https://github.com/ja
 * You can register as a new user or to enter as an authenticated admin, you can use rosie@email.com and password: rosie1
 
 ## Planning
-Inspired by the weather in the UK, we thought that every time it is raining we are thinking that we would like to be somewhere where it is sunny and hot, therefore we decided to build a travel website called Wanderlust. This was the first full-stack app created during my time at General Assembly's Software Engineering Immersive course, and it was the third project overall.
-The app includes a third party API, RESTful API, built using Express, MongoDB, NodeJS and uses a React front-end.
+Inspired by the weather in the UK, we thought that every time it is raining we are thinking that we would like to be somewhere sunny and hot, therefore we decided to build a travel website called Wanderlust. This was the first full-stack app created during my time at General Assembly's Software Engineering Immersive course, and it was the third project overall.
+The app includes a third party API, RESTful API, built using Express, MongoDB, NodeJS and uses React.js in the front-end.
 This was a group project of 3 people to be completed in one week. And it was an amazing experience working with them.
-The wireframe was created in Excalidraw and the main plan was to have a landing page with a nav bar that included a logo on the left hand side and all destinations, login and registration on the right handside.
-At the bottom, we decided to go for a sliding bar,  where the user is able to click on the icons, which describes the range of temperature. According to the icon clicked, it will show a different image and location depending on the weather.
+The wireframe was created in Excalidraw and the main plan was to have a landing page with a navigation bar that included a logo on the left hand side and all destinations, login and registration on the right handside.
+At the bottom, we decided to go for a sliding bar,  where the user is able to click on the weather icons. According to the icon clicked, it will show a different image and location depending on the weather.
 Finally, there is the explore button that will take the user to the destination endpoint.
-On this page, the user can filter the destinations, according to the temperature, date, country, continent and rating. Once everything has been filtered, multiple locations will show up showing an image and the degrees at the very top. Clicking on the destination or city will take the user to another endpoint, which is the destination name endpoint. This will show everything about the city. Such as, images, the 7-day forecast, which is an external api, attractions, another external api that shows the map of the location and the different reviews. Please see the wireframe below:
+On this page, the user can filter the destinations, according to the temperature, date, country, continent and rating. Once everything has been filtered, multiple locations will show up showing an image and the degrees at the very top. Clicking on the destination or city will take the user to another endpoint, which is the destination name endpoint. This will show everything about the city. Such as, images, the 7-day forecast, which is an external api, attractions, another external API that shows the map of the location and reviews. Please see the wireframe below:
 
 ![](https://res.cloudinary.com/dtu5wu4i9/image/upload/v1683898432/Project_3/project-3-readme-google-docs-0_cij1dn.png)
 
@@ -71,11 +71,11 @@ Then, once the user is logged in can only add reviews. While the admin team can 
 ![](https://res.cloudinary.com/dtu5wu4i9/image/upload/v1683898550/Project_3/project-3-readme-google-docs-2_hrgqyg.png)
 ![](https://res.cloudinary.com/dtu5wu4i9/image/upload/v1683898553/Project_3/project-3-readme-google-docs-3_woy5rz.png)
 
-Finally we created the different relationships with a diagram before signing off. This shows the destination schema, the review schema and the user schema and their relationships.
+Finally we created the different relationships in a diagram before sign off. This shows the destination schema, the review schema and the user schema and their relationships.
 
 ![](https://res.cloudinary.com/dtu5wu4i9/image/upload/v1683898601/Project_3/project-3-readme-google-docs-4_lzxku3.png)
 
-We preferred to keep it democratic and everyone was free to work on whatever they liked. However, the most important thing was to keep each other updated before starting working on a particular task. We didn’t want to have any conflicts when pulling or pushing to GitHub. 
+We used Trello for the different tasks, but we preferred to keep it democratic and everyone was free to work on whatever they liked. However, the most important thing was to keep each other updated before starting working on a task. We didn’t want to have any conflicts when pulling or pushing to GitHub. 
 
 ## Approach
 
@@ -83,7 +83,9 @@ We preferred to keep it democratic and everyone was free to work on whatever the
 
 #### Models
 
-* For our collections, we have 2 schemas. They are linked to a collection in the database and sets out the structure. 
+#### Destination Model
+
+* For our collections, we have 3 schemas.  
 * The first model is the Destination Schema. From the code below, the destination name is unique, which means that only one destination can have that name. While, almost every property in this schema has a required property, which means that when creating the database, these properties must be provided, or the creation will fail.
 
 Destination Schema for our destinations:
@@ -104,9 +106,9 @@ const destinationSchema = new Schema({
 })
 ```
 
-After creating this schema, we created roughly 100 destinations in our database and every one of us had to help look for the information needed. For instance, I looked after all the images and features. The latter was an array of 3 indexes, which included sightseeing, activities and restaurants.
+After creating this schema, we created roughly 100 destinations in our database. I looked after all the images and features. The latter was an array of 3 indexes, which included sightseeing, activities and restaurants.
 
-#### User Models
+#### User Model
 
 * User schema for the user registration and login:
 
@@ -122,11 +124,11 @@ const userSchema = new Schema({
 * User: this assigns a user to every activity and uses a referenced relationship.
 * `isAdmin`: this field represents whether the user is an admin or not.
 
-Our User schema was a pretty standard one. However, certain areas about the User need to be protected, including us, admin developers, who had direct access to the database. In order to implement this, additional features were added to the model itself to protect Users:
+Our User schema was a pretty standard one. However, certain areas about the User needed to be protected, including us, admin developers, who had direct access to the database. In order to implement this, additional features were added to the model itself to protect Users:
 
-* Shown in the User model above, the username and email fields have been distinguished as being `unique: true`. In this way the users wouldn’t  be unable to register with the same email address or with an existing username.
+* Shown in the User model above, the username and email fields have been distinguished as being `unique: true`. In this way the user can't register with the same email address or with an existing username.
 * Mongoose has some incredibly in-built methods which I also used in conjunction with Bcrypt for password hashing. Using pre, I was able to access Mongoose Schema’s lifecycle methods and run functions when users either register or login. 
-* The first method I built was a `toJSON` function that is called whenever a Mongoose document is converted to JSON, such as when you send it as a response to an HTTP request. From the code snippet below, I have set `virtuals: true`. Virtual fields are not stored in the database. Then I used the transform method that actually lives on the database and finally the password will be deleted for security reasons.
+* The first method I built was a `toJSON` function that is called whenever a Mongoose document is converted to JSON, such as when you send it as a response to an HTTP request. From the code snippet below, I have set `virtuals: true`. Virtual fields are not stored in the database. Then, I used the `transform` method that actually lives on the database and finally the password will be deleted for security reasons.
 
 ```js
 // Removes password whenever a document is password is converted into JSON
@@ -137,7 +139,7 @@ userSchema.set('toJSON', {
   },
 })
 ```
-* To check the password and passwordConfirmation field match from the user input during registration. If these were not to match, it would be invalid and halts the user from registering and prompts them why.
+* To check the password and passwordConfirmation field match from the user input during registration. If these weren't matching, it would be invalid and halts the user from registering.
 
 ```js
 // Checks password matches password confirmation
@@ -161,7 +163,7 @@ userSchema.pre('validate', function (next) {
   })
 ```
 
-* The final function checks the credentials of a user at login. The function checks the password currently stored in the database and ensures this matches the hashed password.
+* The final function checks the credentials of a user during the login. The function checks the password currently stored in the database and ensures this matches the hashed password.
 
 ```js
 userSchema.methods.validatePassword = function (plainTextPassword) {
@@ -186,7 +188,7 @@ const reviewSchema = new Schema({
 ```
 
 * Reviews: every activity has an array of reviews, which is an embedded relationship.
-* Timestamps: this field if set to true will provide us at what time the review was created and I will be able to show it in the UI.
+* Timestamps: this field if set to true will provide us at what time the review was created and I can show it in the UI.
 
 Thanks to the review model, I was able to create an average rating virtual field, which contains an average of all the reviews rating. I used the GET method to execute whenever the data is retrieved from the database. Inside this method a callback function has been used, which loops through the reviews and gets an average and returns that value.
 
@@ -229,11 +231,11 @@ router.route('/profile/:userId')
   .get(secureRoute, profileView)
 ```
 
-Every route represents the end point. To access the secureRoute ones, the user or the team member needs to login.
+Every route represents the endpoint. To access the secureRoute endpoints, the user or the team member needs to login.
 
 #### Controllers
 
-At this point, I looked at some of the routes, such as  `/destinations/:destinationId`,  `/` and `/admin` . While writing the functions and once completed, I was testing in Insomnia to check that they were working properly.
+At this point, I looked at some of the routes, such as  `/destinations/:destinationId`,  `/` and `/admin` . While writing the functions and once completed, I was testing them in Insomnia to check that they were working properly.
 
 * The function below displays all the destinations using the GET request method to fetch the destinations from the database that we created. All users that don’t have an account can access the collection of all the destinations. The function uses a `try...catch` block to handle any errors that may occur during the asynchronous operation of fetching all destinations using Mongoose's `find()` method. 
 
@@ -248,7 +250,7 @@ export const displayAllDestinations = async (req, res) => {
 }
 ```
 
-* Moving to the next endpoint `/destinations/:destinationId` , in this function I would like to get only one single destination. For this one as well, all users can access the collection of one single destination. The function starts by destructuring the `destinationId` parameter from the `req.params` object. This is the ID of the destination that we are fetching. Here as well the GET request method has been used, but we are looking for the destination with the method `findById()`. If no destination has been found under that Id, it will show an error when testing. Otherwise it will return with the destination that we are looking for.
+* Moving to the next endpoint `/destinations/:destinationId`. For this one as well, all users can access the collection of one single destination. The function starts by destructuring the `destinationId` parameter from the `req.params` object. This is the ID of the destination that we are fetching. The GET request method has been used, but I was looking for the destination with the method `findById()`. If no destination has been found under that Id, it will show an error when testing. Otherwise it will return with the destination that I was looking for.
 
 ```js
 export const displaySingleDestination = async (req, res) => {
@@ -269,7 +271,7 @@ export const displaySingleDestination = async (req, res) => {
 }
 ```
 
-* The user is available, if logged in, to add a review to one of the destinations. I have used the POST request method. The function uses a `try...catch` block to handle any errors that may occur. The function starts by destructuring the destinationId parameter from the req.params object and then I look for the destination with the method `findById()`. If this is successful, the review will be added under the user that is logged in and under that destination Id. Otherwise, if the destination was not found it will show an error.
+* If logged in the user can add a review to one of the destinations. I have used the POST request method. The function uses a `try...catch` block to handle any errors that may occur. The function starts by destructuring the destinationId parameter from the req.params object and then I look for the destination with the method `findById()`. If this is successful, the review will be added under the user profile and under that destination Id. Otherwise, if the destination was not found it will show an error.
 
 ```js
 export const addReview = async (req, res) => {
@@ -292,7 +294,7 @@ export const addReview = async (req, res) => {
 }
 ```
 
-* The last function that I did under the endpoint `/admin` is the `deleteDestination` function. Here I have used the DELETE request and only the admin team, as per endpoint, can delete the destinations. I started destructuring the `id` property from `req.body`. Then, I had to retrieve the ID of the user logged in and according to the latter one, I needed to search for the destination to be deleted by calling the method `Destination.findById(id)`. If the destination that I would like to delete doesn’t match my Id, it will say that I am unauthorised. Otherwise, it will delete the destination. 
+* The last function that I did under the endpoint `/admin` is the `deleteDestination` function. Here I have used the DELETE request and only the admin team, as per endpoint, can delete the destinations. I started destructuring the `id` property from `req.body`. Then, I had to retrieve the Id of the user logged in and according to the latter one, I needed to search for the destination to be deleted by calling the method `Destination.findById(id)`. If the destination that I would like to delete doesn’t match my Id, it will show that I am unauthorised. Otherwise, it will delete the destination. 
 
 ```js
 export const deleteDestination = async (req, res) => {
@@ -334,11 +336,11 @@ if (req.route.path.includes('admin') && !loggedInUser.isAdmin) throw new Unautho
 
 ### Front-end
 
-Having successfully built our API and tested it through Insomnia as a team, our focus could be made on designing the webpage which utilises the built API.
+Having successfully built our API and tested it through Insomnia as a team, we now focused in the font-end.
 
 #### NavBar
 
-* The navigation bar held a number of functions which were determined to be run using ternaries. For instance, if the user is authenticated (logged in), the nav bar needs to show Profile and Logout. If the user is not authenticated, it renders two list items for login and registration, each with an `onClick` handler that calls a function to open a modal - Login and Register.
+* The navigation bar held a number of functions which were determined to be run using ternaries. For instance, if the user is authenticated (logged in), the nav bar needs to show Profile and Logout. And if the user is not authenticated, it renders login and register, each with an `onClick` handler that calls a function to open a modal - Login and Register.
 
 ```js
 <nav>
@@ -407,7 +409,7 @@ const handleChangeRegister = (e) => {
 
 #### Font Awesome Icons
 
-* React is very powerful and thanks to the in-built methods, I was able to import some icons from the website Font Awesome. Firstly, I had to install some commands:
+* React is very powerful and thanks to the in-built methods. My teammate and I did this together. We imported some icons from the website Font Awesome and installed some commands:
 
 ```js
 npm i --save @fortawesome/fontawesome-svg-core
@@ -416,11 +418,11 @@ npm i --save @fortawesome/free-regular-svg-icons
 npm i --save @fortawesome/react-fontawesome@latest
 ```
 
-Once installed, I had to import the name of the icon at the top of `DestinationSingle.js` and pass the icons in the code as a prop.
+Once installed, we imported the name of the icons at the top of `DestinationSingle.js` and passed the icons in the code as a prop.
 
 #### Add Review
 
-* Since I looked after the addReview in the backend, we decided that I was going to create this function in the frontend as well. A POST request has been used to the backend API. Of course, if I wrote POST in the backend, the same needs to be used in the frontend. An API call was made and if the token is valid the request will be successful and the review will be added.
+* Since I looked after the addReview in the back-end, we decided that I was going to create this function in the frontend as well. A POST request has been used. If I used POST in the back-end, the same needs to be used in the front-end. An API call was made and if the token is valid the request will be successful and the review will be added.
 
 ```js
 const [reviewFields, setReviewFields] = useState({
@@ -450,7 +452,7 @@ const addReview = async (e) => {
 
 #### MapBox
 
-* As a team, we decided to use an external API which is mapbox. I did this function with my teammate. When the user is on the single destination is able to see the map of the location as well. In order to do so, I had to register to the website, receive a token and create a function, which is inside a `try...catch` block to handle errors. The `map` constructor takes an object as its argument that specifies various options for configuring the map. Thanks to the database that we built in the backend, I was able to use the longitude and the latitude of the database, instead of using the ones from mapbox.
+* As a team, we decided to use an external API which is mapbox. I did this function with my teammate. When the user is on the single destination is able to see the map of the location. In order to do so, We had to register to the website, receive a token and create a function, which is inside a `try...catch` block to handle errors. The `map` constructor takes an object as its argument that specifies various options for configuring the map. Thanks to the database that we built in the backend, we were able to use the longitude and the latitude of the database, instead of using the ones from mapbox.
 
 ```js
 useEffect(() => {
@@ -490,8 +492,7 @@ useEffect(() => {
 
 ### Future Improvements
 
-* Implement a function in the front-end for how expensive a place is according to the destination.
-* It would be nice to search by destination in the filters under `destination.js`. This would enable the user to find the. 
+* It would be nice to search by destination in the filters under `destination.js`. 
 * Under the `profile.js`, it would be nice to add a real picture of the user.
 
 ### Final Project
