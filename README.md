@@ -24,9 +24,8 @@ This was a group project of 3 people, with [James Gulland](https://github.com/ja
 
 **Front-end:**
 * HTML5
-* CSS3
-* SASS
-* JavaScript
+* SCSS / SASS
+* JavaScript (ES6)
 * React.js
 * Axios
 * Mapbox
